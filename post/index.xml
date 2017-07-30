@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Oysterlab</title>
+    <link>http://nodejh.com/post/</link>
+    <description>Recent content in Posts on Oysterlab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 30 Jul 2017 18:26:18 +0900</lastBuildDate>
+    
+	<atom:link href="http://nodejh.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello!</title>
+      <link>http://nodejh.com/post/my/</link>
+      <pubDate>Sun, 30 Jul 2017 18:26:18 +0900</pubDate>
+      
+      <guid>http://nodejh.com/post/my/</guid>
+      <description>Hello world</description>
+    </item>
+    
+  </channel>
+</rss>
