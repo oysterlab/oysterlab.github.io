@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Oysterlab</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Jul 2017 18:26:18 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 30 Jul 2017 22:26:18 +0900</lastBuildDate>
     
 	<atom:link href="https://oysterlab.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>test!</title>
+      <link>https://oysterlab.github.io/post/test/</link>
+      <pubDate>Sun, 30 Jul 2017 22:26:18 +0900</pubDate>
+      
+      <guid>https://oysterlab.github.io/post/test/</guid>
+      <description>test test&amp;hellip;</description>
+    </item>
     
     <item>
       <title>Hello!</title>
