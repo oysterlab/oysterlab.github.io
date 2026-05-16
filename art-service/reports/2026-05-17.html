@@ -14,10 +14,18 @@
     main { padding:24px 5vw 80px; }
     .hero { display:grid; grid-template-columns:1fr; gap:16px; max-width:1180px; }
     .summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:20px 0 24px; }
+    .audience-summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:14px 0 20px; }
     .metric { border:1px solid var(--line); background:#fff; padding:18px; border-radius:8px; }
     .metric strong { display:block; font-size:34px; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:22px; }
     .card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    .audience-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(270px,1fr)); gap:16px; }
+    .aud-card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .aud-card h3 { margin:0 0 12px; }
+    .aud-card h4 { margin:16px 0 8px; font-size:13px; color:var(--muted); }
+    .aud-card ul { list-style:none; padding:0; margin:0; display:grid; gap:7px; }
+    .aud-card li { display:flex; justify-content:space-between; gap:12px; border-bottom:1px solid #eee7dc; padding-bottom:6px; font-size:13px; }
+    .aud-card li span { color:var(--muted); }
     .media { display:grid; grid-template-columns:1.25fr .75fr; gap:0; background:#111; align-items:stretch; }
     img { width:100%; display:block; object-fit:cover; }
     .contact { aspect-ratio: 810 / 1040; }
@@ -43,15 +51,51 @@
 <body>
   <header>
     <h1>Art Service Daily Report</h1>
-    <p>생성 시각: 2026-05-17 00:33 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
+    <p>생성 시각: 2026-05-17 00:51 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
   </header>
   <main>
     <section class="summary">
       <div class="metric"><span>target fit avg</span><strong>87%</strong></div>
+      <div class="metric"><span>Studio demo fit</span><strong>28%</strong></div>
       <div class="metric"><span>reviewed posts</span><strong>8</strong></div>
       <div class="metric"><span>main bet</span><strong>WFH</strong></div>
       <div class="metric"><span>daily production</span><strong>6</strong></div>
     </section>
+
+    
+    <h2>Studio Audience Matrix</h2>
+    <p>Source: TikTok Studio Analytics, last_7_days. 타겟 기준은 US/English-market, 25-44세, 홈데코 구매 가능성이 높은 여성 skew다.</p>
+    <section class="audience-summary">
+      <div class="metric"><span>Studio demo fit</span><strong>28%</strong></div>
+      <div class="metric"><span>viewer US</span><strong>0.0%</strong></div>
+      <div class="metric"><span>follower US</span><strong>55.4%</strong></div>
+      <div class="metric"><span>viewer 25-44</span><strong>0.0%</strong></div>
+    </section>
+    <section class="audience-grid">
+      <article class="aud-card">
+        <h3>Recent Viewers</h3>
+        <div class="score"><label>US</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:0%"></span></div></div>
+        <h4>Age</h4><ul><li><span>pending</span><b>--</b></li></ul>
+        <h4>Locations</h4><ul><li><span>pending</span><b>--</b></li></ul>
+      </article>
+      <article class="aud-card">
+        <h3>Followers</h3>
+        <div class="score"><label>US</label><div class="bar"><span style="width:55%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:61%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:65%"></span></div></div>
+        <h4>Age</h4><ul><li><span>18-24</span><b>29.9%</b></li><li><span>25-34</span><b>42.8%</b></li><li><span>35-44</span><b>18.1%</b></li><li><span>45-54</span><b>5.9%</b></li><li><span>55+</span><b>3.3%</b></li></ul>
+        <h4>Locations</h4><ul><li><span>US</span><b>55.4%</b></li><li><span>SG</span><b>12.6%</b></li><li><span>CA</span><b>5.0%</b></li><li><span>PH</span><b>4.7%</b></li><li><span>AU</span><b>4.3%</b></li><li><span>MY</span><b>2.5%</b></li><li><span>ID</span><b>2.2%</b></li><li><span>JP</span><b>0.7%</b></li></ul>
+      </article>
+      <article class="aud-card">
+        <h3>Distribution Signals</h3>
+        <h4>Traffic</h4><ul><li><span>For You</span><b>95.4%</b></li><li><span>Search</span><b>3.8%</b></li><li><span>Personal Profile</span><b>0.6%</b></li><li><span>Follow</span><b>0.2%</b></li><li><span>Sound</span><b>0.0%</b></li></ul>
+        <h4>Search</h4><ul><li><span>pending</span><b>--</b></li></ul>
+      </article>
+    </section>
+    <p>팔로워 기반은 미국 타겟에 가깝지만, 최근 7일 시청자 분배는 아직 싱가포르/한국 쪽으로 치우쳐 있다. 새 콘텐츠는 미국 홈오피스/첫 아파트 신호를 훨씬 더 명시적으로 반복해야 한다.</p>
+    
 
     <h2>Content Evidence</h2>
     <div class="grid">

@@ -1,5 +1,16 @@
 {
-  "generated_at": "2026-05-17T00:33:43",
+  "generated_at": "2026-05-17T00:51:56",
+  "audience_fit": {
+    "score": 28,
+    "viewer_us": 0,
+    "follower_us": 55.4,
+    "viewer_english": 0,
+    "follower_english": 64.7,
+    "viewer_target_age": 0,
+    "follower_target_age": 60.9,
+    "viewer_female": 0,
+    "follower_female": 65.0
+  },
   "posts": [
     {
       "id": "svc_20260516_roles_art_can_hold",
