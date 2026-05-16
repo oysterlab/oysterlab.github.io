@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T00:53:32",
+  "generated_at": "2026-05-17T01:04:58",
   "audience_fit": {
     "score": 41,
     "viewer_us": 4.5,
@@ -27,6 +27,13 @@
           "living room / sofa wall",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -43,6 +50,13 @@
           "living room / sofa wall",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -58,6 +72,13 @@
           "renter / first apartment",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -74,6 +95,13 @@
           "renter / first apartment",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -90,6 +118,13 @@
           "bedroom / soft return",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -105,6 +140,13 @@
           "home office / desk wall",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 15,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -120,6 +162,13 @@
           "living room / sofa wall",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 19,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     },
     {
@@ -136,6 +185,13 @@
           "bedroom / soft return",
           "wall art shoppers"
         ]
+      },
+      "audience_match": {
+        "score": 41,
+        "actual_demo_fit": 41,
+        "intended_segment_fit": 100,
+        "action_signal": 11,
+        "note": "account-level Studio demographics; TikTok does not expose per-post demographics for these photo posts"
       }
     }
   ]
