@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T01:30:10",
+  "generated_at": "2026-05-17T06:32:54",
   "audience_fit": {
     "score": 69,
     "viewer_sg": 53.0,
@@ -31,13 +31,13 @@
         ]
       },
       "audience_match": {
-        "score": 58,
-        "actual_demo_fit": 58,
-        "sg": 60.0,
-        "us": 5.0,
-        "target_market": 65.0,
-        "target_age": 37.0,
-        "female": 65.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 78.2,
+        "us": 3.4,
+        "target_market": 81.6,
+        "target_age": 46.0,
+        "female": 71.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -59,13 +59,13 @@
         ]
       },
       "audience_match": {
-        "score": 55,
-        "actual_demo_fit": 55,
-        "sg": 44.3,
-        "us": 0,
-        "target_market": 47.1,
-        "target_age": 59.0,
-        "female": 73.0,
+        "score": 57,
+        "actual_demo_fit": 57,
+        "sg": 24.8,
+        "us": 3.5,
+        "target_market": 47.7,
+        "target_age": 66.0,
+        "female": 70.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -86,13 +86,13 @@
         ]
       },
       "audience_match": {
-        "score": 78,
-        "actual_demo_fit": 78,
-        "sg": 68.7,
+        "score": 69,
+        "actual_demo_fit": 69,
+        "sg": 50.7,
         "us": 0,
-        "target_market": 68.7,
-        "target_age": 86.0,
-        "female": 94.0,
+        "target_market": 60.2,
+        "target_age": 75.0,
+        "female": 88.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -114,13 +114,13 @@
         ]
       },
       "audience_match": {
-        "score": 87,
-        "actual_demo_fit": 87,
-        "sg": 95.7,
+        "score": 76,
+        "actual_demo_fit": 76,
+        "sg": 82.3,
         "us": 0,
-        "target_market": 95.7,
-        "target_age": 72.0,
-        "female": 80.0,
+        "target_market": 83.4,
+        "target_age": 58.0,
+        "female": 77.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
