@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T01:25:23",
+  "generated_at": "2026-05-17T01:30:10",
   "audience_fit": {
     "score": 69,
     "viewer_sg": 53.0,
@@ -59,13 +59,13 @@
         ]
       },
       "audience_match": {
-        "score": 53,
-        "actual_demo_fit": 53,
-        "sg": 41.5,
+        "score": 55,
+        "actual_demo_fit": 55,
+        "sg": 44.3,
         "us": 0,
-        "target_market": 44.4,
+        "target_market": 47.1,
         "target_age": 59.0,
-        "female": 71.0,
+        "female": 73.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -88,9 +88,9 @@
       "audience_match": {
         "score": 78,
         "actual_demo_fit": 78,
-        "sg": 68.0,
+        "sg": 68.7,
         "us": 0,
-        "target_market": 68.0,
+        "target_market": 68.7,
         "target_age": 86.0,
         "female": 94.0,
         "intended_segment_fit": 100,
@@ -114,11 +114,11 @@
         ]
       },
       "audience_match": {
-        "score": 86,
-        "actual_demo_fit": 86,
-        "sg": 95.2,
+        "score": 87,
+        "actual_demo_fit": 87,
+        "sg": 95.7,
         "us": 0,
-        "target_market": 95.2,
+        "target_market": 95.7,
         "target_age": 72.0,
         "female": 80.0,
         "intended_segment_fit": 100,
