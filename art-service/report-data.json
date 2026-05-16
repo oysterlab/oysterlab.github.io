@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-05-17T00:33:43",
+  "posts": [
+    {
+      "id": "svc_20260516_roles_art_can_hold",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7640507246895549717",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "home office / desk wall",
+          "renter / first apartment",
+          "living room / sofa wall",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260516_compare_sofa_wall_with_without",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7640506306436074772",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 4,
+        "service_fit": 98,
+        "hits": [
+          "renter / first apartment",
+          "living room / sofa wall",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260516_story_begin_again_entry",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7640505376860867861",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 4,
+        "service_fit": 98,
+        "hits": [
+          "renter / first apartment",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260516_story_keep_going_desk",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7640504307103567125",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 4,
+        "service_fit": 98,
+        "hits": [
+          "home office / desk wall",
+          "renter / first apartment",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260516_story_real_chapter_bedroom",
+      "url": "",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 4,
+        "service_fit": 98,
+        "hits": [
+          "renter / first apartment",
+          "bedroom / soft return",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260515_wfh_office_a",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7639995525672062228",
+      "scores": {
+        "target": 5,
+        "strategy": 3,
+        "visual": 1,
+        "continuity": 5,
+        "service_fit": 68,
+        "hits": [
+          "home office / desk wall",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260515_first_home_living_a",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7639994750308732180",
+      "scores": {
+        "target": 5,
+        "strategy": 3,
+        "visual": 1,
+        "continuity": 5,
+        "service_fit": 68,
+        "hits": [
+          "living room / sofa wall",
+          "wall art shoppers"
+        ]
+      }
+    },
+    {
+      "id": "svc_20260515_renter_bedroom_a",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7639993732103720212",
+      "scores": {
+        "target": 5,
+        "strategy": 3,
+        "visual": 1,
+        "continuity": 5,
+        "service_fit": 68,
+        "hits": [
+          "renter / first apartment",
+          "bedroom / soft return",
+          "wall art shoppers"
+        ]
+      }
+    }
+  ]
+}
