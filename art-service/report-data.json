@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T06:33:36",
+  "generated_at": "2026-05-17T07:25:00",
   "audience_fit": {
     "score": 69,
     "viewer_sg": 53.0,
@@ -14,6 +14,63 @@
     "follower_female": 65.0
   },
   "posts": [
+    {
+      "id": "svc_preview_20260517_hdb_tile_entry",
+      "url": "",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 2,
+        "continuity": 4,
+        "service_fit": 83,
+        "hits": [
+          "renter / first apartment",
+          "Singapore small-space",
+          "wall art shoppers"
+        ]
+      },
+      "audience_match": {
+        "score": 69,
+        "actual_demo_fit": 69,
+        "sg": 53.0,
+        "us": 4.5,
+        "target_market": 72.5,
+        "target_age": 56.4,
+        "female": 76.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_preview_20260517_rental_textile_wfh",
+      "url": "",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 2,
+        "continuity": 4,
+        "service_fit": 83,
+        "hits": [
+          "home office / desk wall",
+          "Singapore small-space",
+          "bedroom / soft return",
+          "wall art shoppers"
+        ]
+      },
+      "audience_match": {
+        "score": 69,
+        "actual_demo_fit": 69,
+        "sg": 53.0,
+        "us": 4.5,
+        "target_market": 72.5,
+        "target_age": 56.4,
+        "female": 76.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
     {
       "id": "svc_20260516_roles_art_can_hold",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7640507246895549717",
@@ -33,11 +90,11 @@
       "audience_match": {
         "score": 71,
         "actual_demo_fit": 71,
-        "sg": 78.2,
-        "us": 3.4,
-        "target_market": 81.6,
+        "sg": 79.5,
+        "us": 3.2,
+        "target_market": 82.7,
         "target_age": 46.0,
-        "female": 71.0,
+        "female": 72.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -59,13 +116,13 @@
         ]
       },
       "audience_match": {
-        "score": 57,
-        "actual_demo_fit": 57,
-        "sg": 24.8,
-        "us": 3.5,
-        "target_market": 47.7,
-        "target_age": 66.0,
-        "female": 70.0,
+        "score": 59,
+        "actual_demo_fit": 59,
+        "sg": 20.7,
+        "us": 2.8,
+        "target_market": 51.8,
+        "target_age": 64.0,
+        "female": 71.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -86,13 +143,13 @@
         ]
       },
       "audience_match": {
-        "score": 69,
-        "actual_demo_fit": 69,
-        "sg": 50.7,
+        "score": 68,
+        "actual_demo_fit": 68,
+        "sg": 47.4,
         "us": 0,
-        "target_market": 60.2,
-        "target_age": 75.0,
-        "female": 88.0,
+        "target_market": 61.5,
+        "target_age": 68.0,
+        "female": 86.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -116,11 +173,11 @@
       "audience_match": {
         "score": 76,
         "actual_demo_fit": 76,
-        "sg": 82.3,
+        "sg": 81.3,
         "us": 0,
-        "target_market": 83.4,
-        "target_age": 58.0,
-        "female": 77.0,
+        "target_market": 83.2,
+        "target_age": 60.0,
+        "female": 74.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
