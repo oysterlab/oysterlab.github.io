@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-05-17T00:51:56",
+  "generated_at": "2026-05-17T00:53:32",
   "audience_fit": {
-    "score": 28,
-    "viewer_us": 0,
+    "score": 41,
+    "viewer_us": 4.5,
     "follower_us": 55.4,
-    "viewer_english": 0,
+    "viewer_english": 19.5,
     "follower_english": 64.7,
-    "viewer_target_age": 0,
+    "viewer_target_age": 56.4,
     "follower_target_age": 60.9,
-    "viewer_female": 0,
+    "viewer_female": 76.0,
     "follower_female": 65.0
   },
   "posts": [
