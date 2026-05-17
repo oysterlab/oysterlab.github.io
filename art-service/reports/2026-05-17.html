@@ -10,6 +10,7 @@
     header { padding:44px 5vw 22px; border-bottom:1px solid var(--line); }
     h1 { margin:0 0 10px; font-size:clamp(30px,5vw,56px); letter-spacing:0; }
     h2 { margin:34px 0 14px; font-size:24px; }
+    h3 { margin:24px 0 12px; font-size:18px; }
     p { max-width:980px; line-height:1.65; color:var(--muted); }
     main { padding:24px 5vw 80px; }
     .hero { display:grid; grid-template-columns:1fr; gap:16px; max-width:1180px; }
@@ -51,19 +52,37 @@
 <body>
   <header>
     <h1>Art Service Daily Report</h1>
-    <p>생성 시각: 2026-05-17 07:25 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
+    <p>생성 시각: 2026-05-17 09:51 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
   </header>
   <main>
-    <section class="summary">
-      <div class="metric"><span>target fit avg</span><strong>86%</strong></div>
-      <div class="metric"><span>Studio demo fit</span><strong>69%</strong></div>
-      <div class="metric"><span>reviewed posts</span><strong>10</strong></div>
-      <div class="metric"><span>main bet</span><strong>WFH</strong></div>
-      <div class="metric"><span>daily production</span><strong>6</strong></div>
-    </section>
-
     
-    <h2>Studio Audience Matrix</h2>
+    <h2>Executive Summary</h2>
+    <section class="exec">
+      <p><strong>오늘의 판단:</strong> 최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다. 리포트는 먼저 타겟 오디언스 적합도를 보고, 그 다음 실제 생성물 이미지와 생성 근거, 마지막으로 20:30 타겟 오디언스 루틴 결과를 확인한다.</p>
+      <section class="summary">
+        <div class="metric"><span>reviewed content fit</span><strong>86%</strong></div>
+        <div class="metric"><span>Studio demo fit</span><strong>69%</strong></div>
+        <div class="metric"><span>viewer target market</span><strong>72.5%</strong></div>
+        <div class="metric"><span>viewer SG</span><strong>53.0%</strong></div>
+        <div class="metric"><span>routine</span><strong>completed</strong></div>
+        <div class="metric"><span>routine source</span><strong>sample_report_20260517_095128</strong></div>
+        <div class="metric"><span>comment packet</span><strong>8</strong></div>
+        <div class="metric"><span>next production</span><strong>6</strong></div>
+      </section>
+    </section>
+    
+
+    <h2>1. Target Audience & New Content Strategy</h2>
+    
+    <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
+    <section class="slots">
+      <div class="slot"><b>지난 콘텐츠 판정</b>최근 업로드의 의도 세그먼트는 wall art shoppers, renter / first apartment, home office / desk wall 쪽으로 읽힌다. 실제 데모그래피와 세그먼트 의도가 어긋나면 훅보다 공간 선택과 댓글 표면을 먼저 고친다.</div>
+      <div class="slot"><b>유지할 것</b>나의 이야기처럼 읽히는 현재 감각, 프린트로 걸 수 있는 아트 품질, 과장 없는 공간-감정 전환을 유지한다.</div>
+      <div class="slot"><b>폐기할 것</b>흰 설명 카드, 라벨처럼 보이는 문구, 늘어난 이미지, 같은 아트 스타일 반복, 같은 집처럼 보이는 색감/구도를 폐기한다.</div>
+      <div class="slot"><b>새 전략</b>공간을 거실/홈오피스에 묶지 않는다. 침실, 키친, 욕실, 복도, 세탁공간, 식탁 옆, 작은 창가처럼 사용자의 감각이 반복되는 생활 지점을 매일 분산한다.</div>
+    </section>
+    
+    <h3>Studio Audience Matrix</h3>
     <p>Source: TikTok Studio Analytics, last_7_days. 타겟 기준은 SG/US/AU/CA/UK/NZ English small-space market, 25-44세, 홈데코 구매 가능성이 높은 여성 skew다.</p>
     <section class="audience-summary">
       <div class="metric"><span>Studio market fit</span><strong>69%</strong></div>
@@ -94,20 +113,29 @@
       </article>
       <article class="aud-card">
         <h3>Distribution Signals</h3>
-        <h4>Traffic</h4><ul><li><span>For You</span><b>95.4%</b></li><li><span>Search</span><b>3.8%</b></li><li><span>Personal Profile</span><b>0.6%</b></li><li><span>Follow</span><b>0.2%</b></li><li><span>Sound</span><b>0.0%</b></li></ul>
+        <h4>Traffic</h4><ul><li><span>For You</span><b>95.2%</b></li><li><span>Search</span><b>3.9%</b></li><li><span>Personal Profile</span><b>0.7%</b></li><li><span>Follow</span><b>0.3%</b></li><li><span>Sound</span><b>0.0%</b></li></ul>
         <h4>Search</h4><ul><li><span>pending</span><b>--</b></li></ul>
       </article>
     </section>
-    <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. 미국만 고집하지 말고 SG small-space, HDB/condo/rental room/no-drilling 벽 문제를 별도 승자 가설로 테스트한다.</p>
+    <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
+    
     
 
-    <h2>Content Evidence</h2>
+    <h2>2. Content Generation Evidence</h2>
+    
+    <p>아래는 전략을 실제 콘텐츠로 옮긴 증거다. 각 카드에는 contact sheet, 첫 슬라이드, 타겟 세그먼트, 실제 데모그래피 근접도, 시각 QA와 공간 연속성 점수를 함께 둔다.</p>
+    <section class="slots">
+      <div class="slot"><b>공간 생성 기준</b>인테리어 쇼룸이 아니라 타겟 데모그래피가 실제로 살 법한 일반 주거공간을 레퍼런스로 삼는다. 방 종류보다 그 공간에서 생기는 감각을 먼저 정한다.</div>
+      <div class="slot"><b>아트 생성 기준</b>기존에 쓴 quiet grid, beige minimal, poetic-sign류 반복을 막고 매일 unused art style passport를 기록한다.</div>
+      <div class="slot"><b>연속성 기준</b>같은 공간이면 신발장, 문, 벽면, 가구 배치가 같은 인스턴스로 유지되어야 한다.</div>
+      <div class="slot"><b>6개 루틴</b>2개는 유지/폐기 반영, 2개는 새 시도 확장, 2개는 완전히 새로운 포맷으로 생성하되 하루 안에서 생활공간을 넓게 분산한다.</div>
+    </section>
     <div class="grid">
     <article class="card">
       <div class="media"><img class="contact" src="assets/svc_preview_20260517_hdb_tile_entry/contact_sheet.jpg" alt="svc_preview_20260517_hdb_tile_entry contact sheet"><img class="slide" src="assets/svc_preview_20260517_hdb_tile_entry/slide_1.png" alt="svc_preview_20260517_hdb_tile_entry first slide"></div>
       <div class="card-body">
         <div class="row"><strong>svc_preview_20260517_hdb_tile_entry</strong><span class="fit">83%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>wall art shoppers</span></div>
+        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
         <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:69%"></span></div></div>
         <div class="score"><label>target market</label><div class="bar"><span style="width:72%"></span></div></div>
         <div class="score"><label>SG viewers</label><div class="bar"><span style="width:53%"></span></div></div>
@@ -134,7 +162,7 @@
       <div class="media"><img class="contact" src="assets/svc_preview_20260517_rental_textile_wfh/contact_sheet.jpg" alt="svc_preview_20260517_rental_textile_wfh contact sheet"><img class="slide" src="assets/svc_preview_20260517_rental_textile_wfh/slide_1.png" alt="svc_preview_20260517_rental_textile_wfh first slide"></div>
       <div class="card-body">
         <div class="row"><strong>svc_preview_20260517_rental_textile_wfh</strong><span class="fit">83%</span></div>
-        <div class="chips"><span>home office / desk wall</span><span>Singapore small-space</span><span>bedroom / soft return</span><span>wall art shoppers</span></div>
+        <div class="chips"><span>home office / desk wall</span><span>Singapore small-space</span><span>bedroom / soft return</span><span>laundry / service yard</span><span>wall art shoppers</span></div>
         <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:69%"></span></div></div>
         <div class="score"><label>target market</label><div class="bar"><span style="width:72%"></span></div></div>
         <div class="score"><label>SG viewers</label><div class="bar"><span style="width:53%"></span></div></div>
@@ -163,11 +191,11 @@
         <div class="row"><strong>svc_20260516_roles_art_can_hold</strong><span class="fit">100%</span></div>
         <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
         <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:71%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:83%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:79%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:76%"></span></div></div>
         <div class="score"><label>US viewers</label><div class="bar"><span style="width:3%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:46%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:72%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:49%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
         <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
         <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
@@ -189,12 +217,12 @@
       <div class="card-body">
         <div class="row"><strong>svc_20260516_compare_sofa_wall_with_without</strong><span class="fit">98%</span></div>
         <div class="chips"><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:59%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:52%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:21%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:3%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:64%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:71%"></span></div></div>
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:61%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:53%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:15%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:66%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:75%"></span></div></div>
         <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
         <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
@@ -215,13 +243,13 @@
       <div class="media"><img class="contact" src="assets/svc_20260516_story_begin_again_entry/contact_sheet.jpg" alt="svc_20260516_story_begin_again_entry contact sheet"><img class="slide" src="assets/svc_20260516_story_begin_again_entry/slide_1.png" alt="svc_20260516_story_begin_again_entry first slide"></div>
       <div class="card-body">
         <div class="row"><strong>svc_20260516_story_begin_again_entry</strong><span class="fit">98%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>wall art shoppers</span></div>
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:68%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:62%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:47%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:68%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:86%"></span></div></div>
+        <div class="chips"><span>renter / first apartment</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:73%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:69%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:46%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:1%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:69%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:91%"></span></div></div>
         <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
         <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
@@ -243,12 +271,12 @@
       <div class="card-body">
         <div class="row"><strong>svc_20260516_story_keep_going_desk</strong><span class="fit">98%</span></div>
         <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>wall art shoppers</span></div>
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:76%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:83%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:81%"></span></div></div>
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:72%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:79%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:72%"></span></div></div>
         <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>25-44</label><div class="bar"><span style="width:60%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:69%"></span></div></div>
         <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
         <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
@@ -352,7 +380,7 @@
         <div class="row"><strong>svc_20260515_renter_bedroom_a</strong><span class="fit">68%</span></div>
         <div class="chips"><span>renter / first apartment</span><span>bedroom / soft return</span><span>wall art shoppers</span></div>
         <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:79%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:86%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:87%"></span></div></div>
         <div class="score"><label>SG viewers</label><div class="bar"><span style="width:85%"></span></div></div>
         <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
         <div class="score"><label>25-44</label><div class="bar"><span style="width:57%"></span></div></div>
@@ -372,19 +400,55 @@
       </div>
     </article>
     </div>
+    
 
-    <h2>2AM Routine Slots</h2>
-    <div class="slots">
-      <div class="slot"><b>1. keep</b>이전 콘텐츠에서 유지할 훅/공간/감각을 다른 표면으로 변주.</div>
-      <div class="slot"><b>2. discard</b>약했던 요소를 제거하고 같은 목표를 다시 제작.</div>
-      <div class="slot"><b>3. extend A</b>검증된 세그먼트에 새 포맷 추가.</div>
-      <div class="slot"><b>4. extend B</b>검증된 포맷에 새 아트 접근 추가.</div>
-      <div class="slot"><b>5. new A</b>10장 이상 아트 시퀀스, 프린트 더미, 빠른 컷.</div>
-      <div class="slot"><b>6. new B</b>댓글 기반 룸 리딩, 감각별 포트폴리오, 실패 교정형.</div>
-    </div>
+    <h2>3. Target Audience Routine Report</h2>
+    
+    <h3>Audience Surface Routine</h3>
+    <p>20:30 KST routine result. This is the comment/outreach packet that should feed the 02:00 daily6 production. Public cold comments still avoid service, link, price, AI, and check-profile language.</p>
+    <section class="audience-summary">
+      <div class="metric"><span>routine status</span><strong>completed</strong></div>
+      <div class="metric"><span>source</span><strong>sample_report_20260517_095128</strong></div>
+      <div class="metric"><span>prepared</span><strong>8</strong></div>
+      <div class="metric"><span>posted logged</span><strong>0</strong></div>
+    </section>
+    <section class="audience-grid">
+      
+      <article class="aud-card">
+        <h3>private daily rooms / current feeling</h3>
+        <p>This kind of small room can hold more than function. It can hold the feeling you keep returning to.</p>
+        <h4>Search surface</h4>
+        <p>renter bathroom decor small apartment, apartment kitchen wall decor, bedroom corner decor renter</p>
+      </article>
+            
+      <article class="aud-card">
+        <h3>SG small-space / HDB / daily-life rooms</h3>
+        <p>A small HDB corner can still hold a real chapter of your life. It does not have to be a perfect room first.</p>
+        <h4>Search surface</h4>
+        <p>Singapore HDB kitchen decor, HDB bathroom decor small space, Singapore service yard home decor</p>
+      </article>
+            
+      <article class="aud-card">
+        <h3>wall art / feeling-led decor</h3>
+        <p>This works because the art is not just filling a wall. It gives the room a feeling to keep.</p>
+        <h4>Search surface</h4>
+        <p>wall art home decor, gallery wall apartment, art print kitchen wall</p>
+      </article>
+            
+      <article class="aud-card">
+        <h3>rest / reset / threshold spaces</h3>
+        <p>A temporary room can still hold a real part of you. Sometimes the smallest wall is where that starts.</p>
+        <h4>Search surface</h4>
+        <p>renter bedroom wall decor, first apartment bedroom decor, small hallway decor apartment</p>
+      </article>
+            
+      <article class="aud-card">
+        <h3>Hooks To Feed Daily6</h3>
+        <ul><li><span>The room does not have to be important to hold something important in you.</span><b>hook</b></li><li><span>A small everyday corner can still hold a chapter of your life.</span><b>hook</b></li><li><span>Do not choose art for the room first. Choose the feeling you need to keep close.</span><b>hook</b></li><li><span>Temporary does not mean meaningless. Start with the place your day keeps passing through.</span><b>hook</b></li></ul>
+      </article>
+    </section>
+    
 
-    <h2>Strategic Reading</h2>
-    <p>가장 가까운 타겟은 SG/US/AU/CA/UK/NZ의 small-space 홈오피스/데스크월과 첫 아파트/렌터 계열이다. 계속 유지할 축은 일상적인 미완성 공간, 사용자의 현재 감각, 프린트로 걸 수 있는 아트 품질이다. 보완할 축은 매일 웹검색 기반 일반 주거공간 lane, 아트 재사용 금지, 6개 후보 간 공간/색감/구도 분리, 같은 공간 인스턴스 잠금 기록이다.</p>
     <footer>Generated from content/posts.json, content/status.json, and content/output assets.</footer>
   </main>
 </body>

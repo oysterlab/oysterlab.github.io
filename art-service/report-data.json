@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-17T07:25:00",
+  "generated_at": "2026-05-17T09:51:41",
   "audience_fit": {
     "score": 69,
     "viewer_sg": 53.0,
@@ -12,6 +12,129 @@
     "follower_target_age": 60.9,
     "viewer_female": 76.0,
     "follower_female": 65.0
+  },
+  "audience_routine": {
+    "run_id": "20260517-095129-sample_report_20260517_095128",
+    "date_kst": "2026-05-17",
+    "source": "sample_report_20260517_095128",
+    "mode": "manual_confirmed_public_comment_packet",
+    "status": "completed",
+    "started_at_kst": "2026-05-17T09:51:29+09:00",
+    "finished_at_kst": "2026-05-17T09:51:29+09:00",
+    "target_comment_count": "3-5",
+    "prepared_comment_count": 8,
+    "posted_comment_count": 0,
+    "manual_action_required": true,
+    "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
+    "studio_summary": {
+      "generated_at": "2026-05-17T07:24:53",
+      "viewer_sg": 53.0,
+      "viewer_target_market": 72.5,
+      "viewer_25_44": 56.4,
+      "viewer_female": 76.0,
+      "follower_sg": 12.6,
+      "traffic_sources": [
+        {
+          "label": "For You",
+          "percent": 95.4
+        },
+        {
+          "label": "Search",
+          "percent": 3.8
+        },
+        {
+          "label": "Personal Profile",
+          "percent": 0.6
+        },
+        {
+          "label": "Follow",
+          "percent": 0.2
+        },
+        {
+          "label": "Sound",
+          "percent": 0.0
+        }
+      ]
+    },
+    "slots": [
+      {
+        "segment": "private daily rooms / current feeling",
+        "quota": 2,
+        "queries": [
+          "renter bathroom decor small apartment",
+          "apartment kitchen wall decor",
+          "bedroom corner decor renter",
+          "small apartment laundry nook decor"
+        ],
+        "comment_candidates": [
+          "This kind of small room can hold more than function. It can hold the feeling you keep returning to.",
+          "The strongest part is not the decor. It is that this everyday corner starts to feel like a part of your life."
+        ],
+        "content_hook_if_reacts": "The room does not have to be important to hold something important in you."
+      },
+      {
+        "segment": "SG small-space / HDB / daily-life rooms",
+        "quota": 2,
+        "queries": [
+          "Singapore HDB kitchen decor",
+          "HDB bathroom decor small space",
+          "Singapore service yard home decor",
+          "Singapore rental room decor",
+          "small space apartment Singapore"
+        ],
+        "comment_candidates": [
+          "A small HDB corner can still hold a real chapter of your life. It does not have to be a perfect room first.",
+          "This feels like a real small-space problem: the room works, but it has not fully learned what you need to feel here."
+        ],
+        "content_hook_if_reacts": "A small everyday corner can still hold a chapter of your life."
+      },
+      {
+        "segment": "wall art / feeling-led decor",
+        "quota": 1,
+        "queries": [
+          "wall art home decor",
+          "gallery wall apartment",
+          "art print kitchen wall",
+          "bathroom wall art apartment"
+        ],
+        "comment_candidates": [
+          "This works because the art is not just filling a wall. It gives the room a feeling to keep.",
+          "The wall does not need more things. It needs one feeling that belongs there."
+        ],
+        "content_hook_if_reacts": "Do not choose art for the room first. Choose the feeling you need to keep close."
+      },
+      {
+        "segment": "rest / reset / threshold spaces",
+        "quota": 1,
+        "queries": [
+          "renter bedroom wall decor",
+          "first apartment bedroom decor",
+          "small hallway decor apartment",
+          "entryway wall decor renter",
+          "vanity corner decor apartment"
+        ],
+        "comment_candidates": [
+          "A temporary room can still hold a real part of you. Sometimes the smallest wall is where that starts.",
+          "The room already works. The missing part is something that makes it feel like your current life, not just a place you pass through."
+        ],
+        "content_hook_if_reacts": "Temporary does not mean meaningless. Start with the place your day keeps passing through."
+      }
+    ],
+    "reaction_collection": {
+      "lookback_hours": 24,
+      "status": "manual_or_next_run",
+      "rules": [
+        "1-2 likes: save as hook candidate.",
+        "3+ likes or any reply: turn into content concept within 48 hours.",
+        "creator reply: make a stronger variant the next day."
+      ]
+    },
+    "content_hooks_for_daily6": [
+      "The room does not have to be important to hold something important in you.",
+      "A small everyday corner can still hold a chapter of your life.",
+      "Do not choose art for the room first. Choose the feeling you need to keep close.",
+      "Temporary does not mean meaningless. Start with the place your day keeps passing through."
+    ]
   },
   "posts": [
     {
@@ -26,6 +149,7 @@
         "hits": [
           "renter / first apartment",
           "Singapore small-space",
+          "hallway / threshold",
           "wall art shoppers"
         ]
       },
@@ -55,6 +179,7 @@
           "home office / desk wall",
           "Singapore small-space",
           "bedroom / soft return",
+          "laundry / service yard",
           "wall art shoppers"
         ]
       },
@@ -90,11 +215,11 @@
       "audience_match": {
         "score": 71,
         "actual_demo_fit": 71,
-        "sg": 79.5,
-        "us": 3.2,
-        "target_market": 82.7,
-        "target_age": 46.0,
-        "female": 72.0,
+        "sg": 76.5,
+        "us": 2.8,
+        "target_market": 79.3,
+        "target_age": 49.0,
+        "female": 74.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -116,13 +241,13 @@
         ]
       },
       "audience_match": {
-        "score": 59,
-        "actual_demo_fit": 59,
-        "sg": 20.7,
-        "us": 2.8,
-        "target_market": 51.8,
-        "target_age": 64.0,
-        "female": 71.0,
+        "score": 61,
+        "actual_demo_fit": 61,
+        "sg": 15.1,
+        "us": 0,
+        "target_market": 53.2,
+        "target_age": 66.0,
+        "female": 75.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -139,17 +264,18 @@
         "service_fit": 98,
         "hits": [
           "renter / first apartment",
+          "hallway / threshold",
           "wall art shoppers"
         ]
       },
       "audience_match": {
-        "score": 68,
-        "actual_demo_fit": 68,
-        "sg": 47.4,
-        "us": 0,
-        "target_market": 61.5,
-        "target_age": 68.0,
-        "female": 86.0,
+        "score": 73,
+        "actual_demo_fit": 73,
+        "sg": 45.8,
+        "us": 0.6,
+        "target_market": 68.8,
+        "target_age": 69.0,
+        "female": 91.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -171,13 +297,13 @@
         ]
       },
       "audience_match": {
-        "score": 76,
-        "actual_demo_fit": 76,
-        "sg": 81.3,
+        "score": 72,
+        "actual_demo_fit": 72,
+        "sg": 72.0,
         "us": 0,
-        "target_market": 83.2,
+        "target_market": 79.0,
         "target_age": 60.0,
-        "female": 74.0,
+        "female": 69.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "post-level TikTok Studio Viewers API"
@@ -283,9 +409,9 @@
       "audience_match": {
         "score": 79,
         "actual_demo_fit": 79,
-        "sg": 85.3,
+        "sg": 85.4,
         "us": 0.5,
-        "target_market": 86.5,
+        "target_market": 86.6,
         "target_age": 57.0,
         "female": 87.0,
         "intended_segment_fit": 100,
