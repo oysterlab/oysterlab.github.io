@@ -319,6 +319,116 @@ a {
   background: var(--ink);
 }
 
+.compare {
+  display: grid;
+  grid-template-columns: minmax(0, .78fr) minmax(320px, .72fr);
+  gap: clamp(32px, 7vw, 120px);
+  align-items: center;
+  min-height: 100svh;
+  background: var(--paper-soft);
+}
+
+.compare__copy h2 {
+  max-width: 780px;
+  margin: 20px 0 18px;
+  font-size: clamp(36px, 5.2vw, 88px);
+  line-height: .94;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.compare__copy p:last-child {
+  max-width: 460px;
+  color: var(--muted);
+  font-size: clamp(16px, 1.3vw, 21px);
+  line-height: 1.45;
+}
+
+.compare__panel {
+  justify-self: center;
+  width: min(430px, 100%);
+}
+
+.compare__stage {
+  position: relative;
+  aspect-ratio: 941 / 1672;
+  overflow: hidden;
+  background: var(--night);
+}
+
+.compare__image {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+}
+
+.compare__image img {
+  object-position: center;
+}
+
+.compare__image--after {
+  opacity: 0;
+  transition: opacity .45s ease;
+}
+
+.compare__panel.is-after .compare__image--after {
+  opacity: 1;
+}
+
+.compare__label {
+  position: absolute;
+  top: 16px;
+  z-index: 3;
+  padding: 8px 10px;
+  background: rgba(21, 23, 18, .72);
+  color: var(--white);
+  text-transform: uppercase;
+  font-size: 12px;
+  backdrop-filter: blur(10px);
+  transition: opacity .25s ease;
+}
+
+.compare__label--before {
+  left: 16px;
+}
+
+.compare__label--after {
+  right: 16px;
+  opacity: 0;
+}
+
+.compare__panel.is-after .compare__label--before {
+  opacity: 0;
+}
+
+.compare__panel.is-after .compare__label--after {
+  opacity: 1;
+}
+
+.compare__toggle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  margin-top: 12px;
+  background: var(--line);
+}
+
+.compare__toggle button {
+  min-height: 46px;
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  text-transform: uppercase;
+  font: inherit;
+  font-size: 13px;
+}
+
+.compare__toggle button.is-active {
+  background: var(--ink);
+  color: var(--white);
+}
+
 .sticky-story {
   position: relative;
   min-height: 240vh;
@@ -548,6 +658,10 @@ a {
   opacity: .64;
 }
 
+.closing__media img {
+  object-position: center;
+}
+
 .closing__copy {
   position: relative;
   z-index: 2;
@@ -608,6 +722,15 @@ a {
 
   .intro__pair {
     width: min(640px, 92vw);
+  }
+
+  .compare {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .compare__panel {
+    width: min(420px, 100%);
   }
 
   .sticky-story {
@@ -694,6 +817,14 @@ a {
   .project,
   .project:nth-child(n) {
     min-height: 440px;
+  }
+
+  .compare__copy h2 {
+    font-size: clamp(35px, 10vw, 58px);
+  }
+
+  .closing__media img {
+    object-position: 20% center;
   }
 }
 

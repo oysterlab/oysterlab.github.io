@@ -3,20 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>elura — A Reading Room</title>
+  <title>ELURA — A Reading Room</title>
   <meta name="description" content="A personal art reading for the life you are living now. Notice what you need to keep close, then let your space hold it.">
-  <meta property="og:title" content="elura — A Reading Room">
+  <meta property="og:title" content="ELURA — A Reading Room">
   <meta property="og:description" content="Discover yourself through art, and let your space hold it.">
   <meta property="og:image" content="assets/reading-room-closing-v2.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="loader" aria-hidden="true">
-    <span>elura</span>
+    <span>ELURA</span>
   </div>
 
   <header class="nav" data-nav>
-    <a class="nav__mark" href="#top" aria-label="elura home">elura</a>
+    <a class="nav__mark" href="#top" aria-label="ELURA home">ELURA</a>
     <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu-button>
       <span aria-hidden="true">-&gt;</span>
       <span>Menu</span>
@@ -40,7 +40,7 @@
         <img src="assets/roles-grid.png" alt="Four rooms showing different art directions">
       </div>
       <div class="hero__shade" aria-hidden="true"></div>
-      <h1 class="hero__wordmark" aria-label="elura">elura</h1>
+      <h1 class="hero__wordmark" aria-label="ELURA">ELURA</h1>
       <div class="hero__copy reveal">
         <p class="eyebrow">A reading room for the life you are living now</p>
         <p class="hero__line">Discover yourself through art, and let your space hold it.</p>
@@ -48,7 +48,7 @@
     </section>
 
     <section class="intro band" id="reading">
-      <p class="section-kicker reveal">elura is not here to decorate the room first.</p>
+      <p class="section-kicker reveal">ELURA is not here to decorate the room first.</p>
       <h2 class="intro__line reveal">
         It starts with the feeling you keep walking past,
         <em>then gives it a visible place to stay.</em>
@@ -66,6 +66,30 @@
         <span></span>
         <em>and live with.</em>
       </p>
+    </section>
+
+    <section class="compare band" id="before-after">
+      <div class="compare__copy reveal">
+        <p class="section-kicker">Before / after discovering yourself through art</p>
+        <h2>A room can stay ordinary, then start holding something back for you.</h2>
+        <p>Use the toggle to see the same corner before and after one feeling becomes visible.</p>
+      </div>
+      <div class="compare__panel reveal delay-1" data-compare>
+        <div class="compare__stage">
+          <figure class="compare__image compare__image--before">
+            <img src="assets/rental-room-before.png" alt="The rental room before the personal artwork is placed">
+          </figure>
+          <figure class="compare__image compare__image--after">
+            <img src="assets/rental-room.png" alt="The rental room after the personal artwork is placed on the wall">
+          </figure>
+          <div class="compare__label compare__label--before">Before</div>
+          <div class="compare__label compare__label--after">After</div>
+        </div>
+        <div class="compare__toggle" role="group" aria-label="Toggle before and after room">
+          <button type="button" class="is-active" data-compare-state="before" aria-pressed="true">Before</button>
+          <button type="button" data-compare-state="after" aria-pressed="false">After</button>
+        </div>
+      </div>
     </section>
 
     <section class="sticky-story" id="spaces">

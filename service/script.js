@@ -4,6 +4,8 @@ const menuButton = document.querySelector("[data-menu-button]");
 const menuPanel = document.querySelector("[data-menu-panel]");
 const revealItems = document.querySelectorAll(".reveal, .mask-media");
 const parallaxItems = document.querySelectorAll(".parallax");
+const comparePanel = document.querySelector("[data-compare]");
+const compareButtons = document.querySelectorAll("[data-compare-state]");
 
 const revealObserver = new IntersectionObserver(
   entries => {
@@ -34,6 +36,18 @@ menuPanel.addEventListener("click", event => {
   if (event.target.tagName === "A") {
     setMenu(false);
   }
+});
+
+compareButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const state = button.dataset.compareState;
+    comparePanel.classList.toggle("is-after", state === "after");
+    compareButtons.forEach(item => {
+      const active = item === button;
+      item.classList.toggle("is-active", active);
+      item.setAttribute("aria-pressed", String(active));
+    });
+  });
 });
 
 function updateScrollEffects() {
