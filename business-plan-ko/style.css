@@ -396,6 +396,7 @@ li {
 }
 
 .evidence-grid,
+.belief-grid,
 .pricing-table,
 .unit-grid,
 .gtm-grid,
@@ -414,7 +415,12 @@ li {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.belief-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .evidence-grid article,
+.belief-grid article,
 .pricing-table article,
 .unit-grid div,
 .comparison div {
@@ -427,12 +433,23 @@ li {
 }
 
 .evidence-grid strong,
+.belief-grid span,
 .pricing-table span,
 .unit-grid strong {
   color: var(--rust);
   font-size: clamp(42px, 5vw, 74px);
   line-height: .82;
   font-weight: 400;
+}
+
+.belief-grid article {
+  min-height: 300px;
+  justify-content: start;
+}
+
+.belief-grid span {
+  display: block;
+  margin-bottom: 46px;
 }
 
 .evidence-grid span,
@@ -673,6 +690,7 @@ footer a {
   .proof-row,
   .plan-grid,
   .evidence-grid,
+  .belief-grid,
   .unit-grid,
   .gtm-grid,
   .comparison,
@@ -743,6 +761,7 @@ footer a {
   .proof-row,
   .plan-grid,
   .evidence-grid,
+  .belief-grid,
   .unit-grid,
   .gtm-grid,
   .comparison,
