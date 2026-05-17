@@ -339,13 +339,72 @@ li {
   background: var(--panel);
 }
 
+.term-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.term-grid article {
+  min-height: 320px;
+  padding: 22px;
+  background: var(--panel);
+}
+
+.term-grid small {
+  display: block;
+  margin-top: 18px;
+  color: var(--rust);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.appendix-questions {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.appendix-questions ol {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: q;
+  background: var(--line);
+}
+
+.appendix-questions li {
+  counter-increment: q;
+  min-height: 120px;
+  padding: 18px;
+  background: var(--panel);
+  color: var(--ink);
+}
+
+.appendix-questions li::before {
+  content: "Q" counter(q);
+  display: block;
+  margin-bottom: 18px;
+  color: var(--rust);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
 .evidence-grid,
 .pricing-table,
 .unit-grid,
 .gtm-grid,
 .comparison,
 .moat-list,
-.risk-table {
+.risk-table,
+.conversion-table,
+.asset-grid,
+.ops-grid {
   display: grid;
   gap: 1px;
   background: var(--line);
@@ -418,6 +477,38 @@ li {
   line-height: 1.35;
 }
 
+.conversion-table {
+  grid-template-columns: 1fr;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1px;
+  background: var(--line);
+}
+
+.table-row > * {
+  min-height: 84px;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: clamp(14px, 1vw, 17px);
+  line-height: 1.45;
+}
+
+.table-row strong {
+  color: var(--ink);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.table-row span:last-child {
+  color: var(--rust);
+}
+
 .gtm-grid,
 .risk-table {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -453,6 +544,23 @@ li {
 .moat-list {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 28px;
+}
+
+.asset-grid,
+.ops-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.asset-grid article,
+.ops-grid article {
+  min-height: 300px;
+  padding: 24px;
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.asset-grid strong {
+  color: var(--ink);
 }
 
 .risk-table strong {
@@ -574,7 +682,14 @@ footer a {
 
   .flow,
   .pricing-table,
-  .moat-list {
+  .moat-list,
+  .appendix-questions ol,
+  .asset-grid,
+  .ops-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-row {
     grid-template-columns: 1fr;
   }
 
@@ -631,8 +746,20 @@ footer a {
   .unit-grid,
   .gtm-grid,
   .comparison,
-  .risk-table {
+  .risk-table,
+  .asset-grid,
+  .ops-grid {
     grid-template-columns: 1fr;
+  }
+
+  .term-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .term-grid article {
+    min-width: 0;
+    min-height: 240px;
   }
 
   .proof-row div,

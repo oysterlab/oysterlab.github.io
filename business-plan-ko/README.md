@@ -1,6 +1,6 @@
-# Oysterlab 사업성 검토용 사업계획서
+# Oysterlab 서비스 전략 사업계획서 v0.3
 
-Purpose: VC 투자 요청 전 가능성 검토를 위한 한국어 사업계획서 페이지.
+Purpose: Oysterlab이 하려는 서비스와 실행 전략을 운영 가능한 정의, 상품 구조, 데이터 공백, 6개월 목표로 정리한 한국어 사업계획서 페이지.
 
 Published path:
 
@@ -15,6 +15,7 @@ Related pages:
 
 Positioning:
 
-- 투자 권유서가 아니라 사업성 검토용 초안.
-- 현재 단계는 pre-revenue audience validation.
-- 다음 핵심 검증은 paid founding readings.
+- self-to-space personal art commerce.
+- 핵심 용어를 운영 정의로 고정한다.
+- 시청 데이터와 구매 전환 데이터의 공백을 나란히 표시한다.
+- 6개월 실행 계획은 마감월과 완료 기준으로 관리한다.
