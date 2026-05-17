@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oysterlab — A Reading Room</title>
+  <meta name="description" content="A personal art reading for the life you are living now. Notice what you need to keep close, then let your space hold it.">
+  <meta property="og:title" content="Oysterlab — A Reading Room">
+  <meta property="og:description" content="Discover yourself through art, and let your space hold it.">
+  <meta property="og:image" content="assets/roles-grid.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <span>Oysterlab</span>
+  </div>
+
+  <header class="nav" data-nav>
+    <a class="nav__mark" href="#top" aria-label="Oysterlab home">Oysterlab</a>
+    <button class="nav__menu" type="button" aria-expanded="false" aria-controls="menu-panel" data-menu-button>
+      <span aria-hidden="true">-&gt;</span>
+      <span>Menu</span>
+    </button>
+  </header>
+
+  <aside class="menu-panel" id="menu-panel" aria-hidden="true" data-menu-panel>
+    <nav>
+      <a href="#reading">Reading</a>
+      <a href="#spaces">Spaces</a>
+      <a href="#proof">Proof</a>
+      <a href="#begin">Begin</a>
+    </nav>
+  </aside>
+
+  <div class="scroll-progress" aria-hidden="true"><span data-progress></span></div>
+
+  <main id="top">
+    <section class="hero" data-theme="dark">
+      <div class="hero__media parallax" data-speed="-0.16">
+        <img src="assets/roles-grid.png" alt="Four rooms showing different art directions">
+      </div>
+      <div class="hero__shade" aria-hidden="true"></div>
+      <h1 class="hero__wordmark" aria-label="Oysterlab">OYSTERLAB</h1>
+      <div class="hero__copy reveal">
+        <p class="eyebrow">A reading room for the life you are living now</p>
+        <p class="hero__line">Discover yourself through art, and let your space hold it.</p>
+      </div>
+    </section>
+
+    <section class="intro band" id="reading">
+      <p class="section-kicker reveal">Oysterlab is not here to decorate the room first.</p>
+      <h2 class="intro__line reveal">
+        It starts with the feeling you keep walking past,
+        <em>then gives it a visible place to stay.</em>
+      </h2>
+      <div class="intro__pair">
+        <figure class="mask-media reveal">
+          <img src="assets/keep-going-room.png" alt="A desk wall with a dark artwork above it">
+        </figure>
+        <figure class="mask-media reveal delay-1">
+          <img src="assets/begin-again-entry.png" alt="A small entry wall with a bright artwork">
+        </figure>
+      </div>
+      <p class="intro__footer reveal">
+        look back at
+        <span></span>
+        <em>and live with.</em>
+      </p>
+    </section>
+
+    <section class="sticky-story" id="spaces">
+      <div class="sticky-story__image">
+        <figure class="parallax" data-speed="-0.08">
+          <img src="assets/hdb-entry.png" alt="A Singapore HDB entry with ceramic tile art">
+        </figure>
+      </div>
+      <div class="sticky-story__text">
+        <p class="section-kicker reveal">The room is only the surface.</p>
+        <h2 class="reveal">
+          Bedroom. Kitchen. Bathroom. Corridor. Laundry corner.
+          <em>Any ordinary place can hold a real part of you.</em>
+        </h2>
+        <p class="reveal">
+          We look for the moment your current life is already leaving a trace: the mirror you meet in the morning, the keys at the door, the small desk, the wall beside the bed, the kitchen light after everyone leaves.
+        </p>
+      </div>
+      <figure class="floating floating--one parallax" data-speed="0.12">
+        <img src="assets/textile-art.png" alt="A stitched textile artwork in a rental room">
+      </figure>
+      <figure class="floating floating--two parallax" data-speed="0.18">
+        <img src="assets/sofa-wall.png" alt="A living room wall with a framed artwork">
+      </figure>
+    </section>
+
+    <section class="process band">
+      <p class="section-kicker reveal">Here is the shape of the reading.</p>
+      <div class="process__grid">
+        <article class="process__item">
+          <span>01</span>
+          <h3>Notice</h3>
+          <p>We ask what feeling has been following you lately, before we ask what style you like.</p>
+        </article>
+        <article class="process__item">
+          <span>02</span>
+          <h3>Translate</h3>
+          <p>That feeling becomes a set of visual directions: weight, temperature, movement, silence, edge.</p>
+        </article>
+        <article class="process__item">
+          <span>03</span>
+          <h3>Place</h3>
+          <p>The artwork is shown in the room, not as decoration, but as something the space can keep for you.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery" id="proof">
+      <div class="gallery__heading">
+        <p class="section-kicker reveal">Existing readings and experiments</p>
+        <h2 class="reveal">A space starts to feel different when one feeling becomes visible.</h2>
+      </div>
+      <div class="gallery__grid">
+        <a class="project project--wide reveal" href="assets/keep-contact.jpg">
+          <img src="assets/keep-going-room.png" alt="A finished desk wall with a dark artwork">
+          <span>Keep going / desk wall</span>
+        </a>
+        <a class="project reveal delay-1" href="assets/hdb-contact.jpg">
+          <img src="assets/hdb-entry.png" alt="A small HDB entry with a ceramic artwork">
+          <span>Threshold / HDB entry</span>
+        </a>
+        <a class="project reveal delay-2" href="assets/rental-contact.jpg">
+          <img src="assets/rental-room.png" alt="A rental bedroom corner with textile art">
+          <span>Current life / rental room</span>
+        </a>
+        <a class="project project--tall reveal" href="assets/bedroom-chapter.png">
+          <img src="assets/bedroom-chapter.png" alt="Bedroom artwork for a real chapter">
+          <span>Real chapter / bedroom</span>
+        </a>
+        <a class="project reveal delay-1" href="assets/roles-contact.jpg">
+          <img src="assets/roles-grid.png" alt="Four art directions in different rooms">
+          <span>Four roles / one question</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="closing" id="begin">
+      <div class="closing__media parallax" data-speed="-0.10">
+        <img src="assets/rental-room.png" alt="A modest rental bedroom work corner with art">
+      </div>
+      <div class="closing__copy reveal">
+        <p class="section-kicker">Start with the room you keep passing.</p>
+        <h2>What should this space help you remember right now?</h2>
+        <a href="https://art-service-pi.vercel.app/" rel="noopener">Open the reading room</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
