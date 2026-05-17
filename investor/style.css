@@ -113,28 +113,28 @@ a {
 }
 
 .hero h1 {
-  max-width: 1320px;
-  margin: 20px 0 28px;
-  font-size: clamp(54px, 9.6vw, 138px);
-  line-height: .86;
+  max-width: 940px;
+  margin: 18px 0 24px;
+  font-size: clamp(42px, 6vw, 84px);
+  line-height: .94;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
 .lede {
-  max-width: 760px;
+  max-width: 650px;
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
-  font-size: clamp(28px, 4vw, 62px);
-  line-height: 1;
+  font-size: clamp(22px, 2.8vw, 42px);
+  line-height: 1.08;
 }
 
 .hero__metrics {
   position: absolute;
   right: 5vw;
-  bottom: clamp(44px, 7vw, 90px);
+  bottom: clamp(28px, 5vw, 60px);
   z-index: 2;
   width: min(290px, 25vw);
   padding: 20px 0;
@@ -154,7 +154,7 @@ a {
   display: block;
   margin: 18px 0 4px;
   color: var(--sage);
-  font-size: clamp(54px, 7vw, 104px);
+  font-size: clamp(42px, 4.8vw, 72px);
   font-weight: 400;
   line-height: .82;
 }
@@ -167,7 +167,7 @@ section {
 .market,
 .products,
 .strategy {
-  padding: clamp(82px, 12vw, 170px) 5vw;
+  padding: clamp(72px, 9vw, 130px) 5vw;
 }
 
 .thesis {
@@ -182,8 +182,8 @@ section {
 .closing h2,
 .model__sticky h2 {
   margin: 22px 0 0;
-  font-size: clamp(42px, 7vw, 112px);
-  line-height: .92;
+  font-size: clamp(30px, 3.6vw, 58px);
+  line-height: 1;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: uppercase;
@@ -196,9 +196,9 @@ section {
 .thesis__grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12vw;
-  margin-top: clamp(44px, 8vw, 110px);
-  padding-left: 36vw;
+  gap: 8vw;
+  margin-top: clamp(34px, 6vw, 78px);
+  padding-left: 30vw;
 }
 
 .thesis__grid p,
@@ -208,7 +208,7 @@ section {
 .product-row p,
 .signal__copy p {
   color: var(--muted);
-  font-size: clamp(17px, 1.5vw, 23px);
+  font-size: clamp(15px, 1.15vw, 19px);
   line-height: 1.44;
 }
 
@@ -235,11 +235,11 @@ section {
 }
 
 .model__steps {
-  padding: 18vh 5vw;
+  padding: 12vh 5vw;
 }
 
 .step {
-  min-height: 62vh;
+  min-height: 46vh;
   display: grid;
   align-content: center;
   border-bottom: 1px solid rgba(255, 253, 244, .22);
@@ -247,14 +247,14 @@ section {
 
 .step span {
   color: var(--olive);
-  font-size: clamp(66px, 9vw, 140px);
+  font-size: clamp(48px, 6.5vw, 98px);
   line-height: .76;
 }
 
 .step h3 {
   margin: 18px 0 14px;
-  font-size: clamp(32px, 4vw, 72px);
-  line-height: .9;
+  font-size: clamp(28px, 3vw, 52px);
+  line-height: .96;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -262,12 +262,12 @@ section {
 .step p {
   max-width: 620px;
   color: rgba(255, 253, 244, .72);
-  font-size: clamp(18px, 1.6vw, 24px);
+  font-size: clamp(16px, 1.2vw, 20px);
   line-height: 1.42;
 }
 
 .proof-strip {
-  min-height: 120svh;
+  min-height: 96svh;
   display: grid;
   grid-template-columns: 1.1fr .85fr 1fr;
   gap: 16px;
@@ -279,18 +279,18 @@ section {
 
 .proof-strip figure {
   margin: 0;
-  height: min(86vh, 860px);
+  height: min(74vh, 760px);
   overflow: hidden;
   background: var(--blue-deep);
 }
 
 .proof-strip figure:nth-child(2) {
-  height: min(72vh, 720px);
+  height: min(62vh, 640px);
   transform: translateY(10vh);
 }
 
 .proof-strip figure:nth-child(3) {
-  height: min(94vh, 900px);
+  height: min(80vh, 820px);
 }
 
 .section-head {
@@ -313,8 +313,8 @@ section {
 }
 
 .market__cell {
-  min-height: 360px;
-  padding: 28px;
+  min-height: 260px;
+  padding: 24px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -323,8 +323,8 @@ section {
 .strategy__item h3,
 .product-row h3 {
   margin: 0 0 18px;
-  font-size: clamp(26px, 2.8vw, 44px);
-  line-height: .96;
+  font-size: clamp(24px, 2.1vw, 36px);
+  line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -337,7 +337,7 @@ section {
 }
 
 .signal__copy {
-  padding: clamp(80px, 10vw, 150px) 5vw;
+  padding: clamp(72px, 8vw, 120px) 5vw;
   align-self: center;
 }
 
@@ -356,7 +356,7 @@ section {
 }
 
 .number {
-  min-height: 310px;
+  min-height: 230px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -367,7 +367,7 @@ section {
 
 .number strong {
   color: var(--rust);
-  font-size: clamp(58px, 7vw, 118px);
+  font-size: clamp(44px, 5vw, 82px);
   line-height: .82;
   font-weight: 400;
 }
@@ -388,16 +388,16 @@ section {
 
 .product-row {
   display: grid;
-  grid-template-columns: 150px 1fr minmax(0, 520px);
-  gap: 32px;
+  grid-template-columns: 110px 1fr minmax(0, 430px);
+  gap: 26px;
   align-items: baseline;
-  padding: 32px 0;
+  padding: 24px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .product-row span {
   color: var(--rust);
-  font-size: clamp(42px, 6vw, 80px);
+  font-size: clamp(34px, 4.4vw, 60px);
   line-height: .86;
 }
 
@@ -409,7 +409,7 @@ section {
 
 .engine__media {
   margin: 0;
-  min-height: 110svh;
+  min-height: 92svh;
   position: sticky;
   top: 0;
   height: 100svh;
@@ -418,7 +418,7 @@ section {
 }
 
 .engine__copy {
-  padding: clamp(88px, 12vw, 180px) 6vw;
+  padding: clamp(72px, 9vw, 130px) 6vw;
   align-self: center;
 }
 
@@ -452,8 +452,8 @@ section {
 }
 
 .strategy__item {
-  min-height: 330px;
-  padding: clamp(28px, 4vw, 56px);
+  min-height: 250px;
+  padding: clamp(24px, 3vw, 44px);
   background: var(--blue);
 }
 
@@ -539,6 +539,7 @@ section {
     position: relative;
     right: auto;
     top: auto;
+    bottom: auto;
     width: min(360px, 80vw);
     margin-top: 46px;
   }
@@ -612,12 +613,12 @@ section {
   }
 
   .hero h1 {
-    font-size: clamp(42px, 12.4vw, 58px);
-    line-height: .9;
+    font-size: clamp(34px, 9.6vw, 46px);
+    line-height: .94;
   }
 
   .lede {
-    font-size: clamp(27px, 8.2vw, 42px);
+    font-size: clamp(22px, 6.7vw, 32px);
   }
 
   .thesis,
@@ -635,7 +636,7 @@ section {
   .strategy h2,
   .closing h2,
   .model__sticky h2 {
-    font-size: clamp(38px, 12vw, 62px);
+    font-size: clamp(28px, 8.6vw, 42px);
   }
 
   .proof-strip {
