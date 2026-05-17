@@ -5,7 +5,7 @@ const menuPanel = document.querySelector("[data-menu-panel]");
 const revealItems = document.querySelectorAll(".reveal, .mask-media");
 const parallaxItems = document.querySelectorAll(".parallax");
 const comparePanel = document.querySelector("[data-compare]");
-const compareButtons = document.querySelectorAll("[data-compare-state]");
+const compareRange = document.querySelector("[data-compare-range]");
 
 const revealObserver = new IntersectionObserver(
   entries => {
@@ -38,17 +38,18 @@ menuPanel.addEventListener("click", event => {
   }
 });
 
-compareButtons.forEach(button => {
-  button.addEventListener("click", () => {
-    const state = button.dataset.compareState;
-    comparePanel.classList.toggle("is-after", state === "after");
-    compareButtons.forEach(item => {
-      const active = item === button;
-      item.classList.toggle("is-active", active);
-      item.setAttribute("aria-pressed", String(active));
-    });
+function setCompareSplit(value) {
+  if (!comparePanel) return;
+  const split = Math.min(92, Math.max(8, Number(value)));
+  comparePanel.style.setProperty("--split", `${split}%`);
+}
+
+if (compareRange) {
+  compareRange.addEventListener("input", event => {
+    setCompareSplit(event.target.value);
   });
-});
+  setCompareSplit(compareRange.value);
+}
 
 function updateScrollEffects() {
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
