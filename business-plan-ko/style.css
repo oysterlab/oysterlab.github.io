@@ -203,6 +203,7 @@ li {
 .decision-card,
 .plan-grid article,
 .note-box,
+.formula-box,
 .gtm-grid article,
 .risk-table article,
 .moat-list article {
@@ -395,12 +396,19 @@ li {
   text-transform: uppercase;
 }
 
+.ip-appendix {
+  margin-top: 36px;
+}
+
 .evidence-grid,
 .belief-grid,
+.appendix-grid,
 .pricing-table,
 .unit-grid,
 .gtm-grid,
 .comparison,
+.comparison-table,
+.budget-table,
 .moat-list,
 .risk-table,
 .conversion-table,
@@ -419,8 +427,13 @@ li {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.appendix-grid {
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr) minmax(0, 1.25fr);
+}
+
 .evidence-grid article,
 .belief-grid article,
+.appendix-grid article,
 .pricing-table article,
 .unit-grid div,
 .comparison div {
@@ -430,6 +443,47 @@ li {
   justify-content: end;
   padding: 24px;
   background: var(--panel);
+}
+
+.appendix-grid article {
+  justify-content: start;
+  min-height: 360px;
+}
+
+.appendix-grid ol {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: appendix;
+}
+
+.appendix-grid li {
+  counter-increment: appendix;
+  position: relative;
+  padding-left: 34px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.appendix-grid li::before {
+  content: counter(appendix, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--rust);
+  font-size: 12px;
+}
+
+.appendix-grid li strong,
+.appendix-grid li span {
+  display: block;
+}
+
+.appendix-grid li strong {
+  color: var(--ink);
 }
 
 .evidence-grid strong,
@@ -463,6 +517,20 @@ li {
 .note-box {
   margin-top: 28px;
   padding: 24px;
+}
+
+.formula-box {
+  margin-top: 28px;
+  padding: 24px;
+  background: var(--blue-deep);
+}
+
+.formula-box h3 {
+  color: var(--sage);
+}
+
+.formula-box p {
+  color: rgba(255, 250, 240, .78);
 }
 
 .warning {
@@ -539,6 +607,56 @@ li {
 
 .comparison {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.comparison-table,
+.budget-table {
+  grid-template-columns: 1fr;
+}
+
+.comparison-row,
+.budget-row {
+  display: grid;
+  gap: 1px;
+  background: var(--line);
+}
+
+.comparison-row {
+  grid-template-columns: minmax(180px, .75fr) minmax(0, 1fr) minmax(0, 1.25fr);
+}
+
+.budget-row {
+  grid-template-columns: minmax(200px, 1fr) minmax(110px, .35fr) minmax(0, 1.4fr);
+}
+
+.comparison-row > *,
+.budget-row > * {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  padding: 18px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: clamp(14px, 1vw, 17px);
+  line-height: 1.45;
+}
+
+.comparison-head > *,
+.budget-head > * {
+  color: var(--ink);
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.comparison-row span:first-child,
+.budget-row span:nth-child(2),
+.budget-row.total span {
+  color: var(--ink);
+}
+
+.comparison-row span:last-child,
+.budget-row.total span:nth-child(2) {
+  color: var(--rust);
 }
 
 .comparison strong,
@@ -691,6 +809,7 @@ footer a {
   .plan-grid,
   .evidence-grid,
   .belief-grid,
+  .appendix-grid,
   .unit-grid,
   .gtm-grid,
   .comparison,
@@ -708,6 +827,11 @@ footer a {
   }
 
   .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  .comparison-row,
+  .budget-row {
     grid-template-columns: 1fr;
   }
 
@@ -762,6 +886,7 @@ footer a {
   .plan-grid,
   .evidence-grid,
   .belief-grid,
+  .appendix-grid,
   .unit-grid,
   .gtm-grid,
   .comparison,
@@ -784,6 +909,7 @@ footer a {
   .proof-row div,
   .plan-grid article,
   .evidence-grid article,
+  .appendix-grid article,
   .pricing-table article,
   .unit-grid div,
   .gtm-grid article,
