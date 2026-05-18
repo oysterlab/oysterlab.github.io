@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T14:32:54",
+  "generated_at": "2026-05-18T15:02:27",
   "audience_fit": {
     "score": 70,
     "viewer_sg": 59.6,
@@ -150,7 +150,8 @@
           "renter / first apartment",
           "living room / sofa wall",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -170,13 +171,16 @@
       "url": "https://www.tiktok.com/@oysterlab7/photo/7641098583017524501",
       "scores": {
         "target": 4,
-        "strategy": 4,
+        "strategy": 2,
         "visual": 2,
         "continuity": 5,
-        "service_fit": 72,
+        "service_fit": 48,
         "hits": [
           "renter / first apartment",
           "wall art shoppers"
+        ],
+        "participation_hits": [
+          "which one would you live with"
         ]
       },
       "audience_match": {
@@ -197,15 +201,18 @@
       "url": "https://www.tiktok.com/@oysterlab7/photo/7641097754705448213",
       "scores": {
         "target": 5,
-        "strategy": 4,
+        "strategy": 2,
         "visual": 2,
         "continuity": 5,
-        "service_fit": 79,
+        "service_fit": 55,
         "hits": [
           "renter / first apartment",
           "Singapore small-space",
           "hallway / threshold",
           "wall art shoppers"
+        ],
+        "participation_hits": [
+          "i will turn one"
         ]
       },
       "audience_match": {
@@ -226,14 +233,17 @@
       "url": "https://www.tiktok.com/@oysterlab7/photo/7641096956432878869",
       "scores": {
         "target": 5,
-        "strategy": 4,
+        "strategy": 2,
         "visual": 2,
         "continuity": 5,
-        "service_fit": 79,
+        "service_fit": 55,
         "hits": [
           "renter / first apartment",
           "kitchen / dining rhythm",
           "wall art shoppers"
+        ],
+        "participation_hits": [
+          "vote"
         ]
       },
       "audience_match": {
@@ -262,7 +272,8 @@
           "home office / desk wall",
           "renter / first apartment",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -290,7 +301,8 @@
           "renter / first apartment",
           "bedroom / soft return",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -319,7 +331,8 @@
           "Singapore small-space",
           "hallway / threshold",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -349,7 +362,8 @@
           "bedroom / soft return",
           "laundry / service yard",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -378,7 +392,8 @@
           "renter / first apartment",
           "living room / sofa wall",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 70,
@@ -406,7 +421,8 @@
           "renter / first apartment",
           "living room / sofa wall",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 42,
@@ -434,7 +450,8 @@
           "renter / first apartment",
           "hallway / threshold",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 75,
@@ -462,7 +479,8 @@
           "home office / desk wall",
           "renter / first apartment",
           "wall art shoppers"
-        ]
+        ],
+        "participation_hits": []
       },
       "audience_match": {
         "score": 72,
