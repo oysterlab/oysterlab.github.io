@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T01:30:16",
+  "generated_at": "2026-05-19T08:41:34",
   "audience_fit": {
     "score": 70,
     "viewer_sg": 59.6,
@@ -137,6 +137,185 @@
     ]
   },
   "posts": [
+    {
+      "id": "svc_20260519_s6_object_anchor_translation",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641379569273982229",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "renter / first apartment",
+          "bedroom / soft return",
+          "hallway / threshold",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_20260519_s5_portfolio_silent_roles",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641378780023491861",
+      "scores": {
+        "target": 4,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 93,
+        "hits": [
+          "renter / first apartment",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 80,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_20260519_s4_laundry_meaning_before_after",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641377853791145236",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "renter / first apartment",
+          "Singapore small-space",
+          "living room / sofa wall",
+          "laundry / service yard",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_20260519_s3_vanity_force_ladder",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641376926480878869",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "home office / desk wall",
+          "renter / first apartment",
+          "bathroom / mirror ritual",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_20260519_s2_sg_dining_rule_correction",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641376149712555284",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "renter / first apartment",
+          "Singapore small-space",
+          "kitchen / dining rhythm",
+          "hallway / threshold",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "svc_20260519_s1_sg_kitchen_tile_warmth",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641374982576114965",
+      "scores": {
+        "target": 5,
+        "strategy": 5,
+        "visual": 5,
+        "continuity": 5,
+        "service_fit": 100,
+        "hits": [
+          "Singapore small-space",
+          "kitchen / dining rhythm",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 42,
+        "actual_demo_fit": 42,
+        "sg": 0,
+        "us": 0,
+        "target_market": 0,
+        "target_age": 100.0,
+        "female": 83.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "post-level TikTok Studio Viewers API"
+      }
+    },
     {
       "id": "elura_rework_20260518_s6_living_not_match_project",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7641099369793473813",
@@ -315,184 +494,6 @@
         "intended_segment_fit": 100,
         "action_signal": 0,
         "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
-      "id": "svc_preview_20260517_hdb_tile_entry",
-      "url": "",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 2,
-        "continuity": 4,
-        "service_fit": 83,
-        "hits": [
-          "renter / first apartment",
-          "Singapore small-space",
-          "hallway / threshold",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 59.6,
-        "us": 4.5,
-        "target_market": 76.0,
-        "target_age": 58.7,
-        "female": 74.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
-      "id": "svc_preview_20260517_rental_textile_wfh",
-      "url": "",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 2,
-        "continuity": 4,
-        "service_fit": 83,
-        "hits": [
-          "home office / desk wall",
-          "Singapore small-space",
-          "bedroom / soft return",
-          "laundry / service yard",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 59.6,
-        "us": 4.5,
-        "target_market": 76.0,
-        "target_age": 58.7,
-        "female": 74.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
-      "id": "svc_20260516_roles_art_can_hold",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7640507246895549717",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "home office / desk wall",
-          "renter / first apartment",
-          "living room / sofa wall",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 69,
-        "actual_demo_fit": 69,
-        "sg": 75.1,
-        "us": 1.7,
-        "target_market": 76.8,
-        "target_age": 51.0,
-        "female": 72.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260516_compare_sofa_wall_with_without",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7640506306436074772",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 4,
-        "service_fit": 98,
-        "hits": [
-          "renter / first apartment",
-          "living room / sofa wall",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 41,
-        "actual_demo_fit": 41,
-        "sg": 12.0,
-        "us": 0,
-        "target_market": 25.9,
-        "target_age": 59.0,
-        "female": 62.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260516_story_begin_again_entry",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7640505376860867861",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 4,
-        "service_fit": 98,
-        "hits": [
-          "renter / first apartment",
-          "hallway / threshold",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 75,
-        "actual_demo_fit": 75,
-        "sg": 55.6,
-        "us": 0.4,
-        "target_market": 73.1,
-        "target_age": 67.0,
-        "female": 90.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260516_story_keep_going_desk",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7640504307103567125",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 4,
-        "service_fit": 98,
-        "hits": [
-          "home office / desk wall",
-          "renter / first apartment",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 72,
-        "actual_demo_fit": 72,
-        "sg": 78.2,
-        "us": 0,
-        "target_market": 81.2,
-        "target_age": 57.0,
-        "female": 66.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
       }
     }
   ]

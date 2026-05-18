@@ -46,13 +46,17 @@
     .slots { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; }
     .slot { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
     .slot b { display:block; margin-bottom:8px; }
+    .archive-nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
+    .archive-nav a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:7px 10px; background:#fff; font-size:13px; }
+    .archive-nav a.active { background:var(--ink); color:#fff; border-color:var(--ink); }
     footer { margin-top:42px; color:var(--muted); font-size:13px; }
   </style>
 </head>
 <body>
   <header>
     <h1>Art Service Daily Report</h1>
-    <p>생성 시각: 2026-05-19 01:30 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
+    <p>생성 시각: 2026-05-19 08:41 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
+    <nav class="archive-nav"><a class="active" href="2026-05-19/">2026-05-19</a><a href="2026-05-18/">2026-05-18</a><a href="2026-05-17/">2026-05-17</a><a href="archive/">All reports</a></nav>
   </header>
   <main>
     
@@ -60,7 +64,7 @@
     <section class="exec">
       <p><strong>오늘의 판단:</strong> 최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다. 리포트는 먼저 타겟 오디언스 적합도를 보고, 그 다음 실제 생성물 이미지와 생성 근거, 마지막으로 20:30 타겟 오디언스 루틴 결과를 확인한다.</p>
       <section class="summary">
-        <div class="metric"><span>reviewed content fit</span><strong>79%</strong></div>
+        <div class="metric"><span>reviewed content fit</span><strong>82%</strong></div>
         <div class="metric"><span>Studio demo fit</span><strong>70%</strong></div>
         <div class="metric"><span>viewer target market</span><strong>76.0%</strong></div>
         <div class="metric"><span>viewer SG</span><strong>59.6%</strong></div>
@@ -76,7 +80,7 @@
     
     <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
     <section class="slots">
-      <div class="slot"><b>지난 콘텐츠 판정</b>최근 업로드의 의도 세그먼트는 wall art shoppers, renter / first apartment, home office / desk wall 쪽으로 읽힌다. 실제 데모그래피와 세그먼트 의도가 어긋나면 훅보다 공간 선택과 첫 장의 자기 대입 가능성을 먼저 고친다.</div>
+      <div class="slot"><b>지난 콘텐츠 판정</b>최근 업로드의 의도 세그먼트는 wall art shoppers, renter / first apartment, Singapore small-space 쪽으로 읽힌다. 실제 데모그래피와 세그먼트 의도가 어긋나면 훅보다 공간 선택과 첫 장의 자기 대입 가능성을 먼저 고친다.</div>
       <div class="slot"><b>유지할 것</b>나의 이야기처럼 읽히는 현재 감각, 프린트로 걸 수 있는 아트 품질, 과장 없는 공간-감정 전환을 유지한다.</div>
       <div class="slot"><b>폐기할 것</b>흰 설명 카드, 라벨처럼 보이는 문구, 늘어난 이미지, 같은 아트 스타일 반복, 같은 집처럼 보이는 색감/구도, 아직 이른 댓글/투표 CTA를 폐기한다.</div>
       <div class="slot"><b>새 전략</b>공간을 거실/홈오피스에 묶지 않는다. 직접 참여 요구보다 저장, 멈춤, 자기 대입, 재시청을 목표로 한다.</div>
@@ -131,6 +135,174 @@
       <div class="slot"><b>6개 루틴</b>2개는 유지/폐기 반영, 2개는 새 시도 확장, 2개는 완전히 새로운 포맷으로 생성하되 하루 안에서 생활공간을 넓게 분산한다.</div>
     </section>
     <div class="grid">
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s6_object_anchor_translation/contact_sheet.jpg" alt="svc_20260519_s6_object_anchor_translation contact sheet"><img class="slide" src="assets/svc_20260519_s6_object_anchor_translation/slide_1.png" alt="svc_20260519_s6_object_anchor_translation first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s6_object_anchor_translation</strong><span class="fit">100%</span></div>
+        <div class="chips"><span>renter / first apartment</span><span>bedroom / soft return</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>US/UK/Canada/Australia/New Zealand renter hallway or bedside shelf / proof-of-chapter / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641379569273982229">TikTok</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s5_portfolio_silent_roles/contact_sheet.jpg" alt="svc_20260519_s5_portfolio_silent_roles contact sheet"><img class="slide" src="assets/svc_20260519_s5_portfolio_silent_roles/slide_1.png" alt="svc_20260519_s5_portfolio_silent_roles first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s5_portfolio_silent_roles</strong><span class="fit">93%</span></div>
+        <div class="chips"><span>renter / first apartment</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>English-speaking small-space wall-art shoppers / passive role recognition / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641378780023491861">TikTok</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s4_laundry_meaning_before_after/contact_sheet.jpg" alt="svc_20260519_s4_laundry_meaning_before_after contact sheet"><img class="slide" src="assets/svc_20260519_s4_laundry_meaning_before_after/slide_1.png" alt="svc_20260519_s4_laundry_meaning_before_after first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s4_laundry_meaning_before_after</strong><span class="fit">100%</span></div>
+        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>living room / sofa wall</span><span>laundry / service yard</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>Australia/New Zealand/Canada/Singapore small apartment laundry or utility wall / chapter proof / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641377853791145236">TikTok</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s3_vanity_force_ladder/contact_sheet.jpg" alt="svc_20260519_s3_vanity_force_ladder contact sheet"><img class="slide" src="assets/svc_20260519_s3_vanity_force_ladder/slide_1.png" alt="svc_20260519_s3_vanity_force_ladder first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s3_vanity_force_ladder</strong><span class="fit">100%</span></div>
+        <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>bathroom / mirror ritual</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>UK/Canada/Australia/NZ small rental vanity or desk corner / quiet confidence / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641376926480878869">TikTok</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s2_sg_dining_rule_correction/contact_sheet.jpg" alt="svc_20260519_s2_sg_dining_rule_correction contact sheet"><img class="slide" src="assets/svc_20260519_s2_sg_dining_rule_correction/slide_1.png" alt="svc_20260519_s2_sg_dining_rule_correction first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s2_sg_dining_rule_correction</strong><span class="fit">100%</span></div>
+        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>kitchen / dining rhythm</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>Singapore HDB/condo rental dining-entry wall / small-space direction / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641376149712555284">TikTok</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="assets/svc_20260519_s1_sg_kitchen_tile_warmth/contact_sheet.jpg" alt="svc_20260519_s1_sg_kitchen_tile_warmth contact sheet"><img class="slide" src="assets/svc_20260519_s1_sg_kitchen_tile_warmth/slide_1.png" alt="svc_20260519_s1_sg_kitchen_tile_warmth first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>svc_20260519_s1_sg_kitchen_tile_warmth</strong><span class="fit">100%</span></div>
+        <div class="chips"><span>Singapore small-space</span><span>kitchen / dining rhythm</span><span>wall art shoppers</span></div>
+        
+        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:42%"></span></div></div>
+        <div class="score"><label>target market</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>25-44</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>female</label><div class="bar"><span style="width:83%"></span></div></div>
+        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
+        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
+        <div class="meta">
+          <span>Singapore HDB/BTO compact kitchen-dining ledge / small-space warmth / 25-44</span>
+          <span>uploaded</span>
+          <span>no verified music</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641374982576114965">TikTok</a>
+      </div>
+    </article>
+    
+
     <article class="card">
       <div class="media"><img class="contact" src="assets/elura_rework_20260518_s6_living_not_match_project/contact_sheet.jpg" alt="elura_rework_20260518_s6_living_not_match_project contact sheet"><img class="slide" src="assets/elura_rework_20260518_s6_living_not_match_project/slide_1.png" alt="elura_rework_20260518_s6_living_not_match_project first slide"></div>
       <div class="card-body">
@@ -295,174 +467,6 @@
           <span>no verified music</span>
         </div>
         <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7641080462634503444">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_preview_20260517_hdb_tile_entry/contact_sheet.jpg" alt="svc_preview_20260517_hdb_tile_entry contact sheet"><img class="slide" src="assets/svc_preview_20260517_hdb_tile_entry/slide_1.png" alt="svc_preview_20260517_hdb_tile_entry first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_preview_20260517_hdb_tile_entry</strong><span class="fit">83%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:40%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:80%"></span></div></div>
-        <div class="meta">
-          <span>Singapore HDB/BTO small-space entry wall / no-drilling / 25-44</span>
-          <span>not_uploaded_user_review_required</span>
-          <span>music ok</span>
-        </div>
-        
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_preview_20260517_rental_textile_wfh/contact_sheet.jpg" alt="svc_preview_20260517_rental_textile_wfh contact sheet"><img class="slide" src="assets/svc_preview_20260517_rental_textile_wfh/slide_1.png" alt="svc_preview_20260517_rental_textile_wfh first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_preview_20260517_rental_textile_wfh</strong><span class="fit">83%</span></div>
-        <div class="chips"><span>home office / desk wall</span><span>Singapore small-space</span><span>bedroom / soft return</span><span>laundry / service yard</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:70%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:76%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:60%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:4%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:74%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:40%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:80%"></span></div></div>
-        <div class="meta">
-          <span>Singapore rental bedroom / compact WFH desk wall / 25-44</span>
-          <span>not_uploaded_user_review_required</span>
-          <span>music ok</span>
-        </div>
-        
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_20260516_roles_art_can_hold/contact_sheet.jpg" alt="svc_20260516_roles_art_can_hold contact sheet"><img class="slide" src="assets/svc_20260516_roles_art_can_hold/slide_1.png" alt="svc_20260516_roles_art_can_hold first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260516_roles_art_can_hold</strong><span class="fit">100%</span></div>
-        <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:69%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:77%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:75%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:2%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:51%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:72%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="meta">
-          <span>US renters / first apartments / home office walls</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7640507246895549717">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_20260516_compare_sofa_wall_with_without/contact_sheet.jpg" alt="svc_20260516_compare_sofa_wall_with_without contact sheet"><img class="slide" src="assets/svc_20260516_compare_sofa_wall_with_without/slide_1.png" alt="svc_20260516_compare_sofa_wall_with_without first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260516_compare_sofa_wall_with_without</strong><span class="fit">98%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:41%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:26%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:12%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:59%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:62%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:80%"></span></div></div>
-        <div class="meta">
-          <span>US renter or first-apartment living room / sofa wall</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7640506306436074772">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_20260516_story_begin_again_entry/contact_sheet.jpg" alt="svc_20260516_story_begin_again_entry contact sheet"><img class="slide" src="assets/svc_20260516_story_begin_again_entry/slide_1.png" alt="svc_20260516_story_begin_again_entry first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260516_story_begin_again_entry</strong><span class="fit">98%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>hallway / threshold</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:75%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:73%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:56%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:67%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:90%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:80%"></span></div></div>
-        <div class="meta">
-          <span>US first apartment / entry wall</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7640505376860867861">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="assets/svc_20260516_story_keep_going_desk/contact_sheet.jpg" alt="svc_20260516_story_keep_going_desk contact sheet"><img class="slide" src="assets/svc_20260516_story_keep_going_desk/slide_1.png" alt="svc_20260516_story_keep_going_desk first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260516_story_keep_going_desk</strong><span class="fit">98%</span></div>
-        <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>wall art shoppers</span></div>
-        
-        <div class="score"><label>actual demo fit</label><div class="bar"><span style="width:72%"></span></div></div>
-        <div class="score"><label>target market</label><div class="bar"><span style="width:81%"></span></div></div>
-        <div class="score"><label>SG viewers</label><div class="bar"><span style="width:78%"></span></div></div>
-        <div class="score"><label>US viewers</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>25-44</label><div class="bar"><span style="width:57%"></span></div></div>
-        <div class="score"><label>female</label><div class="bar"><span style="width:66%"></span></div></div>
-        <div class="score"><label>intended segment</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>target action</label><div class="bar"><span style="width:0%"></span></div></div>
-        <div class="score"><label>target demo</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>strategy</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>visual QA</label><div class="bar"><span style="width:100%"></span></div></div>
-        <div class="score"><label>continuity</label><div class="bar"><span style="width:80%"></span></div></div>
-        <div class="meta">
-          <span>US renter home office / desk wall</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7640504307103567125">TikTok</a>
       </div>
     </article>
     </div>
