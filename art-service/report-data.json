@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T13:36:56",
+  "generated_at": "2026-05-18T14:32:54",
   "audience_fit": {
     "score": 70,
     "viewer_sg": 59.6,
@@ -138,35 +138,8 @@
   },
   "posts": [
     {
-      "id": "elura_rework_20260518_s5_prints_in_room_sequence",
-      "url": "",
-      "scores": {
-        "target": 4,
-        "strategy": 4,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 72,
-        "hits": [
-          "renter / first apartment",
-          "wall art shoppers"
-        ]
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 59.6,
-        "us": 4.5,
-        "target_market": 76.0,
-        "target_age": 58.7,
-        "female": 74.0,
-        "intended_segment_fit": 80,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
       "id": "elura_rework_20260518_s6_living_not_match_project",
-      "url": "",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641099369793473813",
       "scores": {
         "target": 5,
         "strategy": 4,
@@ -193,8 +166,35 @@
       }
     },
     {
-      "id": "elura_rework_20260518_s3_dining_abc_direction",
-      "url": "",
+      "id": "elura_rework_20260518_s5_prints_in_room_sequence",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641098583017524501",
+      "scores": {
+        "target": 4,
+        "strategy": 4,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 72,
+        "hits": [
+          "renter / first apartment",
+          "wall art shoppers"
+        ]
+      },
+      "audience_match": {
+        "score": 70,
+        "actual_demo_fit": 70,
+        "sg": 59.6,
+        "us": 4.5,
+        "target_market": 76.0,
+        "target_age": 58.7,
+        "female": 74.0,
+        "intended_segment_fit": 80,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_rework_20260518_s4_entry_comment_direction",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641097754705448213",
       "scores": {
         "target": 5,
         "strategy": 4,
@@ -203,7 +203,8 @@
         "service_fit": 79,
         "hits": [
           "renter / first apartment",
-          "kitchen / dining rhythm",
+          "Singapore small-space",
+          "hallway / threshold",
           "wall art shoppers"
         ]
       },
@@ -221,8 +222,8 @@
       }
     },
     {
-      "id": "elura_rework_20260518_s4_entry_comment_direction",
-      "url": "",
+      "id": "elura_rework_20260518_s3_dining_abc_direction",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7641096956432878869",
       "scores": {
         "target": 5,
         "strategy": 4,
@@ -231,8 +232,7 @@
         "service_fit": 79,
         "hits": [
           "renter / first apartment",
-          "Singapore small-space",
-          "hallway / threshold",
+          "kitchen / dining rhythm",
           "wall art shoppers"
         ]
       },
@@ -411,9 +411,9 @@
       "audience_match": {
         "score": 42,
         "actual_demo_fit": 42,
-        "sg": 12.7,
+        "sg": 12.2,
         "us": 0,
-        "target_market": 27.2,
+        "target_market": 26.3,
         "target_age": 59.0,
         "female": 62.0,
         "intended_segment_fit": 100,
