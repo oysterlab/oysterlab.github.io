@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-18T15:04:31",
+  "generated_at": "2026-05-19T01:30:16",
   "audience_fit": {
     "score": 70,
     "viewer_sg": 59.6,
@@ -14,41 +14,41 @@
     "follower_female": 65.0
   },
   "audience_routine": {
-    "run_id": "20260517-203002-scheduled_2030",
-    "date_kst": "2026-05-17",
+    "run_id": "20260518-203000-scheduled_2030",
+    "date_kst": "2026-05-18",
     "source": "scheduled_2030",
     "mode": "manual_confirmed_public_comment_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-17T20:30:02+09:00",
-    "finished_at_kst": "2026-05-17T20:30:02+09:00",
+    "started_at_kst": "2026-05-18T20:30:00+09:00",
+    "finished_at_kst": "2026-05-18T20:30:00+09:00",
     "target_comment_count": "3-5",
     "prepared_comment_count": 8,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
     "studio_summary": {
-      "generated_at": "2026-05-17T09:51:35",
-      "viewer_sg": 53.0,
-      "viewer_target_market": 72.5,
-      "viewer_25_44": 56.4,
-      "viewer_female": 76.0,
+      "generated_at": "2026-05-18T15:04:20",
+      "viewer_sg": 59.6,
+      "viewer_target_market": 76.0,
+      "viewer_25_44": 58.7,
+      "viewer_female": 74.0,
       "follower_sg": 12.6,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 95.2
+          "percent": 93.1
         },
         {
           "label": "Search",
-          "percent": 3.9
+          "percent": 5.4
         },
         {
           "label": "Personal Profile",
-          "percent": 0.7
+          "percent": 1.2
         },
         {
           "label": "Follow",
-          "percent": 0.3
+          "percent": 0.4
         },
         {
           "label": "Sound",
@@ -396,11 +396,11 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 75.8,
+        "score": 69,
+        "actual_demo_fit": 69,
+        "sg": 75.1,
         "us": 1.7,
-        "target_market": 77.5,
+        "target_market": 76.8,
         "target_age": 51.0,
         "female": 72.0,
         "intended_segment_fit": 100,
@@ -425,11 +425,11 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 42,
-        "actual_demo_fit": 42,
-        "sg": 12.2,
+        "score": 41,
+        "actual_demo_fit": 41,
+        "sg": 12.0,
         "us": 0,
-        "target_market": 26.3,
+        "target_market": 25.9,
         "target_age": 59.0,
         "female": 62.0,
         "intended_segment_fit": 100,
@@ -456,9 +456,9 @@
       "audience_match": {
         "score": 75,
         "actual_demo_fit": 75,
-        "sg": 55.7,
+        "sg": 55.6,
         "us": 0.4,
-        "target_market": 73.2,
+        "target_market": 73.1,
         "target_age": 67.0,
         "female": 90.0,
         "intended_segment_fit": 100,
