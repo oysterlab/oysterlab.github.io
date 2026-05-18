@@ -16,7 +16,7 @@ Observed patterns used for Oysterlab:
 
 Oysterlab translation:
 
-- Forner's brand-case-study language was replaced with Oysterlab's core service promise: `current feeling -> visual reading -> space`.
+- Forner's brand-case-study language was replaced with Oysterlab's core service promise: `current feeling -> inner direction -> space`.
 - The space strategy was widened beyond living rooms/home offices to bedrooms, kitchens, bathrooms, corridors, laundry/service yards, dining nooks, and other daily-life spaces.
 - All visuals use existing Oysterlab generated content from `content/output`, not Forner assets.
 - The page is static and GitHub Pages friendly: `index.html`, `style.css`, `script.js`, and local assets only.
