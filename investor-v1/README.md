@@ -1,6 +1,6 @@
 # Oysterlab Investor Portfolio
 
-Purpose: a GitHub Pages-ready investor portfolio page for the personal art reading service.
+Purpose: a GitHub Pages-ready investor portfolio page for the personal art direction service.
 
 Source strategy files:
 
@@ -19,4 +19,4 @@ Positioning:
 
 - Not a generic AI wall-art generator.
 - Not a decor filter.
-- A personal art reading service that turns current feeling into original artwork, story, and placement inside the user's space.
+- A personal art direction service that turns current feeling into original artwork, story, and placement inside the user's space.

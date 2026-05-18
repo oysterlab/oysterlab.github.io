@@ -20,7 +20,7 @@ Positioning:
 
 - Not a generic AI wall-art generator.
 - Not a decor filter.
-- A personal art reading service that turns current feeling into original artwork, story, and placement inside the user's space.
+- A personal art direction service that turns current feeling into original artwork, story, and placement inside the user's space.
 
 Investor-page KPI:
 
