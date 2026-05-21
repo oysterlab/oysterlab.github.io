@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-05-21T01:30:27",
+  "generated_at": "2026-05-22T01:30:34",
   "audience_fit": {
-    "score": 70,
-    "viewer_sg": 65.9,
+    "score": 71,
+    "viewer_sg": 68.3,
     "follower_sg": 12.6,
-    "viewer_us": 3.3,
+    "viewer_us": 2.8,
     "follower_us": 54.9,
-    "viewer_target_market": 75.1,
+    "viewer_target_market": 75.3,
     "follower_target_market": 76.8,
-    "viewer_target_age": 60.1,
-    "follower_target_age": 60.6,
-    "viewer_female": 78.0,
+    "viewer_target_age": 60.6,
+    "follower_target_age": 61.0,
+    "viewer_female": 79.0,
     "follower_female": 64.0
   },
   "audience_routine": {
-    "run_id": "20260520-203000-scheduled_2030",
-    "date_kst": "2026-05-20",
+    "run_id": "20260521-203000-scheduled_2030",
+    "date_kst": "2026-05-21",
     "source": "scheduled_2030",
     "mode": "manual_confirmed_public_comment_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-20T20:30:00+09:00",
-    "finished_at_kst": "2026-05-20T20:30:00+09:00",
+    "started_at_kst": "2026-05-21T20:30:00+09:00",
+    "finished_at_kst": "2026-05-21T20:30:00+09:00",
     "target_comment_count": "3-5",
     "prepared_comment_count": 8,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
     "studio_summary": {
-      "generated_at": "2026-05-20T01:30:01",
-      "viewer_sg": 59.6,
-      "viewer_target_market": 76.0,
-      "viewer_25_44": 58.7,
-      "viewer_female": 74.0,
+      "generated_at": "2026-05-21T01:30:01",
+      "viewer_sg": 65.9,
+      "viewer_target_market": 75.1,
+      "viewer_25_44": 60.1,
+      "viewer_female": 78.0,
       "follower_sg": 12.6,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 92.9
+          "percent": 95.0
         },
         {
           "label": "Search",
-          "percent": 5.2
+          "percent": 3.5
         },
         {
           "label": "Personal Profile",
-          "percent": 1.4
+          "percent": 1.2
         },
         {
           "label": "Follow",
-          "percent": 0.6
+          "percent": 0.4
         },
         {
           "label": "Sound",
@@ -138,6 +138,176 @@
   },
   "posts": [
     {
+      "id": "elura_20260521_r6_object_to_daily_signal",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642060912362261780",
+      "scores": {
+        "target": 4,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 60,
+        "hits": [
+          "renter / first apartment",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 80,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_20260521_r5_twelve_quiet_signals",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642059953347300628",
+      "scores": {
+        "target": 4,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 60,
+        "hits": [
+          "renter / first apartment",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 80,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_20260521_r4_sentence_to_three_images",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642059035356810517",
+      "scores": {
+        "target": 3,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 53,
+        "hits": [
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 60,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_20260521_r3_bedroom_meaning_slider",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642058100228312341",
+      "scores": {
+        "target": 5,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 67,
+        "hits": [
+          "renter / first apartment",
+          "bedroom / soft return",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_20260521_r2_service_yard_theme_keep",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642057312160599316",
+      "scores": {
+        "target": 5,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 67,
+        "hits": [
+          "Singapore small-space",
+          "laundry / service yard",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
+      "id": "elura_20260521_r1_bathroom_signal_keep",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642056497744137492",
+      "scores": {
+        "target": 5,
+        "strategy": 2,
+        "visual": 2,
+        "continuity": 5,
+        "service_fit": 67,
+        "hits": [
+          "renter / first apartment",
+          "bathroom / mirror ritual",
+          "wall art shoppers"
+        ],
+        "participation_hits": []
+      },
+      "audience_match": {
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
+        "intended_segment_fit": 100,
+        "action_signal": 0,
+        "note": "account-level fallback; post-level demographics unavailable"
+      }
+    },
+    {
       "id": "svc_20260520_s6_quiet_receipt_anchor",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7641660833348554005",
       "scores": {
@@ -156,11 +326,11 @@
       "audience_match": {
         "score": 72,
         "actual_demo_fit": 72,
-        "sg": 77.9,
+        "sg": 77.8,
         "us": 0.8,
-        "target_market": 80.6,
+        "target_market": 80.5,
         "target_age": 53.0,
-        "female": 71.0,
+        "female": 72.0,
         "intended_segment_fit": 100,
         "action_signal": 18,
         "note": "post-level TikTok Studio Viewers API"
@@ -184,9 +354,9 @@
       "audience_match": {
         "score": 70,
         "actual_demo_fit": 70,
-        "sg": 78.6,
+        "sg": 79.2,
         "us": 0,
-        "target_market": 81.0,
+        "target_market": 81.4,
         "target_age": 47.0,
         "female": 67.0,
         "intended_segment_fit": 80,
@@ -211,13 +381,13 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 48,
-        "actual_demo_fit": 48,
-        "sg": 11.4,
-        "us": 4.5,
-        "target_market": 25.0,
-        "target_age": 72.0,
-        "female": 79.0,
+        "score": 49,
+        "actual_demo_fit": 49,
+        "sg": 17.0,
+        "us": 4.3,
+        "target_market": 29.8,
+        "target_age": 70.0,
+        "female": 78.0,
         "intended_segment_fit": 100,
         "action_signal": 10,
         "note": "post-level TikTok Studio Viewers API"
@@ -241,13 +411,13 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 71,
-        "actual_demo_fit": 71,
-        "sg": 76.1,
+        "score": 72,
+        "actual_demo_fit": 72,
+        "sg": 76.7,
         "us": 0,
-        "target_market": 78.1,
+        "target_market": 78.6,
         "target_age": 56.0,
-        "female": 71.0,
+        "female": 72.0,
         "intended_segment_fit": 100,
         "action_signal": 4,
         "note": "post-level TikTok Studio Viewers API"
@@ -270,12 +440,12 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 76,
-        "actual_demo_fit": 76,
-        "sg": 83.8,
+        "score": 73,
+        "actual_demo_fit": 73,
+        "sg": 77.9,
         "us": 0,
-        "target_market": 86.3,
-        "target_age": 58.0,
+        "target_market": 80.4,
+        "target_age": 59.0,
         "female": 68.0,
         "intended_segment_fit": 100,
         "action_signal": 24,
@@ -301,192 +471,13 @@
       "audience_match": {
         "score": 79,
         "actual_demo_fit": 79,
-        "sg": 86.8,
+        "sg": 87.2,
         "us": 0,
-        "target_market": 88.7,
+        "target_market": 89.0,
         "target_age": 56.0,
         "female": 82.0,
         "intended_segment_fit": 100,
         "action_signal": 13,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s6_object_anchor_translation",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641379569273982229",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "renter / first apartment",
-          "bedroom / soft return",
-          "hallway / threshold",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 54,
-        "actual_demo_fit": 54,
-        "sg": 11.1,
-        "us": 15.6,
-        "target_market": 42.2,
-        "target_age": 66.0,
-        "female": 72.0,
-        "intended_segment_fit": 100,
-        "action_signal": 6,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s5_portfolio_silent_roles",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641378780023491861",
-      "scores": {
-        "target": 4,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 93,
-        "hits": [
-          "renter / first apartment",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 78,
-        "actual_demo_fit": 78,
-        "sg": 80.0,
-        "us": 0.9,
-        "target_market": 81.4,
-        "target_age": 64.0,
-        "female": 86.0,
-        "intended_segment_fit": 80,
-        "action_signal": 4,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s4_laundry_meaning_before_after",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641377853791145236",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "renter / first apartment",
-          "Singapore small-space",
-          "living room / sofa wall",
-          "laundry / service yard",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 73,
-        "actual_demo_fit": 73,
-        "sg": 74.1,
-        "us": 0,
-        "target_market": 76.1,
-        "target_age": 56.0,
-        "female": 88.0,
-        "intended_segment_fit": 100,
-        "action_signal": 20,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s3_vanity_force_ladder",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641376926480878869",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "home office / desk wall",
-          "renter / first apartment",
-          "bathroom / mirror ritual",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 54,
-        "actual_demo_fit": 54,
-        "sg": 19.0,
-        "us": 4.8,
-        "target_market": 42.9,
-        "target_age": 72.0,
-        "female": 60.0,
-        "intended_segment_fit": 100,
-        "action_signal": 2,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s2_sg_dining_rule_correction",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641376149712555284",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "renter / first apartment",
-          "Singapore small-space",
-          "kitchen / dining rhythm",
-          "hallway / threshold",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 76,
-        "actual_demo_fit": 76,
-        "sg": 81.7,
-        "us": 0,
-        "target_market": 83.2,
-        "target_age": 61.0,
-        "female": 74.0,
-        "intended_segment_fit": 100,
-        "action_signal": 15,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260519_s1_sg_kitchen_tile_warmth",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7641374982576114965",
-      "scores": {
-        "target": 5,
-        "strategy": 5,
-        "visual": 5,
-        "continuity": 5,
-        "service_fit": 100,
-        "hits": [
-          "Singapore small-space",
-          "kitchen / dining rhythm",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 46,
-        "actual_demo_fit": 46,
-        "sg": 14.3,
-        "us": 2.4,
-        "target_market": 28.6,
-        "target_age": 69.0,
-        "female": 63.0,
-        "intended_segment_fit": 100,
-        "action_signal": 5,
         "note": "post-level TikTok Studio Viewers API"
       }
     }
