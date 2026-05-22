@@ -1,54 +1,54 @@
 {
-  "generated_at": "2026-05-23T01:30:46",
+  "generated_at": "2026-05-22T14:30:24",
   "audience_fit": {
-    "score": 70,
-    "viewer_sg": 70.1,
-    "follower_sg": 12.5,
-    "viewer_us": 2.4,
-    "follower_us": 54.7,
-    "viewer_target_market": 76.4,
-    "follower_target_market": 76.5,
-    "viewer_target_age": 61.1,
-    "follower_target_age": 59.9,
-    "viewer_female": 77.0,
+    "score": 71,
+    "viewer_sg": 68.3,
+    "follower_sg": 12.6,
+    "viewer_us": 2.8,
+    "follower_us": 54.9,
+    "viewer_target_market": 75.3,
+    "follower_target_market": 76.8,
+    "viewer_target_age": 60.6,
+    "follower_target_age": 61.0,
+    "viewer_female": 79.0,
     "follower_female": 64.0
   },
   "audience_routine": {
-    "run_id": "20260522-203000-scheduled_2030",
-    "date_kst": "2026-05-22",
+    "run_id": "20260521-203000-scheduled_2030",
+    "date_kst": "2026-05-21",
     "source": "scheduled_2030",
     "mode": "manual_confirmed_public_comment_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-22T20:30:00+09:00",
-    "finished_at_kst": "2026-05-22T20:30:00+09:00",
+    "started_at_kst": "2026-05-21T20:30:00+09:00",
+    "finished_at_kst": "2026-05-21T20:30:00+09:00",
     "target_comment_count": "3-5",
     "prepared_comment_count": 8,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
     "studio_summary": {
-      "generated_at": "2026-05-22T01:30:02",
-      "viewer_sg": 68.3,
-      "viewer_target_market": 75.3,
-      "viewer_25_44": 60.6,
-      "viewer_female": 79.0,
+      "generated_at": "2026-05-21T01:30:01",
+      "viewer_sg": 65.9,
+      "viewer_target_market": 75.1,
+      "viewer_25_44": 60.1,
+      "viewer_female": 78.0,
       "follower_sg": 12.6,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 95.2
+          "percent": 95.0
         },
         {
           "label": "Search",
-          "percent": 3.1
+          "percent": 3.5
         },
         {
           "label": "Personal Profile",
-          "percent": 1.5
+          "percent": 1.2
         },
         {
           "label": "Follow",
-          "percent": 0.3
+          "percent": 0.4
         },
         {
           "label": "Sound",
@@ -154,16 +154,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 76,
-        "actual_demo_fit": 76,
-        "sg": 76.5,
-        "us": 0.9,
-        "target_market": 78.9,
-        "target_age": 65.0,
-        "female": 80.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -183,16 +183,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 65,
-        "actual_demo_fit": 65,
-        "sg": 58.7,
-        "us": 0,
-        "target_market": 60.9,
-        "target_age": 56.0,
-        "female": 86.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -211,16 +211,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 73,
-        "actual_demo_fit": 73,
-        "sg": 81.1,
-        "us": 0.6,
-        "target_market": 82.7,
-        "target_age": 47.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
         "female": 79.0,
         "intended_segment_fit": 80,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -240,16 +240,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 67,
-        "actual_demo_fit": 67,
-        "sg": 63.9,
-        "us": 0,
-        "target_market": 64.9,
-        "target_age": 67.0,
-        "female": 75.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -267,16 +267,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 68,
-        "actual_demo_fit": 68,
-        "sg": 72.5,
-        "us": 0,
-        "target_market": 74.8,
-        "target_age": 49.0,
-        "female": 74.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 60,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -298,16 +298,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 74,
-        "actual_demo_fit": 74,
-        "sg": 75.8,
-        "us": 0,
-        "target_market": 77.4,
-        "target_age": 61.0,
-        "female": 83.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -327,16 +327,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 61,
-        "actual_demo_fit": 61,
-        "sg": 58.6,
-        "us": 0,
-        "target_market": 61.1,
-        "target_age": 52.0,
-        "female": 74.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -357,16 +357,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 80,
-        "actual_demo_fit": 80,
-        "sg": 86.1,
-        "us": 0,
-        "target_market": 86.9,
-        "target_age": 57.0,
-        "female": 90.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -388,16 +388,16 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 75,
-        "actual_demo_fit": 75,
-        "sg": 82.4,
-        "us": 0,
-        "target_market": 83.8,
-        "target_age": 52.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
         "female": 79.0,
         "intended_segment_fit": 100,
         "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "note": "account-level fallback; post-level demographics unavailable"
       }
     },
     {
@@ -416,13 +416,13 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 80,
         "action_signal": 0,
         "note": "account-level fallback; post-level demographics unavailable"
@@ -444,13 +444,13 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 80,
         "action_signal": 0,
         "note": "account-level fallback; post-level demographics unavailable"
@@ -471,13 +471,13 @@
         "participation_hits": []
       },
       "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
+        "score": 71,
+        "actual_demo_fit": 71,
+        "sg": 68.3,
+        "us": 2.8,
+        "target_market": 75.3,
+        "target_age": 60.6,
+        "female": 79.0,
         "intended_segment_fit": 60,
         "action_signal": 0,
         "note": "account-level fallback; post-level demographics unavailable"
