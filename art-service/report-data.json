@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T15:07:15",
+  "generated_at": "2026-05-23T15:20:33",
   "audience_metrics": {
     "viewer_sg": 70.1,
     "follower_sg": 12.5,
@@ -11,6 +11,62 @@
     "follower_target_age": 59.9,
     "viewer_female": 77.0,
     "follower_female": 64.0
+  },
+  "account_audience_7d": {
+    "range": "last_7_days",
+    "generated_at": "2026-05-23T15:20:20",
+    "unique_viewers": 11939,
+    "new_viewers": 6322,
+    "returning_viewers": null,
+    "viewer_target_market": 76.4,
+    "viewer_sg": 70.1,
+    "viewer_kr": 8.7,
+    "viewer_target_age": 61.1,
+    "viewer_female": 77.0,
+    "daily_unique_viewers_7d": [
+      {
+        "date": "2026-05-16",
+        "label": "05-16",
+        "value": 2182,
+        "status": 0
+      },
+      {
+        "date": "2026-05-17",
+        "label": "05-17",
+        "value": 1108,
+        "status": 0
+      },
+      {
+        "date": "2026-05-18",
+        "label": "05-18",
+        "value": 2282,
+        "status": 0
+      },
+      {
+        "date": "2026-05-19",
+        "label": "05-19",
+        "value": 4662,
+        "status": 0
+      },
+      {
+        "date": "2026-05-20",
+        "label": "05-20",
+        "value": 3120,
+        "status": 0
+      },
+      {
+        "date": "2026-05-21",
+        "label": "05-21",
+        "value": 3656,
+        "status": 0
+      },
+      {
+        "date": "2026-05-22",
+        "label": "05-22",
+        "value": null,
+        "status": 2
+      }
+    ]
   },
   "evaluation_excludes_date": "2026-05-23",
   "growth_comparison": {
