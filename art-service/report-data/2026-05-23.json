@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T15:30:34",
+  "generated_at": "2026-05-23T16:08:08",
   "audience_metrics": {
     "viewer_sg": 70.1,
     "follower_sg": 12.5,
@@ -26,43 +26,43 @@
     "daily_unique_viewers_7d": [
       {
         "date": "2026-05-16",
-        "label": "05-16",
+        "label": "5/16",
         "value": 2182,
         "status": 0
       },
       {
         "date": "2026-05-17",
-        "label": "05-17",
+        "label": "5/17",
         "value": 1108,
         "status": 0
       },
       {
         "date": "2026-05-18",
-        "label": "05-18",
+        "label": "5/18",
         "value": 2282,
         "status": 0
       },
       {
         "date": "2026-05-19",
-        "label": "05-19",
+        "label": "5/19",
         "value": 4662,
         "status": 0
       },
       {
         "date": "2026-05-20",
-        "label": "05-20",
+        "label": "5/20",
         "value": 3120,
         "status": 0
       },
       {
         "date": "2026-05-21",
-        "label": "05-21",
+        "label": "5/21",
         "value": 3656,
         "status": 0
       },
       {
         "date": "2026-05-22",
-        "label": "05-22",
+        "label": "5/22",
         "value": null,
         "status": 2
       }
