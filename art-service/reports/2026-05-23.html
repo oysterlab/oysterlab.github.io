@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Art Service Daily Report</title>
+  <title>ELURA 일일 리포트</title>
   <style>
     :root { color-scheme: light; --ink:#191816; --muted:#69645d; --line:#ddd7cc; --paper:#faf7f0; --accent:#9b2f25; --good:#2f6b4f; --bad:#9b2f25; --new:#3f5f91; }
     body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--paper); color:var(--ink); }
@@ -12,17 +12,59 @@
     h2 { margin:34px 0 14px; font-size:24px; }
     h3 { margin:24px 0 12px; font-size:18px; }
     p { max-width:980px; line-height:1.65; color:var(--muted); }
+    mark, .hl { background:#fff1a8; color:#4d241f; font-weight:800; padding:0 .18em; border-radius:4px; }
+    .hl.soft { background:#edf5e8; color:#24523c; }
+    .delta { display:inline-flex; align-items:center; margin-left:6px; font-size:13px; font-weight:800; }
+    .delta.up { color:var(--good); }
+    .delta.down { color:var(--bad); }
+    .delta.flat { color:var(--muted); }
+    .table-note { font-size:13px; margin-top:-14px; }
     main { padding:24px 5vw 80px; }
     .hero { display:grid; grid-template-columns:1fr; gap:16px; max-width:1180px; }
     .summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:20px 0 24px; }
     .audience-summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:14px 0 20px; }
     .metric { border:1px solid var(--line); background:#fff; padding:18px; border-radius:8px; }
     .metric span { display:flex; align-items:center; gap:6px; color:var(--muted); }
-    .metric strong { display:block; font-size:34px; }
+    .metric strong { display:block; font-size:34px; color:var(--accent); }
     .metric small { display:block; margin-top:6px; color:var(--muted); line-height:1.45; }
+    .growth-chart { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px; margin:18px 0 22px; }
+    .trend-card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .trend-card__head { display:flex; justify-content:space-between; gap:12px; align-items:flex-start; margin-bottom:12px; }
+    .trend-card__head b { font-size:14px; }
+    .trend-card__head strong { font-size:14px; text-align:right; color:var(--ink); white-space:nowrap; }
+    .trend-card p { margin:10px 0 0; font-size:12px; line-height:1.45; }
+    .trend-bars { display:grid; gap:8px; }
+    .trend-bar { display:grid; grid-template-columns:48px 1fr 48px; align-items:center; gap:8px; font-size:12px; }
+    .trend-bar span { color:var(--muted); }
+    .trend-bar i { display:block; height:10px; border-radius:999px; background:#eee7dc; overflow:hidden; }
+    .trend-bar em { display:block; height:100%; background:var(--accent); border-radius:999px; }
+    .trend-bar b { text-align:right; font-size:12px; }
+    .trend-bar.muted em { background:#d8d0c3; }
+    .growth-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    .growth-table { width:100%; border-collapse:collapse; margin:12px 0 26px; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; display:table; }
+    .growth-table th, .growth-table td { border-bottom:1px solid #eee7dc; padding:12px 10px; text-align:left; font-size:13px; }
+    .growth-table thead th { color:var(--muted); font-weight:650; background:#fffaf2; }
+    .growth-table tbody th { font-weight:750; }
+    .growth-table small { display:block; color:var(--muted); font-weight:400; margin-top:2px; }
+    .growth-table tbody tr:last-child { background:#fff8df; }
+    .growth-table tr:last-child th, .growth-table tr:last-child td { border-bottom:0; }
     .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:22px; }
     .card { background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
     .card, .metric, .slot, .aud-card { overflow-wrap:anywhere; }
+    .insight-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:14px; margin:12px 0 24px; }
+    .insight-card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:18px; display:grid; gap:12px; }
+    .insight-card h3 { margin:0; font-size:17px; }
+    .insight-card p { margin:0; font-size:14px; line-height:1.6; color:var(--muted); }
+    .insight-card p b { color:var(--ink); }
+    .insight-card.keep { border-top:4px solid var(--good); }
+    .insight-card.discard { border-top:4px solid var(--bad); }
+    .insight-card.new { border-top:4px solid var(--new); }
+    .evidence-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(104px,1fr)); gap:8px; }
+    .mini-post { display:grid; gap:6px; color:inherit; text-decoration:none; border:1px solid #eee7dc; border-radius:7px; overflow:hidden; background:#faf7f0; }
+    .mini-post img { aspect-ratio:9/16; object-fit:cover; background:#111; }
+    .mini-post span { padding:0 8px; font-size:12px; line-height:1.35; font-weight:650; }
+    .mini-post small { padding:0 8px 8px; color:var(--muted); font-size:11px; line-height:1.35; }
+    .evidence-empty { border:1px dashed var(--line); border-radius:7px; padding:12px; }
     .content-learning { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:18px 0 24px; }
     .learning-card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:18px; }
     .learning-card h3 { margin:0 0 8px; }
@@ -39,7 +81,7 @@
     .plan-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin:12px 0 24px; }
     .plan-card { background:#fff; border:1px solid var(--line); border-radius:8px; padding:16px; }
     .plan-card__top { display:flex; align-items:flex-start; justify-content:space-between; gap:10px; margin-bottom:12px; }
-    .plan-card__top strong { font-size:13px; line-height:1.35; text-align:right; }
+    .plan-card__top strong { font-size:13px; line-height:1.35; text-align:right; min-width:0; overflow-wrap:anywhere; }
     .badge { flex:0 0 auto; border-radius:999px; padding:5px 9px; font-size:12px; color:#fff; background:var(--muted); }
     .badge.keep { background:var(--good); }
     .badge.new { background:var(--new); }
@@ -60,12 +102,14 @@
     .slide { aspect-ratio:9/16; height:100%; }
     .card-body { padding:16px; }
     .row { display:flex; align-items:center; justify-content:space-between; gap:12px; }
-    .fit { font-size:28px; color:var(--accent); font-weight:700; }
+    .row strong { min-width:0; overflow-wrap:anywhere; }
+    .data-source { border:1px solid var(--line); border-radius:999px; padding:5px 9px; color:var(--muted); font-size:12px; white-space:nowrap; }
+    .caption-read { margin:10px 0 14px; font-size:14px; line-height:1.5; }
     .chips { display:flex; flex-wrap:wrap; gap:6px; margin:12px 0; }
     .chips span { border:1px solid var(--line); border-radius:999px; padding:5px 9px; font-size:12px; color:var(--muted); }
     .chips.warn span { border-color:#d9b5ac; background:#fff5f2; color:#9b2f25; }
-    .score { display:grid; grid-template-columns:92px 1fr; align-items:center; gap:10px; margin:8px 0; }
-    .score label { color:var(--muted); font-size:12px; display:flex; align-items:center; gap:5px; }
+    .metric-row { display:grid; grid-template-columns:92px 1fr; align-items:center; gap:10px; margin:8px 0; }
+    .metric-row label { color:var(--muted); font-size:12px; display:flex; align-items:center; gap:5px; }
     .bar { height:8px; background:#eee7dc; border-radius:99px; overflow:hidden; }
     .bar span { display:block; height:100%; background:var(--accent); }
     .meta { display:flex; flex-wrap:wrap; gap:8px; color:var(--muted); font-size:12px; margin:14px 0; }
@@ -82,6 +126,7 @@
     .help summary { list-style:none; width:18px; height:18px; border-radius:50%; border:1px solid var(--line); display:inline-flex; align-items:center; justify-content:center; font-size:11px; color:var(--muted); background:#fff; cursor:pointer; }
     .help summary::-webkit-details-marker { display:none; }
     .help p { position:absolute; left:0; top:24px; z-index:5; width:260px; margin:0; padding:10px 12px; border:1px solid var(--line); border-radius:8px; background:#fff; color:var(--ink); box-shadow:0 12px 30px rgba(0,0,0,.12); font-size:12px; line-height:1.5; }
+    .help:not([open]) p { display:none; }
     .archive-nav { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
     .archive-nav a { color:var(--ink); text-decoration:none; border:1px solid var(--line); border-radius:999px; padding:7px 10px; background:#fff; font-size:13px; }
     .archive-nav a.active { background:var(--ink); color:#fff; border-color:var(--ink); }
@@ -96,19 +141,26 @@
       h2 { font-size:21px; margin-top:28px; }
       h3 { font-size:17px; }
       p { line-height:1.55; }
-      .summary, .audience-summary, .slots, .audience-grid, .grid, .content-learning, .plan-grid { grid-template-columns:1fr; }
+      .summary, .audience-summary, .slots, .audience-grid, .grid, .content-learning, .plan-grid, .insight-grid { grid-template-columns:1fr; }
+      .growth-table { min-width:720px; }
+      .growth-table th, .growth-table td { white-space:nowrap; }
+      .growth-chart { grid-template-columns:1fr; }
+      .trend-card__head { flex-direction:column; gap:4px; }
+      .trend-card__head strong { text-align:left; white-space:normal; }
+      .trend-bar { grid-template-columns:44px 1fr 46px; }
       .metric { padding:14px; }
       .metric strong { font-size:28px; overflow-wrap:anywhere; }
       .media { grid-template-columns:1fr; }
       .contact, .slide { aspect-ratio:auto; max-height:68vh; object-fit:contain; background:#111; }
       .card-body { padding:14px; }
-      .learning-card, .plan-card, .slot, .aud-card { padding:14px; }
+      .learning-card, .plan-card, .slot, .aud-card, .insight-card { padding:14px; }
+      .evidence-row { grid-template-columns:repeat(2,minmax(0,1fr)); }
+      .mini-post img { max-height:240px; object-fit:cover; }
       .plan-card__top { flex-direction:column; }
       .plan-card__top strong { text-align:left; }
       .row { align-items:flex-start; flex-direction:column; gap:6px; }
-      .fit { font-size:24px; }
-      .score { grid-template-columns:1fr; gap:5px; margin:12px 0; }
-      .score label { font-size:13px; }
+      .metric-row { grid-template-columns:1fr; gap:5px; margin:12px 0; }
+      .metric-row label { font-size:13px; }
       .bar { height:10px; }
       .archive-nav { flex-wrap:nowrap; overflow-x:auto; padding-bottom:4px; -webkit-overflow-scrolling:touch; }
       .archive-nav a { white-space:nowrap; padding:9px 12px; }
@@ -121,461 +173,722 @@
 </head>
 <body>
   <header>
-    <h1>Art Service Daily Report</h1>
-    <p>생성 시각: 2026-05-23 01:30 KST. 2시 자동 제작/업로드 전에 타겟 데모그래피 근접도, 전략 적합성, 시각 QA, 공간 연속성을 확인하는 리포트.</p>
-    <nav class="archive-nav"><a class="active" href="../2026-05-23/">2026-05-23</a><a href="../2026-05-22/">2026-05-22</a><a href="../2026-05-21/">2026-05-21</a><a href="../2026-05-20/">2026-05-20</a><a href="../2026-05-19/">2026-05-19</a><a href="../2026-05-18/">2026-05-18</a><a href="../2026-05-17/">2026-05-17</a><a href="../archive/">All reports</a></nav>
+    <h1>ELURA 일일 리포트</h1>
+    <p>생성 시각: 2026-05-23 14:36 KST. 2시 자동 제작/업로드 전에 오디언스 이동, 포스트별 증거, 다음 루틴 결정을 확인하는 리포트.</p>
+    <nav class="archive-nav"><a class="active" href="../2026-05-23/">2026-05-23</a><a href="../2026-05-22/">2026-05-22</a><a href="../2026-05-21/">2026-05-21</a><a href="../2026-05-20/">2026-05-20</a><a href="../2026-05-19/">2026-05-19</a><a href="../2026-05-18/">2026-05-18</a><a href="../2026-05-17/">2026-05-17</a><a href="../archive/">전체 리포트</a></nav>
   </header>
   <main>
     
-    <h2>Executive Summary</h2>
+    <h2>핵심 요약</h2>
     <section class="exec">
-      <p><strong>실제 오디언스:</strong> 오늘은 post-level 데모가 9/9개 들어왔지만 어제 post-level 기준이 없어 직접 비교는 아직 불가. 현재 표시 demo fit은 71%이며 이는 들어온 post-level 데이터와 나머지 계정 fallback을 섞은 값이다. target market 74.6%, SG 72.8%, 25-44 56.2%, female 80.0%.</p>
-      <p><strong>콘텐츠 설계:</strong> 어제보다 타겟 설계에 가까워짐 (+7p). 이 값은 실제 데모그래피가 아니라 타겟 단서, 전략, 시각 QA, 공간 연속성 기준이다.</p>
-      <p><strong>그래서 다음 루틴은:</strong> SG small-space 2개 슬롯은 유지하고, 오늘처럼 키친/세탁/vanity 등 생활감 있는 공간을 더 넓힌다. 직접 댓글/투표 CTA는 계속 금지하고 저장·멈춤·자기 대입을 목표로 둔다.</p>
+      <p><strong>성장 판단:</strong> <span class="hl">잘 성장하고 있다. 다만 폭발적인 성장이라기보다는 타겟 농도가 조금씩 좋아지는 쪽이다. 3일 전 대비 우선 국가 비율 +1.4p, 싱가포르 비율 +3.6p, 여성 비율 +6.8p로 올랐다. 25-44세 비율은 -0.6p라 큰 변화는 아니다.</span></p>
+      <p><strong>평가 범위:</strong> 2026-05-23 업로드 6개는 평가에서 제외했다. 이 리포트의 성장 판단은 어제/그제/3일 전 게시물을 실제로 본 사람의 성별·연령·국가 데이터만 비교한다.</p>
+      <p><strong>그래서 다음 루틴은:</strong> <span class="hl soft">싱가포르 작은 집, HDB, 좁은 생활공간 단서는 유지하고, 영수증이나 재질만 나열하는 구성은 줄인다. 다음 판단은 조회수보다 실제 시청자 중 우선 국가, 싱가포르, 25-44세 비율이 함께 올라가는지로 본다.</span></p>
+      <section class="growth-chart">
+            <article class="trend-card">
+              <div class="trend-card__head">
+                <b>우선 국가 비율</b>
+                <strong>73.2% → 74.6% <span class="delta up">+1.4p</span></strong>
+              </div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:73.2%"></em></i><b>73.2%</b></div><div class="trend-bar"><span>그제</span><i><em style="width:74.1%"></em></i><b>74.1%</b></div><div class="trend-bar"><span>어제</span><i><em style="width:74.6%"></em></i><b>74.6%</b></div></div>
+              <p>싱가포르·미국·호주·캐나다·영국·뉴질랜드에서 본 사람</p>
+            </article>
+            
+            <article class="trend-card">
+              <div class="trend-card__head">
+                <b>싱가포르 비율</b>
+                <strong>69.2% → 72.8% <span class="delta up">+3.6p</span></strong>
+              </div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:69.2%"></em></i><b>69.2%</b></div><div class="trend-bar"><span>그제</span><i><em style="width:71.1%"></em></i><b>71.1%</b></div><div class="trend-bar"><span>어제</span><i><em style="width:72.8%"></em></i><b>72.8%</b></div></div>
+              <p>현재 가장 중요하게 보는 싱가포르 시청자</p>
+            </article>
+            
+            <article class="trend-card">
+              <div class="trend-card__head">
+                <b>25-44세 비율</b>
+                <strong>56.8% → 56.2% <span class="delta down">-0.6p</span></strong>
+              </div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:56.8%"></em></i><b>56.8%</b></div><div class="trend-bar"><span>그제</span><i><em style="width:53.8%"></em></i><b>53.8%</b></div><div class="trend-bar"><span>어제</span><i><em style="width:56.2%"></em></i><b>56.2%</b></div></div>
+              <p>현재 구매 가능성이 가장 높다고 보는 연령대</p>
+            </article>
+            
+            <article class="trend-card">
+              <div class="trend-card__head">
+                <b>여성 비율</b>
+                <strong>73.2% → 80.0% <span class="delta up">+6.8p</span></strong>
+              </div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:73.2%"></em></i><b>73.2%</b></div><div class="trend-bar"><span>그제</span><i><em style="width:76.2%"></em></i><b>76.2%</b></div><div class="trend-bar"><span>어제</span><i><em style="width:80.0%"></em></i><b>80.0%</b></div></div>
+              <p>홈데코·개인 아트 구매 가능성이 높은 쪽으로 보는 기준</p>
+            </article>
+            </section>
       <section class="summary">
         
         <div class="metric">
-          <span>today content fit<details class="help"><summary title="리포트에 포함된 콘텐츠들의 종합 적합도입니다. 타겟 명확성, 전략 완성도, 시각 QA, 공간 연속성을 합산합니다. 실제 시청자 데모그래피가 아니라 콘텐츠 설계 점수입니다." aria-label="리포트에 포함된 콘텐츠들의 종합 적합도입니다. 타겟 명확성, 전략 완성도, 시각 QA, 공간 연속성을 합산합니다. 실제 시청자 데모그래피가 아니라 콘텐츠 설계 점수입니다.">?</summary><p>리포트에 포함된 콘텐츠들의 종합 적합도입니다. 타겟 명확성, 전략 완성도, 시각 QA, 공간 연속성을 합산합니다. 실제 시청자 데모그래피가 아니라 콘텐츠 설계 점수입니다.</p></details></span>
-          <strong>65%</strong>
-          <small>2026-05-22 · 9 posts</small>
+          <span>어제 우선 국가 비율<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></span>
+          <strong>74.6%</strong>
+          <small>73.2% -&gt; 74.6%</small>
         </div>
     
         
         <div class="metric">
-          <span>vs previous day<details class="help"><summary title="오늘 콘텐츠 설계 점수와 직전 날짜 콘텐츠 설계 점수의 차이입니다. post-level 실제 데모그래피가 들어오면 이 판단을 다시 갱신합니다." aria-label="오늘 콘텐츠 설계 점수와 직전 날짜 콘텐츠 설계 점수의 차이입니다. post-level 실제 데모그래피가 들어오면 이 판단을 다시 갱신합니다.">?</summary><p>오늘 콘텐츠 설계 점수와 직전 날짜 콘텐츠 설계 점수의 차이입니다. post-level 실제 데모그래피가 들어오면 이 판단을 다시 갱신합니다.</p></details></span>
-          <strong>+7p</strong>
-          <small>2026-05-21 58% -&gt; 2026-05-22 65%</small>
+          <span>어제 싱가포르 비율<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></span>
+          <strong>72.8%</strong>
+          <small>69.2% -&gt; 72.8%</small>
         </div>
     
         
         <div class="metric">
-          <span>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></span>
-          <strong>71%</strong>
-          <small>post-level 9/9 posts</small>
+          <span>어제 25-44세 비율<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></span>
+          <strong>56.2%</strong>
+          <small>56.8% -&gt; 56.2%</small>
         </div>
     
         
         <div class="metric">
-          <span>Studio demo fit<details class="help"><summary title="TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다." aria-label="TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다.">?</summary><p>TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다.</p></details></span>
-          <strong>70%</strong>
-          <small>post-level demo available</small>
+          <span>어제 여성 비율<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></span>
+          <strong>80.0%</strong>
+          <small>73.2% -&gt; 80.0%</small>
         </div>
     
         
         <div class="metric">
-          <span>viewer target market<details class="help"><summary title="최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다." aria-label="최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다.">?</summary><p>최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다.</p></details></span>
-          <strong>76.4%</strong>
-          
+          <span>어제 분석 가능한 게시물</span>
+          <strong>9/9</strong>
+          <small>2026-05-22</small>
         </div>
     
         
         <div class="metric">
-          <span>viewer SG<details class="help"><summary title="최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다." aria-label="최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다.">?</summary><p>최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다.</p></details></span>
-          <strong>70.1%</strong>
-          
+          <span>타겟에 잘 닿은 게시물</span>
+          <strong>5/9</strong>
+          <small>우선 국가 75% 이상 + 싱가포르 70% 이상</small>
         </div>
     
         
         <div class="metric">
-          <span>routine<details class="help"><summary title="20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다." aria-label="20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다.">?</summary><p>20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다.</p></details></span>
-          <strong>completed</strong>
-          <small>scheduled_2030</small>
+          <span>저녁 오디언스 탐색<details class="help"><summary title="저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다." aria-label="저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다.">?</summary><p>저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다.</p></details></span>
+          <strong>완료</strong>
+          <small>20:30 정기 실행</small>
         </div>
     
         
         <div class="metric">
-          <span>comment packet<details class="help"><summary title="20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다." aria-label="20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다.">?</summary><p>20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다.</p></details></span>
+          <span>준비한 관찰 후보<details class="help"><summary title="저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다." aria-label="저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다.">?</summary><p>저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다.</p></details></span>
           <strong>8</strong>
           
         </div>
     
         
         <div class="metric">
-          <span>next production</span>
+          <span>오늘 제외</span>
           <strong>6</strong>
-          <small>daily upload target</small>
+          <small>2026-05-23</small>
         </div>
     
       </section>
+      <div class="growth-scroll"><table class="growth-table"><thead><tr><th>날짜</th><th>분석 가능한 게시물</th><th>우선 국가 비율</th><th>싱가포르 비율</th><th>25-44세 비율</th><th>여성 비율</th><th>타겟에 잘 닿은 게시물</th></tr></thead><tbody><tr><th>3일 전<small>2026-05-20</small></th><td>6/6</td><td>73.2%</td><td>69.2%</td><td>56.8%</td><td>73.2%</td><td>5/6</td></tr><tr><th>그제<small>2026-05-21</small></th><td>5/12</td><td>74.1%</td><td>71.1%</td><td>53.8%</td><td>76.2%</td><td>2/5</td></tr><tr><th>어제<small>2026-05-22</small></th><td>9/9</td><td>74.6%</td><td>72.8%</td><td>56.2%</td><td>80.0%</td><td>5/9</td></tr></tbody></table></div>
+      <p class="table-note">분석 가능한 게시물은 성별·연령·국가가 모두 확인된 게시물만 센다. 삭제된 게시물도 그날 실제로 올라가 시청자를 만든 경우에는 전체 게시물 수에 남긴다. 성별이나 연령이 비어 있는 불완전 데이터는 평균에서 제외한다.</p>
     </section>
     
 
-    <h2>1. Target Audience & New Content Strategy</h2>
+    <h2>1. 타겟 오디언스 분석과 다음 콘텐츠 결정</h2>
     
-    <p class="section-read">최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
-    <section class="content-learning">
-      <article class="learning-card keep">
-        <h3>살릴 것</h3>
-        <p>최근 업로드에서 다음 루틴으로 가져갈 콘텐츠 장치다. 고정 원칙이 아니라 실제 post metadata와 업로드 흐름에서 뽑는다.</p>
-        <ul><li><b>mirror check signal rule</b><span>A bathroom does not need a theme.</span><small>svc_20260522_s1_sg_bathroom_mirror_signal · cyanotype/photogram · 성과 수집 대기</small></li>
-<li><b>kitchen not theme rule correction</b><span>The kitchen does not need kitchen art.</span><small>svc_20260522_s2_sg_kitchen_not_theme · ceramic tile folk mosaic · 성과 수집 대기</small></li>
-<li><b>receipt line to three material directions</b><span>One private line can become more than one art direction.</span><small>svc_20260522_s3_receipt_to_three_materials · risograph object poster · 성과 수집 대기</small></li>
-<li><b>same wall daypart loop</b><span>Same wall, two times of day.</span><small>svc_20260522_s4_same_wall_daypart_anchor · linocut/woodcut print · 성과 수집 대기</small></li></ul>
+    <p class="section-read">최근 시청자 분배는 싱가포르로 강하게 열려 있다. 싱가포르 작은 집, HDB, 콘도, 임차 주거 맥락은 유지하되, 거실·홈오피스만 보지 말고 침실, 주방, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
+    <h3>살릴 것</h3>
+    <section class="insight-grid">
+      <article class="insight-card keep">
+        <h3>살릴 것 1: 싱가포르의 평범한 기능 공간</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642476361516403989"><img src="../2026-05-23/assets/svc_20260522_s1_sg_bathroom_mirror_signal/slide_1.png" alt="svc_20260522_s1_sg_bathroom_mirror_signal first slide"><span>욕실 거울 앞에서 다시 보게 되는 신호</span><small>이 게시물: 우선 국가 83.8%, 싱가포르 82.4%, 25-44세 52.0%, 여성 79.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642477168055995668"><img src="../2026-05-23/assets/svc_20260522_s2_sg_kitchen_not_theme/slide_1.png" alt="svc_20260522_s2_sg_kitchen_not_theme first slide"><span>주방 그림이 아니라 주방에서 필요한 감각</span><small>이 게시물: 우선 국가 86.9%, 싱가포르 86.1%, 25-44세 57.0%, 여성 90.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642515248540355861"><img src="../2026-05-23/assets/svc_20260522_fftest_1_before_buy_wall/slide_1.png" alt="svc_20260522_fftest_1_before_buy_wall first slide"><span>프린트를 사기 전에 역할부터 정하기</span><small>이 게시물: 우선 국가 82.7%, 싱가포르 81.1%, 25-44세 47.0%, 여성 79.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7641655251703106836"><img src="../2026-05-23/assets/svc_20260520_s1_sg_bathroom_signal_rule/slide_1.png" alt="svc_20260520_s1_sg_bathroom_signal_rule first slide"><span>싱가포르 작은 욕실에 둘 개인적 신호</span><small>이 게시물: 우선 국가 89.0%, 싱가포르 87.2%, 25-44세 56.0%, 여성 82.0%</small></a></div>
+        <p><b>판단</b> <span class="hl">욕실·주방·현관·세탁공간처럼 매일 쓰는 공간</span>이 최근 시청자 데이터에서 가장 잘 맞았다. 중요한 건 방을 예쁘게 꾸미는 말이 아니라, 그 공간에서 <b>무엇을 멈추고 어떤 역할을 둘지</b> 먼저 말하는 구조다.</p>
+        <p><b>다음 액션</b> <span class="hl soft">다음 6개 중 2개는 싱가포르 작은 집의 보통 생활공간</span>으로 간다. 같은 방, 같은 아트, 같은 줌 구도는 다시 쓰지 않고 첫 장에는 '테마 그림을 사지 마라', '벽을 채우기 전에 역할을 정하라'처럼 선택을 멈추는 문장을 둔다.</p>
       </article>
-      <article class="learning-card discard">
-        <h3>버릴 것</h3>
-        <p>삭제, 폐기, QA 실패, 낮은 신뢰 신호에서 다음 루틴이 재사용하면 안 되는 요소다.</p>
-        <ul><li><b>seven day anchor routine</b><span>several slides used a half-screen dark/dim treatment, many crops/zooms focused on the wrong visual point, and multiple carousels reused the same source image with only text changes.</span><small>svc_20260521_s6_week_of_small_anchors · discarded user rejected split dim wrong zoom repeated source</small></li>
-<li><b>comment reading with space anchor</b><span>Deleted from TikTok Studio after user approved correction: legacy reading/리딩 framing was wrong; replaced with direction-language candidates.</span><small>elura_rework_20260518_s4_entry_comment_reading · deleted wrong reading language</small></li></ul>
-      </article>
-      <article class="learning-card new">
-        <h3>새롭게 시도하는 것</h3>
-        <p>이전 날짜에 없었거나 신규 슬롯으로 올라온 format/device다. 성과가 들어오기 전까지는 실험으로 표시한다.</p>
-        <ul><li><b>receipt line to three material directions</b><span>One private line can become more than one art direction.</span><small>svc_20260522_s3_receipt_to_three_materials · risograph object poster · 성과 수집 대기</small></li>
-<li><b>same wall daypart loop</b><span>Same wall, two times of day.</span><small>svc_20260522_s4_same_wall_daypart_anchor · linocut/woodcut print · 성과 수집 대기</small></li>
-<li><b>material swatch to inner role flip</b><span>Material changes what a feeling can hold.</span><small>svc_20260522_s5_material_swatch_portfolio_flip · scanned paper collage/mixed material portfolio · 성과 수집 대기</small></li>
-<li><b>random print purchase interruption</b><span>Before another random print fills the wall, name the role the image should hold.</span><small>svc_20260522_s6_random_print_interrupt · painted wood sign abstraction · 성과 수집 대기</small></li>
-<li><b>before buying another print</b><span>Do not buy art to match the wall.</span><small>svc_20260522_fftest_1_before_buy_wall · ordinary entry wall role anchor · 성과 수집 대기</small></li>
-<li><b>bathroom signal rule no theme</b><span>This bathroom does not need bathroom art.</span><small>svc_20260522_fftest_2_bathroom_not_theme · small bathroom personal anchor · 성과 수집 대기</small></li>
-<li><b>do not match the room first</b><span>Stop matching the sofa before naming the role.</span><small>svc_20260522_fftest_3_stop_matching_sofa · ordinary sofa wall role anchor · 성과 수집 대기</small></li></ul>
+    
+      <article class="insight-card keep">
+        <h3>살릴 것 2: 혼자 대입하게 하는 비교</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642478741737852181"><img src="../2026-05-23/assets/svc_20260522_s4_same_wall_daypart_anchor/slide_1.png" alt="svc_20260522_s4_same_wall_daypart_anchor first slide"><span>같은 벽을 아침과 밤에 다르게 보기</span><small>이 게시물: 우선 국가 77.4%, 싱가포르 75.8%, 25-44세 61.0%, 여성 83.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642516852077268245"><img src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/slide_1.png" alt="svc_20260522_fftest_3_stop_matching_sofa first slide"><span>방 색에 맞추기 전에 역할부터 보기</span><small>이 게시물: 우선 국가 78.9%, 싱가포르 76.5%, 25-44세 65.0%, 여성 80.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7641660833348554005"><img src="../2026-05-23/assets/svc_20260520_s6_quiet_receipt_anchor/slide_1.png" alt="svc_20260520_s6_quiet_receipt_anchor first slide"><span>사적인 한 문장을 아트 방향으로 바꾸기</span><small>이 게시물: 우선 국가 80.5%, 싱가포르 77.8%, 25-44세 53.0%, 여성 72.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7641657434775342357"><img src="../2026-05-23/assets/svc_20260520_s3_three_courage_roles/slide_1.png" alt="svc_20260520_s3_three_courage_roles first slide"><span>한 문장에서 세 가지 역할의 아트로 확장</span><small>이 게시물: 우선 국가 78.6%, 싱가포르 76.7%, 25-44세 56.0%, 여성 72.0%</small></a></div>
+        <p><b>판단</b> 댓글을 요구하는 참여형 문구는 아직 이르다. 대신 <span class="hl">색보다 역할을 먼저 본다</span>, <span class="hl">거울 앞에서 나를 다시 보게 하는 신호</span>처럼 사용자가 조용히 자기 상황에 대입하는 장치는 서비스 방향과 맞다.</p>
+        <p><b>다음 액션</b> 투표, 유어턴, 다음 방향 같은 문구는 쓰지 않는다. 세 가지 선택지를 보여주더라도 공개 선택을 요구하지 않고, <b>사용자가 자기 방과 현재 상태를 혼자 비교</b>하게 만든다.</p>
       </article>
     </section>
-    <h3>오늘 업로드 반영</h3>
+    <h3>폐기하거나 줄일 것</h3>
+    <section class="insight-grid">
+      <article class="insight-card discard">
+        <h3>버릴 것 1: 반쪽 어둠, 잘못된 줌, 같은 이미지 반복</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642032548310404373"><img src="../2026-05-23/assets/svc_20260521_s6_week_of_small_anchors/slide_1.png" alt="svc_20260521_s6_week_of_small_anchors first slide"><span>일주일의 작은 기준점을 보여주는 구성</span><small>이 게시물: 우선 국가 71.1%, 싱가포르 64.4%, 25-44세 54.0%, 여성 76.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642031735097691412"><img src="../2026-05-23/assets/svc_20260521_s5_print_quality_macro/slide_1.png" alt="svc_20260521_s5_print_quality_macro first slide"><span>프린트 표면과 기억의 질감을 가까이 보여주기</span><small>이 게시물: 우선 국가 81.0%, 싱가포르 79.4%, 25-44세 49.0%, 여성 68.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642030926062570773"><img src="../2026-05-23/assets/svc_20260521_s4_wrong_reason_right_role/slide_1.png" alt="svc_20260521_s4_wrong_reason_right_role first slide"><span>잘못된 구매 이유를 올바른 역할로 바꾸기</span><small>이 게시물: 우선 국가 68.0%, 싱가포르 66.9%, 25-44세 53.0%, 여성 81.0%</small></a></div>
+        <p><b>판단</b> 화면 일부가 이유 없이 어둡게 갈라지거나, 중요한 지점이 아닌 곳으로 확대되거나, 같은 이미지에 글만 바뀌면 사용자는 브랜드보다 <span class="hl">저품질 자동 생성물</span>로 먼저 읽는다.</p>
+        <p><b>다음 액션</b> 업로드 전 검수에서 <b>확대 위치, 밝기 처리, 슬라이드별 이미지 중복</b>을 먼저 본다. 같은 이미지에 문장만 바뀐 후보는 바로 폐기한다.</p>
+      </article>
+    
+      <article class="insight-card discard">
+        <h3>버릴 것 2: 공간 없이 재질만 나열하는 구성</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642479768239099157"><img src="../2026-05-23/assets/svc_20260522_s5_material_swatch_portfolio_flip/slide_1.png" alt="svc_20260522_s5_material_swatch_portfolio_flip first slide"><span>재질 차이로 감각의 역할을 비교</span><small>이 게시물: 우선 국가 74.8%, 싱가포르 72.5%, 25-44세 49.0%, 여성 74.0%</small></a><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642477952772410645"><img src="../2026-05-23/assets/svc_20260522_s3_receipt_to_three_materials/slide_1.png" alt="svc_20260522_s3_receipt_to_three_materials first slide"><span>한 문장을 세 가지 재질 방향으로 번역</span><small>이 게시물: 우선 국가 61.1%, 싱가포르 58.6%, 25-44세 52.0%, 여성 74.0%</small></a></div>
+        <p><b>판단</b> 재질 비교는 새로워 보일 수 있지만 사용자의 삶으로 들어오는 장면이 약하다. <span class="hl">아트 표면만 보여주면 왜 내 방에 들어와야 하는지</span>가 흐려진다.</p>
+        <p><b>다음 액션</b> 재질은 첫 장의 주인공이 아니라 보조 증거로만 쓴다. 먼저 <b>어떤 순간을 붙잡는지</b> 보여주고, 그 다음에 표면·종이·질감을 보여준다.</p>
+      </article>
+    </section>
+    <h3>새로 시도할 것</h3>
+    <section class="insight-grid">
+      <article class="insight-card new">
+        <h3>시도할 것 1: 프린트를 사기 직전의 망설임</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642480718966394132"><img src="../2026-05-23/assets/svc_20260522_s6_random_print_interrupt/slide_1.png" alt="svc_20260522_s6_random_print_interrupt first slide"><span>무작정 프린트를 사려는 순간 멈추기</span><small>이 게시물: 우선 국가 64.9%, 싱가포르 63.9%, 25-44세 67.0%, 여성 75.0%</small></a></div>
+        <p><b>판단</b> 사용자가 이미 프린트를 사려는 순간을 멈추는 방식은 서비스의 핵심과 맞다. 마음만 건드리는 게 아니라 <span class="hl">실제 구매 선택과 몸의 행동을 잠깐 멈추게</span> 하기 때문이다.</p>
+        <p><b>다음 액션</b> 첫 장은 '이 그림 예쁜가?'가 아니라 <b>'이 벽이 지금 내게 해야 할 일이 무엇인가?'</b>로 시작한다. 장바구니, 프린트 선택, 빈 벽 앞에서 멈추는 장면을 쓴다.</p>
+      </article>
+    
+      <article class="insight-card new">
+        <h3>시도할 것 2: 같은 공간의 아침/밤 변화</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642478741737852181"><img src="../2026-05-23/assets/svc_20260522_s4_same_wall_daypart_anchor/slide_1.png" alt="svc_20260522_s4_same_wall_daypart_anchor first slide"><span>같은 벽을 아침과 밤에 다르게 보기</span><small>이 게시물: 우선 국가 77.4%, 싱가포르 75.8%, 25-44세 61.0%, 여성 83.0%</small></a></div>
+        <p><b>판단</b> 같은 벽도 아침과 밤에는 다르게 작동한다. 이걸 더 밀면 벽 하나가 아니라 <span class="hl">매일 몸이 지나가는 짧은 동선</span>을 하나의 기준점으로 만들 수 있다.</p>
+        <p><b>다음 액션</b> 현관에서 식탁, 침대에서 욕실, 주방에서 세탁공간처럼 반복해서 지나가는 길을 보여준다. 아트는 길을 장식하는 물건이 아니라 <b>그 순간을 다시 잡아주는 표시</b>로 둔다.</p>
+      </article>
+    
+      <article class="insight-card new">
+        <h3>시도할 것 3: 댓글 요구 없는 세 가지 역할 비교</h3>
+        <div class="evidence-row"><a class="mini-post" href="https://www.tiktok.com/@oysterlab7/photo/7642516852077268245"><img src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/slide_1.png" alt="svc_20260522_fftest_3_stop_matching_sofa first slide"><span>방 색에 맞추기 전에 역할부터 보기</span><small>이 게시물: 우선 국가 78.9%, 싱가포르 76.5%, 25-44세 65.0%, 여성 80.0%</small></a></div>
+        <p><b>판단</b> 참여 유도는 약하지만 비교 자체는 유효하다. 댓글을 달게 하지 않아도 세 역할을 보면서 <span class="hl">내 상태에 가까운 것을 마음속으로 고르게</span> 만들 수 있다.</p>
+        <p><b>다음 액션</b> A/B/C 투표가 아니라 <b>색보다 역할이 먼저다</b>는 구조로 보여준다. 성과가 들어오면 저장과 끝까지 넘긴 비율을 먼저 본다.</p>
+      </article>
+    </section>
+    <h3>오늘 업로드: 평가 제외, 다음 관찰 대상</h3>
     <section class="plan-grid">
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge keep">유지</span>
-            <strong>svc_20260522_s1_sg_bathroom_mirror_signal</strong>
+            <strong>콘텐츠 1</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>mirror check signal rule</dd></div>
-            <div><dt>reflected</dt><dd>A bathroom does not need a theme.</dd></div>
-            <div><dt>target</dt><dd>Singapore small-space / HDB or compact condo / English-speaking affluent renter or first home</dd></div>
-            <div><dt>medium</dt><dd>cyanotype/photogram</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>세탁실 테마가 아니라 버티는 감각을 두기</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>세탁실 그림을 사는 대신, 이 공간에서 나를 버티게 할 감각을 정한다.</dd></div>
+            <div><dt>누구에게</dt><dd>싱가포르의 작은 집 세탁공간을 쓰는 영어권 임차인 또는 첫 집 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>그림자와 압력이 남은 단판화 느낌</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge keep">유지</span>
-            <strong>svc_20260522_s2_sg_kitchen_not_theme</strong>
+            <strong>콘텐츠 2</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>kitchen not theme rule correction</dd></div>
-            <div><dt>reflected</dt><dd>The kitchen does not need kitchen art.</dd></div>
-            <div><dt>target</dt><dd>Singapore HDB compact kitchen / small-space renter or first flat</dd></div>
-            <div><dt>medium</dt><dd>ceramic tile folk mosaic</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>현관 벽을 채우기 전에 역할부터 정하기</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>프린트를 하나 더 사기 전에, 그 그림이 할 일을 먼저 정한다.</dd></div>
+            <div><dt>누구에게</dt><dd>싱가포르의 작은 집 현관 벽에 프린트를 고민하는 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>크레용 저항 인쇄 느낌의 종이 아트</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge new">확장</span>
-            <strong>svc_20260522_s3_receipt_to_three_materials</strong>
+            <strong>콘텐츠 3</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>receipt line to three material directions</dd></div>
-            <div><dt>reflected</dt><dd>One private line can become more than one art direction.</dd></div>
-            <div><dt>target</dt><dd>English-speaking affluent small-space renter or first home</dd></div>
-            <div><dt>medium</dt><dd>risograph object poster</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>작은 메모를 거울 앞 신호로 바꾸기</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>거울 앞에는 어울리는 그림보다 나를 다시 보게 하는 신호가 필요하다.</dd></div>
+            <div><dt>누구에게</dt><dd>영어권 작은 집의 욕실에서 스스로를 다시 정돈하고 싶은 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>천 조각과 바느질이 보이는 섬유 아트</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge new">확장</span>
-            <strong>svc_20260522_s4_same_wall_daypart_anchor</strong>
+            <strong>콘텐츠 4</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>same wall daypart loop</dd></div>
-            <div><dt>reflected</dt><dd>Same wall, two times of day.</dd></div>
-            <div><dt>target</dt><dd>English-speaking small-space renter with desk/vanity corner; SG cue via window grille and aircon trunking</dd></div>
-            <div><dt>medium</dt><dd>linocut/woodcut print</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>투표 없이 세 가지 역할을 조용히 비교</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>색을 고르기 전에 그 그림의 역할부터 본다.</dd></div>
+            <div><dt>누구에게</dt><dd>영국·캐나다·호주·뉴질랜드의 작은 임대 침실에서 역할이 분명한 벽 그림을 찾는 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>종이 질감이 올라온 세 조각 부조 아트</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge new">신규</span>
-            <strong>svc_20260522_s5_material_swatch_portfolio_flip</strong>
+            <strong>콘텐츠 5</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>material swatch to inner role flip</dd></div>
-            <div><dt>reflected</dt><dd>Material changes what a feeling can hold.</dd></div>
-            <div><dt>target</dt><dd>English-speaking art-print and small-space decor audience; art-first with no room context required</dd></div>
-            <div><dt>medium</dt><dd>scanned paper collage/mixed material portfolio</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>기능적인 공간에 약한 프린트를 두지 않기</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>반복해서 쓰는 공간에는 쉽게 약해지는 프린트를 두지 않는다.</dd></div>
+            <div><dt>누구에게</dt><dd>싱가포르 HDB·콘도의 작은 주방처럼 기능적인 공간에 둘 아트를 찾는 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>손으로 그린 타일 모자이크 느낌</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
           <div class="plan-card__top">
             <span class="badge new">신규</span>
-            <strong>svc_20260522_s6_random_print_interrupt</strong>
+            <strong>콘텐츠 6</strong>
           </div>
           <dl>
-            <div><dt>format</dt><dd>random print purchase interruption</dd></div>
-            <div><dt>reflected</dt><dd>Before another random print fills the wall, name the role the image should hold.</dd></div>
-            <div><dt>target</dt><dd>English-speaking affluent small-space markets; renters and first homes buying wall art</dd></div>
-            <div><dt>medium</dt><dd>painted wood sign abstraction</dd></div>
-          </dl>
-        </article>
-        
-        <article class="plan-card">
-          <div class="plan-card__top">
-            <span class="badge new">신규</span>
-            <strong>svc_20260522_fftest_1_before_buy_wall</strong>
-          </div>
-          <dl>
-            <div><dt>format</dt><dd>before buying another print</dd></div>
-            <div><dt>reflected</dt><dd>Do not buy art to match the wall.</dd></div>
-            <div><dt>target</dt><dd>target not recorded</dd></div>
-            <div><dt>medium</dt><dd>ordinary entry wall role anchor</dd></div>
-          </dl>
-        </article>
-        
-        <article class="plan-card">
-          <div class="plan-card__top">
-            <span class="badge new">신규</span>
-            <strong>svc_20260522_fftest_2_bathroom_not_theme</strong>
-          </div>
-          <dl>
-            <div><dt>format</dt><dd>bathroom signal rule no theme</dd></div>
-            <div><dt>reflected</dt><dd>This bathroom does not need bathroom art.</dd></div>
-            <div><dt>target</dt><dd>target not recorded</dd></div>
-            <div><dt>medium</dt><dd>small bathroom personal anchor</dd></div>
-          </dl>
-        </article>
-        
-        <article class="plan-card">
-          <div class="plan-card__top">
-            <span class="badge new">신규</span>
-            <strong>svc_20260522_fftest_3_stop_matching_sofa</strong>
-          </div>
-          <dl>
-            <div><dt>format</dt><dd>do not match the room first</dd></div>
-            <div><dt>reflected</dt><dd>Stop matching the sofa before naming the role.</dd></div>
-            <div><dt>target</dt><dd>target not recorded</dd></div>
-            <div><dt>medium</dt><dd>ordinary sofa wall role anchor</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd><mark>매일 지나는 동선을 하나의 기준점으로 바꾸기</mark></dd></div>
+            <div><dt>첫 장 문장</dt><dd>매일 지나가는 길에는 장식보다 나를 다시 잡아주는 신호가 필요하다.</dd></div>
+            <div><dt>누구에게</dt><dd>캐나다·호주·영국·뉴질랜드의 작은 집에서 매일 지나가는 동선에 기준점을 두고 싶은 사용자</dd></div>
+            <div><dt>아트 방식</dt><dd>실로 그린 지도 같은 인쇄 아트</dd></div>
           </dl>
         </article>
         </section>
     <section class="slots">
       <div class="slot">
-        <b>지난 콘텐츠 판정</b>
-        <p>최근 업로드의 의도 세그먼트는 wall art shoppers, renter / first apartment, living room / sofa wall 쪽으로 읽힌다. 다만 아직 개별 포스트별 성별/연령/국가가 충분히 들어오지 않았으므로, 지금은 “누구에게 보여주려 했는가”와 “실제 계정 오디언스가 어디에 붙었는가”를 분리해서 본다.</p>
+        <b>이번 판단의 핵심</b>
+        <p>최근 3일 기준으로는 <mark>벽 그림 구매 고민 사용자, 임차인·첫 아파트, 싱가포르 작은 집</mark> 쪽이 가장 잘 맞았다. 판단 근거는 실제로 게시물을 본 사람의 국가·연령·성별 데이터다.</p>
       </div>
       <div class="slot">
         <b>다음 제작에 반영</b>
-        <p>위의 “살릴 것”은 다음 daily6 슬롯의 시작점으로 쓴다. 특히 유지/확장 슬롯은 같은 포맷을 복제하지 말고 첫 프레임 갈등, 공간 마찰, art role을 구체적으로 갱신해야 한다.</p>
+        <p>유지 슬롯은 <mark>싱가포르 작은 집의 실제 생활공간</mark>을 계속 쓰되, 방을 설명하지 말고 사용자가 멈춰야 할 선택을 먼저 말한다. 예: “주방 그림을 사지 마라”, “입구 벽을 채우기 전에 역할을 정하라”.</p>
       </div>
       <div class="slot">
         <b>다음 제작에서 차단</b>
-        <p>위의 “버릴 것”에 나온 QA 실패 이유는 새 후보 생성 전 hard guard로 본다. 삭제된 source image, crop logic, art instance, dim treatment는 재사용하지 않는다.</p>
+        <p>삭제된 이미지, 확대 방식, 아트 인스턴스, 반쪽 어둠 처리는 재사용하지 않는다. 그리고 재질이나 아트만 나열하는 구성은 사용자의 공간과 몸의 루틴으로 이어지는 장면 없이는 중심 슬롯에 올리지 않는다.</p>
       </div>
       <div class="slot">
         <b>다음 전략</b>
-        <p>SG small-space 맥락은 유지하되, 다음 리포트부터는 포맷별 성과와 삭제 이유를 누적해 “유지/확장/신규/차단”을 콘텐츠 단위로 비교한다. post-level 수치가 없으면 성과 칸은 대기 상태로 표시한다.</p>
+        <p>새 시도는 “새로운 방”이 아니라 <mark>새로운 설득 방식</mark>이어야 한다. 구매 순간 끊기, 같은 공간의 시간 변화, 매일 지나는 길의 기준점, 사적 메모의 번역처럼 사용자의 삶 안으로 들어오는 형식을 우선한다.</p>
       </div>
     </section>
     
-    <h3>Studio Audience Matrix</h3>
-    <p>Source: TikTok Studio Analytics, last_7_days. 타겟 기준은 SG/US/AU/CA/UK/NZ English small-space market, 25-44세, 홈데코 구매 가능성이 높은 여성 skew다.</p>
+    <h3>오디언스 요약</h3>
+    <p>출처: TikTok Studio Analytics, 최근 7일. 우선 보는 기준은 싱가포르·미국·호주·캐나다·영국·뉴질랜드의 영어권 작은 집 시장, 25-44세, 홈데코 구매 가능성이 높은 여성 시청자다.</p>
     <section class="audience-summary">
       
         <div class="metric">
-          <span>Studio market fit<details class="help"><summary title="TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다." aria-label="TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다.">?</summary><p>TikTok Studio의 계정 전체 최근 시청자/팔로워 데모그래피가 목표 시장, 25-44세, 여성 skew에 얼마나 가까운지 보는 점수입니다.</p></details></span>
-          <strong>70%</strong>
-          
-        </div>
-    
-      
-        <div class="metric">
-          <span>viewer target market<details class="help"><summary title="최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다." aria-label="최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다.">?</summary><p>최근 시청자 중 SG/US/AU/CA/GB/NZ, 즉 English-speaking small-space 시장으로 보는 국가 비율입니다.</p></details></span>
+          <span>최근 시청자 중 우선 국가<details class="help"><summary title="최근 시청자 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="최근 시청자 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>최근 시청자 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></span>
           <strong>76.4%</strong>
           
         </div>
     
       
         <div class="metric">
-          <span>viewer SG / US<details class="help"><summary title="최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다." aria-label="최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다.">?</summary><p>최근 시청자 중 Singapore 비율입니다. 현재는 SG small-space 수요를 별도 테스트하기 때문에 중요하게 봅니다.</p></details></span>
+          <span>최근 시청자 중 싱가포르/미국<details class="help"><summary title="최근 시청자 중 싱가포르에서 본 사람의 비율입니다. 지금은 싱가포르의 작은 주거공간 수요를 중요하게 보고 있습니다." aria-label="최근 시청자 중 싱가포르에서 본 사람의 비율입니다. 지금은 싱가포르의 작은 주거공간 수요를 중요하게 보고 있습니다.">?</summary><p>최근 시청자 중 싱가포르에서 본 사람의 비율입니다. 지금은 싱가포르의 작은 주거공간 수요를 중요하게 보고 있습니다.</p></details></span>
           <strong>70.1% / 2.4%</strong>
           
         </div>
     
       
         <div class="metric">
-          <span>viewer 25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></span>
+          <span>최근 시청자 중 25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></span>
           <strong>61.1%</strong>
+          
+        </div>
+    
+      
+        <div class="metric">
+          <span>최근 시청자 중 여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></span>
+          <strong>77.0%</strong>
           
         </div>
     
     </section>
     <section class="audience-grid">
       <article class="aud-card">
-        <h3>Recent Viewers</h3>
+        <h3>최근 시청자</h3>
         
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:76%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:70%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:2%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:61%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:77%"></span></div>
         </div>
     
-        <h4>Age</h4><ul><li><span>18-24</span><b>34.7%</b></li><li><span>25-34</span><b>52.0%</b></li><li><span>35-44</span><b>9.1%</b></li><li><span>45-54</span><b>2.2%</b></li><li><span>55+</span><b>2.0%</b></li></ul>
-        <h4>Locations</h4><ul><li><span>SG</span><b>70.1%</b></li><li><span>KR</span><b>8.7%</b></li><li><span>AU</span><b>2.9%</b></li><li><span>MY</span><b>2.6%</b></li><li><span>US</span><b>2.4%</b></li><li><span>VN</span><b>2.2%</b></li><li><span>JP</span><b>1.1%</b></li><li><span>GB</span><b>1.0%</b></li></ul>
+        <h4>연령</h4><ul><li><span>18-24</span><b>34.7%</b></li><li><span>25-34</span><b>52.0%</b></li><li><span>35-44</span><b>9.1%</b></li><li><span>45-54</span><b>2.2%</b></li><li><span>55+</span><b>2.0%</b></li></ul>
+        <h4>국가</h4><ul><li><span>싱가포르</span><b>70.1%</b></li><li><span>한국</span><b>8.7%</b></li><li><span>호주</span><b>2.9%</b></li><li><span>말레이시아</span><b>2.6%</b></li><li><span>미국</span><b>2.4%</b></li><li><span>베트남</span><b>2.2%</b></li><li><span>일본</span><b>1.1%</b></li><li><span>영국</span><b>1.0%</b></li></ul>
       </article>
       <article class="aud-card">
-        <h3>Followers</h3>
+        <h3>팔로워</h3>
         
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:76%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:12%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:55%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:60%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:64%"></span></div>
         </div>
     
-        <h4>Age</h4><ul><li><span>18-24</span><b>30.9%</b></li><li><span>25-34</span><b>42.4%</b></li><li><span>35-44</span><b>17.5%</b></li><li><span>45-54</span><b>5.9%</b></li><li><span>55+</span><b>3.3%</b></li></ul>
-        <h4>Locations</h4><ul><li><span>US</span><b>54.7%</b></li><li><span>SG</span><b>12.5%</b></li><li><span>CA</span><b>5.0%</b></li><li><span>PH</span><b>4.7%</b></li><li><span>AU</span><b>4.3%</b></li><li><span>MY</span><b>2.9%</b></li><li><span>ID</span><b>2.2%</b></li><li><span>ZA</span><b>0.7%</b></li></ul>
+        <h4>연령</h4><ul><li><span>18-24</span><b>30.9%</b></li><li><span>25-34</span><b>42.4%</b></li><li><span>35-44</span><b>17.5%</b></li><li><span>45-54</span><b>5.9%</b></li><li><span>55+</span><b>3.3%</b></li></ul>
+        <h4>국가</h4><ul><li><span>미국</span><b>54.7%</b></li><li><span>싱가포르</span><b>12.5%</b></li><li><span>캐나다</span><b>5.0%</b></li><li><span>필리핀</span><b>4.7%</b></li><li><span>호주</span><b>4.3%</b></li><li><span>말레이시아</span><b>2.9%</b></li><li><span>인도네시아</span><b>2.2%</b></li><li><span>남아프리카공화국</span><b>0.7%</b></li></ul>
       </article>
       <article class="aud-card">
-        <h3>Distribution Signals</h3>
-        <h4>Traffic</h4><ul><li><span>For You</span><b>95.4%</b></li><li><span>Search</span><b>2.8%</b></li><li><span>Personal Profile</span><b>1.6%</b></li><li><span>Follow</span><b>0.2%</b></li><li><span>Sound</span><b>0.0%</b></li></ul>
-        <h4>Search</h4><ul><li><span>pending</span><b>--</b></li></ul>
+        <h3>유입 경로</h3>
+        <h4>유입</h4><ul><li><span>추천 피드</span><b>95.4%</b></li><li><span>검색</span><b>2.8%</b></li><li><span>프로필 방문</span><b>1.6%</b></li><li><span>팔로우 피드</span><b>0.2%</b></li><li><span>사운드</span><b>0.0%</b></li></ul>
+        <h4>검색어</h4><ul><li><span>데이터 대기</span><b>--</b></li></ul>
       </article>
     </section>
-    <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. SG small-space/HDB/condo/rental 맥락은 유지하되, 거실/홈오피스만 보지 말고 침실, 키친, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
+    <p>최근 시청자 분배는 싱가포르로 강하게 열려 있다. 싱가포르 작은 집, HDB, 콘도, 임차 주거 맥락은 유지하되, 거실·홈오피스만 보지 말고 침실, 주방, 욕실, 복도, 세탁공간처럼 사용자의 감각이 반복해서 생기는 작은 생활공간까지 확장한다.</p>
     
     
 
-    <h2>2. Content Generation Evidence</h2>
+    <h2>2. 업로드 콘텐츠 증거</h2>
     
-    <p>아래 카드는 실제 업로드된 콘텐츠와 그 판단 근거다. 이미지는 직관 확인용이고, 숫자는 “누구에게 닿도록 설계됐는가”와 “시각적으로 업로드 가능한가”를 분리해서 보기 위한 보조 장치다.</p>
+    <p>아래 카드는 실제 업로드된 콘텐츠와 TikTok Studio에서 확인 가능한 시청자 정보다. 게시물별 시청자 정보가 아직 없으면 계정 전체 최근 시청자 평균을 임시로 표시한다.</p>
     <section class="slots">
       <div class="slot"><b>공간 기준</b><p>완성된 인테리어가 아니라 타겟이 실제로 살 법한 보통 공간을 쓴다. 공간은 주제가 아니라 감각이 매일 다시 보이는 장소다.</p></div>
-      <div class="slot"><b>아트 기준</b><p>한번 쓴 아트 문법은 재사용하지 않는다. 매일 `art_style_passport`로 재질, 색, 구성, 역할이 겹치지 않는지 확인한다.</p></div>
+      <div class="slot"><b>아트 기준</b><p>한번 쓴 아트 스타일은 재사용하지 않는다. 매일 재질, 색, 구성, 역할이 겹치지 않는지 확인한다.</p></div>
       <div class="slot"><b>연속성 기준</b><p>같은 공간을 반복해서 보여주면 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지돼야 한다. 바뀌면 스토리가 깨진다.</p></div>
       <div class="slot"><b>6개 루틴</b><p>2개는 유지/폐기 반영, 2개는 새 시도 확장, 2개는 아직 안 해본 포맷이다. 새 시도는 방 종류가 아니라 표현 방식의 변화다.</p></div>
     </section>
     <div class="grid">
     <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/contact_sheet.jpg" alt="svc_20260522_fftest_3_stop_matching_sofa contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/slide_1.png" alt="svc_20260522_fftest_3_stop_matching_sofa first slide"></div>
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s6_daily_route_anchor/contact_sheet.jpg" alt="svc_20260523_s6_daily_route_anchor contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s6_daily_route_anchor/slide_1.png" alt="svc_20260523_s6_daily_route_anchor first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_fftest_3_stop_matching_sofa</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
+        <div class="row"><strong>매일 지나는 동선을 하나의 기준점으로 바꾸기</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">매일 지나가는 길에도 나를 다시 잡아주는 신호를 둘 수 있다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:76%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>캐나다·호주·영국·뉴질랜드의 작은 집에서 매일 지나가는 동선에 기준점을 두고 싶은 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642792848206679317">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s5_sg_kitchen_fragile_print_rule/contact_sheet.jpg" alt="svc_20260523_s5_sg_kitchen_fragile_print_rule contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s5_sg_kitchen_fragile_print_rule/slide_1.png" alt="svc_20260523_s5_sg_kitchen_fragile_print_rule first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>기능적인 공간에 약한 프린트를 두지 않기</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">기능적으로 쓰는 공간은 맞지 않는 프린트를 금방 드러낸다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
+          <div class="bar"><span style="width:76%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>싱가포르 HDB·콘도의 작은 주방처럼 기능적인 공간에 둘 아트를 찾는 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642792027922517269">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s4_bedroom_three_roles_no_vote/contact_sheet.jpg" alt="svc_20260523_s4_bedroom_three_roles_no_vote contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s4_bedroom_three_roles_no_vote/slide_1.png" alt="svc_20260523_s4_bedroom_three_roles_no_vote first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>투표 없이 세 가지 역할을 조용히 비교</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">색을 고르기 전에, 이 벽이 무엇을 가까이 붙잡아줘야 하는지 먼저 본다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
+          <div class="bar"><span style="width:76%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>영국·캐나다·호주·뉴질랜드의 작은 임대 침실에서 역할이 분명한 벽 그림을 찾는 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642790794830548244">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s3_bathroom_note_to_signal/contact_sheet.jpg" alt="svc_20260523_s3_bathroom_note_to_signal contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s3_bathroom_note_to_signal/slide_1.png" alt="svc_20260523_s3_bathroom_note_to_signal first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>작은 메모를 거울 앞 신호로 바꾸기</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">사적인 메모는 고백이 되지 않아도 된다. 작은 신호가 되면 충분하다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
+          <div class="bar"><span style="width:76%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>영어권 작은 집의 욕실에서 스스로를 다시 정돈하고 싶은 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642789820942650644">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s2_sg_entry_before_buy_role/contact_sheet.jpg" alt="svc_20260523_s2_sg_entry_before_buy_role contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s2_sg_entry_before_buy_role/slide_1.png" alt="svc_20260523_s2_sg_entry_before_buy_role first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>현관 벽을 채우기 전에 역할부터 정하기</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">현관 벽을 프린트로 채우기 전에, 그 자리가 내게 붙잡아줘야 할 것을 먼저 정한다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
+          <div class="bar"><span style="width:76%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>싱가포르의 작은 집 현관 벽에 프린트를 고민하는 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642788870530043157">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260523_s1_sg_service_yard_no_laundry_art/contact_sheet.jpg" alt="svc_20260523_s1_sg_service_yard_no_laundry_art contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260523_s1_sg_service_yard_no_laundry_art/slide_1.png" alt="svc_20260523_s1_sg_service_yard_no_laundry_art first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>세탁실 테마가 아니라 버티는 감각을 두기</strong><span class="data-source">계정 전체 평균으로 임시 표시</span></div>
+        <p class="caption-read">세탁공간에는 세탁 테마 그림보다 버티는 감각이 먼저 필요하다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
+          <div class="bar"><span style="width:76%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
+          <div class="bar"><span style="width:2%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
+          <div class="bar"><span style="width:61%"></span></div>
+        </div>
+    
+        
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
+          <div class="bar"><span style="width:77%"></span></div>
+        </div>
+    
+        <div class="meta">
+          <span>싱가포르의 작은 집 세탁공간을 쓰는 영어권 임차인 또는 첫 집 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642787907849260309">틱톡에서 보기</a>
+      </div>
+    </article>
+    
+
+    <article class="card">
+      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/contact_sheet.jpg" alt="svc_20260522_fftest_3_stop_matching_sofa contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_fftest_3_stop_matching_sofa/slide_1.png" alt="svc_20260522_fftest_3_stop_matching_sofa first slide"></div>
+      <div class="card-body">
+        <div class="row"><strong>방 색에 맞추기 전에 역할부터 보기</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">소파가 그림을 고르게 두지 말고, 내가 필요한 역할을 먼저 정한다.</p>
+        
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:79%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:76%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:1%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:65%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:80%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
+          <span>대상 기록 없음</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
         </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642516852077268245">TikTok</a>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642516852077268245">틱톡에서 보기</a>
       </div>
     </article>
     
@@ -583,88 +896,45 @@
     <article class="card">
       <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_fftest_2_bathroom_not_theme/contact_sheet.jpg" alt="svc_20260522_fftest_2_bathroom_not_theme contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_fftest_2_bathroom_not_theme/slide_1.png" alt="svc_20260522_fftest_2_bathroom_not_theme first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_fftest_2_bathroom_not_theme</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>bathroom / mirror ritual</span><span>wall art shoppers</span></div>
+        <div class="row"><strong>작은 욕실에 테마 대신 신호를 두기</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">작은 욕실에는 작은 테마 그림보다 나를 다시 보게 하는 신호가 필요하다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:65%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:61%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:59%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:0%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:56%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:86%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
+          <span>대상 기록 없음</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
         </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642516047450410261">TikTok</a>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642516047450410261">틱톡에서 보기</a>
       </div>
     </article>
     
@@ -672,88 +942,45 @@
     <article class="card">
       <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_fftest_1_before_buy_wall/contact_sheet.jpg" alt="svc_20260522_fftest_1_before_buy_wall contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_fftest_1_before_buy_wall/slide_1.png" alt="svc_20260522_fftest_1_before_buy_wall first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_fftest_1_before_buy_wall</strong><span class="fit">60%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>wall art shoppers</span></div>
+        <div class="row"><strong>프린트를 사기 전에 역할부터 정하기</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">프린트를 장바구니에 넣기 전에, 그 벽이 해야 할 일을 먼저 정한다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:73%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:83%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:81%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:1%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:47%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:79%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
+          <span>대상 기록 없음</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
         </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642515248540355861">TikTok</a>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642515248540355861">틱톡에서 보기</a>
       </div>
     </article>
     
@@ -761,88 +988,45 @@
     <article class="card">
       <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s6_random_print_interrupt/contact_sheet.jpg" alt="svc_20260522_s6_random_print_interrupt contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s6_random_print_interrupt/slide_1.png" alt="svc_20260522_s6_random_print_interrupt first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_s6_random_print_interrupt</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
+        <div class="row"><strong>무작정 프린트를 사려는 순간 멈추기</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">아무 프린트나 벽에 걸기 전에, 그 이미지가 맡을 역할을 먼저 정한다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:67%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:65%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:64%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:0%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:67%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:75%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span>English-speaking affluent small-space markets; renters and first homes buying wall art</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
+          <span>영어권 작은 집 시장에서 벽 그림 구매를 고민하는 임차인과 첫 집 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
         </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642480718966394132">TikTok</a>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642480718966394132">틱톡에서 보기</a>
       </div>
     </article>
     
@@ -850,88 +1034,45 @@
     <article class="card">
       <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s5_material_swatch_portfolio_flip/contact_sheet.jpg" alt="svc_20260522_s5_material_swatch_portfolio_flip contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s5_material_swatch_portfolio_flip/slide_1.png" alt="svc_20260522_s5_material_swatch_portfolio_flip first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_s5_material_swatch_portfolio_flip</strong><span class="fit">53%</span></div>
-        <div class="chips"><span>wall art shoppers</span></div>
+        <div class="row"><strong>재질 차이로 감각의 역할을 비교</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">재질이 바뀌면 같은 감각도 다르게 붙잡힌다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:68%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:75%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:72%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:0%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:49%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:74%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:60%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:60%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span>English-speaking art-print and small-space decor audience; art-first with no room context required</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
+          <span>작은 집을 꾸미는 영어권 아트 프린트 관심 사용자</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
         </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642479768239099157">TikTok</a>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642479768239099157">틱톡에서 보기</a>
       </div>
     </article>
     
@@ -939,656 +1080,79 @@
     <article class="card">
       <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s4_same_wall_daypart_anchor/contact_sheet.jpg" alt="svc_20260522_s4_same_wall_daypart_anchor contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s4_same_wall_daypart_anchor/slide_1.png" alt="svc_20260522_s4_same_wall_daypart_anchor first slide"></div>
       <div class="card-body">
-        <div class="row"><strong>svc_20260522_s4_same_wall_daypart_anchor</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>home office / desk wall</span><span>renter / first apartment</span><span>Singapore small-space</span><span>bathroom / mirror ritual</span><span>wall art shoppers</span></div>
+        <div class="row"><strong>같은 벽을 아침과 밤에 다르게 보기</strong><span class="data-source">이 게시물의 실제 시청자</span></div>
+        <p class="caption-read">같은 벽도 아침과 밤에는 다른 역할을 한다.</p>
         
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:74%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>우선 국가<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 국가 비율입니다. 현재 기준은 싱가포르, 미국, 호주, 캐나다, 영국, 뉴질랜드입니다.</p></details></label>
           <div class="bar"><span style="width:77%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:76%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
           <div class="bar"><span style="width:0%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
+        <div class="metric-row">
+          <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
           <div class="bar"><span style="width:61%"></span></div>
         </div>
     
         
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
+        <div class="metric-row">
+          <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
           <div class="bar"><span style="width:83%"></span></div>
         </div>
     
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
         <div class="meta">
-          <span>English-speaking small-space renter with desk/vanity corner; SG cue via window grille and aircon trunking</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642478741737852181">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s3_receipt_to_three_materials/contact_sheet.jpg" alt="svc_20260522_s3_receipt_to_three_materials contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s3_receipt_to_three_materials/slide_1.png" alt="svc_20260522_s3_receipt_to_three_materials first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260522_s3_receipt_to_three_materials</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>living room / sofa wall</span><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:61%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:61%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:59%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:52%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:74%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span>English-speaking affluent small-space renter or first home</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642477952772410645">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s2_sg_kitchen_not_theme/contact_sheet.jpg" alt="svc_20260522_s2_sg_kitchen_not_theme contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s2_sg_kitchen_not_theme/slide_1.png" alt="svc_20260522_s2_sg_kitchen_not_theme first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260522_s2_sg_kitchen_not_theme</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>kitchen / dining rhythm</span><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:87%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:86%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:57%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:90%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span>Singapore HDB compact kitchen / small-space renter or first flat</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642477168055995668">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/svc_20260522_s1_sg_bathroom_mirror_signal/contact_sheet.jpg" alt="svc_20260522_s1_sg_bathroom_mirror_signal contact sheet"><img class="slide" src="../2026-05-23/assets/svc_20260522_s1_sg_bathroom_mirror_signal/slide_1.png" alt="svc_20260522_s1_sg_bathroom_mirror_signal first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>svc_20260522_s1_sg_bathroom_mirror_signal</strong><span class="fit">67%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>Singapore small-space</span><span>living room / sofa wall</span><span>bathroom / mirror ritual</span><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:75%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:84%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:82%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:52%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:79%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span>Singapore small-space / HDB or compact condo / English-speaking affluent renter or first home</span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>post-level TikTok Studio Viewers API</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642476361516403989">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/elura_20260521_r6_object_to_daily_signal/contact_sheet.jpg" alt="elura_20260521_r6_object_to_daily_signal contact sheet"><img class="slide" src="../2026-05-23/assets/elura_20260521_r6_object_to_daily_signal/slide_1.png" alt="elura_20260521_r6_object_to_daily_signal first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>elura_20260521_r6_object_to_daily_signal</strong><span class="fit">60%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:76%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:2%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:61%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:77%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>account-level fallback; post-level demographics unavailable</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642060912362261780">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/elura_20260521_r5_twelve_quiet_signals/contact_sheet.jpg" alt="elura_20260521_r5_twelve_quiet_signals contact sheet"><img class="slide" src="../2026-05-23/assets/elura_20260521_r5_twelve_quiet_signals/slide_1.png" alt="elura_20260521_r5_twelve_quiet_signals first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>elura_20260521_r5_twelve_quiet_signals</strong><span class="fit">60%</span></div>
-        <div class="chips"><span>renter / first apartment</span><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:76%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:2%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:61%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:77%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:80%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>account-level fallback; post-level demographics unavailable</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642059953347300628">TikTok</a>
-      </div>
-    </article>
-    
-
-    <article class="card">
-      <div class="media"><img class="contact" src="../2026-05-23/assets/elura_20260521_r4_sentence_to_three_images/contact_sheet.jpg" alt="elura_20260521_r4_sentence_to_three_images contact sheet"><img class="slide" src="../2026-05-23/assets/elura_20260521_r4_sentence_to_three_images/slide_1.png" alt="elura_20260521_r4_sentence_to_three_images first slide"></div>
-      <div class="card-body">
-        <div class="row"><strong>elura_20260521_r4_sentence_to_three_images</strong><span class="fit">53%</span></div>
-        <div class="chips"><span>wall art shoppers</span></div>
-        
-        
-        <div class="score">
-          <label>actual demo fit<details class="help"><summary title="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다." aria-label="개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.">?</summary><p>개별 포스트 데모그래피가 있으면 그 값을 쓰고, 없으면 계정 전체 Studio 데모그래피를 fallback으로 씁니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target market<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 목표 국가군 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:76%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>SG viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 Singapore 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:70%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>US viewers<details class="help"><summary title="해당 포스트 또는 계정 시청자 중 US 비율입니다." aria-label="해당 포스트 또는 계정 시청자 중 US 비율입니다.">?</summary><p>해당 포스트 또는 계정 시청자 중 US 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:2%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>25-44<details class="help"><summary title="목표 연령대인 25-44세 시청자 비율입니다." aria-label="목표 연령대인 25-44세 시청자 비율입니다.">?</summary><p>목표 연령대인 25-44세 시청자 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:61%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>female<details class="help"><summary title="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다." aria-label="여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.">?</summary><p>여성 시청자 비율입니다. 현재 가설상 홈데코/개인 아트 구매 가능성이 높은 skew로 봅니다.</p></details></label>
-          <div class="bar"><span style="width:77%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>intended segment<details class="help"><summary title="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다." aria-label="캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.">?</summary><p>캡션, 타겟 데모, 공간/포맷 메타데이터가 우리가 노린 세그먼트를 얼마나 분명히 가리키는지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:60%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target action<details class="help"><summary title="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다." aria-label="저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.">?</summary><p>저장, 댓글, 공유, 팔로우, 완주율 같은 행동 신호입니다. 조회수보다 &#x27;다시 볼 가치&#x27;와 &#x27;프로필 이동 가능성&#x27;을 보려는 보조 지표입니다.</p></details></label>
-          <div class="bar"><span style="width:0%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>target demo<details class="help"><summary title="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다." aria-label="홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.">?</summary><p>홈데코/렌터/SG small-space/방 유형 등 타겟 단서가 콘텐츠 안에 얼마나 분명한지 보는 내부 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:60%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>strategy<details class="help"><summary title="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다." aria-label="현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.">?</summary><p>현재 감각, 아트 역할, 콘텐츠 포맷, 서비스 thesis가 명확한지 보는 내부 점수입니다. 직접 댓글/투표 CTA가 있으면 감점합니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>visual QA<details class="help"><summary title="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다." aria-label="이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.">?</summary><p>이미지 늘어짐, 흰 설명 카드, 로컬 벽 합성, contact sheet 존재 등 기본 시각 QA를 통과했는지입니다.</p></details></label>
-          <div class="bar"><span style="width:40%"></span></div>
-        </div>
-    
-        
-        <div class="score">
-          <label>continuity<details class="help"><summary title="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다." aria-label="같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.">?</summary><p>같은 공간을 반복해서 보여줄 때 문, 가구, 벽, 빛 방향이 같은 인스턴스로 유지되는지 보는 점수입니다.</p></details></label>
-          <div class="bar"><span style="width:100%"></span></div>
-        </div>
-    
-        <div class="meta">
-          <span></span>
-          <span>uploaded</span>
-          <span>no verified music</span>
-          <span>account-level fallback; post-level demographics unavailable</span>
-        </div>
-        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642059035356810517">TikTok</a>
+          <span>책상·화장대 코너가 있는 영어권 작은 집 사용자, 싱가포르 주거 단서 포함</span>
+          <span>업로드 완료</span>
+          <span>음악 미확인</span>
+          <span>조회·저장 수집 대기</span>
+        </div>
+        <a class="button" href="https://www.tiktok.com/@oysterlab7/photo/7642478741737852181">틱톡에서 보기</a>
       </div>
     </article>
     </div>
     
 
-    <h2>3. Target Audience Routine Report</h2>
+    <h2>3. 오디언스 탐색 루틴 보고</h2>
     
-    <h3>Audience Surface Routine</h3>
-    <p>20:30 KST 루틴은 다음 02:00 제작에 들어갈 오디언스 표면을 정리한다. 공개 댓글은 판매, 링크, 가격, AI, check-profile 언어 없이 어떤 공간/감각 표면에 계정을 붙일지 확인하는 용도다.</p>
+    <h3>저녁 오디언스 탐색 결과</h3>
+    <p>20:30 KST 루틴은 다음 02:00 제작에 참고할 오디언스 표면을 정리한다. 공개 댓글은 판매, 링크, 가격, AI, 프로필 확인 유도 없이 어떤 공간과 감각에 계정이 붙는지 보는 용도다.</p>
     <section class="audience-summary">
       
         <div class="metric">
-          <span>routine status<details class="help"><summary title="20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다." aria-label="20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다.">?</summary><p>20:30 타겟 오디언스 루틴이 정상 실행됐는지입니다. 이 루틴은 다음 02:00 콘텐츠 생성의 입력값입니다.</p></details></span>
-          <strong>completed</strong>
+          <span>탐색 상태<details class="help"><summary title="저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다." aria-label="저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다.">?</summary><p>저녁에 타겟 오디언스 관련 콘텐츠 표면을 찾는 작업이 정상 실행됐는지입니다.</p></details></span>
+          <strong>완료</strong>
           
         </div>
     
       
         <div class="metric">
-          <span>source<details class="help"><summary title="오디언스 루틴 데이터가 정시 실행에서 왔는지, 02:00 fallback에서 왔는지 표시합니다." aria-label="오디언스 루틴 데이터가 정시 실행에서 왔는지, 02:00 fallback에서 왔는지 표시합니다.">?</summary><p>오디언스 루틴 데이터가 정시 실행에서 왔는지, 02:00 fallback에서 왔는지 표시합니다.</p></details></span>
-          <strong>scheduled_2030</strong>
+          <span>실행 방식<details class="help"><summary title="오디언스 탐색 작업이 정해진 시간에 실행됐는지, 새벽 제작 직전에 보완 실행됐는지 표시합니다." aria-label="오디언스 탐색 작업이 정해진 시간에 실행됐는지, 새벽 제작 직전에 보완 실행됐는지 표시합니다.">?</summary><p>오디언스 탐색 작업이 정해진 시간에 실행됐는지, 새벽 제작 직전에 보완 실행됐는지 표시합니다.</p></details></span>
+          <strong>20:30 정기 실행</strong>
           
         </div>
     
       
         <div class="metric">
-          <span>prepared<details class="help"><summary title="20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다." aria-label="20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다.">?</summary><p>20:30 루틴에서 준비한 공개 댓글/표면 접촉 후보 수입니다. 현재는 댓글 자체보다 계정이 어떤 표면에 붙는지 학습시키는 용도입니다.</p></details></span>
+          <span>준비한 관찰 후보<details class="help"><summary title="저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다." aria-label="저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다.">?</summary><p>저녁 오디언스 탐색 작업에서 준비한 댓글/관찰 후보 수입니다. 댓글 자체보다 어떤 콘텐츠 표면에 계정을 붙일지 보기 위한 자료입니다.</p></details></span>
           <strong>8</strong>
           
         </div>
     
       
         <div class="metric">
-          <span>posted logged</span>
+          <span>기록된 댓글 수</span>
           <strong>0</strong>
           <small>실제 댓글 작성 기록 수</small>
         </div>
@@ -1597,41 +1161,41 @@
     <section class="audience-grid">
       
       <article class="aud-card">
-        <h3>private daily rooms / current feeling</h3>
-        <p>This kind of small room can hold more than function. It can hold the feeling you keep returning to.</p>
-        <h4>Search surface</h4>
-        <p>renter bathroom decor small apartment, apartment kitchen wall decor, bedroom corner decor renter</p>
+        <h3>사적인 일상 공간과 현재 감각</h3>
+        <p>이런 작은 방은 기능만 담는 곳이 아니다. 계속 돌아오게 되는 감각도 담을 수 있다.</p>
+        <h4>찾아본 주제</h4>
+        <p>작은 임대 아파트 욕실 꾸미기, 아파트 주방 벽 꾸미기, 임차인 침실 코너 꾸미기</p>
       </article>
             
       <article class="aud-card">
-        <h3>SG small-space / HDB / daily-life rooms</h3>
-        <p>A small HDB corner can still hold a real chapter of your life. It does not have to be a perfect room first.</p>
-        <h4>Search surface</h4>
-        <p>Singapore HDB kitchen decor, HDB bathroom decor small space, Singapore service yard home decor</p>
+        <h3>싱가포르 작은 집과 HDB 생활공간</h3>
+        <p>작은 HDB 구석도 삶의 한 장면을 담을 수 있다. 완벽한 방이 먼저일 필요는 없다.</p>
+        <h4>찾아본 주제</h4>
+        <p>싱가포르 HDB 주방 꾸미기, 작은 HDB 욕실 꾸미기, 싱가포르 서비스야드 꾸미기</p>
       </article>
             
       <article class="aud-card">
-        <h3>wall art / feeling-led decor</h3>
-        <p>This works because the art is not just filling a wall. It gives the room a feeling to keep.</p>
-        <h4>Search surface</h4>
-        <p>wall art home decor, gallery wall apartment, art print kitchen wall</p>
+        <h3>벽 그림과 감각 중심 장식</h3>
+        <p>이건 벽을 채우는 그림이 아니라, 방에 오래 두고 싶은 감각을 주기 때문에 작동한다.</p>
+        <h4>찾아본 주제</h4>
+        <p>홈데코 벽 그림, 아파트 갤러리 벽, 주방 벽 아트 프린트</p>
       </article>
             
       <article class="aud-card">
-        <h3>rest / reset / threshold spaces</h3>
-        <p>A temporary room can still hold a real part of you. Sometimes the smallest wall is where that starts.</p>
-        <h4>Search surface</h4>
-        <p>renter bedroom wall decor, first apartment bedroom decor, small hallway decor apartment</p>
+        <h3>휴식, 리셋, 문턱 공간</h3>
+        <p>임시로 사는 방도 나의 진짜 일부를 담을 수 있다. 때로는 가장 작은 벽에서 시작된다.</p>
+        <h4>찾아본 주제</h4>
+        <p>임차인 침실 벽 꾸미기, 첫 아파트 침실 꾸미기, 아파트 작은 복도 꾸미기</p>
       </article>
             
       <article class="aud-card">
-        <h3>Hooks To Feed Daily6</h3>
-        <ul><li><span>The room does not have to be important to hold something important in you.</span><b>hook</b></li><li><span>A small everyday corner can still hold a chapter of your life.</span><b>hook</b></li><li><span>Do not choose art for the room first. Choose the feeling you need to keep close.</span><b>hook</b></li><li><span>Temporary does not mean meaningless. Start with the place your day keeps passing through.</span><b>hook</b></li></ul>
+        <h3>다음 6개 제작에 참고할 문장</h3>
+        <ul><li><span>중요해 보이는 방이 아니어도, 내 안의 중요한 감각을 붙잡을 수 있다.</span><b>참고</b></li><li><span>작고 평범한 구석도 내 삶의 한 장면을 붙잡을 수 있다.</span><b>참고</b></li><li><span>방에 맞는 그림을 먼저 고르지 말고, 가까이 두고 싶은 감각을 먼저 고른다.</span><b>참고</b></li><li><span>임시로 사는 공간도 무의미하지 않다. 하루가 반복해서 지나가는 자리에서 시작한다.</span><b>참고</b></li></ul>
       </article>
     </section>
     
 
-    <footer>Generated from content/posts.json, content/status.json, and content/output assets.</footer>
+    <footer>content/posts.json, content/status.json, content/output 이미지 기준으로 생성.</footer>
   </main>
 </body>
 </html>

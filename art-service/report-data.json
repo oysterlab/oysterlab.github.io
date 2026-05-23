@@ -1,7 +1,6 @@
 {
-  "generated_at": "2026-05-23T01:30:46",
-  "audience_fit": {
-    "score": 70,
+  "generated_at": "2026-05-23T14:36:04",
+  "audience_metrics": {
     "viewer_sg": 70.1,
     "follower_sg": 12.5,
     "viewer_us": 2.4,
@@ -12,6 +11,83 @@
     "follower_target_age": 59.9,
     "viewer_female": 77.0,
     "follower_female": 64.0
+  },
+  "evaluation_excludes_date": "2026-05-23",
+  "growth_comparison": {
+    "days": [
+      {
+        "day": "2026-05-20",
+        "post_count": 6,
+        "post_demo_count": 6,
+        "removed_count": 0,
+        "target_market": 73.2,
+        "sg": 69.2,
+        "target_age": 56.8,
+        "female": 73.2,
+        "target_rich_posts": 5,
+        "top_posts": [
+          "svc_20260520_s1_sg_bathroom_signal_rule",
+          "svc_20260520_s5_twelve_role_sequence",
+          "svc_20260520_s6_quiet_receipt_anchor"
+        ],
+        "weak_posts": [
+          "svc_20260520_s4_scale_of_feeling_dining",
+          "svc_20260520_s3_three_courage_roles",
+          "svc_20260520_s2_sg_service_yard_theme_trap"
+        ]
+      },
+      {
+        "day": "2026-05-21",
+        "post_count": 12,
+        "post_demo_count": 5,
+        "removed_count": 6,
+        "target_market": 74.1,
+        "sg": 71.1,
+        "target_age": 53.8,
+        "female": 76.2,
+        "target_rich_posts": 2,
+        "top_posts": [
+          "svc_20260521_s2_sg_kitchen_not_theme",
+          "svc_20260521_s5_print_quality_macro",
+          "svc_20260521_s6_week_of_small_anchors"
+        ],
+        "weak_posts": [
+          "svc_20260521_s3_pause_closeups",
+          "svc_20260521_s4_wrong_reason_right_role",
+          "svc_20260521_s6_week_of_small_anchors"
+        ]
+      },
+      {
+        "day": "2026-05-22",
+        "post_count": 9,
+        "post_demo_count": 9,
+        "removed_count": 0,
+        "target_market": 74.6,
+        "sg": 72.8,
+        "target_age": 56.2,
+        "female": 80.0,
+        "target_rich_posts": 5,
+        "top_posts": [
+          "svc_20260522_s2_sg_kitchen_not_theme",
+          "svc_20260522_s1_sg_bathroom_mirror_signal",
+          "svc_20260522_fftest_1_before_buy_wall"
+        ],
+        "weak_posts": [
+          "svc_20260522_fftest_2_bathroom_not_theme",
+          "svc_20260522_s3_receipt_to_three_materials",
+          "svc_20260522_s6_random_print_interrupt"
+        ]
+      }
+    ],
+    "direction": {
+      "state": "growing",
+      "line": "잘 성장하고 있다. 다만 폭발적인 성장이라기보다는 타겟 농도가 조금씩 좋아지는 쪽이다. 3일 전 대비 우선 국가 비율 +1.4p, 싱가포르 비율 +3.6p, 여성 비율 +6.8p로 올랐다. 25-44세 비율은 -0.6p라 큰 변화는 아니다.",
+      "next": "싱가포르 작은 집, HDB, 좁은 생활공간 단서는 유지하고, 영수증이나 재질만 나열하는 구성은 줄인다. 다음 판단은 조회수보다 실제 시청자 중 우선 국가, 싱가포르, 25-44세 비율이 함께 올라가는지로 본다.",
+      "target_delta": 1.4,
+      "sg_delta": 3.6,
+      "age_delta": -0.6,
+      "female_delta": 6.8
+    }
   },
   "audience_routine": {
     "run_id": "20260522-203000-scheduled_2030",
@@ -138,391 +214,285 @@
   },
   "posts": [
     {
+      "id": "svc_20260523_s6_daily_route_anchor",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642792848206679317",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642792027922517269",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260523_s4_bedroom_three_roles_no_vote",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642790794830548244",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260523_s3_bathroom_note_to_signal",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642789820942650644",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260523_s2_sg_entry_before_buy_role",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642788870530043157",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260523_s1_sg_service_yard_no_laundry_art",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7642787907849260309",
+      "audience_metrics": {
+        "sg": 70.1,
+        "us": 2.4,
+        "target_market": 76.4,
+        "target_age": 61.1,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260522_fftest_3_stop_matching_sofa",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642516852077268245",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "living room / sofa wall",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 76,
-        "actual_demo_fit": 76,
+      "audience_metrics": {
         "sg": 76.5,
         "us": 0.9,
         "target_market": 78.9,
         "target_age": 65.0,
         "female": 80.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     },
     {
       "id": "svc_20260522_fftest_2_bathroom_not_theme",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642516047450410261",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "bathroom / mirror ritual",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 65,
-        "actual_demo_fit": 65,
+      "audience_metrics": {
         "sg": 58.7,
         "us": 0,
         "target_market": 60.9,
         "target_age": 56.0,
         "female": 86.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     },
     {
       "id": "svc_20260522_fftest_1_before_buy_wall",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642515248540355861",
-      "scores": {
-        "target": 4,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 60,
-        "hits": [
-          "renter / first apartment",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 73,
-        "actual_demo_fit": 73,
+      "audience_metrics": {
         "sg": 81.1,
         "us": 0.6,
         "target_market": 82.7,
         "target_age": 47.0,
         "female": 79.0,
-        "intended_segment_fit": 80,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     },
     {
       "id": "svc_20260522_s6_random_print_interrupt",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642480718966394132",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "living room / sofa wall",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 67,
-        "actual_demo_fit": 67,
+      "audience_metrics": {
         "sg": 63.9,
         "us": 0,
         "target_market": 64.9,
         "target_age": 67.0,
         "female": 75.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     },
     {
       "id": "svc_20260522_s5_material_swatch_portfolio_flip",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642479768239099157",
-      "scores": {
-        "target": 3,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 53,
-        "hits": [
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 68,
-        "actual_demo_fit": 68,
+      "audience_metrics": {
         "sg": 72.5,
         "us": 0,
         "target_market": 74.8,
         "target_age": 49.0,
         "female": 74.0,
-        "intended_segment_fit": 60,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     },
     {
       "id": "svc_20260522_s4_same_wall_daypart_anchor",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7642478741737852181",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "home office / desk wall",
-          "renter / first apartment",
-          "Singapore small-space",
-          "bathroom / mirror ritual",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 74,
-        "actual_demo_fit": 74,
+      "audience_metrics": {
         "sg": 75.8,
         "us": 0,
         "target_market": 77.4,
         "target_age": 61.0,
         "female": 83.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260522_s3_receipt_to_three_materials",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642477952772410645",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "living room / sofa wall",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
+        "unique_viewers": null,
+        "source": "post-level"
       },
-      "audience_match": {
-        "score": 61,
-        "actual_demo_fit": 61,
-        "sg": 58.6,
-        "us": 0,
-        "target_market": 61.1,
-        "target_age": 52.0,
-        "female": 74.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260522_s2_sg_kitchen_not_theme",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642477168055995668",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "Singapore small-space",
-          "kitchen / dining rhythm",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 80,
-        "actual_demo_fit": 80,
-        "sg": 86.1,
-        "us": 0,
-        "target_market": 86.9,
-        "target_age": 57.0,
-        "female": 90.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "svc_20260522_s1_sg_bathroom_mirror_signal",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642476361516403989",
-      "scores": {
-        "target": 5,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 67,
-        "hits": [
-          "renter / first apartment",
-          "Singapore small-space",
-          "living room / sofa wall",
-          "bathroom / mirror ritual",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 75,
-        "actual_demo_fit": 75,
-        "sg": 82.4,
-        "us": 0,
-        "target_market": 83.8,
-        "target_age": 52.0,
-        "female": 79.0,
-        "intended_segment_fit": 100,
-        "action_signal": 0,
-        "note": "post-level TikTok Studio Viewers API"
-      }
-    },
-    {
-      "id": "elura_20260521_r6_object_to_daily_signal",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642060912362261780",
-      "scores": {
-        "target": 4,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 60,
-        "hits": [
-          "renter / first apartment",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
-        "intended_segment_fit": 80,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
-      "id": "elura_20260521_r5_twelve_quiet_signals",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642059953347300628",
-      "scores": {
-        "target": 4,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 60,
-        "hits": [
-          "renter / first apartment",
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
-        "intended_segment_fit": 80,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
-      }
-    },
-    {
-      "id": "elura_20260521_r4_sentence_to_three_images",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642059035356810517",
-      "scores": {
-        "target": 3,
-        "strategy": 2,
-        "visual": 2,
-        "continuity": 5,
-        "service_fit": 53,
-        "hits": [
-          "wall art shoppers"
-        ],
-        "participation_hits": []
-      },
-      "audience_match": {
-        "score": 70,
-        "actual_demo_fit": 70,
-        "sg": 70.1,
-        "us": 2.4,
-        "target_market": 76.4,
-        "target_age": 61.1,
-        "female": 77.0,
-        "intended_segment_fit": 60,
-        "action_signal": 0,
-        "note": "account-level fallback; post-level demographics unavailable"
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
       }
     }
   ],
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260522_s1_sg_bathroom_mirror_signal",
+        "id": "svc_20260523_s1_sg_service_yard_no_laundry_art",
         "role": "유지",
-        "format": "mirror check signal rule",
-        "medium": "cyanotype/photogram",
-        "target": "Singapore small-space / HDB or compact condo / English-speaking affluent renter or first home",
-        "reflected": "A bathroom does not need a theme.",
+        "format": "service yard not theme rule correction",
+        "medium": "monotype shadow print",
+        "target": "Singapore small-space / HDB or compact condo service yard / English-speaking renter or first home",
+        "reflected": "Do not buy laundry art for this corner.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260522_s2_sg_kitchen_not_theme",
+        "id": "svc_20260523_s2_sg_entry_before_buy_role",
         "role": "유지",
-        "format": "kitchen not theme rule correction",
-        "medium": "ceramic tile folk mosaic",
-        "target": "Singapore HDB compact kitchen / small-space renter or first flat",
-        "reflected": "The kitchen does not need kitchen art.",
+        "format": "before buying role entry interrupt",
+        "medium": "wax-resist crayon monoprint",
+        "target": "Singapore small-space / HDB or compact condo entry / art-print shoppers",
+        "reflected": "Before you buy another print, name the role.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260522_s3_receipt_to_three_materials",
+        "id": "svc_20260523_s3_bathroom_note_to_signal",
         "role": "확장",
-        "format": "receipt line to three material directions",
-        "medium": "risograph object poster",
-        "target": "English-speaking affluent small-space renter or first home",
-        "reflected": "One private line can become more than one art direction.",
+        "format": "tiny note to mirror signal",
+        "medium": "stitched textile applique",
+        "target": "English-speaking small-space renter or compact condo bathroom / soft return",
+        "reflected": "This mirror does not need matching art.",
         "performance": "성과 수집 대기",
         "is_new": true
       },
       {
-        "id": "svc_20260522_s4_same_wall_daypart_anchor",
+        "id": "svc_20260523_s4_bedroom_three_roles_no_vote",
         "role": "확장",
-        "format": "same wall daypart loop",
-        "medium": "linocut/woodcut print",
-        "target": "English-speaking small-space renter with desk/vanity corner; SG cue via window grille and aircon trunking",
-        "reflected": "Same wall, two times of day.",
+        "format": "three role wall study no vote",
+        "medium": "paper-pulp relief triptych",
+        "target": "UK/Canada/Australia/New Zealand small rental bedroom / role-first wall art",
+        "reflected": "Stop testing colors before testing the role.",
         "performance": "성과 수집 대기",
         "is_new": true
       }
@@ -543,164 +513,104 @@
     ],
     "new": [
       {
-        "id": "svc_20260522_s3_receipt_to_three_materials",
+        "id": "svc_20260523_s3_bathroom_note_to_signal",
         "role": "확장",
-        "format": "receipt line to three material directions",
-        "medium": "risograph object poster",
-        "target": "English-speaking affluent small-space renter or first home",
-        "reflected": "One private line can become more than one art direction.",
+        "format": "tiny note to mirror signal",
+        "medium": "stitched textile applique",
+        "target": "English-speaking small-space renter or compact condo bathroom / soft return",
+        "reflected": "This mirror does not need matching art.",
         "performance": "성과 수집 대기",
         "is_new": true
       },
       {
-        "id": "svc_20260522_s4_same_wall_daypart_anchor",
+        "id": "svc_20260523_s4_bedroom_three_roles_no_vote",
         "role": "확장",
-        "format": "same wall daypart loop",
-        "medium": "linocut/woodcut print",
-        "target": "English-speaking small-space renter with desk/vanity corner; SG cue via window grille and aircon trunking",
-        "reflected": "Same wall, two times of day.",
+        "format": "three role wall study no vote",
+        "medium": "paper-pulp relief triptych",
+        "target": "UK/Canada/Australia/New Zealand small rental bedroom / role-first wall art",
+        "reflected": "Stop testing colors before testing the role.",
         "performance": "성과 수집 대기",
         "is_new": true
       },
       {
-        "id": "svc_20260522_s5_material_swatch_portfolio_flip",
+        "id": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
         "role": "신규",
-        "format": "material swatch to inner role flip",
-        "medium": "scanned paper collage/mixed material portfolio",
-        "target": "English-speaking art-print and small-space decor audience; art-first with no room context required",
-        "reflected": "Material changes what a feeling can hold.",
+        "format": "fragile print prevention rule",
+        "medium": "ceramic tile folk mosaic",
+        "target": "Singapore small-space / compact HDB or condo kitchen / functional-room art shoppers",
+        "reflected": "Do not put a fragile print here.",
         "performance": "성과 수집 대기",
         "is_new": true
       },
       {
-        "id": "svc_20260522_s6_random_print_interrupt",
+        "id": "svc_20260523_s6_daily_route_anchor",
         "role": "신규",
-        "format": "random print purchase interruption",
-        "medium": "painted wood sign abstraction",
-        "target": "English-speaking affluent small-space markets; renters and first homes buying wall art",
-        "reflected": "Before another random print fills the wall, name the role the image should hold.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_1_before_buy_wall",
-        "role": "신규",
-        "format": "before buying another print",
-        "medium": "ordinary entry wall role anchor",
-        "target": "target not recorded",
-        "reflected": "Do not buy art to match the wall.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_2_bathroom_not_theme",
-        "role": "신규",
-        "format": "bathroom signal rule no theme",
-        "medium": "small bathroom personal anchor",
-        "target": "target not recorded",
-        "reflected": "This bathroom does not need bathroom art.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_3_stop_matching_sofa",
-        "role": "신규",
-        "format": "do not match the room first",
-        "medium": "ordinary sofa wall role anchor",
-        "target": "target not recorded",
-        "reflected": "Stop matching the sofa before naming the role.",
+        "format": "daily route to anchor translation",
+        "medium": "embroidered map print",
+        "target": "Canada/Australia/UK/New Zealand small apartment threshold and dining route / routine anchor",
+        "reflected": "This daily route needs a signal, not decor.",
         "performance": "성과 수집 대기",
         "is_new": true
       }
     ],
     "plan": [
       {
-        "id": "svc_20260522_s1_sg_bathroom_mirror_signal",
+        "id": "svc_20260523_s1_sg_service_yard_no_laundry_art",
         "role": "유지",
-        "format": "mirror check signal rule",
-        "medium": "cyanotype/photogram",
-        "target": "Singapore small-space / HDB or compact condo / English-speaking affluent renter or first home",
-        "reflected": "A bathroom does not need a theme.",
+        "format": "service yard not theme rule correction",
+        "medium": "monotype shadow print",
+        "target": "Singapore small-space / HDB or compact condo service yard / English-speaking renter or first home",
+        "reflected": "Do not buy laundry art for this corner.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260522_s2_sg_kitchen_not_theme",
+        "id": "svc_20260523_s2_sg_entry_before_buy_role",
         "role": "유지",
-        "format": "kitchen not theme rule correction",
+        "format": "before buying role entry interrupt",
+        "medium": "wax-resist crayon monoprint",
+        "target": "Singapore small-space / HDB or compact condo entry / art-print shoppers",
+        "reflected": "Before you buy another print, name the role.",
+        "performance": "성과 수집 대기",
+        "is_new": false
+      },
+      {
+        "id": "svc_20260523_s3_bathroom_note_to_signal",
+        "role": "확장",
+        "format": "tiny note to mirror signal",
+        "medium": "stitched textile applique",
+        "target": "English-speaking small-space renter or compact condo bathroom / soft return",
+        "reflected": "This mirror does not need matching art.",
+        "performance": "성과 수집 대기",
+        "is_new": true
+      },
+      {
+        "id": "svc_20260523_s4_bedroom_three_roles_no_vote",
+        "role": "확장",
+        "format": "three role wall study no vote",
+        "medium": "paper-pulp relief triptych",
+        "target": "UK/Canada/Australia/New Zealand small rental bedroom / role-first wall art",
+        "reflected": "Stop testing colors before testing the role.",
+        "performance": "성과 수집 대기",
+        "is_new": true
+      },
+      {
+        "id": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
+        "role": "신규",
+        "format": "fragile print prevention rule",
         "medium": "ceramic tile folk mosaic",
-        "target": "Singapore HDB compact kitchen / small-space renter or first flat",
-        "reflected": "The kitchen does not need kitchen art.",
-        "performance": "성과 수집 대기",
-        "is_new": false
-      },
-      {
-        "id": "svc_20260522_s3_receipt_to_three_materials",
-        "role": "확장",
-        "format": "receipt line to three material directions",
-        "medium": "risograph object poster",
-        "target": "English-speaking affluent small-space renter or first home",
-        "reflected": "One private line can become more than one art direction.",
+        "target": "Singapore small-space / compact HDB or condo kitchen / functional-room art shoppers",
+        "reflected": "Do not put a fragile print here.",
         "performance": "성과 수집 대기",
         "is_new": true
       },
       {
-        "id": "svc_20260522_s4_same_wall_daypart_anchor",
-        "role": "확장",
-        "format": "same wall daypart loop",
-        "medium": "linocut/woodcut print",
-        "target": "English-speaking small-space renter with desk/vanity corner; SG cue via window grille and aircon trunking",
-        "reflected": "Same wall, two times of day.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_s5_material_swatch_portfolio_flip",
+        "id": "svc_20260523_s6_daily_route_anchor",
         "role": "신규",
-        "format": "material swatch to inner role flip",
-        "medium": "scanned paper collage/mixed material portfolio",
-        "target": "English-speaking art-print and small-space decor audience; art-first with no room context required",
-        "reflected": "Material changes what a feeling can hold.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_s6_random_print_interrupt",
-        "role": "신규",
-        "format": "random print purchase interruption",
-        "medium": "painted wood sign abstraction",
-        "target": "English-speaking affluent small-space markets; renters and first homes buying wall art",
-        "reflected": "Before another random print fills the wall, name the role the image should hold.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_1_before_buy_wall",
-        "role": "신규",
-        "format": "before buying another print",
-        "medium": "ordinary entry wall role anchor",
-        "target": "target not recorded",
-        "reflected": "Do not buy art to match the wall.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_2_bathroom_not_theme",
-        "role": "신규",
-        "format": "bathroom signal rule no theme",
-        "medium": "small bathroom personal anchor",
-        "target": "target not recorded",
-        "reflected": "This bathroom does not need bathroom art.",
-        "performance": "성과 수집 대기",
-        "is_new": true
-      },
-      {
-        "id": "svc_20260522_fftest_3_stop_matching_sofa",
-        "role": "신규",
-        "format": "do not match the room first",
-        "medium": "ordinary sofa wall role anchor",
-        "target": "target not recorded",
-        "reflected": "Stop matching the sofa before naming the role.",
+        "format": "daily route to anchor translation",
+        "medium": "embroidered map print",
+        "target": "Canada/Australia/UK/New Zealand small apartment threshold and dining route / routine anchor",
+        "reflected": "This daily route needs a signal, not decor.",
         "performance": "성과 수집 대기",
         "is_new": true
       }
