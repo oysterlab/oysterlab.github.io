@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-23T14:36:04",
+  "generated_at": "2026-05-23T15:07:15",
   "audience_metrics": {
     "viewer_sg": 70.1,
     "follower_sg": 12.5,
@@ -20,10 +20,16 @@
         "post_count": 6,
         "post_demo_count": 6,
         "removed_count": 0,
+        "known_viewers": 4383,
+        "known_viewer_posts": 6,
         "target_market": 73.2,
+        "target_market_count": 3571,
         "sg": 69.2,
+        "sg_count": 3469,
         "target_age": 56.8,
+        "target_age_count": 2388,
         "female": 73.2,
+        "female_count": 3165,
         "target_rich_posts": 5,
         "top_posts": [
           "svc_20260520_s1_sg_bathroom_signal_rule",
@@ -41,10 +47,16 @@
         "post_count": 12,
         "post_demo_count": 5,
         "removed_count": 6,
+        "known_viewers": 482,
+        "known_viewer_posts": 5,
         "target_market": 74.1,
+        "target_market_count": 363,
         "sg": 71.1,
+        "sg_count": 352,
         "target_age": 53.8,
+        "target_age_count": 264,
         "female": 76.2,
+        "female_count": 367,
         "target_rich_posts": 2,
         "top_posts": [
           "svc_20260521_s2_sg_kitchen_not_theme",
@@ -62,10 +74,16 @@
         "post_count": 9,
         "post_demo_count": 9,
         "removed_count": 0,
+        "known_viewers": 0,
+        "known_viewer_posts": 0,
         "target_market": 74.6,
+        "target_market_count": null,
         "sg": 72.8,
+        "sg_count": null,
         "target_age": 56.2,
+        "target_age_count": null,
         "female": 80.0,
+        "female_count": null,
         "target_rich_posts": 5,
         "top_posts": [
           "svc_20260522_s2_sg_kitchen_not_theme",
@@ -82,7 +100,7 @@
     "direction": {
       "state": "growing",
       "line": "잘 성장하고 있다. 다만 폭발적인 성장이라기보다는 타겟 농도가 조금씩 좋아지는 쪽이다. 3일 전 대비 우선 국가 비율 +1.4p, 싱가포르 비율 +3.6p, 여성 비율 +6.8p로 올랐다. 25-44세 비율은 -0.6p라 큰 변화는 아니다.",
-      "next": "싱가포르 작은 집, HDB, 좁은 생활공간 단서는 유지하고, 영수증이나 재질만 나열하는 구성은 줄인다. 다음 판단은 조회수보다 실제 시청자 중 우선 국가, 싱가포르, 25-44세 비율이 함께 올라가는지로 본다.",
+      "next": "싱가포르의 도시형 일상 공간 단서는 유지하고, 영수증이나 재질만 나열하는 구성은 줄인다. 다음 판단은 조회수보다 실제 시청자 중 우선 국가, 싱가포르, 25-44세 비율이 함께 올라가는지로 본다.",
       "target_delta": 1.4,
       "sg_delta": 3.6,
       "age_delta": -0.6,
@@ -90,41 +108,41 @@
     }
   },
   "audience_routine": {
-    "run_id": "20260522-203000-scheduled_2030",
-    "date_kst": "2026-05-22",
-    "source": "scheduled_2030",
+    "run_id": "20260523-150704-manual_insight_update",
+    "date_kst": "2026-05-23",
+    "source": "manual_insight_update",
     "mode": "manual_confirmed_public_comment_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-22T20:30:00+09:00",
-    "finished_at_kst": "2026-05-22T20:30:00+09:00",
+    "started_at_kst": "2026-05-23T15:07:04+09:00",
+    "finished_at_kst": "2026-05-23T15:07:04+09:00",
     "target_comment_count": "3-5",
     "prepared_comment_count": 8,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
     "studio_summary": {
-      "generated_at": "2026-05-22T01:30:02",
-      "viewer_sg": 68.3,
-      "viewer_target_market": 75.3,
-      "viewer_25_44": 60.6,
-      "viewer_female": 79.0,
-      "follower_sg": 12.6,
+      "generated_at": "2026-05-23T01:30:06",
+      "viewer_sg": 70.1,
+      "viewer_target_market": 76.4,
+      "viewer_25_44": 61.1,
+      "viewer_female": 77.0,
+      "follower_sg": 12.5,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 95.2
+          "percent": 95.4
         },
         {
           "label": "Search",
-          "percent": 3.1
+          "percent": 2.8
         },
         {
           "label": "Personal Profile",
-          "percent": 1.5
+          "percent": 1.6
         },
         {
           "label": "Follow",
-          "percent": 0.3
+          "percent": 0.2
         },
         {
           "label": "Sound",
@@ -132,6 +150,55 @@
         }
       ]
     },
+    "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 사용자의 공간 문제를 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다.",
+    "discovery_sources": [
+      {
+        "surface": "웹",
+        "query": "Singapore HDB service yard decor small space",
+        "source_title": "Goodrich Global: Singapore service-yard design reference",
+        "url": "https://www.goodrichglobal.com/singapore/article/service-yard-design-singapore/",
+        "what_found": "싱가포르의 도시형 서비스야드는 기능이 많은 생활공간이라 벽면과 세로 공간까지 수납 가능성으로 보는 흐름이 강하다.",
+        "insight": "서비스야드는 예쁜 방이 아니라 매일 반복되는 집안일과 정돈의 공간이다. 그래서 빨래 그림보다 반복되는 하루를 조금 가볍게 만드는 신호가 우리 서비스와 맞다.",
+        "content_move": "세탁공간 콘텐츠는 빨래 이미지가 아니라 짧은 동선, 벽면, 빛, 반복 동작을 보여주고 아트는 그 반복을 덜 무겁게 만드는 기준점으로 둔다."
+      },
+      {
+        "surface": "웹",
+        "query": "Singapore service yard home decor HDB",
+        "source_title": "Lemonfridge: Service Yard Design Ideas for Singapore Homes",
+        "url": "https://www.lemonfridge.sg/service-yard",
+        "what_found": "서비스야드는 세탁만 하는 곳이 아니라 작은 식사 자리, 미니 홈오피스, 식물과 휴식이 섞이는 다목적 코너로도 제안된다.",
+        "insight": "타겟은 거실 같은 대표 공간보다, 원래 중요하지 않게 보이던 구석을 자기 삶의 장면으로 바꾸는 이야기에 반응할 수 있다.",
+        "content_move": "다음 실험은 '중요하지 않은 구석도 내 삶의 한 장면을 담을 수 있다'는 문장으로 시작하고, 방 이름보다 사용자의 반복 동선을 먼저 잡는다."
+      },
+      {
+        "surface": "웹/커뮤니티",
+        "query": "Singapore HDB kitchen too small service yard",
+        "source_title": "Reddit SingaporeEats: compact kitchens are difficult for proper cooking",
+        "url": "https://www.reddit.com/r/SingaporeEats/comments/1jmepxd",
+        "what_found": "도시형 주방은 준비 공간이 부족하고 서비스야드와 환기 동선이 답답하다는 불만이 반복된다.",
+        "insight": "싱가포르 주방 콘텐츠는 인테리어 취향보다 '기능적인 공간에서 하루를 어떻게 가볍게 만드는가'를 건드려야 한다.",
+        "content_move": "주방 콘텐츠는 음식, 접시, 예쁜 조리대가 아니라 수납 압박, 환기, 반복 사용감, 잠깐 멈추는 신호를 먼저 보여준다."
+      },
+      {
+        "surface": "웹",
+        "query": "small rental bathroom renter friendly no drill storage",
+        "source_title": "Homes & Gardens: renter-friendly small bathroom storage and lighting fixes",
+        "url": "https://www.homesandgardens.com/solved/no-drill-tiered-shower-caddy-ideal-renters",
+        "what_found": "작은 욕실은 구멍을 뚫기 어렵고, 수납과 조명 같은 작은 개입으로 분위기와 사용감이 크게 바뀐다는 문제가 반복된다.",
+        "insight": "욕실은 완성된 인테리어보다 '매일 거울 앞에서 나를 다시 보는 순간'이 중요하다.",
+        "content_move": "욕실 콘텐츠는 전후 리모델링보다, 드릴 없이 바꾸는 작은 신호와 거울 앞 자기 점검 장면을 중심으로 만든다."
+      },
+      {
+        "surface": "TikTok",
+        "query": "Singapore compact kitchen decor / small bathroom decor / small apartment decor",
+        "source_title": "TikTok 검색 표면",
+        "url": "https://www.tiktok.com/search?q=Singapore%20HDB%20kitchen%20decor",
+        "what_found": "자동 수집 대신 로그인된 TikTok 화면에서 실제 게시물 3-5개를 열어 저장/댓글/반응 문맥을 확인해야 한다.",
+        "insight": "TikTok에서는 완성된 인테리어보다 실제 생활감, 짧은 동선, 전후 비교, 반복해서 쓰는 코너가 콘텐츠 훅으로 강할 가능성이 높다.",
+        "content_move": "20:30 루틴에서 TikTok 게시물 링크와 첫 3초 훅을 별도 기록한다. 기록이 없으면 웹 인사이트만으로 확정하지 않는다.",
+        "manual_required": true
+      }
+    ],
     "slots": [
       {
         "segment": "private daily rooms / current feeling",
@@ -149,7 +216,7 @@
         "content_hook_if_reacts": "The room does not have to be important to hold something important in you."
       },
       {
-        "segment": "SG small-space / HDB / daily-life rooms",
+        "segment": "SG urban everyday rooms / compact daily-life rooms",
         "quota": 2,
         "queries": [
           "Singapore HDB kitchen decor",
@@ -159,7 +226,7 @@
           "small space apartment Singapore"
         ],
         "comment_candidates": [
-          "A small HDB corner can still hold a real chapter of your life. It does not have to be a perfect room first.",
+          "A small everyday corner can still hold a real chapter of your life. It does not have to be a perfect room first.",
           "This feels like a real small-space problem: the room works, but it has not fully learned what you need to feel here."
         ],
         "content_hook_if_reacts": "A small everyday corner can still hold a chapter of your life."
