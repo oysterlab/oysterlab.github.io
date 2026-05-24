@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T11:50:27",
+  "generated_at": "2026-05-24T12:41:45",
   "audience_metrics": {
     "viewer_sg": 71.4,
     "follower_sg": 12.9,
@@ -14,7 +14,7 @@
   },
   "account_audience_7d": {
     "range": "last_7_days",
-    "generated_at": "2026-05-24T11:45:29",
+    "generated_at": "2026-05-24T12:40:54",
     "unique_viewers": 12991,
     "new_viewers": 6857,
     "returning_viewers": null,
@@ -103,16 +103,16 @@
         "post_count": 9,
         "post_demo_count": 9,
         "removed_count": 0,
-        "known_viewers": 124,
-        "known_viewer_posts": 6,
+        "known_viewers": 1535,
+        "known_viewer_posts": 7,
         "target_market": 73.4,
-        "target_market_count": 93,
+        "target_market_count": 1015,
         "sg": 71.7,
-        "sg_count": 90,
+        "sg_count": 983,
         "target_age": 56.9,
-        "target_age_count": 69,
+        "target_age_count": 867,
         "female": 79.9,
-        "female_count": 98,
+        "female_count": 1286,
         "target_rich_posts": 5,
         "top_posts": [
           "svc_20260522_s2_sg_kitchen_not_theme",
@@ -130,16 +130,16 @@
         "post_count": 6,
         "post_demo_count": 6,
         "removed_count": 0,
-        "known_viewers": 19,
-        "known_viewer_posts": 2,
+        "known_viewers": 99,
+        "known_viewer_posts": 4,
         "target_market": 41.7,
-        "target_market_count": 7,
+        "target_market_count": 62,
         "sg": 34.0,
-        "sg_count": 4,
-        "target_age": 62.7,
-        "target_age_count": 13,
-        "female": 68.7,
-        "female_count": 12,
+        "sg_count": 57,
+        "target_age": 63.8,
+        "target_age_count": 61,
+        "female": 69.7,
+        "female_count": 73,
         "target_rich_posts": 0,
         "top_posts": [
           "svc_20260523_s3_bathroom_note_to_signal",
@@ -159,46 +159,46 @@
       "next": "다음 루틴은 형식 실험을 줄이고 싱가포르 도시형 생활공간과 역할이 분명한 첫 장 문장으로 다시 좁힌다.",
       "target_delta": -32.4,
       "sg_delta": -37.1,
-      "age_delta": 8.9,
-      "female_delta": -7.5
+      "age_delta": 10.0,
+      "female_delta": -6.5
     }
   },
   "audience_routine": {
-    "run_id": "20260523-203000-scheduled_2030",
-    "date_kst": "2026-05-23",
-    "source": "scheduled_2030",
-    "mode": "manual_confirmed_public_comment_packet",
+    "run_id": "20260524-123947-manual_1200_research",
+    "date_kst": "2026-05-24",
+    "source": "manual_1200_research",
+    "mode": "target_audience_research_and_surface_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-23T20:30:00+09:00",
-    "finished_at_kst": "2026-05-23T20:30:00+09:00",
-    "target_comment_count": "3-5",
-    "prepared_comment_count": 8,
+    "started_at_kst": "2026-05-24T12:39:47+09:00",
+    "finished_at_kst": "2026-05-24T12:39:47+09:00",
+    "target_comment_count": "0-3 optional",
+    "prepared_comment_count": 10,
     "posted_comment_count": 0,
     "manual_action_required": true,
-    "safety_rule": "No service, link, price, AI, or check-my-profile language in cold comments.",
+    "safety_rule": "Research first. If commenting manually, use no service, link, price, AI, or check-my-profile language.",
     "studio_summary": {
-      "generated_at": "2026-05-23T15:20:20",
-      "viewer_sg": 70.1,
-      "viewer_target_market": 76.4,
+      "generated_at": "2026-05-24T11:45:29",
+      "viewer_sg": 71.4,
+      "viewer_target_market": 77.2,
       "viewer_25_44": 61.1,
-      "viewer_female": 77.0,
-      "follower_sg": 12.5,
+      "viewer_female": 76.0,
+      "follower_sg": 12.9,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 95.4
+          "percent": 96.5
         },
         {
           "label": "Search",
-          "percent": 2.5
+          "percent": 2.0
         },
         {
           "label": "Personal Profile",
-          "percent": 1.8
+          "percent": 1.4
         },
         {
           "label": "Follow",
-          "percent": 0.2
+          "percent": 0.1
         },
         {
           "label": "Sound",
@@ -206,8 +206,28 @@
         }
       ]
     },
-    "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 사용자의 공간 문제를 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다.",
+    "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 사용자의 공간 문제, 북미/SG 도시형 생활패턴, 2D 아트 취향을 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다.",
     "discovery_sources": [
+      {
+        "surface": "TikTok/웹",
+        "query": "NYC apartment wall art small space / LA apartment decor wall art",
+        "source_title": "북미 도시형 아파트 표면",
+        "url": "https://www.tiktok.com/search?q=NYC%20apartment%20wall%20art",
+        "what_found": "12시 루틴에서 LA/NYC 같은 북미 도시형 아파트 게시물을 실제로 열어 첫 2초 훅, 댓글 반응, 저장을 부르는 벽/방 위치를 확인한다.",
+        "insight": "북미 방향은 국가를 바꾸는 것이 아니라 도시형 생활패턴을 넓히는 실험이다. 작은 침실, 주방 코너, 책상 옆, 현관 벽처럼 몸이 매일 지나는 위치를 본다.",
+        "content_move": "다음 6개 중 최소 1개는 북미 도시형 아파트 생활패턴에서 온 공간/훅으로 만든다. 단, 공개 카피에서 지역명이나 경제 조건을 대놓고 말하지 않는다.",
+        "manual_required": true
+      },
+      {
+        "surface": "TikTok/Pinterest/Etsy",
+        "query": "contemporary art print apartment decor / abstract wall art small apartment / digital illustration wall art",
+        "source_title": "타겟 오디언스 아트 취향 표면",
+        "url": "https://www.tiktok.com/search?q=abstract%20wall%20art%20apartment",
+        "what_found": "물리적 작품 종류가 아니라 2D 이미지의 색, 선, 여백, 감정 밀도, 방 안에서의 존재감을 본다.",
+        "insight": "ELURA의 아트 실험은 판화/조각/오브제처럼 물성 중심으로 가지 않는다. 사용자가 저장하거나 구매 후보로 보는 시각 언어를 디지털 이미지 스타일로 번역한다.",
+        "content_move": "다음 제작은 최소 2개 슬롯에서 새로운 2D 시각 스타일을 테스트한다. 예: editorial soft geometry, photographic collage, restrained figurative line, cinematic shadow abstraction.",
+        "manual_required": true
+      },
       {
         "surface": "웹",
         "query": "Singapore HDB service yard decor small space",
@@ -251,8 +271,42 @@
         "url": "https://www.tiktok.com/search?q=Singapore%20HDB%20kitchen%20decor",
         "what_found": "자동 수집 대신 로그인된 TikTok 화면에서 실제 게시물 3-5개를 열어 저장/댓글/반응 문맥을 확인해야 한다.",
         "insight": "TikTok에서는 완성된 인테리어보다 실제 생활감, 짧은 동선, 전후 비교, 반복해서 쓰는 코너가 콘텐츠 훅으로 강할 가능성이 높다.",
-        "content_move": "20:30 루틴에서 TikTok 게시물 링크와 첫 3초 훅을 별도 기록한다. 기록이 없으면 웹 인사이트만으로 확정하지 않는다.",
+        "content_move": "12:00 루틴에서 TikTok 게시물 링크와 첫 3초 훅을 별도 기록한다. 기록이 없으면 웹 인사이트만으로 확정하지 않는다.",
         "manual_required": true
+      }
+    ],
+    "art_taste_sources": [
+      {
+        "surface": "TikTok/Pinterest/Etsy",
+        "query": "abstract wall art apartment decor / contemporary art print apartment / digital illustration wall art",
+        "focus": "북미 25-44 도시형 홈데코 오디언스가 어떤 분위기의 2D 이미지를 저장하고 구매 후보로 보는지 확인한다.",
+        "look_for": [
+          "방을 압도하지 않는 색면과 여백",
+          "사진처럼 보이는 실내와 충돌하지 않는 그래픽 강도",
+          "짧은 문장 없이도 한 번 더 보게 만드는 선/색/리듬",
+          "작은 방에서 실제로 걸 수 있을 만큼 조용하지만 싼 장식처럼 보이지 않는 이미지"
+        ],
+        "exclude": [
+          "조각, 도자, 오브제, 설치물처럼 물리적 물체가 중심인 아트",
+          "판화 기법 자체를 상품처럼 파는 접근",
+          "프레임/재질/배송 같은 물성 중심 콘텐츠"
+        ],
+        "content_move": "아트 스타일 실험은 물리적 매체명이 아니라 2D 시각 언어로 기록한다. 예: editorial soft geometry, digital color-field, photographic collage, restrained figurative line, cinematic shadow abstraction."
+      },
+      {
+        "surface": "TikTok",
+        "query": "NYC apartment art decor / LA apartment wall art / small apartment gallery wall",
+        "focus": "LA/NYC의 작은 도시형 집에서 사람들이 어떤 위치에 아트를 두고, 어떤 방식을 '내 취향'으로 느끼는지 본다.",
+        "look_for": [
+          "침대 옆, 현관, 주방 코너, 책상 옆처럼 매일 몸이 지나는 위치",
+          "완성된 인테리어보다 덜 완벽하지만 생활감 있는 공간",
+          "아트가 방을 꾸미는지, 아니면 하루의 감각을 잡아주는지"
+        ],
+        "exclude": [
+          "고급 갤러리/쇼룸처럼 실제 타겟의 생활감이 사라진 공간",
+          "작품 소장품 자랑이나 물리적 오브제 중심 콘텐츠"
+        ],
+        "content_move": "북미 실험은 SG 신호를 버리는 것이 아니라, 도시형 생활패턴을 넓히는 역할로 쓴다. LA/NYC 소형 집의 빛, 책상, 침대 옆, 주방 코너를 다음 6개 중 최소 1개에 반영한다."
       }
     ],
     "slots": [
@@ -270,6 +324,23 @@
           "The strongest part is not the decor. It is that this everyday corner starts to feel like a part of your life."
         ],
         "content_hook_if_reacts": "The room does not have to be important to hold something important in you."
+      },
+      {
+        "segment": "North America urban apartments / LA NYC daily patterns",
+        "quota": 2,
+        "queries": [
+          "NYC apartment wall art small space",
+          "LA apartment decor bedroom wall",
+          "Brooklyn studio apartment decor",
+          "Los Angeles apartment kitchen decor",
+          "small city apartment entryway decor",
+          "apartment therapy small apartment art"
+        ],
+        "comment_candidates": [
+          "A small city apartment does not need a bigger room first. It needs one place where the day can land.",
+          "This works because the wall is not trying to look finished. It is giving the routine one clear point."
+        ],
+        "content_hook_if_reacts": "A city apartment can feel more intentional without becoming more decorated."
       },
       {
         "segment": "SG urban everyday rooms / compact daily-life rooms",
@@ -294,7 +365,10 @@
           "wall art home decor",
           "gallery wall apartment",
           "art print kitchen wall",
-          "bathroom wall art apartment"
+          "bathroom wall art apartment",
+          "abstract wall art apartment trend",
+          "contemporary art print apartment decor",
+          "editorial illustration wall art home"
         ],
         "comment_candidates": [
           "This works because the art is not just filling a wall. It gives the room a feeling to keep.",
@@ -330,6 +404,7 @@
     },
     "content_hooks_for_daily6": [
       "The room does not have to be important to hold something important in you.",
+      "A city apartment can feel more intentional without becoming more decorated.",
       "A small everyday corner can still hold a chapter of your life.",
       "Do not choose art for the room first. Choose the feeling you need to keep close.",
       "Temporary does not mean meaningless. Start with the place your day keeps passing through."
@@ -340,13 +415,13 @@
       "id": "svc_20260524_recovery_s6_art_sequence_to_room",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643282640103083285",
       "audience_metrics": {
-        "sg": 71.4,
-        "us": 2.2,
-        "target_market": 77.2,
-        "target_age": 61.1,
-        "female": 76.0,
+        "sg": 0,
+        "us": 0,
+        "target_market": 0,
+        "target_age": 85.0,
+        "female": 80.0,
         "unique_viewers": null,
-        "source": "account fallback"
+        "source": "post-level"
       },
       "engagement": {
         "views": null,
@@ -360,13 +435,13 @@
       "id": "svc_20260524_recovery_s5_desk_before_after",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643281715565284629",
       "audience_metrics": {
-        "sg": 71.4,
-        "us": 2.2,
-        "target_market": 77.2,
-        "target_age": 61.1,
-        "female": 76.0,
+        "sg": 0,
+        "us": 0,
+        "target_market": 0,
+        "target_age": 70.0,
+        "female": 80.0,
         "unique_viewers": null,
-        "source": "account fallback"
+        "source": "post-level"
       },
       "engagement": {
         "views": null,
@@ -380,13 +455,13 @@
       "id": "svc_20260524_recovery_s4_kitchen_8pm_return",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643280910829227284",
       "audience_metrics": {
-        "sg": 71.4,
-        "us": 2.2,
-        "target_market": 77.2,
-        "target_age": 61.1,
-        "female": 76.0,
+        "sg": 0,
+        "us": 0,
+        "target_market": 0,
+        "target_age": 90.0,
+        "female": 85.0,
         "unique_viewers": null,
-        "source": "account fallback"
+        "source": "post-level"
       },
       "engagement": {
         "views": null,
@@ -400,13 +475,13 @@
       "id": "svc_20260524_recovery_s3_entry_cart_pause",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643279971527478549",
       "audience_metrics": {
-        "sg": 71.4,
-        "us": 2.2,
-        "target_market": 77.2,
-        "target_age": 61.1,
-        "female": 76.0,
+        "sg": 20.0,
+        "us": 20.0,
+        "target_market": 40.0,
+        "target_age": 76.0,
+        "female": 89.0,
         "unique_viewers": null,
-        "source": "account fallback"
+        "source": "post-level"
       },
       "engagement": {
         "views": null,
@@ -420,10 +495,10 @@
       "id": "svc_20260524_recovery_s2_bedroom_role_first",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643276924827061524",
       "audience_metrics": {
-        "sg": 0,
-        "us": 100.0,
+        "sg": 85.7,
+        "us": 14.3,
         "target_market": 100.0,
-        "target_age": 83.0,
+        "target_age": 75.0,
         "female": 100.0,
         "unique_viewers": null,
         "source": "post-level"
@@ -440,13 +515,13 @@
       "id": "svc_20260524_recovery_s1_mirror_private_signal",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643276123849116949",
       "audience_metrics": {
-        "sg": 71.4,
-        "us": 2.2,
-        "target_market": 77.2,
-        "target_age": 61.1,
-        "female": 76.0,
+        "sg": 43.8,
+        "us": 6.3,
+        "target_market": 50.1,
+        "target_age": 82.0,
+        "female": 75.0,
         "unique_viewers": null,
-        "source": "account fallback"
+        "source": "post-level"
       },
       "engagement": {
         "views": null,
@@ -463,8 +538,8 @@
         "sg": 16.3,
         "us": 2.3,
         "target_market": 32.5,
-        "target_age": 65.0,
-        "female": 64.0,
+        "target_age": 72.0,
+        "female": 70.0,
         "unique_viewers": 11,
         "source": "post-level"
       },
@@ -525,7 +600,7 @@
         "target_market": 74.4,
         "target_age": 58.0,
         "female": 77.0,
-        "unique_viewers": null,
+        "unique_viewers": 73,
         "source": "post-level"
       },
       "engagement": {
@@ -545,7 +620,7 @@
         "target_market": 19.9,
         "target_age": 66.0,
         "female": 64.0,
-        "unique_viewers": null,
+        "unique_viewers": 7,
         "source": "post-level"
       },
       "engagement": {
