@@ -19,6 +19,10 @@
     .delta.down { color:var(--bad); }
     .delta.flat { color:var(--muted); }
     .table-note { font-size:13px; margin-top:-14px; }
+    .activity-table { width:100%; max-width:980px; border-collapse:collapse; margin:12px 0 8px; font-size:13px; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    .activity-table th, .activity-table td { text-align:left; padding:9px 12px; border-bottom:1px solid var(--line); }
+    .activity-table th { color:var(--muted); font-weight:700; background:#f4efe6; }
+    .activity-table tr:last-child td { border-bottom:0; }
     main { padding:24px 5vw 80px; }
     .hero { display:grid; grid-template-columns:1fr; gap:16px; max-width:1180px; }
     .summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin:20px 0 24px; }
@@ -179,10 +183,26 @@
 <body>
   <header>
     <h1>ELURA 일일 리포트</h1>
-    <p>생성 시각: 5/25 18:24 KST. 최근 3일 성과, 이번 업로드에 반영한 전략, 실제 업로드 화면, 계정 전체 시청자 방향, 12시 타겟 오디언스 연구를 한 흐름으로 확인하는 리포트.</p>
+    <p>생성 시각: 5/25 23:05 KST. 최근 3일 성과, 이번 업로드에 반영한 전략, 실제 업로드 화면, 계정 전체 시청자 방향, 12시 타겟 오디언스 연구를 한 흐름으로 확인하는 리포트.</p>
     <nav class="archive-nav"><a class="active" href="../2026-05-25/">5/25</a><a href="../2026-05-24/">5/24</a><a href="../2026-05-23/">5/23</a><a href="../2026-05-22/">5/22</a><a href="../2026-05-21/">5/21</a><a href="../2026-05-20/">5/20</a><a href="../2026-05-19/">5/19</a><a href="../2026-05-18/">5/18</a><a href="../2026-05-17/">5/17</a><a href="../archive/">전체 리포트</a></nav>
   </header>
   <main>
+    <h2>0. ELURA 사이트 유입·전환 (elura.vercel.app)</h2>
+    
+    <section class="summary">
+      <div class="metric"><span>오늘 방문</span><strong>4</strong><small>순방문 IP 3</small></div>
+      <div class="metric"><span>7일 방문</span><strong>4</strong><small>순방문 IP 3</small></div>
+      <div class="metric"><span>오늘 가입</span><strong>1</strong><small>누적 1</small></div>
+      <div class="metric"><span>7일 전환율</span><strong>25.0%</strong><small>가입 1 / 방문 4</small></div>
+    </section>
+    <p><b>국가</b> &nbsp; <span class="hl soft">KR · 2</span> <span class="hl soft">US · 2</span></p>
+    <p><b>유입 경로</b> &nbsp; <span class="hl soft">tiktok · 2</span> <span class="hl soft">elura-mzpo21dpk-oysterlabs-projects.vercel.app · 2</span></p>
+    <p><b>기기</b> &nbsp; <span class="hl soft">데스크톱 · 4</span></p>
+    <h3>최근 가입 (지역·유입·시각)</h3>
+    <table class="activity-table"><thead><tr><th>지역</th><th>유입</th><th>시각(UTC)</th></tr></thead><tbody><tr><td>-</td><td>deploy-verify</td><td>2026-05-25 13:40</td></tr></tbody></table>
+    <p class="table-note">이메일·IP 원본은 공개 리포트에 노출하지 않습니다. 관리 엔드포인트(<code>/api/admin/activity?key=…</code>)에서만 확인하세요.</p>
+    
+
     <h2>1. 최근 3일 성과 변화</h2>
     
     <h3>Executive Summary</h3>
