@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T01:01:04",
+  "generated_at": "2026-05-25T11:27:58",
   "audience_metrics": {
     "viewer_sg": 70.9,
     "follower_sg": 12.8,
@@ -14,7 +14,7 @@
   },
   "account_audience_7d": {
     "range": "last_7_days",
-    "generated_at": "2026-05-25T01:00:05",
+    "generated_at": "2026-05-25T11:27:03",
     "unique_viewers": 13538,
     "new_viewers": 7313,
     "returning_viewers": null,
@@ -27,37 +27,37 @@
       {
         "date": "2026-05-18",
         "label": "5/18",
-        "value": 1108,
+        "value": 2282,
         "status": 0
       },
       {
         "date": "2026-05-19",
         "label": "5/19",
-        "value": 2282,
+        "value": 4662,
         "status": 0
       },
       {
         "date": "2026-05-20",
         "label": "5/20",
-        "value": 4662,
+        "value": 3120,
         "status": 0
       },
       {
         "date": "2026-05-21",
         "label": "5/21",
-        "value": 3120,
+        "value": 3656,
         "status": 0
       },
       {
         "date": "2026-05-22",
         "label": "5/22",
-        "value": 3656,
+        "value": 3190,
         "status": 0
       },
       {
         "date": "2026-05-23",
         "label": "5/23",
-        "value": 3190,
+        "value": 3799,
         "status": 0
       },
       {
@@ -76,16 +76,16 @@
         "post_count": 9,
         "post_demo_count": 9,
         "removed_count": 0,
-        "known_viewers": 4714,
+        "known_viewers": 4906,
         "known_viewer_posts": 9,
         "target_market": 73.4,
-        "target_market_count": 3562,
-        "sg": 71.8,
-        "sg_count": 3485,
+        "target_market_count": 3714,
+        "sg": 71.7,
+        "sg_count": 3634,
         "target_age": 56.7,
-        "target_age_count": 2627,
+        "target_age_count": 2728,
         "female": 79.9,
-        "female_count": 3864,
+        "female_count": 4018,
         "target_rich_posts": 5,
         "top_posts": [
           "svc_20260522_s2_sg_kitchen_not_theme",
@@ -103,16 +103,16 @@
         "post_count": 6,
         "post_demo_count": 6,
         "removed_count": 0,
-        "known_viewers": 184,
+        "known_viewers": 648,
         "known_viewer_posts": 6,
-        "target_market": 43.3,
-        "target_market_count": 118,
-        "sg": 35.7,
-        "sg_count": 111,
+        "target_market": 43.8,
+        "target_market_count": 439,
+        "sg": 36.4,
+        "sg_count": 421,
         "target_age": 61.7,
-        "target_age_count": 108,
+        "target_age_count": 378,
         "female": 70.7,
-        "female_count": 139,
+        "female_count": 493,
         "target_rich_posts": 0,
         "top_posts": [
           "svc_20260523_s3_bathroom_note_to_signal",
@@ -132,13 +132,13 @@
         "removed_count": 12,
         "known_viewers": 0,
         "known_viewer_posts": 0,
-        "target_market": 66.7,
+        "target_market": 65.9,
         "target_market_count": null,
-        "sg": 66.2,
+        "sg": 64.9,
         "sg_count": null,
-        "target_age": 61.2,
+        "target_age": 62.3,
         "target_age_count": null,
-        "female": 78.8,
+        "female": 79.0,
         "female_count": null,
         "target_rich_posts": 2,
         "top_posts": [
@@ -155,12 +155,12 @@
     ],
     "direction": {
       "state": "weakening",
-      "line": "성장 방향이 약해졌다. 3일 전 대비 우선 국가 비율 -6.7p, 싱가포르 비율 -5.6p다.",
+      "line": "성장 방향이 약해졌다. 3일 전 대비 우선 국가 비율 -7.5p, 싱가포르 비율 -6.8p다.",
       "next": "다음 루틴은 형식 실험을 줄이고 싱가포르 도시형 생활공간과 역할이 분명한 첫 장 문장으로 다시 좁힌다.",
-      "target_delta": -6.7,
-      "sg_delta": -5.6,
-      "age_delta": 4.5,
-      "female_delta": -1.1
+      "target_delta": -7.5,
+      "sg_delta": -6.8,
+      "age_delta": 5.6,
+      "female_delta": -0.9
     }
   },
   "audience_routine": {
@@ -412,14 +412,134 @@
   },
   "posts": [
     {
+      "id": "svc_20260525_rework_s6_passage_return",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643648999848709396",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260525_rework_s5_work_shelf_pause",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643648064124767509",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260525_rework_s4_kitchen_quiet_point",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643647253688700180",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260525_rework_s3_mirror_first_check",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643645730665663764",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260525_rework_s2_entry_one_glance",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643644800855559445",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260525_rework_s1_morning_wall_tone",
+      "url": "https://www.tiktok.com/@oysterlab7/photo/7643643865378983189",
+      "audience_metrics": {
+        "sg": 70.9,
+        "us": 1.9,
+        "target_market": 76.3,
+        "target_age": 60.4,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260524_recovery_s6_art_sequence_to_room",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643282640103083285",
       "audience_metrics": {
-        "sg": 53.5,
+        "sg": 41.5,
         "us": 0,
-        "target_market": 53.5,
-        "target_age": 55.0,
-        "female": 71.0,
+        "target_market": 44.8,
+        "target_age": 56.0,
+        "female": 74.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -435,11 +555,11 @@
       "id": "svc_20260524_recovery_s5_desk_before_after",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643281715565284629",
       "audience_metrics": {
-        "sg": 59.8,
+        "sg": 58.1,
         "us": 0,
-        "target_market": 60.6,
+        "target_market": 58.1,
         "target_age": 65.0,
-        "female": 68.0,
+        "female": 67.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -455,11 +575,11 @@
       "id": "svc_20260524_recovery_s4_kitchen_8pm_return",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643280910829227284",
       "audience_metrics": {
-        "sg": 61.9,
+        "sg": 63.9,
         "us": 0,
-        "target_market": 63.3,
-        "target_age": 65.0,
-        "female": 90.0,
+        "target_market": 65.6,
+        "target_age": 67.0,
+        "female": 89.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -495,11 +615,11 @@
       "id": "svc_20260524_recovery_s2_bedroom_role_first",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643276924827061524",
       "audience_metrics": {
-        "sg": 80.8,
-        "us": 0.5,
-        "target_market": 81.3,
-        "target_age": 54.0,
-        "female": 72.0,
+        "sg": 80.3,
+        "us": 0,
+        "target_market": 80.3,
+        "target_age": 55.0,
+        "female": 71.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -515,132 +635,12 @@
       "id": "svc_20260524_recovery_s1_mirror_private_signal",
       "url": "https://www.tiktok.com/@oysterlab7/photo/7643276123849116949",
       "audience_metrics": {
-        "sg": 64.6,
+        "sg": 69.2,
         "us": 0,
-        "target_market": 64.6,
-        "target_age": 64.0,
-        "female": 88.0,
+        "target_market": 69.8,
+        "target_age": 67.0,
+        "female": 89.0,
         "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s6_daily_route_anchor",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642792848206679317",
-      "audience_metrics": {
-        "sg": 18.2,
-        "us": 2.3,
-        "target_market": 34.2,
-        "target_age": 69.0,
-        "female": 71.0,
-        "unique_viewers": 11,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642792027922517269",
-      "audience_metrics": {
-        "sg": 23.5,
-        "us": 2.9,
-        "target_market": 35.2,
-        "target_age": 70.0,
-        "female": 70.0,
-        "unique_viewers": 8,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s4_bedroom_three_roles_no_vote",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642790794830548244",
-      "audience_metrics": {
-        "sg": 70.2,
-        "us": 0,
-        "target_market": 71.8,
-        "target_age": 58.0,
-        "female": 77.0,
-        "unique_viewers": 73,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s3_bathroom_note_to_signal",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642789820942650644",
-      "audience_metrics": {
-        "sg": 72.0,
-        "us": 0,
-        "target_market": 74.5,
-        "target_age": 58.0,
-        "female": 77.0,
-        "unique_viewers": 73,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s2_sg_entry_before_buy_role",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642788870530043157",
-      "audience_metrics": {
-        "sg": 16.1,
-        "us": 0,
-        "target_market": 22.5,
-        "target_age": 63.0,
-        "female": 65.0,
-        "unique_viewers": 7,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260523_s1_sg_service_yard_no_laundry_art",
-      "url": "https://www.tiktok.com/@oysterlab7/photo/7642787907849260309",
-      "audience_metrics": {
-        "sg": 14.3,
-        "us": 0,
-        "target_market": 21.5,
-        "target_age": 52.0,
-        "female": 64.0,
-        "unique_viewers": 12,
         "source": "post-level"
       },
       "engagement": {
@@ -655,204 +655,125 @@
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260524_recovery_s1_mirror_private_signal",
+        "id": "svc_20260525_rework_s1_morning_wall_tone",
         "role": "유지",
-        "format": "mirror private note to signal recovery",
-        "medium": "painterly digital abstraction",
-        "target": "English-speaking 25-44 women in Singapore or compact city homes",
-        "reflected": "That first mirror check sets the tone.",
+        "format": "morning wall tone setter",
+        "medium": "digital soft geometry, smooth color field, no physical texture",
+        "target": "English-speaking compact city apartment audience; NA/Singapore compatible",
+        "reflected": "The first wall can set the tone before the day starts.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "svc_20260523_s3_bathroom_note_to_signal",
-        "applied_strategy": "5/23에서 싱가포르 71.9%, 여성 77%까지 간 '거울 앞 사적 신호'를 살렸다. 다만 'matching art' 장식 말투를 줄이고, 내 상태가 돌아오는 장면으로 다시 썼다.",
-        "drop_prevention": "첫 장을 상식적 금지문이 아니라 사용자가 바로 알아볼 수 있는 일상 순간으로 시작한다. 주거 조건을 직접 부르는 단어와 spa/steam/paper 같은 당연한 조언은 쓰지 않는다."
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260524_recovery_s2_bedroom_role_first",
+        "id": "svc_20260525_rework_s2_entry_one_glance",
         "role": "유지",
-        "format": "bedroom role before color recovery",
-        "medium": "hand-painted digital geometry",
-        "target": "English-speaking 25-44 women in compact city bedrooms",
-        "reflected": "The last wall you see should feel easy to return to.",
+        "format": "entry wall one glance",
+        "medium": "fully digital bold flat geometry, cobalt black coral, smooth surface",
+        "target": "Singapore compact apartment / English-speaking urban apartment audience",
+        "reflected": "The wall by the door only gets a second.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "2026-05-23 bedroom role-first post",
-        "applied_strategy": "5/23에서 싱가포르 69.6%, 여성 78%까지 간 '역할 먼저' 구조를 살렸다. 색상 테스트나 직접 선택 요구처럼 보이지 않게 한 점의 역할로 좁혔다.",
-        "drop_prevention": "직접 선택 요청 문구를 쓰지 않는다. 사용자가 해석해야 하는 'role/proof' 단어보다 밤에 바로 느껴지는 안정감을 먼저 말한다."
-      },
-      {
-        "id": "svc_20260524_recovery_s3_entry_cart_pause",
-        "role": "확장",
-        "format": "entry cart pause before role recovery",
-        "medium": "painterly digital direction field",
-        "target": "English-speaking 25-44 women in Singapore-friendly compact city entries",
-        "reflected": "The wall by the door gets two seconds.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s2_sg_entry_before_buy_role",
-        "applied_strategy": "5/23의 '구매 직전 멈춤'은 유지하되, s2가 한국 67.8% / 싱가포르 10.7%로 샌 원인을 고쳤다. 주거 조건을 직접 말하지 않고 영어권 도시형 현관 장면과 구매 전 감각 판단으로 전환했다.",
-        "drop_prevention": "현관을 경제 상황으로 부르지 않고, 깊게 해석해야 하는 'direction' 대신 문 앞에서 바로 이해되는 두 번의 짧은 시선으로 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s4_kitchen_8pm_return",
-        "role": "확장",
-        "format": "kitchen evening return signal recovery",
-        "medium": "single-gesture digital abstraction",
-        "target": "English-speaking 25-44 women in compact city kitchens",
-        "reflected": "At 8 PM, the kitchen needs one quiet point.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
-        "applied_strategy": "5/23의 주방 슬롯은 SG 21.9%로 떨어졌다. 원인을 'fragile print/steam' 같은 실용 조언으로 보고, 이번에는 주방 재질 문제가 아니라 8PM의 피곤한 상태가 돌아오는 장면으로 확장했다.",
-        "drop_prevention": "steam, fragile, paper, durable 같은 상식 조언을 금지하고 사용자가 바로 느끼는 저녁의 산만함과 쉬는 지점을 보여준다."
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       }
     ],
     "discard": [
+      {
+        "id": "svc_20260525_s6_night_window_eye_stop",
+        "format": "night window reflection to anchor",
+        "reason": "User rejected and requested deletion: weak first-frame impact, awkward art placement, excessive art zooms, tactile-process style drift, and 01:00 report/12:00 research mismatch.",
+        "qa": "pass ready for upload"
+      },
       {
         "id": "svc_20260524_v2_s1_desk_gaze_pattern",
         "format": "desk wall gaze pattern observation",
         "reason": "pass_ready_for_upload",
         "qa": "pass ready for upload"
-      },
-      {
-        "id": "svc_20260524_s6_sg_lease_no_drill_anchor",
-        "format": "lease constraint to removable anchor",
-        "reason": "Deleted from TikTok app on 2026-05-24 after user rejection: common-sense hooks, abstract/economic callout, visual sameness.",
-        "qa": "pass ready for upload"
       }
     ],
-    "new": [
-      {
-        "id": "svc_20260524_recovery_s3_entry_cart_pause",
-        "role": "확장",
-        "format": "entry cart pause before role recovery",
-        "medium": "painterly digital direction field",
-        "target": "English-speaking 25-44 women in Singapore-friendly compact city entries",
-        "reflected": "The wall by the door gets two seconds.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s2_sg_entry_before_buy_role",
-        "applied_strategy": "5/23의 '구매 직전 멈춤'은 유지하되, s2가 한국 67.8% / 싱가포르 10.7%로 샌 원인을 고쳤다. 주거 조건을 직접 말하지 않고 영어권 도시형 현관 장면과 구매 전 감각 판단으로 전환했다.",
-        "drop_prevention": "현관을 경제 상황으로 부르지 않고, 깊게 해석해야 하는 'direction' 대신 문 앞에서 바로 이해되는 두 번의 짧은 시선으로 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s4_kitchen_8pm_return",
-        "role": "확장",
-        "format": "kitchen evening return signal recovery",
-        "medium": "single-gesture digital abstraction",
-        "target": "English-speaking 25-44 women in compact city kitchens",
-        "reflected": "At 8 PM, the kitchen needs one quiet point.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
-        "applied_strategy": "5/23의 주방 슬롯은 SG 21.9%로 떨어졌다. 원인을 'fragile print/steam' 같은 실용 조언으로 보고, 이번에는 주방 재질 문제가 아니라 8PM의 피곤한 상태가 돌아오는 장면으로 확장했다.",
-        "drop_prevention": "steam, fragile, paper, durable 같은 상식 조언을 금지하고 사용자가 바로 느끼는 저녁의 산만함과 쉬는 지점을 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s5_desk_before_after",
-        "role": "새로 도전",
-        "format": "same desk before after inner state",
-        "medium": "soft translucent digital field",
-        "target": "English-speaking 25-44 women in compact home desk corners",
-        "reflected": "A desk wall has to work before you do.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new_format_from_20260524_drop",
-        "applied_strategy": "새로운 방이 아니라 새로운 설득 방식이다. 5/23에서 추상적 동선이 KR 53.3%로 샜기 때문에, 이번에는 같은 책상 전후 비교로 몸의 변화가 보이게 했다.",
-        "drop_prevention": "반쪽 어둠/어색한 줌 없이 동일한 책상 인스턴스를 유지하고, before/after를 인테리어 변화가 아니라 눈이 쉴 곳이 생기는 변화로 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s6_art_sequence_to_room",
-        "role": "새로 도전",
-        "format": "art sequence passive choice to room",
-        "medium": "art-card sequence to room landing",
-        "target": "English-speaking 25-44 women who browse wall art for compact city homes",
-        "reflected": "You do not need ten perfect options.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new_format_from_20260524_drop",
-        "applied_strategy": "사용자가 말한 '아트만 나열하는 새 포맷'을 테스트하되, 단순 포트폴리오로 끝내지 않고 마지막에 실제 공간으로 착지시켰다.",
-        "drop_prevention": "직접 반응 요구 없이 아트 시퀀스가 한 점으로 좁혀지고, 그 한 점이 벽에 들어오는 장면까지 보여준다. '숨은 의미'를 맞히게 하지 않고 시선이 돌아오는 감각으로 설명한다."
-      }
-    ],
+    "new": [],
     "plan": [
       {
-        "id": "svc_20260524_recovery_s1_mirror_private_signal",
+        "id": "svc_20260525_rework_s1_morning_wall_tone",
         "role": "유지",
-        "format": "mirror private note to signal recovery",
-        "medium": "painterly digital abstraction",
-        "target": "English-speaking 25-44 women in Singapore or compact city homes",
+        "format": "morning wall tone setter",
+        "medium": "digital soft geometry, smooth color field, no physical texture",
+        "target": "English-speaking compact city apartment audience; NA/Singapore compatible",
+        "reflected": "The first wall can set the tone before the day starts.",
+        "performance": "성과 수집 대기",
+        "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260525_rework_s2_entry_one_glance",
+        "role": "유지",
+        "format": "entry wall one glance",
+        "medium": "fully digital bold flat geometry, cobalt black coral, smooth surface",
+        "target": "Singapore compact apartment / English-speaking urban apartment audience",
+        "reflected": "The wall by the door only gets a second.",
+        "performance": "성과 수집 대기",
+        "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260525_rework_s3_mirror_first_check",
+        "role": "extend: mirror-check winner plus softer digital art",
+        "format": "mirror first check digital landing",
+        "medium": "fully digital translucent line abstraction, violet coral grey, smooth surface",
+        "target": "Singapore compact apartment bathroom / private daily room audience",
         "reflected": "That first mirror check sets the tone.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "svc_20260523_s3_bathroom_note_to_signal",
-        "applied_strategy": "5/23에서 싱가포르 71.9%, 여성 77%까지 간 '거울 앞 사적 신호'를 살렸다. 다만 'matching art' 장식 말투를 줄이고, 내 상태가 돌아오는 장면으로 다시 썼다.",
-        "drop_prevention": "첫 장을 상식적 금지문이 아니라 사용자가 바로 알아볼 수 있는 일상 순간으로 시작한다. 주거 조건을 직접 부르는 단어와 spa/steam/paper 같은 당연한 조언은 쓰지 않는다."
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260524_recovery_s2_bedroom_role_first",
-        "role": "유지",
-        "format": "bedroom role before color recovery",
-        "medium": "hand-painted digital geometry",
-        "target": "English-speaking 25-44 women in compact city bedrooms",
-        "reflected": "The last wall you see should feel easy to return to.",
+        "id": "svc_20260525_rework_s4_kitchen_quiet_point",
+        "role": "extend: kitchen as emotional return, not practical advice",
+        "format": "kitchen counter quiet point",
+        "medium": "digital color-field line composition, lime navy muted rose, no material texture",
+        "target": "Singapore compact apartment kitchen / city small-space audience",
+        "reflected": "After work, the kitchen does not need a theme.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "2026-05-23 bedroom role-first post",
-        "applied_strategy": "5/23에서 싱가포르 69.6%, 여성 78%까지 간 '역할 먼저' 구조를 살렸다. 색상 테스트나 직접 선택 요구처럼 보이지 않게 한 점의 역할로 좁혔다.",
-        "drop_prevention": "직접 선택 요청 문구를 쓰지 않는다. 사용자가 해석해야 하는 'role/proof' 단어보다 밤에 바로 느껴지는 안정감을 먼저 말한다."
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260524_recovery_s3_entry_cart_pause",
-        "role": "확장",
-        "format": "entry cart pause before role recovery",
-        "medium": "painterly digital direction field",
-        "target": "English-speaking 25-44 women in Singapore-friendly compact city entries",
-        "reflected": "The wall by the door gets two seconds.",
+        "id": "svc_20260525_rework_s5_work_shelf_pause",
+        "role": "new: compact work-shelf corner from 12:00 NA/SG routine research",
+        "format": "work shelf clear signal",
+        "medium": "fully digital smooth geometry, blue ivory black terracotta, clean screen-native finish",
+        "target": "NA/Singapore compact city work-corner audience",
+        "reflected": "A small work corner can start with one clear visual signal.",
         "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s2_sg_entry_before_buy_role",
-        "applied_strategy": "5/23의 '구매 직전 멈춤'은 유지하되, s2가 한국 67.8% / 싱가포르 10.7%로 샌 원인을 고쳤다. 주거 조건을 직접 말하지 않고 영어권 도시형 현관 장면과 구매 전 감각 판단으로 전환했다.",
-        "drop_prevention": "현관을 경제 상황으로 부르지 않고, 깊게 해석해야 하는 'direction' 대신 문 앞에서 바로 이해되는 두 번의 짧은 시선으로 보여준다."
+        "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260524_recovery_s4_kitchen_8pm_return",
-        "role": "확장",
-        "format": "kitchen evening return signal recovery",
-        "medium": "single-gesture digital abstraction",
-        "target": "English-speaking 25-44 women in compact city kitchens",
-        "reflected": "At 8 PM, the kitchen needs one quiet point.",
+        "id": "svc_20260525_rework_s6_passage_return",
+        "role": "new: passing wall as return signal",
+        "format": "passage wall return signal",
+        "medium": "digital atmospheric line abstraction, muted green blue ochre, no physical media",
+        "target": "NA/Singapore compact apartment passage / everyday route audience",
+        "reflected": "A wall you pass every day can still hold your return.",
         "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "svc_20260523_s5_sg_kitchen_fragile_print_rule",
-        "applied_strategy": "5/23의 주방 슬롯은 SG 21.9%로 떨어졌다. 원인을 'fragile print/steam' 같은 실용 조언으로 보고, 이번에는 주방 재질 문제가 아니라 8PM의 피곤한 상태가 돌아오는 장면으로 확장했다.",
-        "drop_prevention": "steam, fragile, paper, durable 같은 상식 조언을 금지하고 사용자가 바로 느끼는 저녁의 산만함과 쉬는 지점을 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s5_desk_before_after",
-        "role": "새로 도전",
-        "format": "same desk before after inner state",
-        "medium": "soft translucent digital field",
-        "target": "English-speaking 25-44 women in compact home desk corners",
-        "reflected": "A desk wall has to work before you do.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new_format_from_20260524_drop",
-        "applied_strategy": "새로운 방이 아니라 새로운 설득 방식이다. 5/23에서 추상적 동선이 KR 53.3%로 샜기 때문에, 이번에는 같은 책상 전후 비교로 몸의 변화가 보이게 했다.",
-        "drop_prevention": "반쪽 어둠/어색한 줌 없이 동일한 책상 인스턴스를 유지하고, before/after를 인테리어 변화가 아니라 눈이 쉴 곳이 생기는 변화로 보여준다."
-      },
-      {
-        "id": "svc_20260524_recovery_s6_art_sequence_to_room",
-        "role": "새로 도전",
-        "format": "art sequence passive choice to room",
-        "medium": "art-card sequence to room landing",
-        "target": "English-speaking 25-44 women who browse wall art for compact city homes",
-        "reflected": "You do not need ten perfect options.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new_format_from_20260524_drop",
-        "applied_strategy": "사용자가 말한 '아트만 나열하는 새 포맷'을 테스트하되, 단순 포트폴리오로 끝내지 않고 마지막에 실제 공간으로 착지시켰다.",
-        "drop_prevention": "직접 반응 요구 없이 아트 시퀀스가 한 점으로 좁혀지고, 그 한 점이 벽에 들어오는 장면까지 보여준다. '숨은 의미'를 맞히게 하지 않고 시선이 돌아오는 감각으로 설명한다."
+        "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
       }
     ]
   }
