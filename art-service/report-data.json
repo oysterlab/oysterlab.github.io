@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T01:01:18",
+  "generated_at": "2026-05-27T08:44:21",
   "audience_metrics": {
     "viewer_sg": 72.2,
     "follower_sg": 12.5,
@@ -14,7 +14,7 @@
   },
   "account_audience_7d": {
     "range": "last_7_days",
-    "generated_at": "2026-05-27T01:00:03",
+    "generated_at": "2026-05-27T08:43:13",
     "unique_viewers": 14900,
     "new_viewers": 7459,
     "returning_viewers": null,
@@ -63,8 +63,8 @@
       {
         "date": "2026-05-26",
         "label": "5/26",
-        "value": null,
-        "status": 2
+        "value": 3158,
+        "status": 0
       }
     ]
   },
@@ -82,11 +82,13 @@
         "target_market_count": 1746,
         "sg": 55.0,
         "sg_count": 1723,
-        "target_age": 64.0,
-        "target_age_count": 1836,
+        "target_age": 63.8,
+        "target_age_count": 1830,
         "female": 79.5,
         "female_count": 2361,
         "target_rich_posts": 1,
+        "account_daily_unique_viewers": 3799,
+        "account_daily_unique_status": 0,
         "top_posts": [
           "svc_20260524_recovery_s3_entry_cart_pause",
           "svc_20260524_recovery_s1_mirror_private_signal",
@@ -105,15 +107,17 @@
         "removed_count": 6,
         "known_viewers": 0,
         "known_viewer_posts": 0,
-        "target_market": 63.2,
+        "target_market": 63.1,
         "target_market_count": null,
         "sg": 49.6,
         "sg_count": null,
-        "target_age": 59.2,
+        "target_age": 59.3,
         "target_age_count": null,
-        "female": 68.7,
+        "female": 68.8,
         "female_count": null,
         "target_rich_posts": 0,
+        "account_daily_unique_viewers": 1767,
+        "account_daily_unique_status": 0,
         "top_posts": [
           "svc_20260525_hq_s6_passage_return_angle_story_preview",
           "svc_20260525_hq_s2_entry_one_glance_angle_story_preview",
@@ -141,18 +145,20 @@
         "female": 0,
         "female_count": null,
         "target_rich_posts": 0,
+        "account_daily_unique_viewers": 3158,
+        "account_daily_unique_status": 0,
         "top_posts": [],
         "weak_posts": []
       }
     ],
     "direction": {
       "state": "weakening",
-      "line": "성장 방향이 약해졌다. 3일 전 대비 우선 국가 비율 +7.3p, 싱가포르 비율 -5.4p다.",
+      "line": "성장 방향이 약해졌다. 3일 전 대비 우선 국가 비율 +7.2p, 싱가포르 비율 -5.4p다.",
       "next": "다음 루틴은 형식 실험을 줄이고 싱가포르 도시형 생활공간과 역할이 분명한 첫 장 문장으로 다시 좁힌다.",
-      "target_delta": 7.3,
+      "target_delta": 7.2,
       "sg_delta": -5.4,
-      "age_delta": -4.8,
-      "female_delta": -10.8
+      "age_delta": -4.5,
+      "female_delta": -10.7
     }
   },
   "audience_routine": {
@@ -404,14 +410,134 @@
   },
   "posts": [
     {
+      "id": "svc_20260527_s6_service_yard_print_flip",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644257553160867093",
+      "audience_metrics": {
+        "sg": 60.1,
+        "us": 0,
+        "target_market": 65.8,
+        "target_age": 66.0,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260527_s5_three_roles_same_wall",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644256581097803029",
+      "audience_metrics": {
+        "sg": 9.6,
+        "us": 0,
+        "target_market": 10.4,
+        "target_age": 43.0,
+        "female": 53.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260527_s4_one_line_mirror_direction",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644255600825634068",
+      "audience_metrics": {
+        "sg": 23.3,
+        "us": 0,
+        "target_market": 49.2,
+        "target_age": 75.0,
+        "female": 76.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260527_s3_kitchen_counter_rule_correction",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644254675331534100",
+      "audience_metrics": {
+        "sg": 43.2,
+        "us": 0,
+        "target_market": 43.2,
+        "target_age": 63.0,
+        "female": 87.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260527_s2_passing_wall_soft_return",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644253848340679956",
+      "audience_metrics": {
+        "sg": 23.2,
+        "us": 0,
+        "target_market": 51.6,
+        "target_age": 72.0,
+        "female": 72.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260527_s1_entry_glance_clear_pause",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644253024055069973",
+      "audience_metrics": {
+        "sg": 29.3,
+        "us": 0,
+        "target_market": 32.3,
+        "target_age": 48.0,
+        "female": 71.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260525_hq_s6_passage_return_angle_story_preview",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7643735624280706325",
       "audience_metrics": {
-        "sg": 35.9,
+        "sg": 35.5,
         "us": 0,
-        "target_market": 71.0,
-        "target_age": 63.0,
-        "female": 80.0,
+        "target_market": 70.3,
+        "target_age": 64.0,
+        "female": 81.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -522,137 +648,17 @@
         "shares": null,
         "saves": null
       }
-    },
-    {
-      "id": "svc_20260525_rework_s6_passage_return",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643648999848709396",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 100.0,
-        "target_market": 100.0,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260525_rework_s5_work_shelf_pause",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643648064124767509",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 0,
-        "target_market": 0,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260525_rework_s4_kitchen_quiet_point",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643647253688700180",
-      "audience_metrics": {
-        "sg": 23.8,
-        "us": 0,
-        "target_market": 23.8,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260525_rework_s3_mirror_first_check",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643645730665663764",
-      "audience_metrics": {
-        "sg": 37.5,
-        "us": 0,
-        "target_market": 41.7,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260525_rework_s2_entry_one_glance",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643644800855559445",
-      "audience_metrics": {
-        "sg": 34.6,
-        "us": 0,
-        "target_market": 34.6,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260525_rework_s1_morning_wall_tone",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643643865378983189",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 0,
-        "target_market": 0,
-        "target_age": 0.0,
-        "female": 0.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
     }
   ],
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260525_rework_s1_morning_wall_tone",
+        "id": "svc_20260527_s1_entry_glance_clear_pause",
         "role": "유지",
-        "format": "morning wall tone setter",
-        "medium": "digital soft geometry, smooth color field, no physical texture",
-        "target": "English-speaking compact city apartment audience; NA/Singapore compatible",
-        "reflected": "The first wall can set the tone before the day starts.",
+        "format": "entry one glance keep recovery 20260527",
+        "medium": "clean screen-native 2D geometry",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The door wall only gets one glance.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
@@ -660,14 +666,40 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s2_entry_one_glance",
+        "id": "svc_20260527_s2_passing_wall_soft_return",
         "role": "유지",
-        "format": "entry wall one glance",
-        "medium": "fully digital bold flat geometry, cobalt black coral, smooth surface",
-        "target": "Singapore compact apartment / English-speaking urban apartment audience",
-        "reflected": "The wall by the door only gets a second.",
+        "format": "passage return keep recovery 20260527",
+        "medium": "clean cinematic 2D shadow-line image",
+        "target": "Singapore and North America compact city apartment audience",
+        "reflected": "The passing wall still changes the room.",
         "performance": "성과 수집 대기",
         "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_s3_kitchen_counter_rule_correction",
+        "role": "확장",
+        "format": "kitchen rule correction theme to pause 20260527",
+        "medium": "smooth vector-like 2D color field",
+        "target": "Singapore compact kitchen and English-speaking small-space audience",
+        "reflected": "The kitchen counter does not need a theme.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_s4_one_line_mirror_direction",
+        "role": "확장",
+        "format": "one line intake to mirror anchor 20260527",
+        "medium": "clean restrained 2D contour image",
+        "target": "Singapore compact bathroom and private daily-room audience",
+        "reflected": "Start with the sentence, not the wall.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
@@ -687,15 +719,68 @@
         "qa": "pass ready for upload"
       }
     ],
-    "new": [],
+    "new": [
+      {
+        "id": "svc_20260527_s3_kitchen_counter_rule_correction",
+        "role": "확장",
+        "format": "kitchen rule correction theme to pause 20260527",
+        "medium": "smooth vector-like 2D color field",
+        "target": "Singapore compact kitchen and English-speaking small-space audience",
+        "reflected": "The kitchen counter does not need a theme.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_s4_one_line_mirror_direction",
+        "role": "확장",
+        "format": "one line intake to mirror anchor 20260527",
+        "medium": "clean restrained 2D contour image",
+        "target": "Singapore compact bathroom and private daily-room audience",
+        "reflected": "Start with the sentence, not the wall.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_s5_three_roles_same_wall",
+        "role": "새로 도전",
+        "format": "three role gallery study passive 20260527",
+        "medium": "clean photographic color-block 2D image set",
+        "target": "North American compact city studio and English-speaking urban small-space audience",
+        "reflected": "The wall needs a role before color.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_s6_service_yard_print_flip",
+        "role": "새로 도전",
+        "format": "service yard print flip anchor 20260527",
+        "medium": "clean modular 2D folk-geometry image",
+        "target": "Singapore service-yard and English-speaking compact apartment audience",
+        "reflected": "This laundry corner needs one visual pause.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      }
+    ],
     "plan": [
       {
-        "id": "svc_20260525_rework_s1_morning_wall_tone",
+        "id": "svc_20260527_s1_entry_glance_clear_pause",
         "role": "유지",
-        "format": "morning wall tone setter",
-        "medium": "digital soft geometry, smooth color field, no physical texture",
-        "target": "English-speaking compact city apartment audience; NA/Singapore compatible",
-        "reflected": "The first wall can set the tone before the day starts.",
+        "format": "entry one glance keep recovery 20260527",
+        "medium": "clean screen-native 2D geometry",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The door wall only gets one glance.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
@@ -703,12 +788,12 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s2_entry_one_glance",
+        "id": "svc_20260527_s2_passing_wall_soft_return",
         "role": "유지",
-        "format": "entry wall one glance",
-        "medium": "fully digital bold flat geometry, cobalt black coral, smooth surface",
-        "target": "Singapore compact apartment / English-speaking urban apartment audience",
-        "reflected": "The wall by the door only gets a second.",
+        "format": "passage return keep recovery 20260527",
+        "medium": "clean cinematic 2D shadow-line image",
+        "target": "Singapore and North America compact city apartment audience",
+        "reflected": "The passing wall still changes the room.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
@@ -716,131 +801,53 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s3_mirror_first_check",
-        "role": "extend: mirror-check winner plus softer digital art",
-        "format": "mirror first check digital landing",
-        "medium": "fully digital translucent line abstraction, violet coral grey, smooth surface",
-        "target": "Singapore compact apartment bathroom / private daily room audience",
-        "reflected": "That first mirror check sets the tone.",
+        "id": "svc_20260527_s3_kitchen_counter_rule_correction",
+        "role": "확장",
+        "format": "kitchen rule correction theme to pause 20260527",
+        "medium": "smooth vector-like 2D color field",
+        "target": "Singapore compact kitchen and English-speaking small-space audience",
+        "reflected": "The kitchen counter does not need a theme.",
         "performance": "성과 수집 대기",
-        "is_new": false,
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s4_kitchen_quiet_point",
-        "role": "extend: kitchen as emotional return, not practical advice",
-        "format": "kitchen counter quiet point",
-        "medium": "digital color-field line composition, lime navy muted rose, no material texture",
-        "target": "Singapore compact apartment kitchen / city small-space audience",
-        "reflected": "After work, the kitchen does not need a theme.",
+        "id": "svc_20260527_s4_one_line_mirror_direction",
+        "role": "확장",
+        "format": "one line intake to mirror anchor 20260527",
+        "medium": "clean restrained 2D contour image",
+        "target": "Singapore compact bathroom and private daily-room audience",
+        "reflected": "Start with the sentence, not the wall.",
         "performance": "성과 수집 대기",
-        "is_new": false,
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s5_work_shelf_pause",
-        "role": "new: compact work-shelf corner from 12:00 NA/SG routine research",
-        "format": "work shelf clear signal",
-        "medium": "fully digital smooth geometry, blue ivory black terracotta, clean screen-native finish",
-        "target": "NA/Singapore compact city work-corner audience",
-        "reflected": "A small work corner can start with one clear visual signal.",
+        "id": "svc_20260527_s5_three_roles_same_wall",
+        "role": "새로 도전",
+        "format": "three role gallery study passive 20260527",
+        "medium": "clean photographic color-block 2D image set",
+        "target": "North American compact city studio and English-speaking urban small-space audience",
+        "reflected": "The wall needs a role before color.",
         "performance": "성과 수집 대기",
-        "is_new": false,
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260525_rework_s6_passage_return",
-        "role": "new: passing wall as return signal",
-        "format": "passage wall return signal",
-        "medium": "digital atmospheric line abstraction, muted green blue ochre, no physical media",
-        "target": "NA/Singapore compact apartment passage / everyday route audience",
-        "reflected": "A wall you pass every day can still hold your return.",
+        "id": "svc_20260527_s6_service_yard_print_flip",
+        "role": "새로 도전",
+        "format": "service yard print flip anchor 20260527",
+        "medium": "clean modular 2D folk-geometry image",
+        "target": "Singapore service-yard and English-speaking compact apartment audience",
+        "reflected": "This laundry corner needs one visual pause.",
         "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s1_morning_wall_tone_angle_story_preview",
-        "role": "업로드",
-        "format": "hq angle story same room carousel",
-        "medium": "art style not recorded",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "The first wall sets the tone before the day starts.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s2_entry_one_glance_angle_story_preview",
-        "role": "entry glance friction",
-        "format": "entry wall one glance hq angle story",
-        "medium": "fully digital bold flat geometry, cobalt black coral, smooth surface",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "The wall by the door only gets a second.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s3_mirror_first_check_angle_story_preview",
-        "role": "mirror first-check plus softer landing",
-        "format": "mirror first check digital landing hq angle story",
-        "medium": "fully digital translucent line abstraction, violet coral grey, smooth surface",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "That first mirror check sets the tone.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s4_kitchen_quiet_point_angle_story_preview",
-        "role": "kitchen emotional return, not practical advice",
-        "format": "kitchen counter quiet point hq angle story",
-        "medium": "digital color-field line composition, lime navy muted rose, no material texture",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "After work, the kitchen does not need a theme.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s5_work_shelf_pause_angle_story_preview",
-        "role": "compact work-shelf clear signal",
-        "format": "work shelf clear signal hq angle story",
-        "medium": "fully digital smooth geometry, blue ivory black terracotta, clean screen-native finish",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "A work corner does not need to be perfectly styled.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260525_hq_s6_passage_return_angle_story_preview",
-        "role": "passing wall as return signal",
-        "format": "passage wall return signal hq angle story",
-        "medium": "digital atmospheric line abstraction, muted green blue ochre, no physical media",
-        "target": "English-speaking compact city apartment audience; Singapore/NA compatible",
-        "reflected": "A passing wall still matters.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
