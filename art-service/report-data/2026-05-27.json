@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T08:44:21",
+  "generated_at": "2026-05-27T17:15:17",
   "audience_metrics": {
     "viewer_sg": 72.2,
     "follower_sg": 12.5,
@@ -162,37 +162,37 @@
     }
   },
   "audience_routine": {
-    "run_id": "20260526-120001-scheduled_1200",
-    "date_kst": "2026-05-26",
+    "run_id": "20260527-120005-scheduled_1200",
+    "date_kst": "2026-05-27",
     "source": "scheduled_1200",
     "mode": "target_audience_research_and_surface_packet",
     "status": "completed",
-    "started_at_kst": "2026-05-26T12:00:01+09:00",
-    "finished_at_kst": "2026-05-26T12:00:01+09:00",
+    "started_at_kst": "2026-05-27T12:00:05+09:00",
+    "finished_at_kst": "2026-05-27T12:00:05+09:00",
     "target_comment_count": "0-3 optional",
     "prepared_comment_count": 10,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "Research first. If commenting manually, use no service, link, price, AI, or check-my-profile language.",
     "studio_summary": {
-      "generated_at": "2026-05-26T01:00:07",
-      "viewer_sg": 71.2,
-      "viewer_target_market": 76.0,
-      "viewer_25_44": 60.4,
+      "generated_at": "2026-05-27T08:43:13",
+      "viewer_sg": 72.2,
+      "viewer_target_market": 76.1,
+      "viewer_25_44": 60.9,
       "viewer_female": 77.0,
-      "follower_sg": 12.9,
+      "follower_sg": 12.5,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 96.6
+          "percent": 96.1
         },
         {
           "label": "Search",
-          "percent": 2.0
+          "percent": 2.1
         },
         {
           "label": "Personal Profile",
-          "percent": 1.3
+          "percent": 1.6
         },
         {
           "label": "Follow",
@@ -409,6 +409,26 @@
     ]
   },
   "posts": [
+    {
+      "id": "svc_20260527_sound_test_entry_default_music",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7644474412493737236",
+      "audience_metrics": {
+        "sg": 72.2,
+        "us": 1.4,
+        "target_market": 76.1,
+        "target_age": 60.9,
+        "female": 77.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
     {
       "id": "svc_20260527_s6_service_yard_print_flip",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7644257553160867093",
@@ -628,26 +648,6 @@
         "shares": null,
         "saves": null
       }
-    },
-    {
-      "id": "svc_20260525_hq_s1_morning_wall_tone_angle_story_preview",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7643731346724097301",
-      "audience_metrics": {
-        "sg": 59.0,
-        "us": 0,
-        "target_market": 63.1,
-        "target_age": 56.0,
-        "female": 64.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
     }
   ],
   "content_learning": {
@@ -848,6 +848,19 @@
         "reflected": "This laundry corner needs one visual pause.",
         "performance": "성과 수집 대기",
         "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260527_sound_test_entry_default_music",
+        "role": "single default-sound upload test",
+        "format": "default sound entry focal point test 20260527",
+        "medium": "clean screen-native 2D geometry",
+        "target": "English-speaking urban small-space audience",
+        "reflected": "The first wall sets the pace.",
+        "performance": "성과 수집 대기",
+        "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
