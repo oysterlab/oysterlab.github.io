@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-29T01:01:31",
+  "generated_at": "2026-05-29T04:20:34",
   "audience_metrics": {
     "viewer_sg": 68.0,
     "follower_sg": 12.6,
@@ -410,6 +410,126 @@
   },
   "posts": [
     {
+      "id": "svc_20260529_s6_bathroom_mirror_temperature",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645023135737154837",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260529_s5_intake_sentence_not_quote",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645021617126411541",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260529_s4_three_roles_one_wall_study",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645020487747161364",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260529_s3_service_yard_chore_path_pause",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645019013315120404",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260529_s2_before_fill_wall_role_filter",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645017376043437333",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260529_s1_entry_bag_landing_first_glance",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645006375105580308",
+      "audience_metrics": {
+        "sg": 68.0,
+        "us": 1.4,
+        "target_market": 72.0,
+        "target_age": 61.3,
+        "female": 75.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260528_s1_entry_key_tray_first_glance",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7644624610931068180",
       "audience_metrics": {
@@ -528,163 +648,17 @@
         "shares": null,
         "saves": null
       }
-    },
-    {
-      "id": "svc_20260527_sound_test_entry_default_music",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644474412493737236",
-      "audience_metrics": {
-        "sg": 55.2,
-        "us": 0,
-        "target_market": 62.3,
-        "target_age": 66.0,
-        "female": 77.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260527_s6_service_yard_print_flip",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644257553160867093",
-      "audience_metrics": {
-        "sg": 71.4,
-        "us": 0,
-        "target_market": 72.9,
-        "target_age": 55.0,
-        "female": 88.0,
-        "unique_viewers": 85,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260527_s5_three_roles_same_wall",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644256581097803029",
-      "audience_metrics": {
-        "sg": 64.2,
-        "us": 0,
-        "target_market": 68.2,
-        "target_age": 54.0,
-        "female": 55.0,
-        "unique_viewers": 121,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260527_s4_one_line_mirror_direction",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644255600825634068",
-      "audience_metrics": {
-        "sg": 28.7,
-        "us": 0,
-        "target_market": 43.8,
-        "target_age": 66.0,
-        "female": 79.0,
-        "unique_viewers": 81,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260527_s3_kitchen_counter_rule_correction",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644254675331534100",
-      "audience_metrics": {
-        "sg": 64.5,
-        "us": 0,
-        "target_market": 64.5,
-        "target_age": 63.0,
-        "female": 88.0,
-        "unique_viewers": 86,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260527_s2_passing_wall_soft_return",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7644253848340679956",
-      "audience_metrics": {
-        "sg": 61.7,
-        "us": 0,
-        "target_market": 73.9,
-        "target_age": 59.0,
-        "female": 60.0,
-        "unique_viewers": 96,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
     }
   ],
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260528_s3_laundry_route_pause_map",
-        "role": "확장",
-        "format": "service yard route pause map 20260528",
-        "medium": "clean screen-native kinetic line field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The routine is heavy enough already.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s4_before_another_print_role_filter",
-        "role": "확장",
-        "format": "before another print role filter 20260528",
-        "medium": "clean photographic digital color-block planes",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Do not buy just to fill it.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s1_entry_key_tray_first_glance",
+        "id": "svc_20260529_s1_entry_bag_landing_first_glance",
         "role": "유지",
-        "format": "entry key tray first glance keep 20260528",
-        "medium": "clean screen-native 2D threshold geometry",
+        "format": "entry bag landing first glance keep 20260529",
+        "medium": "clean digital pressure-block composition",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "This wall only gets one second.",
+        "reflected": "The first wall sets the tone.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
@@ -692,14 +666,40 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260528_s2_route_wall_eye_slow",
+        "id": "svc_20260529_s2_before_fill_wall_role_filter",
         "role": "유지",
-        "format": "route wall eye slow keep 20260528",
-        "medium": "clean digital dusk-line field",
-        "target": "Singapore and North America compact city apartment audience",
-        "reflected": "Give the route one place to slow.",
+        "format": "before fill wall role filter keep 20260529",
+        "medium": "clean digital cinematic shadow-color field",
+        "target": "North American compact city apartment and English-speaking urban small-space audience",
+        "reflected": "Do not fill the wall yet.",
         "performance": "성과 수집 대기",
         "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s3_service_yard_chore_path_pause",
+        "role": "확장",
+        "format": "service yard chore path pause device 20260529",
+        "medium": "clean digital kinetic aperture bands",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The chore path needs a pause.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s4_three_roles_one_wall_study",
+        "role": "확장",
+        "format": "three roles one wall gallery study 20260529",
+        "medium": "clean digital editorial role-study fields",
+        "target": "Singapore and English-speaking compact apartment audience",
+        "reflected": "Same wall. Different role.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
@@ -721,12 +721,12 @@
     ],
     "new": [
       {
-        "id": "svc_20260528_s3_laundry_route_pause_map",
+        "id": "svc_20260529_s3_service_yard_chore_path_pause",
         "role": "확장",
-        "format": "service yard route pause map 20260528",
-        "medium": "clean screen-native kinetic line field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The routine is heavy enough already.",
+        "format": "service yard chore path pause device 20260529",
+        "medium": "clean digital kinetic aperture bands",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The chore path needs a pause.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
@@ -734,38 +734,38 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260528_s5_daypart_anchor_loop",
-        "role": "새로 도전",
-        "format": "daypart anchor loop 20260528",
-        "medium": "clean digital gradient-line orbit system",
-        "target": "North American compact city studio and English-speaking urban small-space audience",
-        "reflected": "One room has to carry too much.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s6_daily_object_anchor_path",
-        "role": "새로 도전",
-        "format": "daily object anchor path 20260528",
-        "medium": "clean restrained digital contour over color planes",
-        "target": "Singapore and North America compact apartment audience",
-        "reflected": "The table already catches the eye.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s4_before_another_print_role_filter",
+        "id": "svc_20260529_s4_three_roles_one_wall_study",
         "role": "확장",
-        "format": "before another print role filter 20260528",
-        "medium": "clean photographic digital color-block planes",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Do not buy just to fill it.",
+        "format": "three roles one wall gallery study 20260529",
+        "medium": "clean digital editorial role-study fields",
+        "target": "Singapore and English-speaking compact apartment audience",
+        "reflected": "Same wall. Different role.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s5_intake_sentence_not_quote",
+        "role": "새로 도전",
+        "format": "intake sentence not quote poster 20260529",
+        "medium": "clean digital restrained figurative-contour image",
+        "target": "English-speaking compact apartment and small work-corner audience",
+        "reflected": "Do not put the sentence on the wall.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s6_bathroom_mirror_temperature",
+        "role": "새로 도전",
+        "format": "bathroom mirror temperature correction 20260529",
+        "medium": "clean digital luminous gradient-line system",
+        "target": "Singapore compact apartment and English-speaking small-space audience",
+        "reflected": "The mirror makes the wall feel cold.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
@@ -775,64 +775,12 @@
     ],
     "plan": [
       {
-        "id": "svc_20260528_s3_laundry_route_pause_map",
-        "role": "확장",
-        "format": "service yard route pause map 20260528",
-        "medium": "clean screen-native kinetic line field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The routine is heavy enough already.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s5_daypart_anchor_loop",
-        "role": "새로 도전",
-        "format": "daypart anchor loop 20260528",
-        "medium": "clean digital gradient-line orbit system",
-        "target": "North American compact city studio and English-speaking urban small-space audience",
-        "reflected": "One room has to carry too much.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s6_daily_object_anchor_path",
-        "role": "새로 도전",
-        "format": "daily object anchor path 20260528",
-        "medium": "clean restrained digital contour over color planes",
-        "target": "Singapore and North America compact apartment audience",
-        "reflected": "The table already catches the eye.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s4_before_another_print_role_filter",
-        "role": "확장",
-        "format": "before another print role filter 20260528",
-        "medium": "clean photographic digital color-block planes",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Do not buy just to fill it.",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "기준 콘텐츠 없음",
-        "applied_strategy": "적용 설명 없음",
-        "drop_prevention": "재발 방지 설명 없음"
-      },
-      {
-        "id": "svc_20260528_s1_entry_key_tray_first_glance",
+        "id": "svc_20260529_s1_entry_bag_landing_first_glance",
         "role": "유지",
-        "format": "entry key tray first glance keep 20260528",
-        "medium": "clean screen-native 2D threshold geometry",
+        "format": "entry bag landing first glance keep 20260529",
+        "medium": "clean digital pressure-block composition",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "This wall only gets one second.",
+        "reflected": "The first wall sets the tone.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "기준 콘텐츠 없음",
@@ -840,14 +788,66 @@
         "drop_prevention": "재발 방지 설명 없음"
       },
       {
-        "id": "svc_20260528_s2_route_wall_eye_slow",
+        "id": "svc_20260529_s2_before_fill_wall_role_filter",
         "role": "유지",
-        "format": "route wall eye slow keep 20260528",
-        "medium": "clean digital dusk-line field",
-        "target": "Singapore and North America compact city apartment audience",
-        "reflected": "Give the route one place to slow.",
+        "format": "before fill wall role filter keep 20260529",
+        "medium": "clean digital cinematic shadow-color field",
+        "target": "North American compact city apartment and English-speaking urban small-space audience",
+        "reflected": "Do not fill the wall yet.",
         "performance": "성과 수집 대기",
         "is_new": false,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s3_service_yard_chore_path_pause",
+        "role": "확장",
+        "format": "service yard chore path pause device 20260529",
+        "medium": "clean digital kinetic aperture bands",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The chore path needs a pause.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s4_three_roles_one_wall_study",
+        "role": "확장",
+        "format": "three roles one wall gallery study 20260529",
+        "medium": "clean digital editorial role-study fields",
+        "target": "Singapore and English-speaking compact apartment audience",
+        "reflected": "Same wall. Different role.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s5_intake_sentence_not_quote",
+        "role": "새로 도전",
+        "format": "intake sentence not quote poster 20260529",
+        "medium": "clean digital restrained figurative-contour image",
+        "target": "English-speaking compact apartment and small work-corner audience",
+        "reflected": "Do not put the sentence on the wall.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "기준 콘텐츠 없음",
+        "applied_strategy": "적용 설명 없음",
+        "drop_prevention": "재발 방지 설명 없음"
+      },
+      {
+        "id": "svc_20260529_s6_bathroom_mirror_temperature",
+        "role": "새로 도전",
+        "format": "bathroom mirror temperature correction 20260529",
+        "medium": "clean digital luminous gradient-line system",
+        "target": "Singapore compact apartment and English-speaking small-space audience",
+        "reflected": "The mirror makes the wall feel cold.",
+        "performance": "성과 수집 대기",
+        "is_new": true,
         "basis_from": "기준 콘텐츠 없음",
         "applied_strategy": "적용 설명 없음",
         "drop_prevention": "재발 방지 설명 없음"
