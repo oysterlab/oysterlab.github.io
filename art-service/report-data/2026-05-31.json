@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T01:02:05",
+  "generated_at": "2026-05-31T03:11:18",
   "audience_metrics": {
     "viewer_sg": 64.0,
     "follower_sg": 12.6,
@@ -418,6 +418,126 @@
   },
   "posts": [
     {
+      "id": "svc_20260531_s6_direction_sheet_to_wall",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645747208427425045",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260531_s5_corner_detail_room_reveal",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645745807324450068",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260531_s4_before_print_chair_audit",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645744674057014549",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260531_s3_kitchen_counter_eye_path",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645743543524298004",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260531_s2_three_roles_counter_study",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645742410110176533",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260531_s1_entry_mirror_first_landing",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7645741292793761045",
+      "audience_metrics": {
+        "sg": 64.0,
+        "us": 1.5,
+        "target_market": 69.2,
+        "target_age": 62.3,
+        "female": 73.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260530_s6_same_wall_day_night_generated",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7645373917221244180",
       "audience_metrics": {
@@ -536,181 +656,61 @@
         "shares": null,
         "saves": null
       }
-    },
-    {
-      "id": "svc_20260529_s6_bathroom_mirror_temperature",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645023135737154837",
-      "audience_metrics": {
-        "sg": 57.6,
-        "us": 0.9,
-        "target_market": 62.6,
-        "target_age": 55.0,
-        "female": 59.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260529_s5_intake_sentence_not_quote",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645021617126411541",
-      "audience_metrics": {
-        "sg": 47.0,
-        "us": 1.6,
-        "target_market": 50.2,
-        "target_age": 61.0,
-        "female": 52.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260529_s4_three_roles_one_wall_study",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645020487747161364",
-      "audience_metrics": {
-        "sg": 82.9,
-        "us": 0.5,
-        "target_market": 83.9,
-        "target_age": 47.0,
-        "female": 56.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260529_s3_service_yard_chore_path_pause",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645019013315120404",
-      "audience_metrics": {
-        "sg": 61.6,
-        "us": 0,
-        "target_market": 73.4,
-        "target_age": 53.0,
-        "female": 81.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260529_s2_before_fill_wall_role_filter",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645017376043437333",
-      "audience_metrics": {
-        "sg": 60.5,
-        "us": 0,
-        "target_market": 64.5,
-        "target_age": 49.0,
-        "female": 55.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260529_s1_entry_bag_landing_first_glance",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7645006375105580308",
-      "audience_metrics": {
-        "sg": 65.7,
-        "us": 0.7,
-        "target_market": 70.3,
-        "target_age": 70.0,
-        "female": 59.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
     }
   ],
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260530_s1_entry_console_first_pause",
+        "id": "svc_20260531_s1_entry_mirror_first_landing",
         "role": "유지",
-        "format": "entry console first pause keep 20260530",
-        "medium": "clean digital threshold-vector field",
+        "format": "entry mirror first landing keep 20260531",
+        "medium": "clean digital line-forward threshold field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The first glance needs a pause.",
+        "reflected": "The first glance sets the mood.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 1: entry first-glance pause",
-        "applied_strategy": "Preserves recent entry first-glance winners while changing object set, art palette, and hook grammar.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "applied_strategy": "Preserves the only target-rich 2026-05-30 post-level signal while changing object set, art geometry, and public sentence.",
+        "drop_prevention": "Keeps entry first-glance evidence but removes the recent ultramarine/citron palette and broad block motif that could make the account feel repetitive."
       },
       {
-        "id": "svc_20260530_s2_three_roles_dining_wall_keep",
+        "id": "svc_20260531_s2_three_roles_counter_study",
         "role": "유지",
-        "format": "three roles dining wall study keep 20260530",
-        "medium": "clean digital role-division color field",
-        "target": "Singapore and English-speaking compact apartment audience",
-        "reflected": "One wall can hold different jobs.",
+        "format": "three roles counter study keep 20260531",
+        "medium": "clean digital cadence-bar role field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The wall needs one clear job.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 2: three-role dining wall study",
-        "applied_strategy": "Preserves the latest three-role wall winner while changing the room, palette, and public sentence.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 2: three-role wall study",
+        "applied_strategy": "Keeps the high-target 2026-05-29 three-role strategy, but changes the surface from finished dining wall to SG counter-level role study.",
+        "drop_prevention": "Preserves proven role-first framing while changing the weak 2026-05-30 dining repeat, palette, and first-frame composition."
       },
       {
-        "id": "svc_20260530_s3_service_yard_task_path_insert",
+        "id": "svc_20260531_s3_kitchen_counter_eye_path",
         "role": "확장",
-        "format": "service yard task path insert device 20260530",
-        "medium": "clean digital kinetic ribbon field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The task path needs one pause.",
+        "format": "kitchen counter eye path insert device 20260531",
+        "medium": "clean digital cool-heat line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "This counter is busy enough.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: service-yard task-path insert story",
-        "applied_strategy": "Extends the service-yard winner with task-path insert evidence instead of another wall-only placement.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: kitchen counter eye-path insert",
+        "applied_strategy": "Extends the task-path learning from service-yard winners, but translates it into SG kitchen friction instead of repeating the weak washer/rack lane.",
+        "drop_prevention": "Moves away from the 2026-05-30 service-yard weak post while keeping ordinary SG functional-space evidence and a clearer first sentence."
       },
       {
-        "id": "svc_20260530_s4_before_print_floor_stack_filter",
+        "id": "svc_20260531_s4_before_print_chair_audit",
         "role": "확장",
-        "format": "before print floor stack role filter 20260530",
-        "medium": "clean digital cinematic shadow-band field",
+        "format": "before print chair audit device 20260531",
+        "medium": "clean digital shadow-window stripe field",
         "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "The stack is not the answer.",
+        "reflected": "Do not choose from the pile.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: before-print floor-stack role filter",
-        "applied_strategy": "Extends the before-buying winner with a visible floor-stack audit device and a different art language.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: before-print chair audit",
+        "applied_strategy": "Extends the before-buying strategy with a chair audit instead of repeating the 2026-05-30 floor-stack device.",
+        "drop_prevention": "Keeps one North America compact-city test, but changes the failed broad spread by making the device more concrete and limiting NA to one slot."
       }
     ],
     "discard": [
@@ -729,136 +729,136 @@
     ],
     "new": [
       {
-        "id": "svc_20260530_s3_service_yard_task_path_insert",
+        "id": "svc_20260531_s3_kitchen_counter_eye_path",
         "role": "확장",
-        "format": "service yard task path insert device 20260530",
-        "medium": "clean digital kinetic ribbon field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The task path needs one pause.",
+        "format": "kitchen counter eye path insert device 20260531",
+        "medium": "clean digital cool-heat line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "This counter is busy enough.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: service-yard task-path insert story",
-        "applied_strategy": "Extends the service-yard winner with task-path insert evidence instead of another wall-only placement.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: kitchen counter eye-path insert",
+        "applied_strategy": "Extends the task-path learning from service-yard winners, but translates it into SG kitchen friction instead of repeating the weak washer/rack lane.",
+        "drop_prevention": "Moves away from the 2026-05-30 service-yard weak post while keeping ordinary SG functional-space evidence and a clearer first sentence."
       },
       {
-        "id": "svc_20260530_s4_before_print_floor_stack_filter",
+        "id": "svc_20260531_s4_before_print_chair_audit",
         "role": "확장",
-        "format": "before print floor stack role filter 20260530",
-        "medium": "clean digital cinematic shadow-band field",
+        "format": "before print chair audit device 20260531",
+        "medium": "clean digital shadow-window stripe field",
         "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "The stack is not the answer.",
+        "reflected": "Do not choose from the pile.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: before-print floor-stack role filter",
-        "applied_strategy": "Extends the before-buying winner with a visible floor-stack audit device and a different art language.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: before-print chair audit",
+        "applied_strategy": "Extends the before-buying strategy with a chair audit instead of repeating the 2026-05-30 floor-stack device.",
+        "drop_prevention": "Keeps one North America compact-city test, but changes the failed broad spread by making the device more concrete and limiting NA to one slot."
       },
       {
-        "id": "svc_20260530_s5_wall_diagnosis_physical_marks",
+        "id": "svc_20260531_s5_corner_detail_room_reveal",
         "role": "새로 도전",
-        "format": "failed wall diagnosis physical marks 20260530",
-        "medium": "clean digital calibration-shape composition",
-        "target": "English-speaking compact apartment users who feel a wall is unfinished but do not know why",
-        "reflected": "This wall has no clear job.",
+        "format": "close detail to room reveal experiment 20260531",
+        "medium": "clean digital contour-light field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The eye gets stuck in this corner.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1: physical failed-wall diagnosis",
-        "applied_strategy": "Responds to the novelty warning by changing the content surface to a physical process state before placement.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 1: close-detail-to-room reveal",
+        "applied_strategy": "Replaces the weak 2026-05-30 physical diagnosis novelty with a different content surface and camera grammar.",
+        "drop_prevention": "Changes novelty from process marks to close-detail evidence so the first frame is not another taped wall or normal placement carousel."
       },
       {
-        "id": "svc_20260530_s6_same_wall_day_night_generated",
+        "id": "svc_20260531_s6_direction_sheet_to_wall",
         "role": "새로 도전",
-        "format": "generated same wall day night compare 20260530",
-        "medium": "clean digital dual-light vector field",
-        "target": "North American compact city studio and English-speaking urban small-space audience",
-        "reflected": "Same wall. Different hours.",
+        "format": "art direction document to space sequence 20260531",
+        "medium": "clean digital lucid-shape direction field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "Start with the role, not the frame.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 2: generated same-wall day/night compare",
-        "applied_strategy": "Responds to the novelty warning with actual generated time-state evidence instead of another normal placement carousel.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 2: art-direction document to space",
+        "applied_strategy": "Introduces a true process surface while keeping role-first strategy and SG compact route-wall evidence.",
+        "drop_prevention": "Adds novelty without repeating the weak physical diagnosis or day-night direction, and keeps the recovery run grounded in SG ordinary space."
       }
     ],
     "plan": [
       {
-        "id": "svc_20260530_s1_entry_console_first_pause",
+        "id": "svc_20260531_s1_entry_mirror_first_landing",
         "role": "유지",
-        "format": "entry console first pause keep 20260530",
-        "medium": "clean digital threshold-vector field",
+        "format": "entry mirror first landing keep 20260531",
+        "medium": "clean digital line-forward threshold field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The first glance needs a pause.",
+        "reflected": "The first glance sets the mood.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 1: entry first-glance pause",
-        "applied_strategy": "Preserves recent entry first-glance winners while changing object set, art palette, and hook grammar.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "applied_strategy": "Preserves the only target-rich 2026-05-30 post-level signal while changing object set, art geometry, and public sentence.",
+        "drop_prevention": "Keeps entry first-glance evidence but removes the recent ultramarine/citron palette and broad block motif that could make the account feel repetitive."
       },
       {
-        "id": "svc_20260530_s2_three_roles_dining_wall_keep",
+        "id": "svc_20260531_s2_three_roles_counter_study",
         "role": "유지",
-        "format": "three roles dining wall study keep 20260530",
-        "medium": "clean digital role-division color field",
-        "target": "Singapore and English-speaking compact apartment audience",
-        "reflected": "One wall can hold different jobs.",
+        "format": "three roles counter study keep 20260531",
+        "medium": "clean digital cadence-bar role field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The wall needs one clear job.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 2: three-role dining wall study",
-        "applied_strategy": "Preserves the latest three-role wall winner while changing the room, palette, and public sentence.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 2: three-role wall study",
+        "applied_strategy": "Keeps the high-target 2026-05-29 three-role strategy, but changes the surface from finished dining wall to SG counter-level role study.",
+        "drop_prevention": "Preserves proven role-first framing while changing the weak 2026-05-30 dining repeat, palette, and first-frame composition."
       },
       {
-        "id": "svc_20260530_s3_service_yard_task_path_insert",
+        "id": "svc_20260531_s3_kitchen_counter_eye_path",
         "role": "확장",
-        "format": "service yard task path insert device 20260530",
-        "medium": "clean digital kinetic ribbon field",
-        "target": "Singapore service-yard and English-speaking compact apartment audience",
-        "reflected": "The task path needs one pause.",
+        "format": "kitchen counter eye path insert device 20260531",
+        "medium": "clean digital cool-heat line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "This counter is busy enough.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: service-yard task-path insert story",
-        "applied_strategy": "Extends the service-yard winner with task-path insert evidence instead of another wall-only placement.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: kitchen counter eye-path insert",
+        "applied_strategy": "Extends the task-path learning from service-yard winners, but translates it into SG kitchen friction instead of repeating the weak washer/rack lane.",
+        "drop_prevention": "Moves away from the 2026-05-30 service-yard weak post while keeping ordinary SG functional-space evidence and a clearer first sentence."
       },
       {
-        "id": "svc_20260530_s4_before_print_floor_stack_filter",
+        "id": "svc_20260531_s4_before_print_chair_audit",
         "role": "확장",
-        "format": "before print floor stack role filter 20260530",
-        "medium": "clean digital cinematic shadow-band field",
+        "format": "before print chair audit device 20260531",
+        "medium": "clean digital shadow-window stripe field",
         "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "The stack is not the answer.",
+        "reflected": "Do not choose from the pile.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: before-print floor-stack role filter",
-        "applied_strategy": "Extends the before-buying winner with a visible floor-stack audit device and a different art language.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: before-print chair audit",
+        "applied_strategy": "Extends the before-buying strategy with a chair audit instead of repeating the 2026-05-30 floor-stack device.",
+        "drop_prevention": "Keeps one North America compact-city test, but changes the failed broad spread by making the device more concrete and limiting NA to one slot."
       },
       {
-        "id": "svc_20260530_s5_wall_diagnosis_physical_marks",
+        "id": "svc_20260531_s5_corner_detail_room_reveal",
         "role": "새로 도전",
-        "format": "failed wall diagnosis physical marks 20260530",
-        "medium": "clean digital calibration-shape composition",
-        "target": "English-speaking compact apartment users who feel a wall is unfinished but do not know why",
-        "reflected": "This wall has no clear job.",
+        "format": "close detail to room reveal experiment 20260531",
+        "medium": "clean digital contour-light field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The eye gets stuck in this corner.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1: physical failed-wall diagnosis",
-        "applied_strategy": "Responds to the novelty warning by changing the content surface to a physical process state before placement.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 1: close-detail-to-room reveal",
+        "applied_strategy": "Replaces the weak 2026-05-30 physical diagnosis novelty with a different content surface and camera grammar.",
+        "drop_prevention": "Changes novelty from process marks to close-detail evidence so the first frame is not another taped wall or normal placement carousel."
       },
       {
-        "id": "svc_20260530_s6_same_wall_day_night_generated",
+        "id": "svc_20260531_s6_direction_sheet_to_wall",
         "role": "새로 도전",
-        "format": "generated same wall day night compare 20260530",
-        "medium": "clean digital dual-light vector field",
-        "target": "North American compact city studio and English-speaking urban small-space audience",
-        "reflected": "Same wall. Different hours.",
+        "format": "art direction document to space sequence 20260531",
+        "medium": "clean digital lucid-shape direction field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "Start with the role, not the frame.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 2: generated same-wall day/night compare",
-        "applied_strategy": "Responds to the novelty warning with actual generated time-state evidence instead of another normal placement carousel.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 2: art-direction document to space",
+        "applied_strategy": "Introduces a true process surface while keeping role-first strategy and SG compact route-wall evidence.",
+        "drop_prevention": "Adds novelty without repeating the weak physical diagnosis or day-night direction, and keeps the recovery run grounded in SG ordinary space."
       }
     ]
   }
