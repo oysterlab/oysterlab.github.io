@@ -1,12 +1,14 @@
 {
-  "generated_at": "2026-06-03T01:02:06",
+  "generated_at": "2026-06-03T12:55:29",
   "audience_metrics": {
     "viewer_sg": 57.1,
     "follower_sg": 11.8,
     "viewer_us": 3.8,
     "follower_us": 51.5,
-    "viewer_target_market": 67.3,
-    "follower_target_market": 71.7,
+    "viewer_target_market": 5.3,
+    "follower_target_market": 56.2,
+    "viewer_asia_leakage": 77.0,
+    "follower_asia_leakage": 20.9,
     "viewer_target_age": 61.1,
     "follower_target_age": 63.8,
     "viewer_female": 59.0,
@@ -18,7 +20,7 @@
     "unique_viewers": 15339,
     "new_viewers": 8061,
     "returning_viewers": null,
-    "viewer_target_market": 67.3,
+    "viewer_target_market": 5.3,
     "viewer_sg": 57.1,
     "viewer_kr": 9.9,
     "viewer_target_age": 61.1,
@@ -78,10 +80,12 @@
         "removed_count": 0,
         "known_viewers": 3677,
         "known_viewer_posts": 6,
-        "target_market": 67.5,
-        "target_market_count": 2498,
+        "target_market": 2.9,
+        "target_market_count": 91,
         "sg": 59.2,
         "sg_count": 2205,
+        "asia_leakage": 80.9,
+        "asia_leakage_count": 3028,
         "target_age": 58.7,
         "target_age_count": 2150,
         "female": 61.3,
@@ -90,14 +94,14 @@
         "account_daily_unique_viewers": 4037,
         "account_daily_unique_status": 0,
         "top_posts": [
-          "svc_20260531_s5_corner_detail_room_reveal",
-          "svc_20260531_s4_before_print_chair_audit",
-          "svc_20260531_s3_kitchen_counter_eye_path"
+          "svc_20260531_s6_direction_sheet_to_wall",
+          "svc_20260531_s2_three_roles_counter_study",
+          "svc_20260531_s5_corner_detail_room_reveal"
         ],
         "weak_posts": [
-          "svc_20260531_s2_three_roles_counter_study",
-          "svc_20260531_s6_direction_sheet_to_wall",
-          "svc_20260531_s1_entry_mirror_first_landing"
+          "svc_20260531_s3_kitchen_counter_eye_path",
+          "svc_20260531_s1_entry_mirror_first_landing",
+          "svc_20260531_s4_before_print_chair_audit"
         ]
       },
       {
@@ -107,26 +111,28 @@
         "removed_count": 0,
         "known_viewers": 554,
         "known_viewer_posts": 6,
-        "target_market": 66.0,
-        "target_market_count": 356,
+        "target_market": 2.0,
+        "target_market_count": 12,
         "sg": 62.7,
         "sg_count": 336,
+        "asia_leakage": 91.6,
+        "asia_leakage_count": 509,
         "target_age": 60.2,
         "target_age_count": 336,
         "female": 66.0,
         "female_count": 369,
-        "target_rich_posts": 3,
+        "target_rich_posts": 0,
         "account_daily_unique_viewers": 2638,
         "account_daily_unique_status": 0,
         "top_posts": [
-          "svc_20260601_s6_doorway_distance_proof",
-          "svc_20260601_s1_kitchen_detail_counter_reveal",
-          "svc_20260601_s4_vanity_reflection_role_check"
+          "svc_20260601_s2_bedside_print_pile_audit",
+          "svc_20260601_s5_window_shadow_to_art",
+          "svc_20260601_s6_doorway_distance_proof"
         ],
         "weak_posts": [
           "svc_20260601_s3_kitchen_landing_zone_path",
-          "svc_20260601_s5_window_shadow_to_art",
-          "svc_20260601_s2_bedside_print_pile_audit"
+          "svc_20260601_s4_vanity_reflection_role_check",
+          "svc_20260601_s1_kitchen_detail_counter_reveal"
         ]
       },
       {
@@ -136,10 +142,12 @@
         "removed_count": 0,
         "known_viewers": 0,
         "known_viewer_posts": 0,
-        "target_market": 55.2,
+        "target_market": 4.1,
         "target_market_count": null,
         "sg": 39.3,
         "sg_count": null,
+        "asia_leakage": 76.6,
+        "asia_leakage_count": null,
         "target_age": 64.5,
         "target_age_count": null,
         "female": 73.3,
@@ -148,51 +156,53 @@
         "account_daily_unique_viewers": null,
         "account_daily_unique_status": 2,
         "top_posts": [
-          "svc_20260602_s5_open_cabinet_frame_test",
           "svc_20260602_s1_route_distance_test",
-          "svc_20260602_s6_pillow_line_sightline"
+          "svc_20260602_s3_vanity_last_glance",
+          "svc_20260602_s4_chair_sightline_wall"
         ],
         "weak_posts": [
-          "svc_20260602_s3_vanity_last_glance",
+          "svc_20260602_s5_open_cabinet_frame_test",
           "svc_20260602_s2_sink_detail_counter_reveal",
-          "svc_20260602_s4_chair_sightline_wall"
+          "svc_20260602_s6_pillow_line_sightline"
         ]
       }
     ],
     "direction": {
       "state": "weakening",
-      "line": "성장 방향이 약해졌다. 3일 전 대비 우선 국가 비율 -12.3p, 싱가포르 비율 -19.9p다.",
-      "next": "다음 루틴은 형식 실험을 줄이고 싱가포르 도시형 생활공간과 역할이 분명한 첫 장 문장으로 다시 좁힌다.",
-      "target_delta": -12.3,
+      "line": "타겟에서 아직 멀다. 최근 실제 게시물 기준 북미/유럽 우선 국가 비율은 4.1%이고, 아시아권 누수는 76.6%다. 3일 전 대비 북미/유럽 비율은 +1.2p지만, 절대 비율이 낮아 성장으로 보지 않는다.",
+      "next": "다음 제작은 회복 흐름이다. 싱가포르/한국식 주거 단서와 아시아권 사운드/해시태그를 줄이고, 북미/유럽 apartment/flat 레퍼런스와 현재 2D 아트 취향 리서치에서 시작한다.",
+      "target_delta": 1.2,
       "sg_delta": -19.9,
+      "asia_leakage_delta": -4.3,
       "age_delta": 5.8,
       "female_delta": 12.0
     }
   },
   "audience_routine": {
-    "run_id": "20260602-120001-scheduled_1200",
-    "date_kst": "2026-06-02",
-    "source": "scheduled_1200",
+    "run_id": "20260603-123528-high_performing_reference_format_rule_20260603",
+    "date_kst": "2026-06-03",
+    "source": "high_performing_reference_format_rule_20260603",
     "mode": "target_audience_research_and_surface_packet",
     "status": "completed",
-    "started_at_kst": "2026-06-02T12:00:01+09:00",
-    "finished_at_kst": "2026-06-02T12:00:01+09:00",
+    "started_at_kst": "2026-06-03T12:35:28+09:00",
+    "finished_at_kst": "2026-06-03T12:35:28+09:00",
     "target_comment_count": "0-3 optional",
     "prepared_comment_count": 10,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "Research first. If commenting manually, use no service, link, price, AI, or check-my-profile language.",
     "studio_summary": {
-      "generated_at": "2026-06-02T01:00:05",
-      "viewer_sg": 58.7,
-      "viewer_target_market": 67.7,
-      "viewer_25_44": 61.8,
-      "viewer_female": 63.0,
-      "follower_sg": 12.5,
+      "generated_at": "2026-06-03T01:00:03",
+      "viewer_sg": 57.1,
+      "viewer_target_market": 5.3,
+      "viewer_asia_leakage": 77.0,
+      "viewer_25_44": 61.1,
+      "viewer_female": 59.0,
+      "follower_sg": 11.8,
       "traffic_sources": [
         {
           "label": "For You",
-          "percent": 90.4
+          "percent": 90.7
         },
         {
           "label": "Search",
@@ -200,7 +210,7 @@
         },
         {
           "label": "Personal Profile",
-          "percent": 0.8
+          "percent": 0.5
         },
         {
           "label": "Follow",
@@ -212,16 +222,16 @@
         }
       ]
     },
-    "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 사용자의 공간 문제, 북미/SG 도시형 생활패턴, 2D 아트 취향을 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다.",
+    "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 북미/유럽 사용자의 공간 문제, 도시형 생활패턴, 2D 아트 취향을 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다. Singapore/Korea/Asia 신호는 타겟이 아니라 분배 진단으로만 본다.",
     "discovery_sources": [
       {
         "surface": "TikTok/웹",
-        "query": "NYC apartment wall art small space / LA apartment decor wall art",
-        "source_title": "북미 도시형 아파트 표면",
+        "query": "NYC apartment wall art small space / Brooklyn walk-up apartment entryway art",
+        "source_title": "New York / Brooklyn urban apartment surface",
         "url": "https://www.tiktok.com/search?q=NYC%20apartment%20wall%20art",
         "what_found": "12시 루틴에서 LA/NYC 같은 북미 도시형 아파트 게시물을 실제로 열어 첫 2초 훅, 댓글 반응, 저장을 부르는 벽/방 위치를 확인한다.",
         "insight": "북미 방향은 국가를 바꾸는 것이 아니라 도시형 생활패턴을 넓히는 실험이다. 작은 침실, 주방 코너, 책상 옆, 현관 벽처럼 몸이 매일 지나는 위치를 본다.",
-        "content_move": "다음 6개 중 최소 1개는 북미 도시형 아파트 생활패턴에서 온 공간/훅으로 만든다. 단, 공개 카피에서 지역명이나 경제 조건을 대놓고 말하지 않는다.",
+        "content_move": "다음 6개 중 최소 2개는 북미 도시형 아파트 생활패턴에서 온 공간/훅으로 만든다. 단, 공개 카피에서 지역명이나 경제 조건을 대놓고 말하지 않는다.",
         "manual_required": true
       },
       {
@@ -231,38 +241,31 @@
         "url": "https://www.tiktok.com/search?q=abstract%20wall%20art%20apartment",
         "what_found": "물리적 작품 종류가 아니라 2D 이미지의 색, 선, 여백, 감정 밀도, 방 안에서의 존재감을 본다.",
         "insight": "ELURA의 아트 실험은 판화/조각/오브제처럼 물성 중심으로 가지 않는다. 사용자가 저장하거나 구매 후보로 보는 시각 언어를 디지털 이미지 스타일로 번역한다.",
-        "content_move": "다음 제작은 최소 2개 슬롯에서 새로운 2D 시각 스타일을 테스트한다. 예: editorial soft geometry, photographic collage, restrained figurative line, cinematic shadow abstraction.",
+        "content_move": "다음 제작은 최소 4개 슬롯에서 새로운 2D 시각 스타일을 테스트한다. 예: editorial soft geometry, photographic collage, restrained figurative line, cinematic shadow abstraction.",
         "manual_required": true
       },
       {
-        "surface": "웹",
-        "query": "Singapore HDB service yard decor small space",
-        "source_title": "Goodrich Global: Singapore service-yard design reference",
-        "url": "https://www.goodrichglobal.com/singapore/article/service-yard-design-singapore/",
-        "what_found": "싱가포르의 도시형 서비스야드는 기능이 많은 생활공간이라 벽면과 세로 공간까지 수납 가능성으로 보는 흐름이 강하다.",
-        "insight": "서비스야드는 예쁜 방이 아니라 매일 반복되는 집안일과 정돈의 공간이다. 그래서 빨래 그림보다 반복되는 하루를 조금 가볍게 만드는 신호가 우리 서비스와 맞다.",
-        "content_move": "세탁공간 콘텐츠는 빨래 이미지가 아니라 짧은 동선, 벽면, 빛, 반복 동작을 보여주고 아트는 그 반복을 덜 무겁게 만드는 기준점으로 둔다."
+        "surface": "TikTok/웹",
+        "query": "London small flat wall art renter / UK terrace flat hallway wall art",
+        "source_title": "United Kingdom small-flat / terrace-flat surface",
+        "url": "https://www.tiktok.com/search?q=London%20small%20flat%20wall%20art",
+        "what_found": "작은 flat, terrace hallway, rented room에서 radiator, narrow hall, old plaster wall, leaning frame 같은 실제 단서를 확인한다.",
+        "insight": "유럽/영국 쪽은 완성형 인테리어보다 오래된 벽과 좁은 동선 안에서 하나의 개인적 기준점을 만드는 장면이 맞다.",
+        "content_move": "다음 6개 중 최소 1개는 London/UK small-flat 감각의 hallway, bedroom, dining nook, window corner에서 시작한다.",
+        "manual_required": true
       },
       {
-        "surface": "웹",
-        "query": "Singapore service yard home decor HDB",
-        "source_title": "Lemonfridge: Service Yard Design Ideas for Singapore Homes",
-        "url": "https://www.lemonfridge.sg/service-yard",
-        "what_found": "서비스야드는 세탁만 하는 곳이 아니라 작은 식사 자리, 미니 홈오피스, 식물과 휴식이 섞이는 다목적 코너로도 제안된다.",
-        "insight": "타겟은 거실 같은 대표 공간보다, 원래 중요하지 않게 보이던 구석을 자기 삶의 장면으로 바꾸는 이야기에 반응할 수 있다.",
-        "content_move": "다음 실험은 '중요하지 않은 구석도 내 삶의 한 장면을 담을 수 있다'는 문장으로 시작하고, 방 이름보다 사용자의 반복 동선을 먼저 잡는다."
+        "surface": "TikTok/웹",
+        "query": "Berlin apartment rental wall art / Amsterdam small apartment wall art / Paris small flat bedroom wall decor",
+        "source_title": "Continental Europe apartment/flat surface",
+        "url": "https://www.tiktok.com/search?q=Berlin%20apartment%20wall%20art",
+        "what_found": "Berlin/Amsterdam/Paris/Copenhagen의 작은 flat에서 오래된 바닥, 밝은 벽, 라디에이터, 작은 식탁, 창가 코너가 어떻게 반복되는지 본다.",
+        "insight": "유럽형 공간은 덜 장식된 벽과 가구의 간격이 크므로, 하나의 그래픽한 아트가 방 전체의 리듬을 바꾸는 장면이 잘 맞는다.",
+        "content_move": "다음 제작은 유럽 small flat을 명시 문구가 아니라 공간 구조와 빛, 벽 재질로 읽히게 한다.",
+        "manual_required": true
       },
       {
-        "surface": "웹/커뮤니티",
-        "query": "Singapore HDB kitchen too small service yard",
-        "source_title": "Reddit SingaporeEats: compact kitchens are difficult for proper cooking",
-        "url": "https://www.reddit.com/r/SingaporeEats/comments/1jmepxd",
-        "what_found": "도시형 주방은 준비 공간이 부족하고 서비스야드와 환기 동선이 답답하다는 불만이 반복된다.",
-        "insight": "싱가포르 주방 콘텐츠는 인테리어 취향보다 '기능적인 공간에서 하루를 어떻게 가볍게 만드는가'를 건드려야 한다.",
-        "content_move": "주방 콘텐츠는 음식, 접시, 예쁜 조리대가 아니라 수납 압박, 환기, 반복 사용감, 잠깐 멈추는 신호를 먼저 보여준다."
-      },
-      {
-        "surface": "웹",
+        "surface": "웹/TikTok",
         "query": "small rental bathroom renter friendly no drill storage",
         "source_title": "Homes & Gardens: renter-friendly small bathroom storage and lighting fixes",
         "url": "https://www.homesandgardens.com/solved/no-drill-tiered-shower-caddy-ideal-renters",
@@ -272,9 +275,9 @@
       },
       {
         "surface": "TikTok",
-        "query": "Singapore compact kitchen decor / small bathroom decor / small apartment decor",
+        "query": "first apartment wall art / renter friendly wall art / small flat wall art",
         "source_title": "TikTok 검색 표면",
-        "url": "https://www.tiktok.com/search?q=Singapore%20HDB%20kitchen%20decor",
+        "url": "https://www.tiktok.com/search?q=first%20apartment%20wall%20art",
         "what_found": "자동 수집 대신 로그인된 TikTok 화면에서 실제 게시물 3-5개를 열어 저장/댓글/반응 문맥을 확인해야 한다.",
         "insight": "TikTok에서는 완성된 인테리어보다 실제 생활감, 짧은 동선, 전후 비교, 반복해서 쓰는 코너가 콘텐츠 훅으로 강할 가능성이 높다.",
         "content_move": "12:00 루틴에서 TikTok 게시물 링크와 첫 3초 훅을 별도 기록한다. 기록이 없으면 웹 인사이트만으로 확정하지 않는다.",
@@ -312,7 +315,119 @@
           "고급 갤러리/쇼룸처럼 실제 타겟의 생활감이 사라진 공간",
           "작품 소장품 자랑이나 물리적 오브제 중심 콘텐츠"
         ],
-        "content_move": "북미 실험은 SG 신호를 버리는 것이 아니라, 도시형 생활패턴을 넓히는 역할로 쓴다. LA/NYC 소형 집의 빛, 책상, 침대 옆, 주방 코너를 다음 6개 중 최소 1개에 반영한다."
+        "content_move": "북미/유럽 실험은 기본 타겟이다. LA/NYC/Toronto/London/Berlin 같은 소형 집의 빛, 책상, 침대 옆, 주방 코너를 다음 6개 중 최소 4개에 반영한다."
+      }
+    ],
+    "high_performing_reference_rule": "실제 TikTok/Creative Center에서 유사 분야 고성과 콘텐츠를 확인하고, 원본을 복제하지 않은 채 first-frame stop, sequence rhythm, crop/camera grammar, text placement, caption/hashtag/sound packaging만 ELURA 포맷으로 번역한다.",
+    "reference_scout_path": "content/reference_scout_20260603_elura.md",
+    "reference_scout_required_fields": [
+      "reference_url",
+      "creator",
+      "observed_at_kst",
+      "search_query",
+      "visible_views",
+      "visible_likes",
+      "visible_comments_saves_shares",
+      "format_family",
+      "slide_count_or_video_length",
+      "first_frame_stop",
+      "sequence_structure",
+      "text_layout",
+      "caption_hashtag_sound",
+      "why_it_worked",
+      "format_elements_to_borrow",
+      "elements_not_to_copy",
+      "elura_translation",
+      "slot_target"
+    ],
+    "high_performing_format_sources": [
+      {
+        "surface": "TikTok/Creative Center",
+        "query": "apartment wall art / gallery wall apartment / small apartment decor",
+        "source_title": "High-performing apartment wall-art formats",
+        "url": "https://www.tiktok.com/search?q=apartment%20wall%20art",
+        "performance_threshold": "Prefer views 50K+ or likes 5K+. For narrow art/home niches, likes 2K+ can qualify if the format directly fits ELURA.",
+        "extract": [
+          "first-frame stop signal",
+          "slide count or video length",
+          "sequence beat order",
+          "crop/camera grammar",
+          "text placement and density",
+          "caption/hashtag/sound structure",
+          "visible views, likes, comments, saves, or shares"
+        ],
+        "format_elements_to_borrow": [
+          "before/after rhythm",
+          "room-audit structure",
+          "detail-to-room reveal",
+          "one focal point transformation",
+          "fast art-choice sequence"
+        ],
+        "do_not_copy": [
+          "original TikTok images",
+          "exact creator copy",
+          "faces or creator personality",
+          "watermarks or brand marks",
+          "exact music instance"
+        ],
+        "content_move": "Use the reference as format basis for daily6 slots 5-6. Translate it into ELURA self-to-space direction, North America/Europe ordinary homes, and clean digital 2D art.",
+        "manual_required": true
+      },
+      {
+        "surface": "TikTok/Creative Center",
+        "query": "before after wall decor / interior design mistakes / renter friendly wall art",
+        "source_title": "High-performing room problem and correction formats",
+        "url": "https://www.tiktok.com/search?q=before%20after%20wall%20decor",
+        "performance_threshold": "Require visible views/likes or visible comment/save/share strength. Hidden-metric posts cannot be the sole basis for a novel slot.",
+        "extract": [
+          "what the first frame says is wrong",
+          "how quickly the proof appears",
+          "whether the result is shown before or after the explanation",
+          "how text anchors a common mistake without sounding generic",
+          "what viewer action the format invites: save, rewatch, self-review, or comment"
+        ],
+        "format_elements_to_borrow": [
+          "rule-correction carousel",
+          "annotated audit",
+          "failed wall diagnosis",
+          "before-buying-another-print friction"
+        ],
+        "do_not_copy": [
+          "generic interior advice",
+          "economic-status callouts",
+          "direct comment/vote CTA",
+          "product-haul logic"
+        ],
+        "content_move": "Adapt the problem/correction structure to inner direction and focal art, not practical decorating tips.",
+        "manual_required": true
+      },
+      {
+        "surface": "TikTok/Creative Center",
+        "query": "art print apartment / abstract wall art apartment / bedroom wall decor",
+        "source_title": "High-performing art-print decision formats",
+        "url": "https://www.tiktok.com/search?q=art%20print%20apartment",
+        "performance_threshold": "Prefer posts where art choice, wall memory, room feeling, or save-worthy visual comparison drives engagement rather than price or shipping.",
+        "extract": [
+          "how many artworks or options appear",
+          "how the winning/final image is revealed",
+          "whether the viewer sees art detail before room context",
+          "how captions frame taste without overexplaining",
+          "which hashtags and sound genre place the post in North America/Europe home decor TikTok"
+        ],
+        "format_elements_to_borrow": [
+          "10+ rapid recognition sequence",
+          "three-role gallery study",
+          "one artwork across three moments",
+          "process-to-final-room sequence"
+        ],
+        "do_not_copy": [
+          "artist/store inventory",
+          "shipping or discount framing",
+          "physical printmaking/process claims",
+          "Asia-coded room cues as default target"
+        ],
+        "content_move": "Translate art-shopping formats into ELURA's question: what feeling should this wall help the viewer keep close?",
+        "manual_required": true
       }
     ],
     "slots": [
@@ -323,7 +438,7 @@
           "renter bathroom decor small apartment",
           "apartment kitchen wall decor",
           "bedroom corner decor renter",
-          "small apartment laundry nook decor"
+          "small apartment dining nook wall art"
         ],
         "comment_candidates": [
           "This kind of small room can hold more than function. It can hold the feeling you keep returning to.",
@@ -332,13 +447,14 @@
         "content_hook_if_reacts": "The room does not have to be important to hold something important in you."
       },
       {
-        "segment": "North America urban apartments / LA NYC daily patterns",
+        "segment": "North America urban apartments / LA NYC Toronto Vancouver daily patterns",
         "quota": 2,
         "queries": [
           "NYC apartment wall art small space",
           "LA apartment decor bedroom wall",
+          "Toronto condo rental wall art",
+          "Vancouver small apartment wall art",
           "Brooklyn studio apartment decor",
-          "Los Angeles apartment kitchen decor",
           "small city apartment entryway decor",
           "apartment therapy small apartment art"
         ],
@@ -349,20 +465,21 @@
         "content_hook_if_reacts": "A city apartment can feel more intentional without becoming more decorated."
       },
       {
-        "segment": "SG urban everyday rooms / compact daily-life rooms",
+        "segment": "Europe / UK small flats and rented rooms",
         "quota": 2,
         "queries": [
-          "Singapore HDB kitchen decor",
-          "HDB bathroom decor small space",
-          "Singapore service yard home decor",
-          "Singapore rental room decor",
-          "small space apartment Singapore"
+          "London small flat wall art renter",
+          "UK terrace flat hallway wall art",
+          "Berlin apartment rental wall art",
+          "Amsterdam small apartment wall art",
+          "Paris small flat bedroom wall decor",
+          "Copenhagen apartment dining nook art"
         ],
         "comment_candidates": [
-          "A small everyday corner can still hold a real chapter of your life. It does not have to be a perfect room first.",
-          "This feels like a real small-space problem: the room works, but it has not fully learned what you need to feel here."
+          "A small flat does not need to look finished before it can hold something personal.",
+          "The strongest part is the ordinary corner. It already knows where your day keeps returning."
         ],
-        "content_hook_if_reacts": "A small everyday corner can still hold a chapter of your life."
+        "content_hook_if_reacts": "A small flat can hold more than a blank wall."
       },
       {
         "segment": "wall art / feeling-led decor",
@@ -411,19 +528,146 @@
     "content_hooks_for_daily6": [
       "The room does not have to be important to hold something important in you.",
       "A city apartment can feel more intentional without becoming more decorated.",
-      "A small everyday corner can still hold a chapter of your life.",
+      "A small flat can hold more than a blank wall.",
       "Do not choose art for the room first. Choose the feeling you need to keep close.",
       "Temporary does not mean meaningless. Start with the place your day keeps passing through."
     ]
   },
   "posts": [
     {
+      "id": "svc_20260603_s6_appliance_reflection_to_wall",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646859537101638932",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260603_s5_switch_height_wall_test",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646858095234190612",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260603_s4_service_yard_line_sightline",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646856822095121684",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260603_s3_mirror_reflection_checkpoint",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646855519226957076",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260603_s2_kitchen_counter_edge_reveal",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646854357782138133",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260603_s1_entry_wall_distance_recovery",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7646853088497716501",
+      "audience_metrics": {
+        "sg": 57.1,
+        "us": 3.8,
+        "target_market": 5.3,
+        "asia_leakage": 77.0,
+        "target_age": 61.1,
+        "female": 59.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260602_s6_pillow_line_sightline",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7646489636012952852",
       "audience_metrics": {
         "sg": 53.1,
         "us": 0,
-        "target_market": 65.2,
+        "target_market": 2.5,
+        "asia_leakage": 77.4,
         "target_age": 52.0,
         "female": 74.0,
         "unique_viewers": null,
@@ -443,7 +687,8 @@
       "audience_metrics": {
         "sg": 72.7,
         "us": 0,
-        "target_market": 74.4,
+        "target_market": 1.0,
+        "asia_leakage": 93.6,
         "target_age": 62.0,
         "female": 45.0,
         "unique_viewers": null,
@@ -463,7 +708,8 @@
       "audience_metrics": {
         "sg": 58.0,
         "us": 0,
-        "target_market": 64.5,
+        "target_market": 5.7,
+        "asia_leakage": 78.7,
         "target_age": 62.0,
         "female": 75.0,
         "unique_viewers": null,
@@ -483,7 +729,8 @@
       "audience_metrics": {
         "sg": 18.8,
         "us": 6.3,
-        "target_market": 25.1,
+        "target_market": 6.3,
+        "asia_leakage": 93.7,
         "target_age": 90.0,
         "female": 77.0,
         "unique_viewers": null,
@@ -503,7 +750,8 @@
       "audience_metrics": {
         "sg": 24.3,
         "us": 0.3,
-        "target_market": 27.8,
+        "target_market": 2.2,
+        "asia_leakage": 92.9,
         "target_age": 60.0,
         "female": 81.0,
         "unique_viewers": null,
@@ -523,130 +771,11 @@
       "audience_metrics": {
         "sg": 8.7,
         "us": 1.9,
-        "target_market": 74.4,
+        "target_market": 6.7,
+        "asia_leakage": 23.5,
         "target_age": 61.0,
         "female": 88.0,
         "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s6_doorway_distance_proof",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646116196370238740",
-      "audience_metrics": {
-        "sg": 83.4,
-        "us": 0.7,
-        "target_market": 85.5,
-        "target_age": 61.0,
-        "female": 65.0,
-        "unique_viewers": 83,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s5_window_shadow_to_art",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646115026243407125",
-      "audience_metrics": {
-        "sg": 50.5,
-        "us": 0.8,
-        "target_market": 54.8,
-        "target_age": 62.0,
-        "female": 48.0,
-        "unique_viewers": 85,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s4_vanity_reflection_role_check",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646113744665201940",
-      "audience_metrics": {
-        "sg": 75.4,
-        "us": 0.5,
-        "target_market": 77.8,
-        "target_age": 57.0,
-        "female": 76.0,
-        "unique_viewers": 87,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s3_kitchen_landing_zone_path",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646112458121153813",
-      "audience_metrics": {
-        "sg": 24.8,
-        "us": 0,
-        "target_market": 26.8,
-        "target_age": 62.0,
-        "female": 80.0,
-        "unique_viewers": 118,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s2_bedside_print_pile_audit",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646111299239169300",
-      "audience_metrics": {
-        "sg": 65.1,
-        "us": 1.3,
-        "target_market": 71.8,
-        "target_age": 54.0,
-        "female": 69.0,
-        "unique_viewers": 83,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260601_s1_kitchen_detail_counter_reveal",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7646110143511399700",
-      "audience_metrics": {
-        "sg": 76.7,
-        "us": 0.8,
-        "target_market": 79.1,
-        "target_age": 65.0,
-        "female": 58.0,
-        "unique_viewers": 98,
         "source": "post-level"
       },
       "engagement": {
@@ -661,56 +790,76 @@
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260602_s1_route_distance_test",
+        "id": "svc_20260603_s1_entry_wall_distance_recovery",
         "role": "유지",
-        "format": "route distance test keep 20260602",
-        "medium": "clean digital threshold-scale field",
+        "format": "entry wall distance recovery keep 20260603",
+        "medium": "clean digital threshold aperture",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The far view decides fast.",
+        "reflected": "The first wall has to work fast.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 1: route distance proof",
-        "applied_strategy": "Preserves the 2026-06-01 top doorway-distance proof strategy while changing wall, object set, palette, and route geometry.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 1: doorway-distance proof",
+        "applied_strategy": "Keeps 2026-06-01 doorway-distance proof and returns it to SG ordinary entry cues after target/SG share declined.",
+        "drop_prevention": "Recovery keeps the evidenced distance-proof mechanic but changes the route geometry, art palette, and everyday objects instead of copying 2026-06-02 unchanged.",
+        "saved_points": "이전에 반응이 있던 현관 벽 거리 테스트 구조를 유지했다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
+        "visual_proof": "첫 문장 `The first wall has to work fast.`. 화면 증거: 문 앞, 신발장, 키 트레이, 신발, 스위치, 타일, 동선 거리 벽이 자리 잡기 전에 시선을 빼앗음.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s2_sink_detail_counter_reveal",
+        "id": "svc_20260603_s2_kitchen_counter_edge_reveal",
         "role": "유지",
-        "format": "sink detail counter reveal keep 20260602",
-        "medium": "clean digital aperture field",
+        "format": "kitchen counter edge reveal keep 20260603",
+        "medium": "clean digital counter ribbon field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The sink edge keeps pulling focus.",
+        "reflected": "The counter keeps stealing the view.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 2: sink detail to counter reveal",
-        "applied_strategy": "Preserves the 2026-06-01 kitchen-detail top signal while changing sink evidence and avoiding the weak landing-zone path.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 2: kitchen close-detail reveal",
+        "applied_strategy": "Keeps the 2026-06-01 kitchen-detail top signal while changing the weak 2026-06-02 sink repeat into a clearer counter-edge reveal.",
+        "drop_prevention": "Recovery keeps close-detail kitchen evidence because it previously indexed SG well, but changes source geometry, copy rhythm, and artwork language.",
+        "saved_points": "이전에 반응이 있던 주방 카운터 가장자리에서 벽으로 넘어가는 구성 구조를 유지했다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
+        "visual_proof": "첫 문장 `The counter keeps stealing the view.`. 화면 증거: 식기 건조대, 싱크대 가장자리, 밥솥, 콘센트, 카운터, 라미네이트 수납장, 세탁공간 방향 시야 시선을 빼앗음.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s3_vanity_last_glance",
+        "id": "svc_20260603_s3_mirror_reflection_checkpoint",
         "role": "확장",
-        "format": "vanity last glance checkpoint device 20260602",
-        "medium": "clean digital mirror-ribbon field",
+        "format": "mirror reflection checkpoint device 20260603",
+        "medium": "clean digital restrained reflection contour",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The mirror keeps catching the clutter.",
+        "reflected": "The mirror needs one calm edge.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: vanity last-glance checkpoint",
-        "applied_strategy": "Takes the 2026-06-01 vanity-reflection top signal and adds last-glance routine evidence instead of another normal placement story.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: mirror reflection checkpoint",
+        "applied_strategy": "Preserves the 2026-06-01 vanity-reflection winner but changes the weak 2026-06-02 last-glance framing into a cleaner reflection checkpoint.",
+        "drop_prevention": "Recovery keeps reflection evidence with SG private-room cues, but removes the previous last-glance wording and uses a clearer single visual edge.",
+        "saved_points": "작동하던 거울 반사 체크포인트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The mirror needs one calm edge.`. 화면 증거: 거울 가장자리, 램프, 트레이, 케이블, 평범한 병들, 침대 가장자리, 창문, 반사된 벽 거울 앞 확인을 복잡하게 만듦.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s4_chair_sightline_wall",
+        "id": "svc_20260603_s4_service_yard_line_sightline",
         "role": "확장",
-        "format": "chair sightline wall device 20260602",
-        "medium": "clean digital city-window block field",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Check it from the chair first.",
+        "format": "service yard line sightline device 20260603",
+        "medium": "clean digital utility line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The laundry line cuts the room.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: chair sightline proof",
-        "applied_strategy": "Uses the 12:00 North America city-apartment cue while avoiding yesterday's weak bedside print-pile format.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: laundry-line sightline proof",
+        "applied_strategy": "Takes recent partial working-room evidence from open-cabinet success and changes the device to service-yard line-of-sight for SG recovery.",
+        "drop_prevention": "Recovery keeps SG utility-room evidence but changes the old chore-path and task-path formats into a direct line-of-sight proof.",
+        "saved_points": "작동하던 세탁공간 선/시선 테스트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The laundry line cuts the room.`. 화면 증거: 빨래 건조대, 걸린 옷, 창문 그릴, 세탁기, 세제, 밀대, 배관, 좁은 벽 시선을 둘로 가름.",
+        "reference_basis": ""
       }
     ],
     "discard": [
@@ -729,136 +878,186 @@
     ],
     "new": [
       {
-        "id": "svc_20260602_s3_vanity_last_glance",
+        "id": "svc_20260603_s3_mirror_reflection_checkpoint",
         "role": "확장",
-        "format": "vanity last glance checkpoint device 20260602",
-        "medium": "clean digital mirror-ribbon field",
+        "format": "mirror reflection checkpoint device 20260603",
+        "medium": "clean digital restrained reflection contour",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The mirror keeps catching the clutter.",
+        "reflected": "The mirror needs one calm edge.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: vanity last-glance checkpoint",
-        "applied_strategy": "Takes the 2026-06-01 vanity-reflection top signal and adds last-glance routine evidence instead of another normal placement story.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: mirror reflection checkpoint",
+        "applied_strategy": "Preserves the 2026-06-01 vanity-reflection winner but changes the weak 2026-06-02 last-glance framing into a cleaner reflection checkpoint.",
+        "drop_prevention": "Recovery keeps reflection evidence with SG private-room cues, but removes the previous last-glance wording and uses a clearer single visual edge.",
+        "saved_points": "작동하던 거울 반사 체크포인트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The mirror needs one calm edge.`. 화면 증거: 거울 가장자리, 램프, 트레이, 케이블, 평범한 병들, 침대 가장자리, 창문, 반사된 벽 거울 앞 확인을 복잡하게 만듦.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s4_chair_sightline_wall",
+        "id": "svc_20260603_s4_service_yard_line_sightline",
         "role": "확장",
-        "format": "chair sightline wall device 20260602",
-        "medium": "clean digital city-window block field",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Check it from the chair first.",
+        "format": "service yard line sightline device 20260603",
+        "medium": "clean digital utility line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The laundry line cuts the room.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: chair sightline proof",
-        "applied_strategy": "Uses the 12:00 North America city-apartment cue while avoiding yesterday's weak bedside print-pile format.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: laundry-line sightline proof",
+        "applied_strategy": "Takes recent partial working-room evidence from open-cabinet success and changes the device to service-yard line-of-sight for SG recovery.",
+        "drop_prevention": "Recovery keeps SG utility-room evidence but changes the old chore-path and task-path formats into a direct line-of-sight proof.",
+        "saved_points": "작동하던 세탁공간 선/시선 테스트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The laundry line cuts the room.`. 화면 증거: 빨래 건조대, 걸린 옷, 창문 그릴, 세탁기, 세제, 밀대, 배관, 좁은 벽 시선을 둘로 가름.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s5_open_cabinet_frame_test",
-        "role": "새로 도전",
-        "format": "open cabinet frame test experiment 20260602",
-        "medium": "clean digital cabinet-gap color field",
+        "id": "svc_20260603_s5_switch_height_wall_test",
+        "role": "신규",
+        "format": "switch height wall test experiment 20260603",
+        "medium": "clean digital switch-height signal system",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "This is the view that repeats.",
+        "reflected": "The switch gets the first glance.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1: open-cabinet frame test",
-        "applied_strategy": "Keeps SG ordinary kitchen evidence while opening a new content surface after the weak window-shadow post.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 1: switch-height wall test",
+        "applied_strategy": "Novel slot keeps SG route cues but changes the content surface to switch-height evidence, avoiding a normal room-placement carousel.",
+        "drop_prevention": "Recovery creates a content-level experiment without broadening away from SG: the first frame is a concrete daily touchpoint, not a new room label.",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "새로 넣은 장치: 스위치 높이에서 먼저 보이는 벽 테스트. 전개 방식: 시작 장면: 전등 스위치와 키 트레이가 손 높이에 보이는 장면, 다음 동선에 놓인 물건, 아트와 공간의 관계, 아트 디테일, 전체 벽 결과.",
+        "visual_proof": "첫 문장 `The switch gets the first glance.`. 화면 증거: 전등 스위치, 키 트레이, 벽의 생활 자국, 가방 끈, 수납장 가장자리, 타일, 문틀, 아트 손이 닿는 높이에서 만남.",
+        "reference_basis": "고성과 TikTok 레퍼런스 URL/지표가 metadata에 없음. 이번 신규는 내부 형식 테스트로만 보고, 다음 제작부터는 레퍼런스 없으면 통과시키지 않는다."
       },
       {
-        "id": "svc_20260602_s6_pillow_line_sightline",
-        "role": "새로 도전",
-        "format": "pillow line sightline experiment 20260602",
-        "medium": "clean digital pillow-line contour field",
+        "id": "svc_20260603_s6_appliance_reflection_to_wall",
+        "role": "신규",
+        "format": "appliance reflection to wall experiment 20260603",
+        "medium": "clean digital reflection-edge color field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The first view starts from here.",
+        "reflected": "The reflection catches the wall first.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 2: pillow-line sightline proof",
-        "applied_strategy": "Keeps the growing SG compact-room signal while testing a new body-level camera grammar.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 2: appliance-reflection to wall",
+        "applied_strategy": "Novel slot keeps SG compact kitchen evidence while changing visual format to a physical reflection surface rather than another placement story.",
+        "drop_prevention": "Recovery creates a new content surface without repeating open-cabinet or sink-detail formats: the proof starts in reflection and then moves to direct wall context.",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: 가전 반사면에서 시작하는 벽 테스트. 전개 방식: 시작 장면: 가전과 카운터의 반사 장면, 다음 반사된 아트, 직접 보이는 벽, 아트 디테일, 마지막 주방 가장자리 컷.",
+        "visual_proof": "첫 문장 `The reflection catches the wall first.`. 화면 증거: 반사되는 가전 가장자리, 식기 건조대, 머그컵, 주전자, 라미네이트 수납장, 좁은 벽, 반사된 아트 시야를 좁게 압축함.",
+        "reference_basis": "고성과 TikTok 레퍼런스 URL/지표가 metadata에 없음. 이번 신규는 내부 형식 테스트로만 보고, 다음 제작부터는 레퍼런스 없으면 통과시키지 않는다."
       }
     ],
     "plan": [
       {
-        "id": "svc_20260602_s1_route_distance_test",
+        "id": "svc_20260603_s1_entry_wall_distance_recovery",
         "role": "유지",
-        "format": "route distance test keep 20260602",
-        "medium": "clean digital threshold-scale field",
+        "format": "entry wall distance recovery keep 20260603",
+        "medium": "clean digital threshold aperture",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The far view decides fast.",
+        "reflected": "The first wall has to work fast.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 1: route distance proof",
-        "applied_strategy": "Preserves the 2026-06-01 top doorway-distance proof strategy while changing wall, object set, palette, and route geometry.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 1: doorway-distance proof",
+        "applied_strategy": "Keeps 2026-06-01 doorway-distance proof and returns it to SG ordinary entry cues after target/SG share declined.",
+        "drop_prevention": "Recovery keeps the evidenced distance-proof mechanic but changes the route geometry, art palette, and everyday objects instead of copying 2026-06-02 unchanged.",
+        "saved_points": "이전에 반응이 있던 현관 벽 거리 테스트 구조를 유지했다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
+        "visual_proof": "첫 문장 `The first wall has to work fast.`. 화면 증거: 문 앞, 신발장, 키 트레이, 신발, 스위치, 타일, 동선 거리 벽이 자리 잡기 전에 시선을 빼앗음.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s2_sink_detail_counter_reveal",
+        "id": "svc_20260603_s2_kitchen_counter_edge_reveal",
         "role": "유지",
-        "format": "sink detail counter reveal keep 20260602",
-        "medium": "clean digital aperture field",
+        "format": "kitchen counter edge reveal keep 20260603",
+        "medium": "clean digital counter ribbon field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The sink edge keeps pulling focus.",
+        "reflected": "The counter keeps stealing the view.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "keep what works 2: sink detail to counter reveal",
-        "applied_strategy": "Preserves the 2026-06-01 kitchen-detail top signal while changing sink evidence and avoiding the weak landing-zone path.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "keep what works 2: kitchen close-detail reveal",
+        "applied_strategy": "Keeps the 2026-06-01 kitchen-detail top signal while changing the weak 2026-06-02 sink repeat into a clearer counter-edge reveal.",
+        "drop_prevention": "Recovery keeps close-detail kitchen evidence because it previously indexed SG well, but changes source geometry, copy rhythm, and artwork language.",
+        "saved_points": "이전에 반응이 있던 주방 카운터 가장자리에서 벽으로 넘어가는 구성 구조를 유지했다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
+        "visual_proof": "첫 문장 `The counter keeps stealing the view.`. 화면 증거: 식기 건조대, 싱크대 가장자리, 밥솥, 콘센트, 카운터, 라미네이트 수납장, 세탁공간 방향 시야 시선을 빼앗음.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s3_vanity_last_glance",
+        "id": "svc_20260603_s3_mirror_reflection_checkpoint",
         "role": "확장",
-        "format": "vanity last glance checkpoint device 20260602",
-        "medium": "clean digital mirror-ribbon field",
+        "format": "mirror reflection checkpoint device 20260603",
+        "medium": "clean digital restrained reflection contour",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The mirror keeps catching the clutter.",
+        "reflected": "The mirror needs one calm edge.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 1: vanity last-glance checkpoint",
-        "applied_strategy": "Takes the 2026-06-01 vanity-reflection top signal and adds last-glance routine evidence instead of another normal placement story.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 1: mirror reflection checkpoint",
+        "applied_strategy": "Preserves the 2026-06-01 vanity-reflection winner but changes the weak 2026-06-02 last-glance framing into a cleaner reflection checkpoint.",
+        "drop_prevention": "Recovery keeps reflection evidence with SG private-room cues, but removes the previous last-glance wording and uses a clearer single visual edge.",
+        "saved_points": "작동하던 거울 반사 체크포인트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The mirror needs one calm edge.`. 화면 증거: 거울 가장자리, 램프, 트레이, 케이블, 평범한 병들, 침대 가장자리, 창문, 반사된 벽 거울 앞 확인을 복잡하게 만듦.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s4_chair_sightline_wall",
+        "id": "svc_20260603_s4_service_yard_line_sightline",
         "role": "확장",
-        "format": "chair sightline wall device 20260602",
-        "medium": "clean digital city-window block field",
-        "target": "North American compact city apartment and English-speaking urban small-space audience",
-        "reflected": "Check it from the chair first.",
+        "format": "service yard line sightline device 20260603",
+        "medium": "clean digital utility line field",
+        "target": "Singapore compact apartment and English-speaking urban small-space audience",
+        "reflected": "The laundry line cuts the room.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "works plus new device 2: chair sightline proof",
-        "applied_strategy": "Uses the 12:00 North America city-apartment cue while avoiding yesterday's weak bedside print-pile format.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "works plus new device 2: laundry-line sightline proof",
+        "applied_strategy": "Takes recent partial working-room evidence from open-cabinet success and changes the device to service-yard line-of-sight for SG recovery.",
+        "drop_prevention": "Recovery keeps SG utility-room evidence but changes the old chore-path and task-path formats into a direct line-of-sight proof.",
+        "saved_points": "작동하던 세탁공간 선/시선 테스트 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
+        "visual_proof": "첫 문장 `The laundry line cuts the room.`. 화면 증거: 빨래 건조대, 걸린 옷, 창문 그릴, 세탁기, 세제, 밀대, 배관, 좁은 벽 시선을 둘로 가름.",
+        "reference_basis": ""
       },
       {
-        "id": "svc_20260602_s5_open_cabinet_frame_test",
-        "role": "새로 도전",
-        "format": "open cabinet frame test experiment 20260602",
-        "medium": "clean digital cabinet-gap color field",
+        "id": "svc_20260603_s5_switch_height_wall_test",
+        "role": "신규",
+        "format": "switch height wall test experiment 20260603",
+        "medium": "clean digital switch-height signal system",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "This is the view that repeats.",
+        "reflected": "The switch gets the first glance.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1: open-cabinet frame test",
-        "applied_strategy": "Keeps SG ordinary kitchen evidence while opening a new content surface after the weak window-shadow post.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 1: switch-height wall test",
+        "applied_strategy": "Novel slot keeps SG route cues but changes the content surface to switch-height evidence, avoiding a normal room-placement carousel.",
+        "drop_prevention": "Recovery creates a content-level experiment without broadening away from SG: the first frame is a concrete daily touchpoint, not a new room label.",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "새로 넣은 장치: 스위치 높이에서 먼저 보이는 벽 테스트. 전개 방식: 시작 장면: 전등 스위치와 키 트레이가 손 높이에 보이는 장면, 다음 동선에 놓인 물건, 아트와 공간의 관계, 아트 디테일, 전체 벽 결과.",
+        "visual_proof": "첫 문장 `The switch gets the first glance.`. 화면 증거: 전등 스위치, 키 트레이, 벽의 생활 자국, 가방 끈, 수납장 가장자리, 타일, 문틀, 아트 손이 닿는 높이에서 만남.",
+        "reference_basis": "고성과 TikTok 레퍼런스 URL/지표가 metadata에 없음. 이번 신규는 내부 형식 테스트로만 보고, 다음 제작부터는 레퍼런스 없으면 통과시키지 않는다."
       },
       {
-        "id": "svc_20260602_s6_pillow_line_sightline",
-        "role": "새로 도전",
-        "format": "pillow line sightline experiment 20260602",
-        "medium": "clean digital pillow-line contour field",
+        "id": "svc_20260603_s6_appliance_reflection_to_wall",
+        "role": "신규",
+        "format": "appliance reflection to wall experiment 20260603",
+        "medium": "clean digital reflection-edge color field",
         "target": "Singapore compact apartment and English-speaking urban small-space audience",
-        "reflected": "The first view starts from here.",
+        "reflected": "The reflection catches the wall first.",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 2: pillow-line sightline proof",
-        "applied_strategy": "Keeps the growing SG compact-room signal while testing a new body-level camera grammar.",
-        "drop_prevention": "재발 방지 설명 없음"
+        "basis_from": "new approach 2: appliance-reflection to wall",
+        "applied_strategy": "Novel slot keeps SG compact kitchen evidence while changing visual format to a physical reflection surface rather than another placement story.",
+        "drop_prevention": "Recovery creates a new content surface without repeating open-cabinet or sink-detail formats: the proof starts in reflection and then moves to direct wall context.",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: 가전 반사면에서 시작하는 벽 테스트. 전개 방식: 시작 장면: 가전과 카운터의 반사 장면, 다음 반사된 아트, 직접 보이는 벽, 아트 디테일, 마지막 주방 가장자리 컷.",
+        "visual_proof": "첫 문장 `The reflection catches the wall first.`. 화면 증거: 반사되는 가전 가장자리, 식기 건조대, 머그컵, 주전자, 라미네이트 수납장, 좁은 벽, 반사된 아트 시야를 좁게 압축함.",
+        "reference_basis": "고성과 TikTok 레퍼런스 URL/지표가 metadata에 없음. 이번 신규는 내부 형식 테스트로만 보고, 다음 제작부터는 레퍼런스 없으면 통과시키지 않는다."
       }
     ]
   }
