@@ -1,26 +1,32 @@
 {
-  "generated_at": "2026-06-09T08:24:17",
+  "generated_at": "2026-06-08T10:09:25",
   "audience_metrics": {
-    "viewer_sg": 51.5,
+    "viewer_sg": 52.0,
     "follower_sg": 12.3,
-    "viewer_us": 2.0,
+    "viewer_us": 2.3,
     "follower_us": 50.7,
-    "viewer_target_market": 5.1,
+    "viewer_target_market": 5.2,
     "follower_target_market": 54.7,
-    "viewer_asia_leakage": 75.3,
+    "viewer_asia_leakage": 75.4,
     "follower_asia_leakage": 21.3,
-    "viewer_target_age": 62.6,
+    "viewer_target_age": 62.4,
     "follower_target_age": 64.9,
-    "viewer_female": 68.0,
+    "viewer_female": 66.0,
     "follower_female": 60.0
   },
   "account_audience_7d": {
     "range": "last_7_days",
-    "generated_at": "2026-06-09T08:20:38",
-    "unique_viewers": 18554,
-    "new_viewers": 10585,
+    "generated_at": "2026-06-08T05:51:22",
+    "unique_viewers": 19301,
+    "new_viewers": 10518,
     "returning_viewers": null,
     "profile_views_7d": [
+      {
+        "date": "2026-06-01",
+        "label": "6/1",
+        "value": 11,
+        "status": 0
+      },
       {
         "date": "2026-06-02",
         "label": "6/2",
@@ -56,16 +62,16 @@
         "label": "6/7",
         "value": 2,
         "status": 0
-      },
-      {
-        "date": "2026-06-08",
-        "label": "6/8",
-        "value": 7,
-        "status": 0
       }
     ],
-    "profile_views_7d_total": 81,
+    "profile_views_7d_total": 85,
     "reached_audience_7d": [
+      {
+        "date": "2026-06-01",
+        "label": "6/1",
+        "value": 3255,
+        "status": 0
+      },
       {
         "date": "2026-06-02",
         "label": "6/2",
@@ -101,24 +107,24 @@
         "label": "6/7",
         "value": 518,
         "status": 0
-      },
-      {
-        "date": "2026-06-08",
-        "label": "6/8",
-        "value": 3362,
-        "status": 0
       }
     ],
-    "reached_audience_7d_total": 22203,
-    "viewer_to_profile_visit_rate": 0.437,
-    "reached_to_profile_visit_rate": 0.365,
-    "profile_origin_view_percent": 1.3,
-    "viewer_target_market": 5.1,
-    "viewer_sg": 51.5,
-    "viewer_kr": 9.5,
-    "viewer_target_age": 62.6,
-    "viewer_female": 68.0,
+    "reached_audience_7d_total": 22096,
+    "viewer_to_profile_visit_rate": 0.44,
+    "reached_to_profile_visit_rate": 0.385,
+    "profile_origin_view_percent": 1.1,
+    "viewer_target_market": 5.2,
+    "viewer_sg": 52.0,
+    "viewer_kr": 9.2,
+    "viewer_target_age": 62.4,
+    "viewer_female": 66.0,
     "daily_unique_viewers_7d": [
+      {
+        "date": "2026-06-01",
+        "label": "6/1",
+        "value": 2638,
+        "status": 0
+      },
       {
         "date": "2026-06-02",
         "label": "6/2",
@@ -154,85 +160,103 @@
         "label": "6/7",
         "value": 3534,
         "status": 0
-      },
-      {
-        "date": "2026-06-08",
-        "label": "6/8",
-        "value": 528,
-        "status": 0
       }
     ]
   },
   "site_activity": {
-    "raw_views_total": 158,
-    "raw_signups_total": 2,
-    "raw_views_7d": 22,
-    "raw_signups_7d": 1,
+    "raw_views_total": 147,
+    "raw_signups_total": 1,
+    "raw_views_7d": 26,
+    "raw_signups_7d": 0,
     "verified_views_today": 0,
     "verified_unique_ips_today": 0,
-    "verified_views_7d": 4,
-    "verified_unique_ips_7d": 4,
+    "verified_views_7d": 2,
+    "verified_unique_ips_7d": 2,
     "verified_signups_today": 0,
-    "verified_signups_7d": 1,
-    "bot_datacenter_views_7d": 18,
-    "suspicious_views_7d": 0,
+    "verified_signups_7d": 0,
+    "bot_datacenter_views_7d": 21,
+    "suspicious_views_7d": 3,
     "bot_datacenter_signups_7d": 0,
     "suspicious_signups_7d": 0,
     "target_market_verified_7d": 1,
-    "direct_or_typed_verified_7d": 3,
-    "conversion_7d": 25.0,
+    "direct_or_typed_verified_7d": 1,
+    "conversion_7d": 0.0,
     "countries_7d": [
       [
-        "한국",
-        3
+        "네덜란드",
+        1
       ],
       [
-        "네덜란드",
+        "말레이시아",
         1
       ]
     ],
     "sources_7d": [
       [
-        "direct/domain",
-        3
+        "google.com",
+        1
       ],
       [
-        "google.com",
+        "direct/domain",
         1
       ]
     ],
     "devices_7d": [
       [
         "모바일",
-        3
-      ],
-      [
-        "데스크톱",
-        1
+        2
       ]
     ],
     "exclusion_reasons_7d": [
       [
         "datacenter/proxy IP",
-        12
+        20
+      ],
+      [
+        "known scanner IP",
+        3
       ],
       [
         "bot/crawler UA",
-        6
+        1
       ]
     ],
-    "recent_verified_signups": [
-      {
-        "country": "KR",
-        "city": "Yongsan-gu",
-        "source": "direct/domain",
-        "createdAt": "2026-06-08T13:18:06.245Z"
-      }
-    ]
+    "recent_verified_signups": []
   },
-  "evaluation_excludes_date": "2026-06-09",
+  "evaluation_excludes_date": "2026-06-08",
   "growth_comparison": {
     "days": [
+      {
+        "day": "2026-06-05",
+        "post_count": 9,
+        "post_demo_count": 6,
+        "removed_count": 3,
+        "known_viewers": 4188,
+        "known_viewer_posts": 6,
+        "target_market": 2.8,
+        "target_market_count": 100,
+        "sg": 40.5,
+        "sg_count": 1644,
+        "asia_leakage": 77.4,
+        "asia_leakage_count": 3275,
+        "target_age": 61.0,
+        "target_age_count": 2546,
+        "female": 74.5,
+        "female_count": 3152,
+        "target_rich_posts": 0,
+        "account_daily_unique_viewers": 4472,
+        "account_daily_unique_status": 0,
+        "top_posts": [
+          "svc_20260605_s4_vanity_doorway_last_glance",
+          "svc_20260605_s6_object_to_art_role_sequence",
+          "svc_20260605_s2_window_chair_sightline"
+        ],
+        "weak_posts": [
+          "svc_20260605_s3_kitchen_prep_path_detail",
+          "svc_20260605_s5_wall_role_audit_marks",
+          "svc_20260605_s1_stair_landing_distance"
+        ]
+      },
       {
         "day": "2026-06-06",
         "post_count": 12,
@@ -259,97 +283,66 @@
       {
         "day": "2026-06-07",
         "post_count": 8,
-        "post_demo_count": 7,
+        "post_demo_count": 6,
         "removed_count": 0,
-        "known_viewers": 390,
-        "known_viewer_posts": 5,
+        "known_viewers": 0,
+        "known_viewer_posts": 0,
         "target_market": 3.4,
-        "target_market_count": 13,
-        "sg": 42.3,
-        "sg_count": 172,
-        "asia_leakage": 73.0,
-        "asia_leakage_count": 256,
-        "target_age": 62.4,
-        "target_age_count": 242,
-        "female": 64.4,
-        "female_count": 248,
+        "target_market_count": null,
+        "sg": 44.8,
+        "sg_count": null,
+        "asia_leakage": 76.4,
+        "asia_leakage_count": null,
+        "target_age": 60.7,
+        "target_age_count": null,
+        "female": 65.8,
+        "female_count": null,
         "target_rich_posts": 0,
         "account_daily_unique_viewers": 3534,
         "account_daily_unique_status": 0,
         "top_posts": [
-          "svc_20260607_new_s5_it_girl_apartment_wall_ideas",
           "svc_20260607_s1_window_radiator_sightline",
+          "svc_20260607_new_s5_it_girl_apartment_wall_ideas",
           "svc_20260607_s6_three_moment_art_test"
         ],
         "weak_posts": [
           "svc_20260607_s3_entry_object_line",
-          "svc_20260607_new_s6_apartment_to_hold",
-          "svc_20260607_s5_intake_dossier_to_wall"
-        ]
-      },
-      {
-        "day": "2026-06-08",
-        "post_count": 8,
-        "post_demo_count": 8,
-        "removed_count": 0,
-        "known_viewers": 0,
-        "known_viewer_posts": 0,
-        "target_market": 6.5,
-        "target_market_count": null,
-        "sg": 28.2,
-        "sg_count": null,
-        "asia_leakage": 73.8,
-        "asia_leakage_count": null,
-        "target_age": 68.0,
-        "target_age_count": null,
-        "female": 76.6,
-        "female_count": null,
-        "target_rich_posts": 0,
-        "account_daily_unique_viewers": 528,
-        "account_daily_unique_status": 0,
-        "top_posts": [
-          "svc_20260608_s6_profile_ignored_wall_objects",
-          "svc_20260608_profile_wall_clues_direction",
-          "svc_20260608_s4_print_stack_before_buying"
-        ],
-        "weak_posts": [
-          "svc_20260608_s1_dining_window_sightline",
-          "svc_20260608_s2_entry_mirror_threshold",
-          "svc_20260608_profile_hold_wall_direction"
+          "svc_20260607_s5_intake_dossier_to_wall",
+          "svc_20260607_new_s6_apartment_to_hold"
         ]
       }
     ],
     "direction": {
       "state": "weakening",
-      "line": "타겟에서 아직 멀다. 최근 실제 게시물 기준 북미/유럽 우선 국가 비율은 6.5%이고, 아시아권 누수는 73.8%다. 3일 전 대비 북미/유럽 비율은 +3.1p지만, 절대 비율이 낮아 성장으로 보지 않는다.",
+      "line": "타겟에서 아직 멀다. 최근 실제 게시물 기준 북미/유럽 우선 국가 비율은 3.4%이고, 아시아권 누수는 76.4%다. 3일 전 대비 북미/유럽 비율은 +0.6p지만, 절대 비율이 낮아 성장으로 보지 않는다.",
       "next": "다음 제작은 회복 흐름이다. 싱가포르/한국식 주거 단서와 아시아권 사운드/해시태그를 줄이고, 북미/유럽 apartment/flat 레퍼런스와 현재 2D 아트 취향 리서치에서 시작한다.",
-      "target_delta": 3.1,
-      "sg_delta": -14.1,
-      "asia_leakage_delta": 0.8,
-      "age_delta": 5.6,
-      "female_delta": 12.2
+      "target_delta": 0.6,
+      "sg_delta": 4.3,
+      "asia_leakage_delta": -1.0,
+      "age_delta": -0.3,
+      "female_delta": -8.7
     }
   },
   "audience_routine": {
-    "run_id": "20260609-072839-daily6_fallback_0200",
-    "date_kst": "2026-06-09",
+    "run_id": "20260608-055553-daily6_fallback_0200",
+    "date_kst": "2026-06-08",
     "source": "daily6_fallback_0200",
     "mode": "target_audience_research_and_surface_packet",
     "status": "completed",
-    "started_at_kst": "2026-06-09T07:28:39+09:00",
-    "finished_at_kst": "2026-06-09T07:28:39+09:00",
+    "started_at_kst": "2026-06-08T05:55:53+09:00",
+    "finished_at_kst": "2026-06-08T05:55:53+09:00",
     "target_comment_count": "0-3 optional",
     "prepared_comment_count": 10,
     "posted_comment_count": 0,
     "manual_action_required": true,
     "safety_rule": "Research first. If commenting manually, use no service, link, price, AI, or check-my-profile language.",
     "studio_summary": {
-      "generated_at": "2026-06-09T01:00:08",
-      "viewer_sg": 51.5,
-      "viewer_target_market": 5.1,
-      "viewer_asia_leakage": 75.3,
-      "viewer_25_44": 62.6,
-      "viewer_female": 68.0,
+      "generated_at": "2026-06-08T05:51:22",
+      "viewer_sg": 52.0,
+      "viewer_target_market": 5.2,
+      "viewer_asia_leakage": 75.4,
+      "viewer_25_44": 62.4,
+      "viewer_female": 66.0,
       "follower_sg": 12.3,
       "traffic_sources": [
         {
@@ -358,15 +351,15 @@
         },
         {
           "label": "Search",
-          "percent": 2.7
+          "percent": 2.9
         },
         {
           "label": "Personal Profile",
-          "percent": 1.3
+          "percent": 1.1
         },
         {
           "label": "Follow",
-          "percent": 0.0
+          "percent": 0.1
         },
         {
           "label": "Sound",
@@ -471,7 +464,7 @@
       }
     ],
     "high_performing_reference_rule": "실제 TikTok/Creative Center에서 유사 분야 고성과 콘텐츠를 확인하고, 원본을 복제하지 않은 채 first-frame stop, sequence rhythm, crop/camera grammar, text placement, caption/hashtag/sound packaging만 ELURA 포맷으로 번역한다.",
-    "reference_scout_path": "content/reference_scout_20260609_elura.md",
+    "reference_scout_path": "content/reference_scout_20260608_elura.md",
     "reference_scout_required_fields": [
       "reference_url",
       "creator",
@@ -687,143 +680,17 @@
   },
   "posts": [
     {
-      "id": "svc_20260609_s6_profile_room_clues_direction",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649167091282595092",
-      "audience_metrics": {
-        "sg": 51.5,
-        "us": 2.0,
-        "target_market": 5.1,
-        "asia_leakage": 75.3,
-        "target_age": 62.6,
-        "female": 68.0,
-        "unique_viewers": null,
-        "source": "account fallback"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260609_s5_profile_room_photo_wall_direction",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649165923982560533",
-      "audience_metrics": {
-        "sg": 51.5,
-        "us": 2.0,
-        "target_market": 5.1,
-        "asia_leakage": 75.3,
-        "target_age": 62.6,
-        "female": 68.0,
-        "unique_viewers": null,
-        "source": "account fallback"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260609_s4_print_stack_role_filter",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649164665754340629",
-      "audience_metrics": {
-        "sg": 51.5,
-        "us": 2.0,
-        "target_market": 5.1,
-        "asia_leakage": 75.3,
-        "target_age": 62.6,
-        "female": 68.0,
-        "unique_viewers": null,
-        "source": "account fallback"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260609_s3_sofa_wall_flat_to_personal",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649163603194580245",
-      "audience_metrics": {
-        "sg": 51.5,
-        "us": 2.0,
-        "target_market": 5.1,
-        "asia_leakage": 75.3,
-        "target_age": 62.6,
-        "female": 68.0,
-        "unique_viewers": null,
-        "source": "account fallback"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260609_s2_hallway_object_clue_wall",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649162540953439508",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 100.0,
-        "target_age": 100.0,
-        "female": 100.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260609_s1_bedside_evening_return",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7649161359254506772",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 28.6,
-        "target_market": 28.6,
-        "asia_leakage": 71.4,
-        "target_age": 100.0,
-        "female": 100.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
       "id": "svc_20260608_profile_wall_clues_direction",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648824430411418901",
       "audience_metrics": {
-        "sg": 4.5,
-        "us": 18.2,
-        "target_market": 20.5,
-        "asia_leakage": 70.3,
-        "target_age": 61.0,
-        "female": 75.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
         "unique_viewers": null,
-        "source": "post-level"
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -837,14 +704,14 @@
       "id": "svc_20260608_profile_hold_wall_direction",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648823351871294741",
       "audience_metrics": {
-        "sg": 45.5,
-        "us": 0.8,
-        "target_market": 1.5,
-        "asia_leakage": 85.2,
-        "target_age": 70.0,
-        "female": 86.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
         "unique_viewers": null,
-        "source": "post-level"
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -858,14 +725,14 @@
       "id": "svc_20260608_s6_profile_ignored_wall_objects",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648784873901002005",
       "audience_metrics": {
-        "sg": 2.4,
-        "us": 11.9,
-        "target_market": 21.4,
-        "asia_leakage": 73.8,
-        "target_age": 69.0,
-        "female": 62.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
         "unique_viewers": null,
-        "source": "post-level"
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -879,14 +746,14 @@
       "id": "svc_20260608_s5_profile_it_wall_audit",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648783605208059156",
       "audience_metrics": {
-        "sg": 16.6,
-        "us": 2.0,
-        "target_market": 2.0,
-        "asia_leakage": 59.4,
-        "target_age": 70.0,
-        "female": 76.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
         "unique_viewers": null,
-        "source": "post-level"
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -900,14 +767,14 @@
       "id": "svc_20260608_s4_print_stack_before_buying",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648781587600919828",
       "audience_metrics": {
-        "sg": 29.4,
-        "us": 1.9,
-        "target_market": 3.0,
-        "asia_leakage": 63.9,
-        "target_age": 71.0,
-        "female": 67.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
         "unique_viewers": null,
-        "source": "post-level"
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -921,12 +788,138 @@
       "id": "svc_20260608_s3_floor_route_entry_wall",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7648780351526980885",
       "audience_metrics": {
-        "sg": 53.8,
-        "us": 0,
-        "target_market": 2.0,
-        "asia_leakage": 71.4,
-        "target_age": 55.0,
-        "female": 85.0,
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260608_s2_entry_mirror_threshold",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648779093034650900",
+      "audience_metrics": {
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260608_s1_dining_window_sightline",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648777998593838356",
+      "audience_metrics": {
+        "sg": 52.0,
+        "us": 2.3,
+        "target_market": 5.2,
+        "asia_leakage": 75.4,
+        "target_age": 62.4,
+        "female": 66.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260607_new_s6_apartment_to_hold",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648476190264675605",
+      "audience_metrics": {
+        "sg": 69.5,
+        "us": 0.6,
+        "target_market": 1.3,
+        "asia_leakage": 91.7,
+        "target_age": 60.0,
+        "female": 79.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260607_new_s5_it_girl_apartment_wall_ideas",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648461844486573333",
+      "audience_metrics": {
+        "sg": 5.0,
+        "us": 5.0,
+        "target_market": 5.0,
+        "asia_leakage": 93.7,
+        "target_age": 61.0,
+        "female": 56.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260607_s6_three_moment_art_test",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648356430222839061",
+      "audience_metrics": {
+        "sg": 35.5,
+        "us": 2.1,
+        "target_market": 4.5,
+        "asia_leakage": 59.8,
+        "target_age": 58.0,
+        "female": 57.0,
+        "unique_viewers": null,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260607_s5_intake_dossier_to_wall",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7648355091426118933",
+      "audience_metrics": {
+        "sg": 51.5,
+        "us": 1.2,
+        "target_market": 1.2,
+        "asia_leakage": 67.5,
+        "target_age": 58.0,
+        "female": 67.0,
         "unique_viewers": null,
         "source": "post-level"
       },
@@ -942,75 +935,75 @@
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260609_s1_bedside_evening_return",
+        "id": "svc_20260608_s1_dining_window_sightline",
         "role": "유지",
-        "format": "bedside evening return keep 20260609",
+        "format": "dining window sightline keep 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The corner you see at night can carry the whole room.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The table keeps pulling the eye sideways.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 1",
-        "applied_strategy": "The corner you see at night can carry the whole room.",
+        "applied_strategy": "The table keeps pulling the eye sideways.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "이전에 반응이 있던 bedside evening return 구조를 유지했다.",
+        "saved_points": "이전에 반응이 있던 dining window sight선 구조를 유지했다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
-        "visual_proof": "첫 문장 `The corner you see at night can carry the whole room.`. 화면 증거: The 램프 was doing all the work..",
+        "visual_proof": "첫 문장 `The table keeps pulling the eye sideways.`. 화면 증거: small table, chair back, radiator/창문 edge, pendant cord, books, 머그컵, baseboard 케이블 pull the eye sideways.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260609_s2_hallway_object_clue_wall",
+        "id": "svc_20260608_s2_entry_mirror_threshold",
         "role": "유지",
-        "format": "hallway object clue keep 20260609",
+        "format": "entry mirror threshold keep 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The small wall by the door usually has the answer already.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The mirror catches everything at once.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 2",
-        "applied_strategy": "The small wall by the door usually has the answer already.",
+        "applied_strategy": "The mirror catches everything at once.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "이전에 반응이 있던 hallway object clue 구조를 유지했다.",
+        "saved_points": "이전에 반응이 있던 entry 거울 threshold 구조를 유지했다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
-        "visual_proof": "첫 문장 `The small wall by the door usually has the answer already.`. 화면 증거: The door wall already had clues..",
+        "visual_proof": "첫 문장 `The mirror catches everything at once.`. 화면 증거: 거울 가장자리, coat hook, tote, key bowl, 램프 cord, doorframe catch attention at once.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260609_s3_sofa_wall_flat_to_personal",
+        "id": "svc_20260608_s3_floor_route_entry_wall",
         "role": "확장",
-        "format": "sofa wall flat to personal device 20260609",
+        "format": "floor route entry wall device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "A sofa wall can look finished and still feel anonymous.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The floor gets the attention first.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 1",
-        "applied_strategy": "A sofa wall can look finished and still feel anonymous.",
+        "applied_strategy": "The floor gets the attention first.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "작동하던 sofa wall flat to personal 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "saved_points": "작동하던 floor route 현관 벽 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `A sofa wall can look finished and still feel anonymous.`. 화면 증거: Finished can still feel anonymous..",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143506, 좋아요 11748 / apartment assembly/progression. 빌린 포맷 요소: ['ordinary room recognition', 'art-detail-to-room rhythm', 'coherent final payoff']."
+        "visual_proof": "첫 문장 `The floor gets the attention first.`. 화면 증거: 신발, tote strap, key bowl, narrow floor route, baseboard, 케이블 시선을 빼앗음 down before the wall.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2590739, 좋아요 106457 / small-wall object setup. 빌린 포맷 요소: ['small-wall friction', 'ordinary detail evidence', 'one focal answer']."
       },
       {
-        "id": "svc_20260609_s4_print_stack_role_filter",
+        "id": "svc_20260608_s4_print_stack_before_buying",
         "role": "확장",
-        "format": "print stack role filter device 20260609",
+        "format": "print stack role filter device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "Before buying another almost-right print, decide what the wall should hold.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "Before another print, check the wall's job.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 2",
-        "applied_strategy": "Before buying another almost-right print, decide what the wall should hold.",
+        "applied_strategy": "Before another print, check the wall's job.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "작동하던 print stack role filter 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `Before buying another almost-right print, decide what the wall should hold.`. 화면 증거: Before another print, ask the wall's job..",
+        "visual_proof": "첫 문장 `Before another print, check the wall's job.`. 화면 증거: small stack of mismatched framed prints, 램프, book, 케이블, unresolved wall create art-choice friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@so.candice/video/7424632966669749534 / 조회수 31891, 좋아요 4474 / art-rich apartment story curiosity. 빌린 포맷 요소: ['art-detail curiosity', 'object-led progress beat', 'final usable corner']."
       }
     ],
@@ -1042,186 +1035,258 @@
     ],
     "new": [
       {
-        "id": "svc_20260609_s3_sofa_wall_flat_to_personal",
+        "id": "svc_20260608_s3_floor_route_entry_wall",
         "role": "확장",
-        "format": "sofa wall flat to personal device 20260609",
+        "format": "floor route entry wall device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "A sofa wall can look finished and still feel anonymous.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The floor gets the attention first.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 1",
-        "applied_strategy": "A sofa wall can look finished and still feel anonymous.",
+        "applied_strategy": "The floor gets the attention first.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "작동하던 sofa wall flat to personal 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "saved_points": "작동하던 floor route 현관 벽 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `A sofa wall can look finished and still feel anonymous.`. 화면 증거: Finished can still feel anonymous..",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143506, 좋아요 11748 / apartment assembly/progression. 빌린 포맷 요소: ['ordinary room recognition', 'art-detail-to-room rhythm', 'coherent final payoff']."
+        "visual_proof": "첫 문장 `The floor gets the attention first.`. 화면 증거: 신발, tote strap, key bowl, narrow floor route, baseboard, 케이블 시선을 빼앗음 down before the wall.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2590739, 좋아요 106457 / small-wall object setup. 빌린 포맷 요소: ['small-wall friction', 'ordinary detail evidence', 'one focal answer']."
       },
       {
-        "id": "svc_20260609_s4_print_stack_role_filter",
+        "id": "svc_20260608_s4_print_stack_before_buying",
         "role": "확장",
-        "format": "print stack role filter device 20260609",
+        "format": "print stack role filter device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "Before buying another almost-right print, decide what the wall should hold.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "Before another print, check the wall's job.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 2",
-        "applied_strategy": "Before buying another almost-right print, decide what the wall should hold.",
+        "applied_strategy": "Before another print, check the wall's job.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "작동하던 print stack role filter 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `Before buying another almost-right print, decide what the wall should hold.`. 화면 증거: Before another print, ask the wall's job..",
+        "visual_proof": "첫 문장 `Before another print, check the wall's job.`. 화면 증거: small stack of mismatched framed prints, 램프, book, 케이블, unresolved wall create art-choice friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@so.candice/video/7424632966669749534 / 조회수 31891, 좋아요 4474 / art-rich apartment story curiosity. 빌린 포맷 요소: ['art-detail curiosity', 'object-led progress beat', 'final usable corner']."
       },
       {
-        "id": "svc_20260609_s5_profile_room_photo_wall_direction",
+        "id": "svc_20260608_s5_profile_it_wall_audit",
         "role": "신규",
-        "format": "profile room photo wall direction experiment 20260609",
+        "format": "profile it wall audit experiment 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "A room photo can tell you more than a Pinterest board.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "IT GIRL APARTMENT WALL IDEAS",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "new approach 1 / profile-visit test",
-        "applied_strategy": "A room photo can tell you more than a Pinterest board.",
+        "applied_strategy": "IT GIRL APARTMENT WALL IDEAS",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: profile trigger text system plus one room photo proof beat. 전개 방식: realistic wall 직접 보이는ion carousel with visible offer by slide two, varied editorial text anchors.",
-        "visual_proof": "첫 문장 `A room photo can tell you more than a Pinterest board.`. 화면 증거: THE WALL YOUR ROOM KEEPS AVOIDING.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe / 조회수 public account reference; style/format observed manually, 좋아요 varies by post / saveable realistic apartment editorial carousel. 빌린 포맷 요소: ['warm apartment relatability', 'small-wall friction', 'art-and-room final payoff']."
+        "new_points": "새로 넣은 장치: visual format, camera grammar, and profile trigger sequence. 전개 방식: annotated realistic apartment wall audit, printed room-photo proof move into 마지막 wall, not a normal six-line room placement carousel.",
+        "visual_proof": "첫 문장 `IT GIRL APARTMENT WALL IDEAS`. 화면 증거: ordinary wall, 콘센트, 케이블, side table, blanket, book, art sample show a wall that is almost ready but not resolved.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2590739, 좋아요 106457 / small-wall object setup. 빌린 포맷 요소: ['small-wall friction', 'apartment hook', 'art-detail-to-home rhythm', 'coherent final payoff']."
       },
       {
-        "id": "svc_20260609_s6_profile_room_clues_direction",
+        "id": "svc_20260608_s6_profile_ignored_wall_objects",
         "role": "신규",
-        "format": "profile room clues direction experiment 20260609",
+        "format": "profile ignored wall object sequence experiment 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The things you leave in a room are usually the map.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "THE WALL I KEPT IGNORING",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "new approach 2 / profile-visit test",
-        "applied_strategy": "The things you leave in a room are usually the map.",
+        "applied_strategy": "THE WALL I KEPT IGNORING",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: object clue profile trigger plus editorial text system. 전개 방식: lived object 증거 leads to a room-photo 직접 보이는ion promise instead of a normal placement story.",
-        "visual_proof": "첫 문장 `The things you leave in a room are usually the map.`. 화면 증거: THE ROOM ALREADY HAD CLUES.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe / 조회수 public account reference; style/format observed manually, 좋아요 varies by post / saveable realistic apartment editorial carousel. 빌린 포맷 요소: ['lived object detail', 'apartment-first relatability', 'art-detail payoff']."
+        "new_points": "새로 넣은 장치: visual format, sequence structure, and conceptual point of view. 전개 방식: object-led stop-motion-like stills lead from ignored wall to room-photo 직접 보이는ion proof, not a standard placement story.",
+        "visual_proof": "첫 문장 `THE WALL I KEPT IGNORING`. 화면 증거: keys, 램프, blanket, book, 케이블, 콘센트, baseboard collect around an ignored wall.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@reserve home/video/7071061616951086382 / 조회수 67002, 좋아요 3799 / room memory detail arc. 빌린 포맷 요소: ['lived detail rhythm', 'object-led progression', 'art/detail payoff']."
+      },
+      {
+        "id": "svc_20260608_profile_hold_wall_direction",
+        "role": "신규",
+        "format": "profile hold wall direction 20260608",
+        "medium": "clean digital 2D matte print",
+        "target": "North America and Europe apartment decor, wall art, small apartment, first-home audience, 22-38, female-skewing save-oriented vie…",
+        "reflected": "THINGS THIS APARTMENT COULD HOLD",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach / profile-visit proof test A",
+        "applied_strategy": "THINGS THIS APARTMENT COULD HOLD",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: profile trigger text system plus one room photo proof beat. 전개 방식: keeps warm lived-room hook but makes slide 2 a printed room-photo proof, varies text anchors/treatments.",
+        "visual_proof": "첫 문장 `THINGS THIS APARTMENT COULD HOLD`. 화면 증거: warm first-apartment living corner with ordinary objects, one wall that can carry a clearer role.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/video/7639103552656362765. 빌린 포맷 요소: ['warm first-apartment visual relatability', 'wishlist/list grammar', 'saveable wall-role progression']."
+      },
+      {
+        "id": "svc_20260608_profile_wall_clues_direction",
+        "role": "신규",
+        "format": "profile wall clues direction 20260608",
+        "medium": "clean digital 2D matte print",
+        "target": "North America and Europe apartment decor, wall art, small apartment, first-home audience, 22-38, female-skewing save-oriented vie…",
+        "reflected": "THE ROOM ALREADY HAD CLUES",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach / profile-visit proof test B",
+        "applied_strategy": "THE ROOM ALREADY HAD CLUES",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: object clue profile trigger plus editorial text system correction. 전개 방식: uses ignored wall, object 증거 instead of a generic placement carousel; slide 2 makes room-photo clue visible.",
+        "visual_proof": "첫 문장 `THE ROOM ALREADY HAD CLUES`. 화면 증거: ignored wall surrounded by keys, 램프, book, blanket, 콘센트, 케이블, baseboard.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/video/7639103552656362765. 빌린 포맷 요소: ['lived object detail', 'apartment-first relatability', 'art-and-room final reveal']."
       }
     ],
     "plan": [
       {
-        "id": "svc_20260609_s1_bedside_evening_return",
+        "id": "svc_20260608_s1_dining_window_sightline",
         "role": "유지",
-        "format": "bedside evening return keep 20260609",
+        "format": "dining window sightline keep 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The corner you see at night can carry the whole room.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The table keeps pulling the eye sideways.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 1",
-        "applied_strategy": "The corner you see at night can carry the whole room.",
+        "applied_strategy": "The table keeps pulling the eye sideways.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "이전에 반응이 있던 bedside evening return 구조를 유지했다.",
+        "saved_points": "이전에 반응이 있던 dining window sight선 구조를 유지했다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
-        "visual_proof": "첫 문장 `The corner you see at night can carry the whole room.`. 화면 증거: The 램프 was doing all the work..",
+        "visual_proof": "첫 문장 `The table keeps pulling the eye sideways.`. 화면 증거: small table, chair back, radiator/창문 edge, pendant cord, books, 머그컵, baseboard 케이블 pull the eye sideways.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260609_s2_hallway_object_clue_wall",
+        "id": "svc_20260608_s2_entry_mirror_threshold",
         "role": "유지",
-        "format": "hallway object clue keep 20260609",
+        "format": "entry mirror threshold keep 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The small wall by the door usually has the answer already.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The mirror catches everything at once.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "keep what works 2",
-        "applied_strategy": "The small wall by the door usually has the answer already.",
+        "applied_strategy": "The mirror catches everything at once.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "이전에 반응이 있던 hallway object clue 구조를 유지했다.",
+        "saved_points": "이전에 반응이 있던 entry 거울 threshold 구조를 유지했다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "새 방이나 새 문장으로 포장하지 않고, 오브젝트·동선·아트 색을 바꿔 반복감을 줄였다.",
-        "visual_proof": "첫 문장 `The small wall by the door usually has the answer already.`. 화면 증거: The door wall already had clues..",
+        "visual_proof": "첫 문장 `The mirror catches everything at once.`. 화면 증거: 거울 가장자리, coat hook, tote, key bowl, 램프 cord, doorframe catch attention at once.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260609_s3_sofa_wall_flat_to_personal",
+        "id": "svc_20260608_s3_floor_route_entry_wall",
         "role": "확장",
-        "format": "sofa wall flat to personal device 20260609",
+        "format": "floor route entry wall device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "A sofa wall can look finished and still feel anonymous.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "The floor gets the attention first.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 1",
-        "applied_strategy": "A sofa wall can look finished and still feel anonymous.",
+        "applied_strategy": "The floor gets the attention first.",
         "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "작동하던 sofa wall flat to personal 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
+        "saved_points": "작동하던 floor route 현관 벽 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `A sofa wall can look finished and still feel anonymous.`. 화면 증거: Finished can still feel anonymous..",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143506, 좋아요 11748 / apartment assembly/progression. 빌린 포맷 요소: ['ordinary room recognition', 'art-detail-to-room rhythm', 'coherent final payoff']."
+        "visual_proof": "첫 문장 `The floor gets the attention first.`. 화면 증거: 신발, tote strap, key bowl, narrow floor route, baseboard, 케이블 시선을 빼앗음 down before the wall.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2590739, 좋아요 106457 / small-wall object setup. 빌린 포맷 요소: ['small-wall friction', 'ordinary detail evidence', 'one focal answer']."
       },
       {
-        "id": "svc_20260609_s4_print_stack_role_filter",
+        "id": "svc_20260608_s4_print_stack_before_buying",
         "role": "확장",
-        "format": "print stack role filter device 20260609",
+        "format": "print stack role filter device 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "Before buying another almost-right print, decide what the wall should hold.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "Before another print, check the wall's job.",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "winning strategy plus new device 2",
-        "applied_strategy": "Before buying another almost-right print, decide what the wall should hold.",
+        "applied_strategy": "Before another print, check the wall's job.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "작동하던 print stack role filter 계열을 유지하되, 첫 장의 증거를 더 구체적으로 바꿨다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "기존 포맷에 새로운 시선 위치나 물체 증거를 더해 첫 장의 이유를 선명하게 했다.",
-        "visual_proof": "첫 문장 `Before buying another almost-right print, decide what the wall should hold.`. 화면 증거: Before another print, ask the wall's job..",
+        "visual_proof": "첫 문장 `Before another print, check the wall's job.`. 화면 증거: small stack of mismatched framed prints, 램프, book, 케이블, unresolved wall create art-choice friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@so.candice/video/7424632966669749534 / 조회수 31891, 좋아요 4474 / art-rich apartment story curiosity. 빌린 포맷 요소: ['art-detail curiosity', 'object-led progress beat', 'final usable corner']."
       },
       {
-        "id": "svc_20260609_s5_profile_room_photo_wall_direction",
+        "id": "svc_20260608_s5_profile_it_wall_audit",
         "role": "신규",
-        "format": "profile room photo wall direction experiment 20260609",
+        "format": "profile it wall audit experiment 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "A room photo can tell you more than a Pinterest board.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "IT GIRL APARTMENT WALL IDEAS",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "new approach 1 / profile-visit test",
-        "applied_strategy": "A room photo can tell you more than a Pinterest board.",
+        "applied_strategy": "IT GIRL APARTMENT WALL IDEAS",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: profile trigger text system plus one room photo proof beat. 전개 방식: realistic wall 직접 보이는ion carousel with visible offer by slide two, varied editorial text anchors.",
-        "visual_proof": "첫 문장 `A room photo can tell you more than a Pinterest board.`. 화면 증거: THE WALL YOUR ROOM KEEPS AVOIDING.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe / 조회수 public account reference; style/format observed manually, 좋아요 varies by post / saveable realistic apartment editorial carousel. 빌린 포맷 요소: ['warm apartment relatability', 'small-wall friction', 'art-and-room final payoff']."
+        "new_points": "새로 넣은 장치: visual format, camera grammar, and profile trigger sequence. 전개 방식: annotated realistic apartment wall audit, printed room-photo proof move into 마지막 wall, not a normal six-line room placement carousel.",
+        "visual_proof": "첫 문장 `IT GIRL APARTMENT WALL IDEAS`. 화면 증거: ordinary wall, 콘센트, 케이블, side table, blanket, book, art sample show a wall that is almost ready but not resolved.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2590739, 좋아요 106457 / small-wall object setup. 빌린 포맷 요소: ['small-wall friction', 'apartment hook', 'art-detail-to-home rhythm', 'coherent final payoff']."
       },
       {
-        "id": "svc_20260609_s6_profile_room_clues_direction",
+        "id": "svc_20260608_s6_profile_ignored_wall_objects",
         "role": "신규",
-        "format": "profile room clues direction experiment 20260609",
+        "format": "profile ignored wall object sequence experiment 20260608",
         "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "The things you leave in a room are usually the map.",
+        "target": "North America and Europe ordinary apartment and small-flat home-decor/art audience, 25-44",
+        "reflected": "THE WALL I KEPT IGNORING",
         "performance": "성과 수집 대기",
         "is_new": true,
         "basis_from": "new approach 2 / profile-visit test",
-        "applied_strategy": "The things you leave in a room are usually the map.",
+        "applied_strategy": "THE WALL I KEPT IGNORING",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: object clue profile trigger plus editorial text system. 전개 방식: lived object 증거 leads to a room-photo 직접 보이는ion promise instead of a normal placement story.",
-        "visual_proof": "첫 문장 `The things you leave in a room are usually the map.`. 화면 증거: THE ROOM ALREADY HAD CLUES.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe / 조회수 public account reference; style/format observed manually, 좋아요 varies by post / saveable realistic apartment editorial carousel. 빌린 포맷 요소: ['lived object detail', 'apartment-first relatability', 'art-detail payoff']."
+        "new_points": "새로 넣은 장치: visual format, sequence structure, and conceptual point of view. 전개 방식: object-led stop-motion-like stills lead from ignored wall to room-photo 직접 보이는ion proof, not a standard placement story.",
+        "visual_proof": "첫 문장 `THE WALL I KEPT IGNORING`. 화면 증거: keys, 램프, blanket, book, 케이블, 콘센트, baseboard collect around an ignored wall.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@reserve home/video/7071061616951086382 / 조회수 67002, 좋아요 3799 / room memory detail arc. 빌린 포맷 요소: ['lived detail rhythm', 'object-led progression', 'art/detail payoff']."
+      },
+      {
+        "id": "svc_20260608_profile_hold_wall_direction",
+        "role": "신규",
+        "format": "profile hold wall direction 20260608",
+        "medium": "clean digital 2D matte print",
+        "target": "North America and Europe apartment decor, wall art, small apartment, first-home audience, 22-38, female-skewing save-oriented vie…",
+        "reflected": "THINGS THIS APARTMENT COULD HOLD",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach / profile-visit proof test A",
+        "applied_strategy": "THINGS THIS APARTMENT COULD HOLD",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: profile trigger text system plus one room photo proof beat. 전개 방식: keeps warm lived-room hook but makes slide 2 a printed room-photo proof, varies text anchors/treatments.",
+        "visual_proof": "첫 문장 `THINGS THIS APARTMENT COULD HOLD`. 화면 증거: warm first-apartment living corner with ordinary objects, one wall that can carry a clearer role.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/video/7639103552656362765. 빌린 포맷 요소: ['warm first-apartment visual relatability', 'wishlist/list grammar', 'saveable wall-role progression']."
+      },
+      {
+        "id": "svc_20260608_profile_wall_clues_direction",
+        "role": "신규",
+        "format": "profile wall clues direction 20260608",
+        "medium": "clean digital 2D matte print",
+        "target": "North America and Europe apartment decor, wall art, small apartment, first-home audience, 22-38, female-skewing save-oriented vie…",
+        "reflected": "THE ROOM ALREADY HAD CLUES",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach / profile-visit proof test B",
+        "applied_strategy": "THE ROOM ALREADY HAD CLUES",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: object clue profile trigger plus editorial text system correction. 전개 방식: uses ignored wall, object 증거 instead of a generic placement carousel; slide 2 makes room-photo clue visible.",
+        "visual_proof": "첫 문장 `THE ROOM ALREADY HAD CLUES`. 화면 증거: ignored wall surrounded by keys, 램프, book, blanket, 콘센트, 케이블, baseboard.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/video/7639103552656362765. 빌린 포맷 요소: ['lived object detail', 'apartment-first relatability', 'art-and-room final reveal']."
       }
     ]
   }
