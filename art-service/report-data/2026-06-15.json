@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T01:04:50",
+  "generated_at": "2026-06-15T03:18:54",
   "audience_metrics": {
     "viewer_sg": 46.7,
     "follower_sg": 12.5,
@@ -688,6 +688,90 @@
   },
   "posts": [
     {
+      "id": "svc_20260615_s4_pattern_surface_inspo_board",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7651314563685584149",
+      "audience_metrics": {
+        "sg": 46.7,
+        "us": 2.9,
+        "target_market": 3.9,
+        "asia_leakage": 76.5,
+        "target_age": 64.7,
+        "female": 74.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260615_s3_normal_apartment_art_ideas",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7651313360452996372",
+      "audience_metrics": {
+        "sg": 46.7,
+        "us": 2.9,
+        "target_market": 3.9,
+        "asia_leakage": 76.5,
+        "target_age": 64.7,
+        "female": 74.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260615_s2_threshold_first_glance",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7651311428799876373",
+      "audience_metrics": {
+        "sg": 46.7,
+        "us": 2.9,
+        "target_market": 3.9,
+        "asia_leakage": 76.5,
+        "target_age": 64.7,
+        "female": 74.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260615_s1_coffee_corner_print_stack",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7651310021594172693",
+      "audience_metrics": {
+        "sg": 46.7,
+        "us": 2.9,
+        "target_market": 3.9,
+        "asia_leakage": 76.5,
+        "target_age": 64.7,
+        "female": 74.0,
+        "unique_viewers": null,
+        "source": "account fallback"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
       "id": "svc_20260614_s4_profile_apartment_hold_objects",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7650942333466201365",
       "audience_metrics": {
@@ -854,121 +938,37 @@
         "shares": null,
         "saves": null
       }
-    },
-    {
-      "id": "svc_20260612_s4_floor_path_wall_audit",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7650298903010561300",
-      "audience_metrics": {
-        "sg": 43.1,
-        "us": 1.0,
-        "target_market": 2.1,
-        "asia_leakage": 89.5,
-        "target_age": 57.0,
-        "female": 85.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260612_s3_three_role_gallery_study",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7650297727817092372",
-      "audience_metrics": {
-        "sg": 31.9,
-        "us": 0,
-        "target_market": 4.1,
-        "asia_leakage": 76.7,
-        "target_age": 67.0,
-        "female": 75.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260612_s2_hallway_radiator_clue",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7650296543450516756",
-      "audience_metrics": {
-        "sg": 21.2,
-        "us": 0,
-        "target_market": 1.4,
-        "asia_leakage": 88.9,
-        "target_age": 61.0,
-        "female": 85.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260612_s1_print_stack_role_check",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7650295391392484629",
-      "audience_metrics": {
-        "sg": 59.1,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 82.9,
-        "target_age": 58.0,
-        "female": 59.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
     }
   ],
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260614_s4_profile_apartment_hold_objects",
+        "id": "svc_20260615_s4_pattern_surface_inspo_board",
         "role": "유지",
-        "format": "profile object still sequence experiment 20260614",
+        "format": "pattern art surface inspo board 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "The room already gives clues: lamp, books, blanket, keys.",
+        "target": "target not recorded",
+        "reflected": "Pattern can make a plain wall feel less random.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260614_s3_profile_it_girl_wall_audit",
+        "id": "svc_20260615_s3_normal_apartment_art_ideas",
         "role": "유지",
-        "format": "profile it girl wall audit experiment 20260614",
+        "format": "normal apartment wall art idea board 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "For the wall that keeps almost working: start with the room you already have.",
+        "target": "target not recorded",
+        "reflected": "A normal apartment does not need a bigger room first.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260614_s2_threshold_too_many_answers",
+        "id": "svc_20260615_s2_threshold_first_glance",
         "role": "유지",
-        "format": "threshold mirror radiator clue keep 20260614",
+        "format": "threshold radiator first glance keep 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "A threshold can feel scattered even when nothing is wrong with it.",
+        "target": "target not recorded",
+        "reflected": "A threshold can feel busy even when nothing is wrong with it.",
         "performance": "성과 수집 대기",
         "is_new": false
       }
@@ -1001,114 +1001,114 @@
     ],
     "new": [
       {
-        "id": "svc_20260614_s3_profile_it_girl_wall_audit",
+        "id": "svc_20260615_s3_normal_apartment_art_ideas",
         "role": "신규",
-        "format": "profile it girl wall audit experiment 20260614",
+        "format": "normal apartment wall art idea board 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "IT GIRL APARTMENT WALL IDEAS",
+        "target": "target not recorded",
+        "reflected": "4 WALL ART IDEAS FOR A NORMAL APARTMENT",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1 / profile-visit test",
-        "applied_strategy": "IT GIRL APARTMENT WALL IDEAS",
-        "drop_prevention": "Responds to weak target share by using trend-native apartment-save grammar but keeps service hint early and avoids the rejected blank-wall first-frame surface.",
-        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
-        "reduced_points": "약했던 첫 장 프레이밍과 흐릿한 카피 리듬을 그대로 가져오지 않았다.",
-        "new_points": "새로 넣은 장치: trend native profile visit wall audit grammar plus service hint by slide 2. 전개 방식: object-heavy wall audit -> room-photo offer -> 직접 보이는ion proof cards -> physical 아트 디테일 -> 마지막 room proof.",
-        "visual_proof": "첫 문장 `IT GIRL APARTMENT WALL IDEAS`. 화면 증거: sofa edge, 램프, 콘센트, white 케이블, tote/blanket, leaning print make the wall feel unresolved without a blank-wall lead.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2599964, 좋아요 106815 / small-wall object setup. 빌린 포맷 요소: ['small-wall object stop', 'apartment-first relatability', 'fast proof payoff', 'art-and-room reveal']."
-      },
-      {
-        "id": "svc_20260614_s4_profile_apartment_hold_objects",
-        "role": "신규",
-        "format": "profile object still sequence experiment 20260614",
-        "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "THINGS I WANT MY APARTMENT TO HOLD",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new approach 2 / profile-visit test",
-        "applied_strategy": "THINGS I WANT MY APARTMENT TO HOLD",
-        "drop_prevention": "Keeps the object-to-art profile mechanic but changes the rejected blank-wall lead into a lower object still-life and a distinct ELURA-native trigger.",
+        "basis_from": "new approach 1 / reference-parity save board",
+        "applied_strategy": "4 WALL ART IDEAS FOR A NORMAL APARTMENT",
+        "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: elura native object led still sequence plus profile visit room photo offer. 전개 방식: lower object still life -> room-photo offer -> object proof cards -> 아트 디테일 -> 마지막 wall proof.",
-        "visual_proof": "첫 문장 `THINGS I WANT MY APARTMENT TO HOLD`. 화면 증거: 램프, keys, books, blanket, bag, 콘센트/케이블, baseboard heater, partial framed art make the wall's emotional job visible before text.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143572, 좋아요 11750 / object-led apartment progression. 빌린 포맷 요소: ['ordinary object progression', 'art-rich apartment curiosity', 'room-memory detail arc', 'final lived-in payoff']."
+        "new_points": "새로 넣은 장치: reference parity idea board list optimized for saves, shares, and target market reach. 전개 방식: one public category cover plus one independently saveable idea per slide across varied rooms.",
+        "visual_proof": "첫 문장 `4 WALL ART IDEAS FOR A NORMAL APARTMENT`. 화면 증거: bold finished room, public category title, not an empty service lead.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/photo/7637343805661793566 - 124,861 views, 6,623 likes, 4,242 saves. 빌린 포맷 요소: ['public category hook', 'one label per slide', 'varied rooms', 'fast room/art payoff']."
+      },
+      {
+        "id": "svc_20260615_s4_pattern_surface_inspo_board",
+        "role": "신규",
+        "format": "pattern art surface inspo board 20260615",
+        "medium": "clean digital 2D matte print",
+        "target": "target not recorded",
+        "reflected": "PATTERN IDEAS FOR A NORMAL WALL",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach 2 / reference-parity save board",
+        "applied_strategy": "PATTERN IDEAS FOR A NORMAL WALL",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "새로 넣은 장치: reference parity pattern/art surface board optimized for saves, shares, and target market reach. 전개 방식: dense art surface cover, close detail proof, varied proof-room slides rather than one-room story.",
+        "visual_proof": "첫 문장 `PATTERN IDEAS FOR A NORMAL WALL`. 화면 증거: dense saffron/indigo art surface, ordinary proof room create immediate visual contact.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@marina.does.diy/photo/7624082475802692887 - 536,581 views, 113,011 likes, 31,570 saves. 빌린 포맷 요소: ['image-dense board rhythm', 'accessible outcome logic', 'standalone visual impact per slide']."
       }
     ],
     "plan": [
       {
-        "id": "svc_20260614_s1_print_stack_wall_job",
+        "id": "svc_20260615_s1_coffee_corner_print_stack",
         "role": "proven strategy plus improvement 1",
-        "format": "print stack wall job keep 20260614",
+        "format": "coffee corner print stack wall job keep 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "Before another print, check the wall's job.",
+        "target": "target not recorded",
+        "reflected": "Before one more print, check the pause.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "proven strategy plus improvement 1",
-        "applied_strategy": "Before another print, check the wall's job.",
-        "drop_prevention": "Keeps the evidenced print-stack role mechanic, but changes yesterday's broad print-stack surface into a tighter first-apartment object decision with cable/outlet proof.",
+        "applied_strategy": "Before one more print, check the pause.",
+        "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "이번 카드는 신규 장치 기록이 없어 다음 생성 metadata에서 보강이 필요하다.",
-        "visual_proof": "첫 문장 `Before another print, check the wall's job.`. 화면 증거: mismatched leaning prints, 램프, 콘센트, white 케이블, worn table, scuffed wall make the wall role unresolved.",
+        "visual_proof": "첫 문장 `Before one more print, check the pause.`. 화면 증거: leaning prints, coffee cup, 콘센트, white 케이블, empty upper wall compete in a coffee corner.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260614_s2_threshold_too_many_answers",
+        "id": "svc_20260615_s2_threshold_first_glance",
         "role": "proven strategy plus improvement 2",
-        "format": "threshold mirror radiator clue keep 20260614",
+        "format": "threshold radiator first glance keep 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "This corner has too many answers.",
+        "target": "target not recorded",
+        "reflected": "The first glance needs one place to land.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "proven strategy plus improvement 2",
-        "applied_strategy": "This corner has too many answers.",
-        "drop_prevention": "Keeps threshold/object-clue evidence but makes the space more clearly UK/EU with radiator, boots, mirror edge, old plaster, and no Asia-coded cues.",
+        "applied_strategy": "The first glance needs one place to land.",
+        "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
         "new_points": "이번 카드는 신규 장치 기록이 없어 다음 생성 metadata에서 보강이 필요하다.",
-        "visual_proof": "첫 문장 `This corner has too many answers.`. 화면 증거: 거울 가장자리, radiator, boots, 키 트레이, tote, old plaster compete at a narrow threshold.",
+        "visual_proof": "첫 문장 `The first glance needs one place to land.`. 화면 증거: 거울 가장자리, radiator, boots, 키 트레이, tote, old plaster compete in a narrow threshold.",
         "reference_basis": ""
       },
       {
-        "id": "svc_20260614_s3_profile_it_girl_wall_audit",
+        "id": "svc_20260615_s3_normal_apartment_art_ideas",
         "role": "신규",
-        "format": "profile it girl wall audit experiment 20260614",
+        "format": "normal apartment wall art idea board 20260615",
         "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "IT GIRL APARTMENT WALL IDEAS",
+        "target": "target not recorded",
+        "reflected": "4 WALL ART IDEAS FOR A NORMAL APARTMENT",
         "performance": "성과 수집 대기",
         "is_new": true,
-        "basis_from": "new approach 1 / profile-visit test",
-        "applied_strategy": "IT GIRL APARTMENT WALL IDEAS",
-        "drop_prevention": "Responds to weak target share by using trend-native apartment-save grammar but keeps service hint early and avoids the rejected blank-wall first-frame surface.",
-        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
-        "reduced_points": "약했던 첫 장 프레이밍과 흐릿한 카피 리듬을 그대로 가져오지 않았다.",
-        "new_points": "새로 넣은 장치: trend native profile visit wall audit grammar plus service hint by slide 2. 전개 방식: object-heavy wall audit -> room-photo offer -> 직접 보이는ion proof cards -> physical 아트 디테일 -> 마지막 room proof.",
-        "visual_proof": "첫 문장 `IT GIRL APARTMENT WALL IDEAS`. 화면 증거: sofa edge, 램프, 콘센트, white 케이블, tote/blanket, leaning print make the wall feel unresolved without a blank-wall lead.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2599964, 좋아요 106815 / small-wall object setup. 빌린 포맷 요소: ['small-wall object stop', 'apartment-first relatability', 'fast proof payoff', 'art-and-room reveal']."
-      },
-      {
-        "id": "svc_20260614_s4_profile_apartment_hold_objects",
-        "role": "신규",
-        "format": "profile object still sequence experiment 20260614",
-        "medium": "clean digital 2D matte print",
-        "target": "North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44",
-        "reflected": "THINGS I WANT MY APARTMENT TO HOLD",
-        "performance": "성과 수집 대기",
-        "is_new": true,
-        "basis_from": "new approach 2 / profile-visit test",
-        "applied_strategy": "THINGS I WANT MY APARTMENT TO HOLD",
-        "drop_prevention": "Keeps the object-to-art profile mechanic but changes the rejected blank-wall lead into a lower object still-life and a distinct ELURA-native trigger.",
+        "basis_from": "new approach 1 / reference-parity save board",
+        "applied_strategy": "4 WALL ART IDEAS FOR A NORMAL APARTMENT",
+        "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: elura native object led still sequence plus profile visit room photo offer. 전개 방식: lower object still life -> room-photo offer -> object proof cards -> 아트 디테일 -> 마지막 wall proof.",
-        "visual_proof": "첫 문장 `THINGS I WANT MY APARTMENT TO HOLD`. 화면 증거: 램프, keys, books, blanket, bag, 콘센트/케이블, baseboard heater, partial framed art make the wall's emotional job visible before text.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143572, 좋아요 11750 / object-led apartment progression. 빌린 포맷 요소: ['ordinary object progression', 'art-rich apartment curiosity', 'room-memory detail arc', 'final lived-in payoff']."
+        "new_points": "새로 넣은 장치: reference parity idea board list optimized for saves, shares, and target market reach. 전개 방식: one public category cover plus one independently saveable idea per slide across varied rooms.",
+        "visual_proof": "첫 문장 `4 WALL ART IDEAS FOR A NORMAL APARTMENT`. 화면 증거: bold finished room, public category title, not an empty service lead.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/photo/7637343805661793566 - 124,861 views, 6,623 likes, 4,242 saves. 빌린 포맷 요소: ['public category hook', 'one label per slide', 'varied rooms', 'fast room/art payoff']."
+      },
+      {
+        "id": "svc_20260615_s4_pattern_surface_inspo_board",
+        "role": "신규",
+        "format": "pattern art surface inspo board 20260615",
+        "medium": "clean digital 2D matte print",
+        "target": "target not recorded",
+        "reflected": "PATTERN IDEAS FOR A NORMAL WALL",
+        "performance": "성과 수집 대기",
+        "is_new": true,
+        "basis_from": "new approach 2 / reference-parity save board",
+        "applied_strategy": "PATTERN IDEAS FOR A NORMAL WALL",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
+        "new_points": "새로 넣은 장치: reference parity pattern/art surface board optimized for saves, shares, and target market reach. 전개 방식: dense art surface cover, close detail proof, varied proof-room slides rather than one-room story.",
+        "visual_proof": "첫 문장 `PATTERN IDEAS FOR A NORMAL WALL`. 화면 증거: dense saffron/indigo art surface, ordinary proof room create immediate visual contact.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@marina.does.diy/photo/7624082475802692887 - 536,581 views, 113,011 likes, 31,570 saves. 빌린 포맷 요소: ['image-dense board rhythm', 'accessible outcome logic', 'standalone visual impact per slide']."
       }
     ]
   }

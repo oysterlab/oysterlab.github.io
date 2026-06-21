@@ -12,6 +12,37 @@
     h2 { margin:34px 0 14px; font-size:24px; }
     h3 { margin:24px 0 12px; font-size:18px; }
     p { max-width:980px; line-height:1.65; color:var(--muted); }
+    .simple-report { max-width:1180px; }
+    .simple-report h2 { margin-top:34px; }
+    .simple-hero { margin:8px 0 22px; padding:28px; background:#fff; border:1px solid var(--line); border-radius:8px; }
+    .simple-hero .eyebrow { margin:0 0 10px; color:var(--accent); font-size:12px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; }
+    .simple-hero h2 { margin:0 0 10px; font-size:clamp(30px,4vw,52px); line-height:1.08; }
+    .simple-hero p:last-child { margin-bottom:0; font-size:17px; color:#4e4942; }
+    .simple-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin:18px 0 28px; }
+    .simple-card { background:#fff; border:1px solid var(--line); border-top:4px solid var(--muted); border-radius:8px; padding:16px; }
+    .simple-card span { display:block; color:var(--muted); font-size:13px; margin-bottom:6px; }
+    .simple-card strong { display:block; font-size:24px; letter-spacing:0; }
+    .simple-card p { margin:8px 0 0; font-size:14px; line-height:1.5; }
+    .simple-card.up { border-top-color:var(--good); }
+    .simple-card.down { border-top-color:var(--bad); }
+    .simple-card.flat, .simple-card.pending { border-top-color:#d0c5b5; }
+    .simple-posts { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:14px; margin:14px 0 22px; }
+    .simple-post { display:grid; grid-template-columns:minmax(92px,.42fr) 1fr; gap:0; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    .simple-post__image { background:#171513; min-height:160px; }
+    .simple-post__image img { width:100%; height:100%; aspect-ratio:9/16; object-fit:cover; }
+    .simple-post__body { padding:14px; }
+    .simple-post__body h3 { margin:6px 0 8px; font-size:16px; line-height:1.25; }
+    .rank { color:var(--accent); font-weight:800; font-size:12px; }
+    .reaction { margin:0 0 8px; color:#3e3a35; font-weight:700; font-size:13px; }
+    .today-list, .tomorrow ul { list-style:none; margin:12px 0 22px; padding:0; display:grid; gap:10px; max-width:980px; }
+    .today-list li, .tomorrow li, .simple-warning { background:#fff; border:1px solid var(--line); border-radius:8px; padding:13px 14px; }
+    .today-list li span { display:block; margin:5px 0; color:#3e3a35; font-weight:700; font-size:13px; }
+    .today-list li p { margin:0; font-size:14px; line-height:1.5; }
+    .tomorrow li { color:#34302b; line-height:1.55; }
+    .simple-warning { margin-top:20px; border-color:#d9b5ac; background:#fff5f2; }
+    .simple-warning h2 { margin-top:0; color:var(--bad); }
+    .debug-report { max-width:1180px; margin-top:34px; border-top:1px solid var(--line); padding-top:18px; }
+    .debug-report > summary { cursor:pointer; font-weight:800; color:var(--muted); }
     mark, .hl { background:#fff1a8; color:#4d241f; font-weight:800; padding:0 .18em; border-radius:4px; }
     .hl.soft { background:#edf5e8; color:#24523c; }
     .delta { display:inline-flex; align-items:center; margin-left:6px; font-size:13px; font-weight:800; }
@@ -159,6 +190,11 @@
       h2 { font-size:21px; margin-top:28px; }
       h3 { font-size:17px; }
       p { line-height:1.55; }
+      .simple-hero { padding:18px; }
+      .simple-hero h2 { font-size:31px; }
+      .simple-cards, .simple-posts { grid-template-columns:1fr; }
+      .simple-post { grid-template-columns:104px 1fr; }
+      .simple-post__image { min-height:150px; }
       .summary, .audience-summary, .slots, .audience-grid, .grid, .content-learning, .plan-grid, .insight-grid { grid-template-columns:1fr; }
       .exec-list li, .compact-list li { padding:11px 12px; font-size:14px; }
       .growth-table { min-width:860px; }
@@ -200,150 +236,229 @@
 <body>
   <header>
     <h1>ELURA 일일 리포트</h1>
-    <p>생성 시각: 6/15 01:04 KST. 최근 3일 성과, 이번 업로드의 유지·확장·신규 적용, 계정 전체 시청자 방향만 빠르게 확인하는 리포트.</p>
-    <nav class="archive-nav"><a class="active" href="2026-06-15/">6/15</a><a href="2026-06-14/">6/14</a><a href="2026-06-13/">6/13</a><a href="2026-06-12/">6/12</a><a href="2026-06-11/">6/11</a><a href="2026-06-10/">6/10</a><a href="2026-06-09/">6/9</a><a href="2026-06-08/">6/8</a><a href="2026-06-07/">6/7</a><a href="2026-06-06/">6/6</a><a href="2026-06-05/">6/5</a><a href="2026-06-04/">6/4</a><a href="2026-06-03/">6/3</a><a href="2026-06-02/">6/2</a><a href="2026-06-01/">6/1</a><a href="2026-05-31/">5/31</a><a href="2026-05-30/">5/30</a><a href="2026-05-29/">5/29</a><a href="2026-05-28/">5/28</a><a href="2026-05-27/">5/27</a><a href="2026-05-26/">5/26</a><a href="2026-05-25/">5/25</a><a href="2026-05-24/">5/24</a><a href="2026-05-23/">5/23</a><a href="2026-05-22/">5/22</a><a href="2026-05-21/">5/21</a><a href="2026-05-20/">5/20</a><a href="2026-05-19/">5/19</a><a href="2026-05-18/">5/18</a><a href="2026-05-17/">5/17</a><a href="archive/">전체 리포트</a></nav>
+    <p>생성 시각: 6/21 20:56 KST. 반응이 늘고 있는지, 맞는 오디언스가 반응하는지, 내일 4개 슬롯을 어떻게 바꿀지만 먼저 본다.</p>
   </header>
   <main>
-    <h2>0. ELURA 사이트 유입·전환 (elura.vercel.app)</h2>
     
+    <section class="simple-report">
+      <section class="simple-hero">
+        <p class="eyebrow">Today's Takeaway</p>
+        <h2>오늘은 조회는 받았지만, 저장/공유까지 끌어내지는 못했다.</h2>
+        <p>내일은 팁처럼 보이는 콘텐츠를 줄이고, 저장하고 싶은 보드형 콘텐츠로 더 강하게 간다.</p>
+      </section>
+
+      <section class="simple-cards">
+        <article class="simple-card up">
+          <span>Overall reaction</span>
+          <strong>UP</strong>
+          <p>최근 7일 반응 점수: 175 -&gt; 395 (+125.7%). 저장 변화: 11 -&gt; 32 (+190.9%).</p>
+        </article>
+        <article class="simple-card pending">
+          <span>Target audience: available</span>
+          <strong>CHECK</strong>
+          <p>오늘 게시물 4/4개에 게시물별 타겟 데이터가 있다. 세부 타겟 반응은 Debug에서 확인한다.</p>
+        </article>
+        <article class="simple-card pending">
+          <span>Profile movement: tracking</span>
+          <strong>TRACK</strong>
+          <p>최근 7일 프로필 방문 33회. 시청자 대비 0.2%.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>What Worked In The Last 7 Days</h2>
+        <section class="simple-posts">
+            <article class="simple-post">
+              <div class="simple-post__image"><img src="assets/svc_20260619_s3_art_color_combos_normal_apartments/slide_1.png" alt="svc_20260619_s3_art_color_combos_normal_apartments first slide"></div>
+              <div class="simple-post__body">
+                <span class="rank">#1</span>
+                <h3>Art Color Combos for Normal Homes</h3>
+                <p class="reaction">937 views / 27 likes / 10 saves / 1 shares</p>
+                <p>색 조합 보드가 저장할 이유를 만들었다. 이 방향은 더 밀어볼 만하다.</p>
+              </div>
+            </article>
+            
+            <article class="simple-post">
+              <div class="simple-post__image"><img src="assets/svc_20260616_s3_cool_girl_apartment_art_ideas/slide_1.png" alt="svc_20260616_s3_cool_girl_apartment_art_ideas first slide"></div>
+              <div class="simple-post__body">
+                <span class="rank">#2</span>
+                <h3>Cool girl home art ideas</h3>
+                <p class="reaction">1,057 views / 26 likes / 5 saves / 0 shares</p>
+                <p>저장이 발생했다. 같은 주제를 더 예쁜 보드 형태로 다시 테스트한다.</p>
+              </div>
+            </article>
+            
+            <article class="simple-post">
+              <div class="simple-post__image"><img src="assets/svc_20260618_s4_art_for_awkward_corners/slide_1.png" alt="svc_20260618_s4_art_for_awkward_corners first slide"></div>
+              <div class="simple-post__body">
+                <span class="rank">#3</span>
+                <h3>Art For Awkward Corners</h3>
+                <p class="reaction">1,175 views / 22 likes / 4 saves / 0 shares</p>
+                <p>구체적인 표면이나 코너를 보여줄 때 저장 가능성이 생긴다.</p>
+              </div>
+            </article>
+            </section>
+      </section>
+
+      <section>
+        <h2>Today’s Posts</h2>
+        <ul class="today-list"><li><b>Bookcase Print Stack Role</b><span>975 views / 14 likes / 0 saves / 0 shares</span><p>사람들이 멈춰 보긴 했지만, 저장할 자료처럼 보이진 않았다.</p></li><li><b>Bedside Lamp Cord Sightline</b><span>980 views / 5 likes / 0 saves / 0 shares</span><p>오늘 반응은 약하다. 첫 장에서 저장하고 싶은 이유를 더 분명하게 만들어야 한다.</p></li><li><b>Tricky Wall Surface Art</b><span>833 views / 2 likes / 1 saves / 0 shares</span><p>구체적인 표면이나 코너를 보여줄 때 저장 가능성이 생긴다.</p></li><li><b>Everyday Object Art Ideas</b><span>274 views / 2 likes / 0 saves / 0 shares</span><p>오늘 반응은 약하다. 첫 장에서 저장하고 싶은 이유를 더 분명하게 만들어야 한다.</p></li></ul>
+      </section>
+
+      <section class="tomorrow">
+        <h2>Tomorrow</h2>
+        <ul><li>S1: 한 벽을 고쳐주는 팁처럼 만들지 말고, 저장할 수 있는 색 조합 보드로 시작한다.</li><li>S2: ref 1+2 방향. 흰 보드, palette label, 실제 방 color circles를 쓴다.</li><li>S3: ref 4 방향. 취향 있는 집 소품 리스트처럼 짧고 구체적인 라벨을 쓴다.</li><li>S4: ref 5 방향. 말을 줄이고, 따뜻한 방 사진과 아트 무드보드로 간다.</li></ul>
+      </section>
+
+      <section class="simple-warning"><h2>Fix Before Next Upload</h2><p><b>공개 카피 금지어가 다시 들어갔다.</b></p><p>Bedside Lamp Cord Sightline, Bookcase Print Stack Role, Everyday Object Art Ideas, Tricky Wall Surface Art 캡션/해시태그에서 공개 금지어를 제거해야 한다.</p></section>
+    </section>
+    
+    
+      <details class="debug-report">
+        <summary>Debug / 기존 상세 데이터</summary>
+        <section>
+          <h2>사이트 유입·전환</h2>
+          
     <section class="summary">
       <div class="metric"><span>오늘 실제 후보 방문</span><strong>0</strong><small>순방문 IP 0</small></div>
-      <div class="metric"><span>7일 실제 후보 방문</span><strong>4</strong><small>순방문 IP 2</small></div>
-      <div class="metric"><span>7일 원본 방문 로그</span><strong>17</strong><small>봇/데이터센터 13 · 의심 0 제외</small></div>
+      <div class="metric"><span>7일 실제 후보 방문</span><strong>5</strong><small>순방문 IP 3</small></div>
+      <div class="metric"><span>7일 원본 방문 로그</span><strong>19</strong><small>봇/데이터센터 14 · 의심 0 제외</small></div>
       <div class="metric"><span>7일 가입</span><strong>0</strong><small>오늘 0 · 실제 후보 기준</small></div>
-      <div class="metric"><span>7일 전환율</span><strong>0.0%</strong><small>가입 0 / 실제 후보 방문 4</small></div>
-      <div class="metric"><span>7일 타깃 마켓 후보</span><strong>1</strong><small>북미/유럽 · 확정 TikTok 유입 아님</small></div>
+      <div class="metric"><span>7일 전환율</span><strong>0.0%</strong><small>가입 0 / 실제 후보 방문 5</small></div>
+      <div class="metric"><span>7일 타깃 마켓 후보</span><strong>0</strong><small>북미/유럽 · 확정 TikTok 유입 아님</small></div>
     </section>
-    <p><b>국가</b> &nbsp; <span class="hl soft">한국 · 3</span> <span class="hl soft">캐나다 · 1</span></p>
-    <p><b>유입 경로</b> &nbsp; <span class="hl soft">direct/domain · 3</span> <span class="hl soft">google.com · 1</span></p>
-    <p><b>기기</b> &nbsp; <span class="hl soft">모바일 · 3</span> <span class="hl soft">데스크톱 · 1</span></p>
-    <p><b>제외 사유</b> &nbsp; <span class="hl soft">datacenter/proxy IP · 9</span> <span class="hl soft">bot/crawler UA · 4</span></p>
+    <p><b>국가</b> &nbsp; <span class="hl soft">한국 · 4</span> <span class="hl soft">중국 · 1</span></p>
+    <p><b>유입 경로</b> &nbsp; <span class="hl soft">direct/domain · 5</span></p>
+    <p><b>기기</b> &nbsp; <span class="hl soft">데스크톱 · 4</span> <span class="hl soft">모바일 · 1</span></p>
+    <p><b>제외 사유</b> &nbsp; <span class="hl soft">datacenter/proxy IP · 13</span> <span class="hl soft">bot/crawler UA · 1</span></p>
     <h3>최근 가입 (지역·유입·시각)</h3>
     <small>아직 가입이 없습니다.</small>
     <p class="table-note">전환 계산은 봇·크롤러·헤드리스·CLI(UA), 데이터센터/호스팅 IP, 알려진 스캐너 IP, AI 인덱서, 낡은 데스크톱 스캐너 패턴을 제외한 실제 후보 방문만 사용합니다. 사람들이 주소를 직접 입력할 수 있으므로 <code>direct</code>/<code>elura.art</code> 계열은 TikTok 확정 유입이 아니라 직접/타이핑 후보로만 봅니다. 이메일·IP 원본과 타깃/전체 토글은 실시간 대시보드(<code>/activity/</code>)·관리 엔드포인트(<code>/api/admin/activity?key=…</code>)에서만 확인하세요.</p>
     
-
-    <h2>1. 최근 3일 성과 변화</h2>
-    
+        </section>
+        <section>
+          <h2>최근 3일 상세</h2>
+          
     <h3>Executive Summary</h3>
     <section class="exec">
-      <ul class="exec-list"><li>북미/유럽: 2.5% -&gt; 16.6% (+14.1p).</li><li>아시아권 누수: 85% -&gt; 58.2% (-26.8p).</li><li>25-44세 77.2%, 여성 88.5%. 확인된 게시물 4/4개.</li><li>판단: 타겟 농도는 개선 중. 같은 포맷을 반복하지 말고 검증된 구조만 확장한다.</li><li>최근 7일 전체 12,939명 중 신규 8,536명(66%).</li><li>북미/유럽 3.9%(약 505명), 아시아권 누수 76.5%(약 9,898명).</li><li>프로필 방문 32회. 시청자 대비 0.2%; 이번 신규 슬롯의 1차 전환 지표.</li><li>다음 제작: 북미/유럽 보통 집 맥락 + 고성과 TikTok 포맷 레퍼런스 기반 신규 슬롯만 통과.</li></ul>
+      <ul class="exec-list"><li>북미/유럽: 4.1% -&gt; 2% (-2.1p).</li><li>아시아권 누수: 64.6% -&gt; 79.2% (+14.6p).</li><li>25-44세 57.8%, 여성 71%. 확인된 게시물 4/4개.</li><li>판단: 북미/유럽 절대 비율이 15% 미만이라 회복 흐름으로 본다.</li><li>최근 7일 전체 15,629명 중 신규 10,001명(64%).</li><li>북미/유럽 5.6%(약 875명), 아시아권 누수 70.4%(약 11,003명).</li><li>프로필 방문 33회. 시청자 대비 0.2%; 이번 신규 슬롯의 1차 전환 지표.</li><li>다음 제작: 북미/유럽 보통 집 맥락 + 고성과 TikTok 포맷 레퍼런스 기반 신규 슬롯만 통과.</li></ul>
       <section class="growth-chart">
             <article class="trend-card">
               <div class="trend-card__head">
                 <b>북미/유럽 우선 국가 비율</b>
-                <strong>2.5% → 16.6% <span class="delta up">+14.1p</span></strong>
+                <strong>4.1% → 2% <span class="delta down">-2.1p</span></strong>
               </div>
-              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:2.5%"></em></i><b>2.5%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:9.8%"></em></i><b>9.8%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:16.6%"></em></i><b>16.6%<small>비율만 제공됨</small></b></div></div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:4.1%"></em></i><b>4.1%<small>(약 165명)</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:2.0%"></em></i><b>1.7%<small>(약 56명)</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:2.0%"></em></i><b>2%<small>(약 8명)</small></b></div></div>
               <p>미국·캐나다·영국·아일랜드·프랑스·독일·네덜란드·북유럽 등에서 본 사람</p>
             </article>
             
             <article class="trend-card">
               <div class="trend-card__head">
                 <b>아시아권 누수</b>
-                <strong>85% → 58.2% <span class="delta down">-26.8p</span></strong>
+                <strong>64.6% → 79.2% <span class="delta up">+14.6p</span></strong>
               </div>
-              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:85.0%"></em></i><b>85%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:73.8%"></em></i><b>73.8%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:58.2%"></em></i><b>58.2%<small>비율만 제공됨</small></b></div></div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:64.6%"></em></i><b>64.6%<small>(약 2,648명)</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:78.9%"></em></i><b>78.9%<small>(약 2,657명)</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:79.2%"></em></i><b>79.2%<small>(약 339명)</small></b></div></div>
               <p>싱가포르·한국·말레이시아 등 아시아권 유입 합산</p>
             </article>
             
             <article class="trend-card">
               <div class="trend-card__head">
                 <b>25-44세 비율</b>
-                <strong>61.7% → 77.2% <span class="delta up">+15.5p</span></strong>
+                <strong>59.2% → 57.8% <span class="delta down">-1.4p</span></strong>
               </div>
-              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:61.7%"></em></i><b>61.7%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:78.0%"></em></i><b>78%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:77.2%"></em></i><b>77.2%<small>비율만 제공됨</small></b></div></div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:59.2%"></em></i><b>59.2%<small>(약 2,420명)</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:57.5%"></em></i><b>57.5%<small>(약 1,936명)</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:57.8%"></em></i><b>57.8%<small>(약 241명)</small></b></div></div>
               <p>현재 구매 가능성이 가장 높다고 보는 연령대</p>
             </article>
             
             <article class="trend-card">
               <div class="trend-card__head">
                 <b>여성 비율</b>
-                <strong>81.7% → 88.5% <span class="delta up">+6.8p</span></strong>
+                <strong>70.8% → 71% <span class="delta up">+0.2p</span></strong>
               </div>
-              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:81.7%"></em></i><b>81.7%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:80.7%"></em></i><b>80.7%<small>비율만 제공됨</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:88.5%"></em></i><b>88.5%<small>비율만 제공됨</small></b></div></div>
+              <div class="trend-bars"><div class="trend-bar"><span>3일 전</span><i><em style="width:70.8%"></em></i><b>70.8%<small>(약 2,887명)</small></b></div><div class="trend-bar"><span>그제</span><i><em style="width:65.2%"></em></i><b>65.2%<small>(약 2,200명)</small></b></div><div class="trend-bar"><span>어제</span><i><em style="width:71.0%"></em></i><b>71%<small>(약 298명)</small></b></div></div>
               <p>홈데코·개인 아트 구매 가능성이 높은 쪽으로 보는 기준</p>
             </article>
             </section>
     </section>
     
-
-    <h2>2. 이번 업로드: 유지 · 확장 · 신규</h2>
-    
-    <p class="section-read">6/14 업로드 4개는 아래처럼 유지·확장·신규로 나눠 적용했다. 오늘 숫자로 성급히 판정하지 않고, 다음 리포트에서 실제 시청자 분포와 함께 평가한다.</p>
+        </section>
+        <section>
+          <h2>업로드 상세</h2>
+          
+    <p class="section-read">6/21 업로드 4개는 아래처럼 유지·확장·신규로 나눠 적용했다. 오늘 숫자로 성급히 판정하지 않고, 다음 리포트에서 실제 시청자 분포와 함께 평가한다.</p>
     <section class="plan-grid">
         <article class="plan-card">
-          <div class="plan-media"><img src="assets/svc_20260614_s1_print_stack_wall_job/slide_1.png" alt="svc_20260614_s1_print_stack_wall_job first slide"><img src="assets/svc_20260614_s1_print_stack_wall_job/contact_sheet.jpg" alt="svc_20260614_s1_print_stack_wall_job contact sheet"></div>
+          <div class="plan-media"><img src="assets/svc_20260621_s1_bedside_lamp_cord_sightline/slide_1.png" alt="svc_20260621_s1_bedside_lamp_cord_sightline first slide"><img src="assets/svc_20260621_s1_bedside_lamp_cord_sightline/contact_sheet.jpg" alt="svc_20260621_s1_bedside_lamp_cord_sightline contact sheet"></div>
           <div class="plan-card__top">
             <span class="badge keep">proven strategy plus improvement 1</span>
             <strong>콘텐츠 1</strong>
           </div>
           <dl>
             <div><dt>구분</dt><dd><mark class="applied-signal">—</mark></dd></div>
-            <div><dt>콘텐츠 형식</dt><dd>print stack wall job</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd>bedside lamp cord sight선</dd></div>
             <div><dt>살린 포인트</dt><dd>기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.</dd></div>
             <div><dt>줄인 포인트</dt><dd>같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.</dd></div>
             <div><dt>새로 넣은 포인트</dt><dd>이번 카드는 신규 장치 기록이 없어 다음 생성 metadata에서 보강이 필요하다.</dd></div>
             
-            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `Before another print, check the wall&#x27;s job.`. 화면 증거: mismatched leaning prints, 램프, 콘센트, white 케이블, worn table, scuffed wall make the wall role unresolved.</strong></dd></div>
-            <div><dt>누구에게</dt><dd>North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44</dd></div>
+            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `The cord is where your eye lands.`. 화면 증거: 램프 cord, 콘센트 pull the eye below a framed peacock/brick print.</strong></dd></div>
+            <div><dt>누구에게</dt><dd>대상 기록 없음</dd></div>
             <div><dt>아트 방식</dt><dd>깨끗한 디지털 2D 2D matte print</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
-          <div class="plan-media"><img src="assets/svc_20260614_s2_threshold_too_many_answers/slide_1.png" alt="svc_20260614_s2_threshold_too_many_answers first slide"><img src="assets/svc_20260614_s2_threshold_too_many_answers/contact_sheet.jpg" alt="svc_20260614_s2_threshold_too_many_answers contact sheet"></div>
+          <div class="plan-media"><img src="assets/svc_20260621_s2_bookcase_print_stack_role/slide_1.png" alt="svc_20260621_s2_bookcase_print_stack_role first slide"><img src="assets/svc_20260621_s2_bookcase_print_stack_role/contact_sheet.jpg" alt="svc_20260621_s2_bookcase_print_stack_role contact sheet"></div>
           <div class="plan-card__top">
             <span class="badge keep">proven strategy plus improvement 2</span>
             <strong>콘텐츠 2</strong>
           </div>
           <dl>
             <div><dt>구분</dt><dd><mark class="applied-signal">—</mark></dd></div>
-            <div><dt>콘텐츠 형식</dt><dd>threshold 거울 radiator clue</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd>bookcase print stack role</dd></div>
             <div><dt>살린 포인트</dt><dd>기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.</dd></div>
             <div><dt>줄인 포인트</dt><dd>같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.</dd></div>
             <div><dt>새로 넣은 포인트</dt><dd>이번 카드는 신규 장치 기록이 없어 다음 생성 metadata에서 보강이 필요하다.</dd></div>
             
-            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `This corner has too many answers.`. 화면 증거: 거울 가장자리, radiator, boots, 키 트레이, tote, old plaster compete at a narrow threshold.</strong></dd></div>
-            <div><dt>누구에게</dt><dd>North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44</dd></div>
+            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `The bookcase is doing too much.`. 화면 증거: books, 케이블, frame pile, shelf objects compete before the wall has one job.</strong></dd></div>
+            <div><dt>누구에게</dt><dd>대상 기록 없음</dd></div>
             <div><dt>아트 방식</dt><dd>깨끗한 디지털 2D 2D matte print</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
-          <div class="plan-media"><img src="assets/svc_20260614_s3_profile_it_girl_wall_audit/slide_1.png" alt="svc_20260614_s3_profile_it_girl_wall_audit first slide"><img src="assets/svc_20260614_s3_profile_it_girl_wall_audit/contact_sheet.jpg" alt="svc_20260614_s3_profile_it_girl_wall_audit contact sheet"></div>
+          <div class="plan-media"><img src="assets/svc_20260621_s3_everyday_object_art_ideas/slide_1.png" alt="svc_20260621_s3_everyday_object_art_ideas first slide"><img src="assets/svc_20260621_s3_everyday_object_art_ideas/contact_sheet.jpg" alt="svc_20260621_s3_everyday_object_art_ideas contact sheet"></div>
           <div class="plan-card__top">
             <span class="badge new">신규</span>
             <strong>콘텐츠 3</strong>
           </div>
           <dl>
             <div><dt>구분</dt><dd><mark class="applied-signal">신규 1</mark></dd></div>
-            <div><dt>콘텐츠 형식</dt><dd>profile it girl wall audit</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd>everyday object art ideas board</dd></div>
             <div><dt>살린 포인트</dt><dd>기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.</dd></div>
-            <div><dt>줄인 포인트</dt><dd>약했던 첫 장 프레이밍과 흐릿한 카피 리듬을 그대로 가져오지 않았다.</dd></div>
-            <div><dt>새로 넣은 포인트</dt><dd>새로 넣은 장치: trend native profile visit wall audit grammar plus service hint by slide 2. 전개 방식: object-heavy wall audit -&gt; room-photo offer -&gt; 직접 보이는ion proof cards -&gt; physical 아트 디테일 -&gt; 마지막 room proof.</dd></div>
-            <div><dt>리서치 근거</dt><dd>확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / 조회수 2599964, 좋아요 106815 / small-wall object setup. 빌린 포맷 요소: [&#x27;small-wall object stop&#x27;, &#x27;apartment-first relatability&#x27;, &#x27;fast proof payoff&#x27;, &#x27;art-and-room reveal&#x27;].</dd></div>
-            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `IT GIRL APARTMENT WALL IDEAS`. 화면 증거: sofa edge, 램프, 콘센트, white 케이블, tote/blanket, leaning print make the wall feel unresolved without a blank-wall lead.</strong></dd></div>
-            <div><dt>누구에게</dt><dd>North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44</dd></div>
+            <div><dt>줄인 포인트</dt><dd>전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.</dd></div>
+            <div><dt>새로 넣은 포인트</dt><dd>새로 넣은 장치: object led idea board where everyday items create the art prompt, not one room/wall progression. 전개 방식: varied object contexts, numbered board labels, swatches, one concrete object/art idea per slide.</dd></div>
+            <div><dt>리서치 근거</dt><dd>확인한 고성과 레퍼런스: https://www.tiktok.com/@curatingthevibe/photo/7637343805661793566 - 124,861 views, 6,623 likes, 4,242 saves. 빌린 포맷 요소: public category title, one saveable idea per slide, board markers, palette swatches, proof-room rhythm.</dd></div>
+            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `ART FROM EVERYDAY THINGS`. 화면 증거: 램프, books, keys, chair edge already create clues before the framed art is labeled.</strong></dd></div>
+            <div><dt>누구에게</dt><dd>대상 기록 없음</dd></div>
             <div><dt>아트 방식</dt><dd>깨끗한 디지털 2D 2D matte print</dd></div>
           </dl>
         </article>
         
         <article class="plan-card">
-          <div class="plan-media"><img src="assets/svc_20260614_s4_profile_apartment_hold_objects/slide_1.png" alt="svc_20260614_s4_profile_apartment_hold_objects first slide"><img src="assets/svc_20260614_s4_profile_apartment_hold_objects/contact_sheet.jpg" alt="svc_20260614_s4_profile_apartment_hold_objects contact sheet"></div>
+          <div class="plan-media"><img src="assets/svc_20260621_s4_tricky_wall_surface_art/slide_1.png" alt="svc_20260621_s4_tricky_wall_surface_art first slide"><img src="assets/svc_20260621_s4_tricky_wall_surface_art/contact_sheet.jpg" alt="svc_20260621_s4_tricky_wall_surface_art contact sheet"></div>
           <div class="plan-card__top">
             <span class="badge new">신규</span>
             <strong>콘텐츠 4</strong>
           </div>
           <dl>
             <div><dt>구분</dt><dd><mark class="applied-signal">신규 2</mark></dd></div>
-            <div><dt>콘텐츠 형식</dt><dd>profile object still sequence</dd></div>
+            <div><dt>콘텐츠 형식</dt><dd>tricky wall surface art board</dd></div>
             <div><dt>살린 포인트</dt><dd>기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.</dd></div>
-            <div><dt>줄인 포인트</dt><dd>같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.</dd></div>
-            <div><dt>새로 넣은 포인트</dt><dd>새로 넣은 장치: elura native object led still sequence plus profile visit room photo offer. 전개 방식: lower object still life -&gt; room-photo offer -&gt; object proof cards -&gt; 아트 디테일 -&gt; 마지막 wall proof.</dd></div>
-            <div><dt>리서치 근거</dt><dd>확인한 고성과 레퍼런스: https://www.tiktok.com/@thebryandeane/video/7528611657476492599 / 조회수 143572, 좋아요 11750 / object-led apartment progression. 빌린 포맷 요소: [&#x27;ordinary object progression&#x27;, &#x27;art-rich apartment curiosity&#x27;, &#x27;room-memory detail arc&#x27;, &#x27;final lived-in payoff&#x27;].</dd></div>
-            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `THINGS I WANT MY APARTMENT TO HOLD`. 화면 증거: 램프, keys, books, blanket, bag, 콘센트/케이블, baseboard heater, partial framed art make the wall&#x27;s emotional job visible before text.</strong></dd></div>
-            <div><dt>누구에게</dt><dd>North America and Europe ordinary apartment/small-flat home-decor and art audience, female-skewing 25-44</dd></div>
+            <div><dt>줄인 포인트</dt><dd>전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.</dd></div>
+            <div><dt>새로 넣은 포인트</dt><dd>새로 넣은 장치: wall surface constraint board with one surface/art move per slide. 전개 방식: large surface events, compact proof rooms, safe-zone labels, swatches, board rhythm.</dd></div>
+            <div><dt>리서치 근거</dt><dd>확인한 고성과 레퍼런스: https://www.tiktok.com/@marina.does.diy/photo/7624082475802692887 - 536,581 views, 113,011 likes, 31,570 saves, 10,067 shares. 빌린 포맷 요소: dense inspiration-board rhythm, short labels, board markers, swatches, proof-room logic.</dd></div>
+            <div><dt>첫 장에서 보이는 증거</dt><dd><strong>첫 문장 `ART FOR TRICKY WALLS`. 화면 증거: textured wall surface, old trim create a visible constraint before the category label.</strong></dd></div>
+            <div><dt>누구에게</dt><dd>대상 기록 없음</dd></div>
             <div><dt>아트 방식</dt><dd>깨끗한 디지털 2D 2D matte print</dd></div>
           </dl>
         </article>
@@ -352,37 +467,38 @@
     <section class="cumulative">
       <h3>누적 인사이트</h3>
       <div class="slots">
-        <div class="slot"><b>누적 유지</b><ul class="plain-list"><li>profile object art detail rebuild: The room keeps repeating a few things: lamp, books, blanket, tote, the colors you already live with.</li><li>profile print choice evidence rebuild: The room already gives you the clues: cable, rug, tote, floor, two almost-right prints.</li><li>print stack role reset: Before another print, name what the wall should hold.</li></ul></div>
+        <div class="slot"><b>누적 유지</b><ul class="plain-list"><li>pattern art surface inspo board: Pattern can make a plain wall feel less random.</li><li>normal apartment wall art idea board: A normal apartment does not need a bigger room first.</li><li>threshold radiator first glance: A threshold can feel busy even when nothing is wrong with it.</li></ul></div>
         <div class="slot"><b>누적 차단</b><ul class="plain-list"><li>daily6 batch art consistency and first-frame mix failure: User discarded all six: art consistency failed across the batch, the 아트s did not read as one ELURA family, blank/tape-wall first frames were overused from the previous da…</li><li>daily6 batch art consistency and first-frame mix failure: User rejected the paired keep previews because the 아트s were visibly different. Same family was not enough; the pair needed one locked art identity.</li><li>daily6 batch art consistency and first-frame mix failure: User rejected identity-lock v2 previews because the 아트 visibly looked pasted/local-composited, especially keep1 slide 4, the chair candidate. Same art identity was locked,…</li></ul></div>
-        <div class="slot"><b>미해결 테스트</b><ul class="plain-list"><li>profile print choice evidence rebuild: Converts profile-test slot into a trend-native North American apartment audit with stronger ordinary cues, distinct text anchors.</li><li>profile object art detail rebuild: 세탁공간 증거는 유지하되, 집안일 경로 설명 대신 첫 장에서 선과 시선이 바로 보이는지 검증 중.</li><li>profile print choice evidence rebuild: Converts profile-test slot into a trend-native North American apartment audit with stronger ordinary cues, distinct text anchors.</li></ul></div>
+        <div class="slot"><b>미해결 테스트</b><ul class="plain-list"><li>normal apartment wall art idea board: 재발 방지 설명 없음</li><li>pattern art surface inspo board: 재발 방지 설명 없음</li><li>profile it girl wall audit: 세탁공간 증거는 유지하되, 집안일 경로 설명 대신 첫 장에서 선과 시선이 바로 보이는지 검증 중.</li></ul></div>
       </div>
     </section>
     
     
-
-    <h2>3. 계정 전체 시청자 방향</h2>
-    
+        </section>
+        <section>
+          <h2>시청자 상세</h2>
+          
     <h3>시청자 분포가 말하는 타겟 방향</h3>
-    <ul class="compact-list"><li>최근 7일 북미/유럽 우선 국가: 3.9%(약 505명).</li><li>아시아권 누수: 76.5%(약 9,898명). 싱가포르 단독: 46.7%(약 6,043명).</li><li>프로필 방문: 32회, 시청자 대비 0.2%.</li><li>미국: 2.9%(약 375명). 다음 제작은 북미/유럽 apartment/flat 단서와 영어권 사운드로 재정렬.</li></ul>
+    <ul class="compact-list"><li>최근 7일 북미/유럽 우선 국가: 5.6%(약 875명).</li><li>아시아권 누수: 70.4%(약 11,003명). 싱가포르 단독: 41.6%(약 6,502명).</li><li>프로필 방문: 33회, 시청자 대비 0.2%.</li><li>미국: 2.3%(약 359명). 다음 제작은 북미/유럽 apartment/flat 단서와 영어권 사운드로 재정렬.</li></ul>
     <section class="audience-summary">
       
         <div class="metric">
           <span>최근 시청자 중 북미/유럽<details class="help"><summary title="최근 시청자 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 현재 기준은 미국, 캐나다, 영국, 아일랜드, 프랑스, 독일, 네덜란드, 북유럽 등입니다." aria-label="최근 시청자 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 현재 기준은 미국, 캐나다, 영국, 아일랜드, 프랑스, 독일, 네덜란드, 북유럽 등입니다.">?</summary><p>최근 시청자 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 현재 기준은 미국, 캐나다, 영국, 아일랜드, 프랑스, 독일, 네덜란드, 북유럽 등입니다.</p></details></span>
-          <strong>3.9%</strong>
-          <small>약 505명</small>
+          <strong>5.6%</strong>
+          <small>약 875명</small>
         </div>
     
       
         <div class="metric">
           <span>아시아권 누수<details class="help"><summary title="최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다." aria-label="최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다.">?</summary><p>최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다.</p></details></span>
-          <strong>76.5%</strong>
-          <small>약 9,898명</small>
+          <strong>70.4%</strong>
+          <small>약 11,003명</small>
         </div>
     
       
         <div class="metric">
           <span>최근 7일 프로필 방문</span>
-          <strong>32회</strong>
+          <strong>33회</strong>
           <small>영상 시청 후 프로필 방문으로 이어지는지 보는 1차 KPI</small>
         </div>
     
@@ -396,22 +512,22 @@
       
         <div class="metric">
           <span>프로필발 영상조회</span>
-          <strong>0.7%</strong>
+          <strong>0.6%</strong>
           <small>보조 지표: 프로필에서 영상으로 들어온 조회 비중</small>
         </div>
     
       
         <div class="metric">
           <span>최근 시청자 중 25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></span>
-          <strong>64.7%</strong>
-          <small>약 8,372명</small>
+          <strong>62.8%</strong>
+          <small>약 9,815명</small>
         </div>
     
       
         <div class="metric">
           <span>최근 시청자 중 여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></span>
-          <strong>74%</strong>
-          <small>약 9,575명</small>
+          <strong>71%</strong>
+          <small>약 11,097명</small>
         </div>
     
     </section>
@@ -421,54 +537,61 @@
         
         <div class="metric-row">
           <label>북미/유럽<details class="help"><summary title="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 싱가포르/한국/아시아권은 포함하지 않습니다." aria-label="이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 싱가포르/한국/아시아권은 포함하지 않습니다.">?</summary><p>이 게시물 또는 계정을 본 사람 중 우리가 우선 보고 있는 북미/유럽 국가 비율입니다. 싱가포르/한국/아시아권은 포함하지 않습니다.</p></details></label>
-          <div class="bar"><span style="width:4%"></span></div>
-          <b class="metric-value">3.9%(약 505명)</b>
+          <div class="bar"><span style="width:6%"></span></div>
+          <b class="metric-value">5.6%(약 875명)</b>
         </div>
     
         
         <div class="metric-row">
           <label>아시아권 누수<details class="help"><summary title="최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다." aria-label="최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다.">?</summary><p>최근 시청자 중 싱가포르, 한국, 말레이시아, 일본 등 아시아권에서 본 사람의 합산 비율입니다. 현재는 타겟 적합이 아니라 분배 누수/진단 신호입니다.</p></details></label>
-          <div class="bar"><span style="width:76%"></span></div>
-          <b class="metric-value">76.5%(약 9,898명)</b>
+          <div class="bar"><span style="width:70%"></span></div>
+          <b class="metric-value">70.4%(약 11,003명)</b>
         </div>
     
         
         <div class="metric-row">
           <label>싱가포르<details class="help"><summary title="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다. 현재는 타겟 적합이 아니라 아시아권 분배 누수/진단 신호입니다." aria-label="이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다. 현재는 타겟 적합이 아니라 아시아권 분배 누수/진단 신호입니다.">?</summary><p>이 게시물 또는 계정을 싱가포르에서 본 사람의 비율입니다. 현재는 타겟 적합이 아니라 아시아권 분배 누수/진단 신호입니다.</p></details></label>
-          <div class="bar"><span style="width:47%"></span></div>
-          <b class="metric-value">46.7%(약 6,043명)</b>
+          <div class="bar"><span style="width:42%"></span></div>
+          <b class="metric-value">41.6%(약 6,502명)</b>
         </div>
     
         
         <div class="metric-row">
           <label>미국<details class="help"><summary title="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다." aria-label="이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.">?</summary><p>이 게시물 또는 계정을 미국에서 본 사람의 비율입니다.</p></details></label>
-          <div class="bar"><span style="width:3%"></span></div>
-          <b class="metric-value">2.9%(약 375명)</b>
+          <div class="bar"><span style="width:2%"></span></div>
+          <b class="metric-value">2.3%(약 359명)</b>
         </div>
     
         
         <div class="metric-row">
           <label>25-44세<details class="help"><summary title="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다." aria-label="25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.">?</summary><p>25-44세 시청자 비율입니다. 현재 우리가 가장 중요하게 보는 구매 가능 연령대입니다.</p></details></label>
-          <div class="bar"><span style="width:65%"></span></div>
-          <b class="metric-value">64.7%(약 8,372명)</b>
+          <div class="bar"><span style="width:63%"></span></div>
+          <b class="metric-value">62.8%(약 9,815명)</b>
         </div>
     
         
         <div class="metric-row">
           <label>여성<details class="help"><summary title="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다." aria-label="여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.">?</summary><p>여성 시청자 비율입니다. 현재 홈데코/개인 아트 구매 가능성이 높은 쪽으로 보고 있는 기준입니다.</p></details></label>
-          <div class="bar"><span style="width:74%"></span></div>
-          <b class="metric-value">74%(약 9,575명)</b>
+          <div class="bar"><span style="width:71%"></span></div>
+          <b class="metric-value">71%(약 11,097명)</b>
         </div>
     
-        <h4>연령</h4><ul><li><span>18-24</span><b>30.1%(약 3,895명)</b></li><li><span>25-34</span><b>54.7%(약 7,078명)</b></li><li><span>35-44</span><b>10%(약 1,294명)</b></li><li><span>45-54</span><b>3.1%(약 401명)</b></li><li><span>55+</span><b>2.1%(약 272명)</b></li></ul>
-        <h4>국가</h4><ul><li><span>싱가포르</span><b>46.7%(약 6,043명)</b></li><li><span>말레이시아</span><b>16.6%(약 2,148명)</b></li><li><span>한국</span><b>9.6%(약 1,242명)</b></li><li><span>호주</span><b>3.4%(약 440명)</b></li><li><span>미국</span><b>2.9%(약 375명)</b></li><li><span>인도네시아</span><b>1.3%(약 168명)</b></li><li><span>일본</span><b>1.2%(약 155명)</b></li><li><span>필리핀</span><b>1.1%(약 142명)</b></li></ul>
+        <h4>연령</h4><ul><li><span>18-24</span><b>30.7%(약 4,798명)</b></li><li><span>25-34</span><b>52.8%(약 8,252명)</b></li><li><span>35-44</span><b>10%(약 1,563명)</b></li><li><span>45-54</span><b>3.2%(약 500명)</b></li><li><span>55+</span><b>3.3%(약 516명)</b></li></ul>
+        <h4>국가</h4><ul><li><span>싱가포르</span><b>41.6%(약 6,502명)</b></li><li><span>말레이시아</span><b>14.6%(약 2,282명)</b></li><li><span>한국</span><b>10.4%(약 1,625명)</b></li><li><span>호주</span><b>5.9%(약 922명)</b></li><li><span>미국</span><b>2.3%(약 359명)</b></li><li><span>캐나다</span><b>1.9%(약 297명)</b></li><li><span>일본</span><b>1.7%(약 266명)</b></li><li><span>영국</span><b>1.4%(약 219명)</b></li></ul>
       </article>
       <article class="aud-card">
         <h3>발견 경로</h3>
-        <h4>유입</h4><ul><li><span>추천 피드</span><b>93.9%</b></li><li><span>검색</span><b>5.1%</b></li><li><span>프로필발 조회</span><b>0.7%</b></li><li><span>팔로우 피드</span><b>0.2%</b></li><li><span>사운드</span><b>0%</b></li></ul>
+        <h4>유입</h4><ul><li><span>추천 피드</span><b>96.4%</b></li><li><span>검색</span><b>3%</b></li><li><span>프로필발 조회</span><b>0.6%</b></li><li><span>팔로우 피드</span><b>0%</b></li><li><span>사운드</span><b>0%</b></li></ul>
         <h4>검색어</h4><ul><li><span>데이터 대기</span><b>--</b></li></ul>
       </article>
     </section>
+    
+        </section>
+        <section>
+          <h2>Archive</h2>
+          <nav class="archive-nav"><a class="active" href="2026-06-21/">6/21</a><a href="2026-06-15/">6/15</a><a href="2026-06-14/">6/14</a><a href="2026-06-13/">6/13</a><a href="2026-06-12/">6/12</a><a href="2026-06-11/">6/11</a><a href="2026-06-10/">6/10</a><a href="2026-06-09/">6/9</a><a href="2026-06-08/">6/8</a><a href="2026-06-07/">6/7</a><a href="2026-06-06/">6/6</a><a href="2026-06-05/">6/5</a><a href="2026-06-04/">6/4</a><a href="2026-06-03/">6/3</a><a href="2026-06-02/">6/2</a><a href="2026-06-01/">6/1</a><a href="2026-05-31/">5/31</a><a href="2026-05-30/">5/30</a><a href="2026-05-29/">5/29</a><a href="2026-05-28/">5/28</a><a href="2026-05-27/">5/27</a><a href="2026-05-26/">5/26</a><a href="2026-05-25/">5/25</a><a href="2026-05-24/">5/24</a><a href="2026-05-23/">5/23</a><a href="2026-05-22/">5/22</a><a href="2026-05-21/">5/21</a><a href="2026-05-20/">5/20</a><a href="2026-05-19/">5/19</a><a href="2026-05-18/">5/18</a><a href="2026-05-17/">5/17</a><a href="archive/">전체 리포트</a></nav>
+        </section>
+      </details>
     
 
     <footer>content/posts.json, content/status.json, content/output 이미지 기준으로 생성.</footer>
