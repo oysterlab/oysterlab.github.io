@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELURA Private Room Art Brochure Lab</title>
+  <meta name="description" content="ELURA 공간 사진 기반 명품형 아트 디자인 스토리텔링 브로슈어 리서치 및 2시간 실험 랩">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar screen-only" aria-label="Brochure controls">
+    <a class="brand" href="#top" aria-label="ELURA brochure lab home">ELURA</a>
+    <nav class="variant-nav" aria-label="Brochure variants">
+      <button type="button" data-target="v0900" class="is-active">09:00</button>
+      <button type="button" data-target="v1100">11:00</button>
+      <button type="button" data-target="v1300">13:00</button>
+      <button type="button" data-target="v1500">15:00</button>
+      <button type="button" data-target="v1700">17:00</button>
+      <button type="button" data-target="v1900">19:00</button>
+      <button type="button" data-target="v2100">21:00</button>
+    </nav>
+    <div class="print-actions">
+      <button type="button" id="print-selected" aria-label="Print selected brochure variant">Print Selected</button>
+      <button type="button" id="print-all" aria-label="Print all brochure variants">Print All</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="cover print-page">
+      <div class="cover-media">
+        <img src="assets/room-window-chair.jpg" alt="Warm room corner with framed abstract art by a window">
+      </div>
+      <div class="cover-copy">
+        <p class="kicker">Research Session / 2026.06.22 KST</p>
+        <h1>Private Room Art Brochure Lab</h1>
+        <p class="lead">사용자가 자신의 공간을 올렸을 때, ELURA가 그 방의 단서를 읽고 개인 아트와 배치 서사를 명품 브로슈어처럼 전달하는 웹/PDF 산출물 실험.</p>
+        <div class="cover-grid">
+          <div>
+            <span>Current Product Gap</span>
+            <strong>room upload to paid delivery is not closed</strong>
+          </div>
+          <div>
+            <span>Today's Role</span>
+            <strong>visual proof before engineering the flow</strong>
+          </div>
+          <div>
+            <span>Cadence</span>
+            <strong>09:00 to 21:00, seven design tests</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="research print-page">
+      <div class="section-label">Research Memo</div>
+      <div class="two-column">
+        <div>
+          <h2>어떤 감성이 먹힐 가능성이 높은가</h2>
+          <p>현재 ELURA의 내부 데이터는 25-34세와 여성 비중이 강하지만, 북미/유럽 도달은 아직 약하다. 그래서 브로슈어는 지나치게 차갑거나 미술관 같은 럭셔리보다, 실제 임대방과 작은 가구의 단서를 고급스럽게 해석하는 방향이 유리하다.</p>
+          <p>핵심은 “비싼 결과물”을 말하는 것이 아니라, 사용자의 방에서 이미 보이는 취향을 발견해 주는 편집 경험이다. 빈 벽, 낮은 선반, 거울 가장자리, 침대 옆 조도, 책 더미 같은 생활 단서를 아트의 역할로 번역해야 한다.</p>
+        </div>
+        <aside class="metric-panel">
+          <div>
+            <span>7d unique viewers</span>
+            <strong>15,629</strong>
+          </div>
+          <div>
+            <span>female viewers</span>
+            <strong>71.0%</strong>
+          </div>
+          <div>
+            <span>target age viewers</span>
+            <strong>62.8%</strong>
+          </div>
+          <div>
+            <span>target market viewers</span>
+            <strong>5.6%</strong>
+          </div>
+        </aside>
+      </div>
+
+      <div class="research-grid">
+        <article>
+          <h3>명품 하우스 문법</h3>
+          <p>Dior Maison은 집을 제품 카테고리가 아니라 art de vivre와 물성의 세계로 묶는다. ELURA에는 “팔레트, 텍스타일, 오브제, 조도”를 하나의 방 언어로 묶는 방식이 맞다.</p>
+        </article>
+        <article>
+          <h3>장인적 오브제 문법</h3>
+          <p>Louis Vuitton Objets Nomades는 기능적 가구를 디자이너, 재료, 이동성, 장인성의 이야기로 올린다. ELURA도 “벽에 거는 그림”이 아니라 “방의 행동을 바꾸는 오브제”로 설명해야 한다.</p>
+        </article>
+        <article>
+          <h3>하우스 코드 문법</h3>
+          <p>Chanel식 스토리텔링은 반복되는 상징, 장소, 챕터의 힘이 강하다. ELURA에는 사용자의 방에서 반복되는 색, 선, 물건, 시선을 개인 코드로 명명하는 구조가 필요하다.</p>
+        </article>
+        <article>
+          <h3>소셜 저장 문법</h3>
+          <p>TikTok 레퍼런스의 저장 동인은 컬러 콤보, 맛 취향 인벤토리, 실제 방 크롭이다. 브로슈어도 PDF로는 고급 잡지처럼 보이되, 화면에서는 저장 가능한 보드처럼 즉시 읽혀야 한다.</p>
+        </article>
+      </div>
+
+      <div class="sources">
+        <h3>Reference Links</h3>
+        <a href="https://www.dior.com/en_us/fashion/maison/maison">Dior Maison</a>
+        <a href="https://us.louisvuitton.com/eng-us/magazine/articles/the-objets-nomades-collection">Louis Vuitton Objets Nomades</a>
+        <a href="https://us.louisvuitton.com/eng-us/magazine/articles/milandesignweek">Louis Vuitton Home Collection</a>
+        <a href="https://www.chanel.com/us/about-chanel/inside-chanel/">Inside Chanel</a>
+        <a href="https://www.chanel.com/us/fashion/services/boutique-31-cambon/">Chanel 31 Cambon</a>
+        <a href="https://www.vogue.com/article/interior-design-trends-2026">Vogue 2026 Interior Trends</a>
+        <a href="https://newsroom.pinterest.com/en-au/news/pinterest-predicts-nonconformity-self-preservation-and-escapism-drive-21-trends-for-2026/">Pinterest Predicts 2026</a>
+        <a href="https://www.voguecollege.com/articles/madrid/the-secrets-of-editorial-interior-design-by-pete-bermejo-how-visual-scenes-are-crafted-for-magazines/">Vogue College Editorial Interior Design</a>
+      </div>
+    </section>
+
+    <section class="schedule print-page">
+      <div class="section-label">Experiment Schedule</div>
+      <h2>2시간마다 서로 다른 명품형 브로슈어 문법을 테스트한다</h2>
+      <div class="schedule-grid">
+        <article>
+          <span>09:00</span>
+          <h3>Atelier Diagnostic</h3>
+          <p>방의 문제를 조용히 진단하고, 한 점의 아트가 맡을 역할을 지정한다.</p>
+        </article>
+        <article>
+          <span>11:00</span>
+          <h3>Couture Palette Dossier</h3>
+          <p>사용자 공간의 색을 패션 하우스 팔레트처럼 편집한다.</p>
+        </article>
+        <article>
+          <span>13:00</span>
+          <h3>Objets Nomades Room</h3>
+          <p>선반, 램프, 책 더미, 의자를 이동 가능한 오브제 서사로 엮는다.</p>
+        </article>
+        <article>
+          <span>15:00</span>
+          <h3>Rue Cambon Chapters</h3>
+          <p>방 안의 반복 상징을 개인 하우스 코드로 이름 붙인다.</p>
+        </article>
+        <article>
+          <span>17:00</span>
+          <h3>Neo-Deco Certificate</h3>
+          <p>기하학, 광택, 깊은 색을 사용해 더 화려한 PDF 소장감을 실험한다.</p>
+        </article>
+        <article>
+          <span>19:00</span>
+          <h3>Lived-In Magazine Feature</h3>
+          <p>살고 있는 방의 흔적을 고급 인테리어 매거진 화보처럼 만든다.</p>
+        </article>
+        <article>
+          <span>21:00</span>
+          <h3>Private Client Portfolio</h3>
+          <p>최종 구매 전환에 가까운 개인 납품서 형식으로 정리한다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="variant is-active" id="v0900" data-title="Atelier Diagnostic">
+      <article class="brochure diagnostic print-page">
+        <div class="brochure-head">
+          <span>09:00 / Design Test 01</span>
+          <h2>Atelier Diagnostic</h2>
+          <p>사진 속 방을 “꾸밀 곳”이 아니라 이미 존재하는 습관의 지형으로 읽는다. 낮은 선반, 창가 의자, 라디에이터, 그림자의 각도를 먼저 보고 그 다음에 아트를 제안한다.</p>
+        </div>
+        <div class="diagnostic-layout">
+          <figure class="large-figure">
+            <img src="assets/room-window-chair.jpg" alt="Warm chair corner with framed abstract art">
+            <figcaption>Primary read: the room already has a quiet return point. The artwork should not shout; it should hold the pause.</figcaption>
+          </figure>
+          <div class="diagnostic-notes">
+            <div>
+              <span>Room Signal</span>
+              <strong>soft window light, chair angle, radiator line</strong>
+            </div>
+            <div>
+              <span>Art Role</span>
+              <strong>make the pause visible</strong>
+            </div>
+            <div>
+              <span>Placement Rule</span>
+              <strong>hang where the eye returns after sitting down</strong>
+            </div>
+          </div>
+        </div>
+        <div class="image-strip">
+          <img src="assets/room-low-table.jpg" alt="Low table with framed art">
+          <img src="assets/room-tiny-table.jpg" alt="Tiny round table with framed art">
+          <img src="assets/room-mirror-edge.jpg" alt="Bathroom mirror edge with framed art">
+          <img src="assets/room-low-shelf.jpg" alt="Low shelf with framed art">
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v1100" data-title="Couture Palette Dossier">
+      <article class="brochure palette print-page">
+        <div class="brochure-head split">
+          <div>
+            <span>11:00 / Design Test 02</span>
+            <h2>Couture Palette Dossier</h2>
+          </div>
+          <p>방의 색을 “좋아하는 컬러”가 아니라, 사용자의 공간에서 이미 일하는 색의 계급으로 정리한다. 명품 카탈로그의 소재 표처럼 팔레트와 실제 벽면을 함께 보여준다.</p>
+        </div>
+        <div class="palette-grid">
+          <figure>
+            <img src="assets/palette-dining.jpg" alt="Dining nook with wall art color palette">
+            <figcaption>Brown, sky blue, cream, black. A lived-in dining nook gets a formal color spine.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/palette-entry.jpg" alt="Entry wall with brick and moss palette">
+            <figcaption>Brick red and moss turn the entry wall into a composed threshold.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/palette-bedside.jpg" alt="Bedside wall with aubergine and blush palette">
+            <figcaption>Aubergine and blush soften the bedside without making it decorative.</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/palette-coffee.jpg" alt="Coffee corner with cobalt and persimmon palette">
+            <figcaption>Cobalt and persimmon create one decisive note in a small daily zone.</figcaption>
+          </figure>
+        </div>
+        <div class="swatch-row" aria-label="Recommended palette">
+          <i style="--swatch:#3a201b"></i>
+          <i style="--swatch:#b95644"></i>
+          <i style="--swatch:#7f8f6f"></i>
+          <i style="--swatch:#8fb6c4"></i>
+          <i style="--swatch:#f0e4d1"></i>
+          <i style="--swatch:#151515"></i>
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v1300" data-title="Objets Nomades Room">
+      <article class="brochure object print-page">
+        <div class="object-hero">
+          <img src="assets/object-low-shelf.jpg" alt="Low shelf with books and framed wall art">
+          <div>
+            <span>13:00 / Design Test 03</span>
+            <h2>Objets Nomades Room</h2>
+            <p>사용자의 방은 정적인 배경이 아니라 매일 이동하는 오브제들의 무대다. 아트는 선반, 램프, 책 더미, 열쇠, 의자와 함께 움직임의 질서를 잡는 중심 오브제가 된다.</p>
+          </div>
+        </div>
+        <div class="object-index">
+          <article>
+            <img src="assets/object-lamp-line.jpg" alt="Lamp and wall art">
+            <span>Object 01</span>
+            <h3>Lamp Line</h3>
+            <p>조도의 곡선과 그림의 선을 맞춰 밤의 방을 정리한다.</p>
+          </article>
+          <article>
+            <img src="assets/object-book-stack.jpg" alt="Book stack below framed art">
+            <span>Object 02</span>
+            <h3>Book Stack Color</h3>
+            <p>책등의 색을 그림의 서브 팔레트로 끌어올린다.</p>
+          </article>
+          <article>
+            <img src="assets/object-entry-keys.jpg" alt="Entry keys and small frame">
+            <span>Object 03</span>
+            <h3>Keys and Small Frame</h3>
+            <p>출입의 반복을 작은 프레임으로 고정한다.</p>
+          </article>
+          <article>
+            <img src="assets/object-chair-shadow.jpg" alt="Chair shadow and framed art">
+            <span>Object 04</span>
+            <h3>Chair Shadow</h3>
+            <p>비어 있는 의자와 벽면 사이에 시선을 만든다.</p>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v1500" data-title="Rue Cambon Chapters">
+      <article class="brochure cambon print-page">
+        <div class="cambon-cover">
+          <div>
+            <span>15:00 / Design Test 04</span>
+            <h2>Rue Cambon Chapters</h2>
+            <p>한 사용자의 방에도 반복되는 개인 코드가 있다. 이 버전은 그 코드를 챕터로 나누어, 사용자의 공간을 작은 하우스 아카이브처럼 읽게 한다.</p>
+          </div>
+          <img src="assets/cool-ivory.jpg" alt="Vanity and mirror with ivory and espresso art palette">
+        </div>
+        <div class="chapter-list">
+          <article>
+            <span>Chapter I</span>
+            <h3>The Mirror Edge</h3>
+            <p>거울은 자기 확인의 장치가 아니라 방의 두 번째 프레임이다.</p>
+          </article>
+          <article>
+            <span>Chapter II</span>
+            <h3>The Dark Line</h3>
+            <p>검은 선은 공간을 무겁게 하지 않고, 시선이 머무를 위치를 만든다.</p>
+          </article>
+          <article>
+            <span>Chapter III</span>
+            <h3>The Warm Object</h3>
+            <p>나무, 수건, 화분 같은 작은 물성은 그림의 색을 현실로 내려놓는다.</p>
+          </article>
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v1700" data-title="Neo-Deco Certificate">
+      <article class="brochure deco print-page">
+        <div class="deco-grid">
+          <div class="deco-title">
+            <span>17:00 / Design Test 05</span>
+            <h2>Neo-Deco Certificate</h2>
+            <p>2026 트렌드의 Neo Deco와 ELURA의 추상 아트를 결합한다. 금속적 선, 깊은 색면, 대칭적 배치를 사용해 PDF 소장감을 높이는 버전이다.</p>
+          </div>
+          <img class="deco-main" src="assets/cool-chartreuse.jpg" alt="Chartreuse and ink room art palette">
+          <img src="assets/cool-midnight.jpg" alt="Midnight and tomato dresser art palette">
+          <img src="assets/cool-plum.jpg" alt="Plum and butter dining art palette">
+        </div>
+        <div class="certificate">
+          <div>
+            <span>Certified Direction</span>
+            <strong>one bold geometry, one cool field, one warm interruption</strong>
+          </div>
+          <div>
+            <span>Client Use</span>
+            <strong>best for users who want the room to feel sharper immediately</strong>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v1900" data-title="Lived-In Magazine Feature">
+      <article class="brochure magazine print-page">
+        <div class="magazine-masthead">
+          <span>19:00 / Design Test 06</span>
+          <h2>Lived-In Magazine Feature</h2>
+          <p>고급 매거진처럼 보이지만, 공간을 지나치게 완벽하게 만들지 않는다. 살고 있는 흔적, 다크 우드, 책 더미, 조도, 작은 의자까지 보존한다.</p>
+        </div>
+        <div class="magazine-layout">
+          <img src="assets/room-low-shelf.jpg" alt="Low shelf room feature">
+          <div class="pullquote">The room is not improved by hiding use. It becomes expensive when the use is edited.</div>
+          <img src="assets/palette-bath.jpg" alt="Bathroom with powder blue and chocolate palette">
+        </div>
+        <div class="editorial-notes">
+          <p><strong>Keep:</strong> lived-in warmth, real object density, dark wood, visible texture.</p>
+          <p><strong>Drop:</strong> sterile minimalism, generic gallery wall advice, over-explaining the emotional premise.</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="variant" id="v2100" data-title="Private Client Portfolio">
+      <article class="brochure portfolio print-page">
+        <div class="portfolio-head">
+          <span>21:00 / Design Test 07</span>
+          <h2>Private Client Portfolio</h2>
+          <p>최종 버전은 사용자가 실제로 돈을 낼 수 있는 개인 납품서에 가깝게 만든다. 감성은 유지하되, 무엇을 받고 어떤 결정을 하면 되는지 분명해야 한다.</p>
+        </div>
+        <div class="portfolio-body">
+          <figure>
+            <img src="assets/palette-dining.jpg" alt="Dining nook final room direction">
+            <figcaption>Chosen wall role: daily dining pause</figcaption>
+          </figure>
+          <div class="deliverable-list">
+            <h3>Included Direction</h3>
+            <p><span>01</span> room signal reading</p>
+            <p><span>02</span> art role and placement</p>
+            <p><span>03</span> palette and material logic</p>
+            <p><span>04</span> two alternate art families</p>
+            <p><span>05</span> printable PDF client brochure</p>
+          </div>
+        </div>
+        <div class="decision-strip">
+          <article>
+            <span>Primary</span>
+            <strong>brown and sky-blue frame</strong>
+          </article>
+          <article>
+            <span>Alternate</span>
+            <strong>brick red and moss entry cue</strong>
+          </article>
+          <article>
+            <span>Next Action</span>
+            <strong>upload wall photo, choose room moment</strong>
+          </article>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
