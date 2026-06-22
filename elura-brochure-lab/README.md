@@ -32,3 +32,8 @@ Release log:
   - Verified with Playwright image load check: 0 broken images.
   - Rendered with Poppler for visual PDF inspection.
   - PDF: A4, 7 pages, approximately 2.7 MB.
+- 2026-06-22 11:00 KST ready: `exports/elura-brochure-1100-couture-palette-dossier.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 6 pages, approximately 2.6 MB.
+  - Status should change from `Ready` to `Released` at the 11:00 KST checkpoint after live verification.

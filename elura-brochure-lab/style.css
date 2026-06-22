@@ -362,6 +362,11 @@ p {
   background: #15120f;
 }
 
+.release-grid article.is-ready {
+  border-color: var(--gold);
+  border-top: 4px solid var(--gold);
+}
+
 .release-grid article.is-released h3,
 .release-grid article.is-released p {
   color: var(--paper);
@@ -485,6 +490,45 @@ figcaption {
   background: #fbf8f2;
 }
 
+.palette-dossier {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 0 0 18px;
+}
+
+.palette-dossier div,
+.palette-decision article {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 16px;
+}
+
+.palette-dossier span,
+.palette-decision span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.palette-dossier strong {
+  display: block;
+  min-height: 52px;
+  color: var(--ink);
+  font-size: 20px;
+  line-height: 1.22;
+}
+
+.palette-dossier p,
+.palette-decision p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .palette-grid {
   display: grid;
   grid-template-columns: 1.15fr repeat(3, 1fr);
@@ -510,6 +554,21 @@ figcaption {
   border: 1px solid rgba(0, 0, 0, .18);
   border-radius: 999px;
   background: var(--swatch);
+}
+
+.palette-decision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.palette-decision h3 {
+  margin-bottom: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
 }
 
 .object {
@@ -812,11 +871,13 @@ figcaption {
   .research-grid,
   .schedule-grid,
   .release-grid,
+  .palette-dossier,
   .object-index,
   .image-strip,
   .chapter-list,
   .decision-strip,
   .editorial-notes,
+  .palette-decision,
   .certificate {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -868,12 +929,14 @@ figcaption {
   .research-grid,
   .schedule-grid,
   .release-grid,
+  .palette-dossier,
   .object-index,
   .image-strip,
   .chapter-list,
   .decision-strip,
   .editorial-notes,
   .certificate,
+  .palette-decision,
   .palette-grid,
   .deco-grid,
   .magazine-layout,
@@ -967,12 +1030,14 @@ figcaption {
   .research-grid,
   .schedule-grid,
   .release-grid,
+  .palette-dossier,
   .object-index,
   .image-strip,
   .chapter-list,
   .decision-strip,
   .editorial-notes,
   .certificate,
+  .palette-decision,
   .palette-grid,
   .deco-grid,
   .magazine-layout {
@@ -982,7 +1047,9 @@ figcaption {
   .research-grid,
   .schedule-grid,
   .object-index,
-  .image-strip {
+  .image-strip,
+  .palette-dossier,
+  .palette-decision {
     gap: 7px;
   }
 
@@ -1008,6 +1075,26 @@ figcaption {
 
   .release-actions {
     display: none;
+  }
+
+  .palette-dossier div,
+  .palette-decision article {
+    padding: 10px;
+  }
+
+  .palette-dossier strong {
+    min-height: auto;
+    font-size: 12pt;
+  }
+
+  .palette-dossier p,
+  .palette-decision p {
+    font-size: 8.5pt;
+    line-height: 1.35;
+  }
+
+  .palette-decision h3 {
+    font-size: 15pt;
   }
 
   .palette-grid figure:first-child,
