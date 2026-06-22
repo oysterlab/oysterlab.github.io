@@ -550,6 +550,95 @@ p {
   font-size: 14px;
 }
 
+.measurement {
+  background: #f8f6f0;
+}
+
+.measurement-head {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 470px);
+  gap: 28px;
+  align-items: end;
+}
+
+.measurement-head p {
+  max-width: 800px;
+  font-size: 18px;
+}
+
+.measurement-rule {
+  padding: 24px;
+  border: 1px solid var(--ink);
+  background: #15120f;
+}
+
+.measurement-rule span,
+.measurement-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.measurement-rule span {
+  color: #dcc8a0;
+}
+
+.measurement-rule strong {
+  display: block;
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.measurement-rule p {
+  margin: 12px 0 0;
+  color: #e6ddd1;
+  font-size: 15px;
+}
+
+.measurement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.measurement-grid article {
+  min-height: 225px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.measurement-grid article:nth-child(6),
+.measurement-grid article:nth-child(7) {
+  border-color: var(--ink);
+  border-top: 5px solid var(--ink);
+}
+
+.measurement-grid article:nth-child(2) {
+  border-top: 5px solid var(--gold);
+}
+
+.measurement-grid p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.measurement-grid strong {
+  display: block;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 .schedule-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -1606,6 +1695,7 @@ figcaption {
   .fit-matrix,
   .intake-head,
   .verdict-head,
+  .measurement-head,
   .qa-head,
   .schema-head,
   .copy-head,
@@ -1633,6 +1723,7 @@ figcaption {
   .flow-grid,
   .contract-strip,
   .verdict-grid,
+  .measurement-grid,
   .qa-grid,
   .schema-map,
   .copy-grid,
@@ -1711,6 +1802,7 @@ figcaption {
   .flow-grid,
   .contract-strip,
   .verdict-grid,
+  .measurement-grid,
   .qa-grid,
   .schema-map,
   .copy-grid,
@@ -1738,6 +1830,7 @@ figcaption {
   .fit-matrix,
   .intake-head,
   .verdict-head,
+  .measurement-head,
   .qa-head,
   .schema-head,
   .copy-head,
@@ -1819,6 +1912,7 @@ figcaption {
   .fit-matrix,
   .intake-head,
   .verdict-head,
+  .measurement-head,
   .qa-head,
   .schema-head,
   .copy-head,
@@ -1841,6 +1935,7 @@ figcaption {
   .flow-grid,
   .contract-strip,
   .verdict-grid,
+  .measurement-grid,
   .qa-grid,
   .schema-map,
   .copy-grid,
@@ -1873,6 +1968,7 @@ figcaption {
   .flow-grid,
   .contract-strip,
   .verdict-grid,
+  .measurement-grid,
   .qa-grid,
   .schema-map,
   .copy-grid,
@@ -1966,6 +2062,53 @@ figcaption {
   .verdict-grid p {
     font-size: 8pt;
     line-height: 1.35;
+  }
+
+  .measurement-head {
+    gap: 10px;
+  }
+
+  .measurement-head p {
+    font-size: 10pt;
+    line-height: 1.45;
+  }
+
+  .measurement-rule {
+    padding: 12px;
+  }
+
+  .measurement-rule strong {
+    font-size: 14pt;
+  }
+
+  .measurement-rule p {
+    font-size: 8.5pt;
+  }
+
+  .measurement-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .measurement-grid article {
+    min-height: auto;
+    padding: 9px;
+  }
+
+  .measurement-grid h3 {
+    font-size: 9.8pt;
+  }
+
+  .measurement-grid p {
+    margin-bottom: 6px;
+    font-size: 7.4pt;
+    line-height: 1.32;
+  }
+
+  .measurement-grid strong {
+    font-size: 7.9pt;
+    line-height: 1.25;
   }
 
   .qa-head {
