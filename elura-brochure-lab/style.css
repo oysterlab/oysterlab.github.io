@@ -241,6 +241,7 @@ p {
 
 .research,
 .intake,
+.verdict,
 .schedule {
   background: var(--paper);
 }
@@ -467,6 +468,86 @@ p {
   font-size: 25px;
   font-weight: 500;
   line-height: 1.12;
+}
+
+.verdict {
+  background: #f3eee6;
+}
+
+.verdict-head {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 470px);
+  gap: 28px;
+  align-items: end;
+}
+
+.verdict-head p {
+  max-width: 830px;
+  font-size: 18px;
+}
+
+.verdict-score {
+  padding: 24px;
+  border: 1px solid var(--ink);
+  background: #15120f;
+}
+
+.verdict-score span,
+.verdict-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.verdict-score span {
+  color: #dcc8a0;
+}
+
+.verdict-score strong {
+  display: block;
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.verdict-score p {
+  margin: 12px 0 0;
+  color: #e6ddd1;
+  font-size: 15px;
+}
+
+.verdict-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.verdict-grid article {
+  min-height: 205px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.verdict-grid article:nth-child(1),
+.verdict-grid article:nth-child(2) {
+  border-color: var(--ink);
+  border-top: 5px solid var(--ink);
+}
+
+.verdict-grid article:nth-child(6) {
+  border-top: 5px solid var(--gold);
+}
+
+.verdict-grid p {
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 .schedule-grid {
@@ -1199,6 +1280,7 @@ figcaption {
   .cambon-cover,
   .fit-matrix,
   .intake-head,
+  .verdict-head,
   .magazine-masthead,
   .portfolio-head,
   .portfolio-body {
@@ -1221,6 +1303,7 @@ figcaption {
   .fit-table,
   .flow-grid,
   .contract-strip,
+  .verdict-grid,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1293,6 +1376,7 @@ figcaption {
   .fit-table,
   .flow-grid,
   .contract-strip,
+  .verdict-grid,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1314,6 +1398,7 @@ figcaption {
   .magazine-layout,
   .fit-matrix,
   .intake-head,
+  .verdict-head,
   .release-head {
     grid-template-columns: 1fr;
   }
@@ -1390,6 +1475,7 @@ figcaption {
   .cambon-cover,
   .fit-matrix,
   .intake-head,
+  .verdict-head,
   .magazine-masthead,
   .release-head,
   .portfolio-head,
@@ -1407,6 +1493,7 @@ figcaption {
   .fit-table,
   .flow-grid,
   .contract-strip,
+  .verdict-grid,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1433,6 +1520,7 @@ figcaption {
   .fit-table,
   .flow-grid,
   .contract-strip,
+  .verdict-grid,
   .schedule-grid,
   .object-index,
   .image-strip,
@@ -1480,6 +1568,47 @@ figcaption {
 
   .contract-strip strong {
     font-size: 10.5pt;
+  }
+
+  .verdict-head {
+    gap: 10px;
+  }
+
+  .verdict-head p {
+    font-size: 10pt;
+    line-height: 1.45;
+  }
+
+  .verdict-score {
+    padding: 12px;
+  }
+
+  .verdict-score strong {
+    font-size: 14pt;
+  }
+
+  .verdict-score p {
+    font-size: 8.5pt;
+  }
+
+  .verdict-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .verdict-grid article {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .verdict-grid h3 {
+    font-size: 10.5pt;
+  }
+
+  .verdict-grid p {
+    font-size: 8pt;
+    line-height: 1.35;
   }
 
   .fit-matrix {
