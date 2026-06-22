@@ -69,12 +69,12 @@ Release log:
   - PDF: A4, 2 pages, approximately 1.3 MB.
   - 2026-06-22 11:14 KST pre-release refinement: added two proof captions to connect the image spread back to private house-code logic.
   - 2026-06-22 15:00 KST live checkpoint: automatic release state verified with `Released` count 4 and `Ready` count 3.
-- 2026-06-22 17:00 KST ready: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
+- 2026-06-22 17:00 KST released: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.3 MB.
   - 2026-06-22 11:20 KST pre-release refinement: tightened the finish rule around one dramatic gesture, matte print, dark frame, and a single metallic cue.
-  - Status should change from `Ready` to `Released` at the 17:00 KST checkpoint after live verification.
+  - 2026-06-22 17:00 KST live checkpoint: automatic release state verified with `Released` count 5 and `Ready` count 2.
 - 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
