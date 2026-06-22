@@ -1326,13 +1326,24 @@ figcaption {
 
 .object-index span,
 .object-index h3,
-.object-index p {
+.object-index p,
+.object-index strong {
   margin-left: 14px;
   margin-right: 14px;
 }
 
 .object-index span {
   margin-top: 14px;
+}
+
+.object-index strong {
+  display: block;
+  margin-bottom: 16px;
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .cambon {
@@ -1880,6 +1891,10 @@ figcaption {
 
   .variant {
     display: block;
+  }
+
+  body.print-selected main > section:not(.variant) {
+    display: none;
   }
 
   body.print-selected .variant:not(.is-active) {

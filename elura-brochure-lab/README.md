@@ -17,6 +17,7 @@ Core thesis:
 - 2026-06-22 10:30 KST copy update: added a luxury copy system to keep brochure language evidence-based, role-first, restrained, and free of generic decor labels.
 - 2026-06-22 10:36 KST measurement update: added an experiment measurement matrix that maps every two-hour brochure to target behavior, proof signal, and next product decision.
 - 2026-06-22 10:20 KST client sample update: added a filled client brief sample for a mirror-edge bathroom upload, including room signal, wall role, two art routes, and revision rule.
+- 2026-06-22 11:05 KST 13:00 pre-release refinement: strengthened the Objets Nomades Room brochure with placement proof and explicit art-role notes for each object.
 
 Included experiments:
 
@@ -46,36 +47,37 @@ Release log:
 - 2026-06-22 09:00 KST: `exports/elura-brochure-0900-atelier-diagnostic.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered with Poppler for visual PDF inspection.
-  - PDF: A4, 7 pages, approximately 2.7 MB.
+  - PDF: A4, 3 pages, approximately 2.2 MB.
 - 2026-06-22 11:00 KST released: `exports/elura-brochure-1100-couture-palette-dossier.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 6 pages, approximately 2.6 MB.
+  - PDF: A4, 2 pages, approximately 1.7 MB.
   - 2026-06-22 11:00 KST live checkpoint: automatic release state verified with `Released` count 2 and `Ready` count 5.
 - 2026-06-22 13:00 KST ready: `exports/elura-brochure-1300-objets-nomades-room.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 7 pages, approximately 3.4 MB.
+  - PDF: A4, 3 pages, approximately 2.5 MB.
+  - 2026-06-22 11:05 KST pre-release refinement: added placement proof and object-level art role notes.
   - Status should change from `Ready` to `Released` at the 13:00 KST checkpoint after live verification.
 - 2026-06-22 15:00 KST ready: `exports/elura-brochure-1500-rue-cambon-chapters.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 6 pages, approximately 2.2 MB.
+  - PDF: A4, 2 pages, approximately 1.3 MB.
   - Status should change from `Ready` to `Released` at the 15:00 KST checkpoint after live verification.
 - 2026-06-22 17:00 KST ready: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 6 pages, approximately 2.2 MB.
+  - PDF: A4, 2 pages, approximately 1.3 MB.
   - Status should change from `Ready` to `Released` at the 17:00 KST checkpoint after live verification.
 - 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 6 pages, approximately 2.0 MB.
+  - PDF: A4, 2 pages, approximately 1.0 MB.
   - Status should change from `Ready` to `Released` at the 19:00 KST checkpoint after live verification.
 - 2026-06-22 21:00 KST ready: `exports/elura-brochure-2100-private-client-portfolio.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 6 pages, approximately 1.5 MB.
+  - PDF: A4, 2 pages, approximately 0.6 MB.
   - Status should change from `Ready` to `Released` at the 21:00 KST checkpoint after live verification.
 - 2026-06-22 09:40 KST: added automatic KST release-state calculation.
   - Verified with Playwright time injection for 09:40, 11:01, and 21:01 KST.
