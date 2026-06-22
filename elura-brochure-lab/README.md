@@ -42,3 +42,23 @@ Release log:
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 7 pages, approximately 3.4 MB.
   - Status should change from `Ready` to `Released` at the 13:00 KST checkpoint after live verification.
+- 2026-06-22 15:00 KST ready: `exports/elura-brochure-1500-rue-cambon-chapters.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 6 pages, approximately 2.2 MB.
+  - Status should change from `Ready` to `Released` at the 15:00 KST checkpoint after live verification.
+- 2026-06-22 17:00 KST ready: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 6 pages, approximately 2.2 MB.
+  - Status should change from `Ready` to `Released` at the 17:00 KST checkpoint after live verification.
+- 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 6 pages, approximately 2.0 MB.
+  - Status should change from `Ready` to `Released` at the 19:00 KST checkpoint after live verification.
+- 2026-06-22 21:00 KST ready: `exports/elura-brochure-2100-private-client-portfolio.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 6 pages, approximately 1.5 MB.
+  - Status should change from `Ready` to `Released` at the 21:00 KST checkpoint after live verification.

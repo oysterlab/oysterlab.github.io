@@ -720,6 +720,61 @@ figcaption {
   color: #dcc8a0;
 }
 
+.cambon-note {
+  margin-top: 22px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: #15120f;
+}
+
+.cambon-note strong {
+  display: block;
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.cambon-note p {
+  margin: 10px 0 0;
+  color: #e6ddd1;
+  font-size: 14px;
+}
+
+.chapter-codes,
+.chapter-proof {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.chapter-codes article {
+  padding: 18px;
+  border: 1px solid var(--ink);
+  background: var(--card);
+}
+
+.chapter-codes span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.chapter-codes p {
+  margin-bottom: 0;
+}
+
+.chapter-proof img {
+  max-height: 640px;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+}
+
 .deco {
   background: #eef0ea;
 }
@@ -772,6 +827,42 @@ figcaption {
   border-color: #8c8a81;
 }
 
+.deco-spec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.deco-spec article {
+  padding: 18px;
+  border: 1px solid #8c8a81;
+  background: #f8f6ef;
+}
+
+.deco-spec span,
+.magazine-brief span,
+.portfolio-scope span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.deco-spec h3 {
+  min-height: 48px;
+}
+
+.deco-spec p,
+.magazine-brief p,
+.portfolio-scope p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .magazine {
   background: #f2eadf;
 }
@@ -821,6 +912,26 @@ figcaption {
   padding: 16px;
   border: 1px solid var(--line);
   background: var(--card);
+}
+
+.magazine-brief {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.magazine-brief article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.magazine-brief h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
 }
 
 .portfolio {
@@ -884,6 +995,23 @@ figcaption {
   margin-top: 14px;
 }
 
+.portfolio-scope {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.portfolio-scope article {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.portfolio-scope h3 {
+  min-height: 48px;
+}
+
 @media (max-width: 1050px) {
   .topbar {
     grid-template-columns: 1fr;
@@ -927,6 +1055,11 @@ figcaption {
   .palette-dossier,
   .object-index,
   .object-materials,
+  .chapter-codes,
+  .chapter-proof,
+  .deco-spec,
+  .magazine-brief,
+  .portfolio-scope,
   .image-strip,
   .chapter-list,
   .decision-strip,
@@ -986,6 +1119,11 @@ figcaption {
   .palette-dossier,
   .object-index,
   .object-materials,
+  .chapter-codes,
+  .chapter-proof,
+  .deco-spec,
+  .magazine-brief,
+  .portfolio-scope,
   .image-strip,
   .chapter-list,
   .decision-strip,
@@ -1088,6 +1226,11 @@ figcaption {
   .palette-dossier,
   .object-index,
   .object-materials,
+  .chapter-codes,
+  .chapter-proof,
+  .deco-spec,
+  .magazine-brief,
+  .portfolio-scope,
   .image-strip,
   .chapter-list,
   .decision-strip,
@@ -1111,6 +1254,36 @@ figcaption {
 
   .schedule-grid article {
     min-height: auto;
+  }
+
+  .chapter-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+  }
+
+  .chapter-list article {
+    min-height: auto;
+    padding: 11px;
+  }
+
+  .chapter-list h3 {
+    margin-bottom: 6px;
+    font-size: 12pt;
+  }
+
+  .chapter-list p {
+    margin-bottom: 0;
+    font-size: 9pt;
+    line-height: 1.35;
+  }
+
+  .chapter-proof {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .chapter-proof img {
+    max-height: 154mm;
   }
 
   .release-grid article {
