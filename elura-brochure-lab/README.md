@@ -25,3 +25,10 @@ Print behavior:
 - `Print Selected` prints the active brochure concept.
 - `Print All` prints the research memo, schedule, and every concept as a multi-page PDF.
 - CSS includes A4 `@page` rules and page breaks for browser print output.
+
+Release log:
+
+- 2026-06-22 09:00 KST: `exports/elura-brochure-0900-atelier-diagnostic.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered with Poppler for visual PDF inspection.
+  - PDF: A4, 7 pages, approximately 2.7 MB.
