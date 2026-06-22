@@ -1447,6 +1447,22 @@ figcaption {
   border: 1px solid var(--ink);
 }
 
+.chapter-proof figure {
+  margin: 0;
+  border: 1px solid var(--ink);
+  background: var(--card);
+}
+
+.chapter-proof figure img {
+  border: 0;
+}
+
+.chapter-proof figcaption {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 17px;
+}
+
 .deco {
   background: #eef0ea;
 }

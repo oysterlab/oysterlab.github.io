@@ -18,6 +18,7 @@ Core thesis:
 - 2026-06-22 10:36 KST measurement update: added an experiment measurement matrix that maps every two-hour brochure to target behavior, proof signal, and next product decision.
 - 2026-06-22 10:20 KST client sample update: added a filled client brief sample for a mirror-edge bathroom upload, including room signal, wall role, two art routes, and revision rule.
 - 2026-06-22 11:05 KST 13:00 pre-release refinement: strengthened the Objets Nomades Room brochure with placement proof and explicit art-role notes for each object.
+- 2026-06-22 11:14 KST 15:00 pre-release refinement: added code-proof captions to the Rue Cambon Chapters brochure so the image spread explains why each room signal qualifies as a private house code.
 
 Included experiments:
 
@@ -63,6 +64,7 @@ Release log:
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.3 MB.
+  - 2026-06-22 11:14 KST pre-release refinement: added two proof captions to connect the image spread back to private house-code logic.
   - Status should change from `Ready` to `Released` at the 15:00 KST checkpoint after live verification.
 - 2026-06-22 17:00 KST ready: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
   - Verified with Playwright image load check: 0 broken images.
