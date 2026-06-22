@@ -25,11 +25,17 @@ Print behavior:
 
 - `Print Selected` prints the active brochure concept.
 - `Print All` prints the research memo, schedule, and every concept as a multi-page PDF.
+- `Master PDF` links to `exports/elura-brochure-master-research-release.pdf`, a full research plus seven-experiment export.
 - CSS includes A4 `@page` rules and page breaks for browser print output.
 - Release cards now use KST timestamp data and client-side status calculation, so each ready brochure becomes `Released` automatically at its scheduled checkpoint.
 
 Release log:
 
+- 2026-06-22 09:45 KST master export: `exports/elura-brochure-master-research-release.pdf`
+  - Includes cover, research memo, demographic fit matrix, schedule, release log, and all seven brochure experiments.
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 21 pages, approximately 9.1 MB.
 - 2026-06-22 09:00 KST: `exports/elura-brochure-0900-atelier-diagnostic.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered with Poppler for visual PDF inspection.

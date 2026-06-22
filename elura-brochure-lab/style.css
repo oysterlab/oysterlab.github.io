@@ -79,17 +79,20 @@ button {
 }
 
 .variant-nav button,
-.print-actions button {
+.print-actions button,
+.print-actions a {
   border: 1px solid var(--line);
   border-radius: 6px;
   padding: 7px 10px;
   background: var(--card);
   color: var(--ink);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .variant-nav button.is-active,
 .print-actions button:hover,
+.print-actions a:hover,
 .variant-nav button:hover {
   border-color: var(--ink);
   background: var(--ink);
@@ -461,6 +464,21 @@ p {
   color: var(--ink);
   font-size: 13px;
   font-weight: 750;
+  text-decoration: none;
+}
+
+.master-export {
+  display: inline-flex;
+  min-height: 38px;
+  align-items: center;
+  margin-top: 10px;
+  border: 1px solid var(--ink);
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #15120f;
+  color: var(--paper);
+  font-size: 13px;
+  font-weight: 800;
   text-decoration: none;
 }
 
