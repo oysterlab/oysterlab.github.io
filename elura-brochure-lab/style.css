@@ -1588,6 +1588,35 @@ figcaption {
   line-height: 1.18;
 }
 
+.magazine-proof {
+  grid-column: 2 / 4;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: #15120f;
+}
+
+.magazine-proof span {
+  display: block;
+  margin-bottom: 8px;
+  color: #dcc8a0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.magazine-proof h3 {
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.magazine-proof p {
+  margin-bottom: 0;
+  color: #e6ddd1;
+  font-size: 15px;
+}
+
 .editorial-notes {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1792,6 +1821,10 @@ figcaption {
     height: auto;
   }
 
+  .magazine-proof {
+    grid-column: 1 / -1;
+  }
+
   .fit-copy {
     border-right: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .18);
@@ -1992,6 +2025,20 @@ figcaption {
   .deco-grid,
   .magazine-layout {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .magazine-proof {
+    grid-column: auto;
+    padding: 12px;
+  }
+
+  .magazine-proof h3 {
+    font-size: 14pt;
+  }
+
+  .magazine-proof p {
+    font-size: 8.5pt;
+    line-height: 1.35;
   }
 
   .research-grid,

@@ -20,6 +20,7 @@ Core thesis:
 - 2026-06-22 11:05 KST 13:00 pre-release refinement: strengthened the Objets Nomades Room brochure with placement proof and explicit art-role notes for each object.
 - 2026-06-22 11:14 KST 15:00 pre-release refinement: added code-proof captions to the Rue Cambon Chapters brochure so the image spread explains why each room signal qualifies as a private house code.
 - 2026-06-22 11:20 KST 17:00 pre-release refinement: tightened the Neo-Deco finish rule so the certificate stays dramatic without turning the room into theme decor.
+- 2026-06-22 11:38 KST 19:00 pre-release refinement: added a saveable crop rule to make the lived-in magazine route more explicit about which real room object should remain visible.
 
 Included experiments:
 
@@ -76,7 +77,8 @@ Release log:
 - 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 2 pages, approximately 1.0 MB.
+  - PDF: A4, 2 pages, approximately 1.1 MB.
+  - 2026-06-22 11:38 KST pre-release refinement: added a saveable crop rule that keeps one lived object visible inside the editorial frame.
   - Status should change from `Ready` to `Released` at the 19:00 KST checkpoint after live verification.
 - 2026-06-22 21:00 KST ready: `exports/elura-brochure-2100-private-client-portfolio.pdf`
   - Verified with Playwright image load check: 0 broken images.
