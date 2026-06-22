@@ -75,12 +75,12 @@ Release log:
   - PDF: A4, 2 pages, approximately 1.3 MB.
   - 2026-06-22 11:20 KST pre-release refinement: tightened the finish rule around one dramatic gesture, matte print, dark frame, and a single metallic cue.
   - 2026-06-22 17:00 KST live checkpoint: automatic release state verified with `Released` count 5 and `Ready` count 2.
-- 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
+- 2026-06-22 19:00 KST released: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.1 MB.
   - 2026-06-22 11:38 KST pre-release refinement: added a saveable crop rule that keeps one lived object visible inside the editorial frame.
-  - Status should change from `Ready` to `Released` at the 19:00 KST checkpoint after live verification.
+  - 2026-06-22 19:00 KST live checkpoint: automatic release state verified with `Released` count 6 and `Ready` count 1.
 - 2026-06-22 21:00 KST ready: `exports/elura-brochure-2100-private-client-portfolio.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
