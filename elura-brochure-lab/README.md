@@ -26,6 +26,7 @@ Print behavior:
 - `Print Selected` prints the active brochure concept.
 - `Print All` prints the research memo, schedule, and every concept as a multi-page PDF.
 - CSS includes A4 `@page` rules and page breaks for browser print output.
+- Release cards now use KST timestamp data and client-side status calculation, so each ready brochure becomes `Released` automatically at its scheduled checkpoint.
 
 Release log:
 
@@ -63,3 +64,6 @@ Release log:
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 6 pages, approximately 1.5 MB.
   - Status should change from `Ready` to `Released` at the 21:00 KST checkpoint after live verification.
+- 2026-06-22 09:40 KST: added automatic KST release-state calculation.
+  - Verified with Playwright time injection for 09:40, 11:01, and 21:01 KST.
+  - Verified selected print output with Playwright PDF generation and Poppler page rendering.
