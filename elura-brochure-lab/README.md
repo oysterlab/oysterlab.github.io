@@ -9,6 +9,7 @@ Core thesis:
 - ELURA should not present room art as generic decor advice.
 - The brochure should read the room's existing signals first, then translate them into art role, palette, placement, and story.
 - The strongest direction for the current demographic is lived-in luxury: real apartments, warm object density, editorial restraint, and one clear art decision per space.
+- 2026-06-22 09:35 KST research update: added a demographic fit matrix that ranks the strongest brochure languages as lived-in couture, palette dossier, private diagnostic, object narrative, and Neo-Deco as a higher-risk accent direction.
 
 Included experiments:
 

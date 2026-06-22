@@ -293,6 +293,64 @@ p {
   border-top: 4px solid var(--green);
 }
 
+.fit-matrix {
+  display: grid;
+  grid-template-columns: minmax(280px, .74fr) 1.26fr;
+  margin-top: 34px;
+  border: 1px solid var(--ink);
+  background: #15120f;
+}
+
+.fit-copy {
+  padding: 24px;
+  border-right: 1px solid rgba(255, 255, 255, .18);
+}
+
+.fit-copy span,
+.fit-table span {
+  display: block;
+  margin-bottom: 8px;
+  color: #dcc8a0;
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.fit-copy h3 {
+  margin-bottom: 14px;
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.08;
+}
+
+.fit-copy p,
+.fit-table p {
+  color: #e6ddd1;
+}
+
+.fit-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.fit-table article {
+  min-height: 184px;
+  padding: 20px;
+  border-left: 1px solid rgba(255, 255, 255, .12);
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.fit-table h3 {
+  color: var(--paper);
+}
+
+.fit-table p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
 .sources {
   display: flex;
   gap: 8px;
@@ -1031,6 +1089,7 @@ figcaption {
   .diagnostic-layout,
   .object-hero,
   .cambon-cover,
+  .fit-matrix,
   .magazine-masthead,
   .portfolio-head,
   .portfolio-body {
@@ -1050,6 +1109,7 @@ figcaption {
   }
 
   .research-grid,
+  .fit-table,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1085,6 +1145,11 @@ figcaption {
   .magazine-layout img {
     height: auto;
   }
+
+  .fit-copy {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+  }
 }
 
 @media (max-width: 680px) {
@@ -1114,6 +1179,7 @@ figcaption {
   .cover-grid,
   .metric-panel,
   .research-grid,
+  .fit-table,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1133,6 +1199,7 @@ figcaption {
   .palette-grid,
   .deco-grid,
   .magazine-layout,
+  .fit-matrix,
   .release-head {
     grid-template-columns: 1fr;
   }
@@ -1207,6 +1274,7 @@ figcaption {
   .diagnostic-layout,
   .object-hero,
   .cambon-cover,
+  .fit-matrix,
   .magazine-masthead,
   .release-head,
   .portfolio-head,
@@ -1221,6 +1289,7 @@ figcaption {
 
   .cover-grid,
   .research-grid,
+  .fit-table,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1244,6 +1313,7 @@ figcaption {
   }
 
   .research-grid,
+  .fit-table,
   .schedule-grid,
   .object-index,
   .image-strip,
@@ -1254,6 +1324,34 @@ figcaption {
 
   .schedule-grid article {
     min-height: auto;
+  }
+
+  .fit-matrix {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .fit-table article {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .fit-copy {
+    padding: 16px;
+  }
+
+  .fit-copy h3 {
+    font-size: 20pt;
+  }
+
+  .fit-table h3 {
+    font-size: 11pt;
+  }
+
+  .fit-copy p,
+  .fit-table p {
+    font-size: 9pt;
+    line-height: 1.42;
   }
 
   .chapter-list {
