@@ -409,6 +409,59 @@
       </div>
     </section>
 
+    <section class="schema print-page">
+      <div class="section-label">Signal To Story Generation Schema</div>
+      <div class="schema-head">
+        <div>
+          <h2>브로슈어 생성은 취향 라벨링이 아니라 증거 번역이다</h2>
+          <p>사용자가 방 사진을 올리면 ELURA는 “모던”, “미니멀”, “코지” 같은 라벨을 먼저 붙이지 않는다. 사진 속 반복 증거를 읽고, 그 증거가 어떤 아트 역할과 스토리 문장으로 바뀌어야 하는지 순서대로 변환한다.</p>
+        </div>
+        <div class="schema-card">
+          <span>Generation Rule</span>
+          <strong>signal first, style second, purchase proof last</strong>
+          <p>방의 증거가 없으면 문장도 만들지 않는다. 모든 브로슈어 문장은 사진 안의 색, 선, 물건, 빛, 행동 중 하나에 연결되어야 한다.</p>
+        </div>
+      </div>
+      <div class="schema-map">
+        <article>
+          <span>Field 01</span>
+          <h3>Visible Signals</h3>
+          <p>색면, 프레임 선, 조도, 재료, 반복 물건, 시선이 멈추는 지점을 추출한다.</p>
+          <strong>example: dark frame, towel, warm wood, mirror edge</strong>
+        </article>
+        <article>
+          <span>Field 02</span>
+          <h3>Room Role</h3>
+          <p>그 벽이 쉬는 곳인지, 들어오는 곳인지, 앉는 곳인지, 정리되는 곳인지 먼저 정한다.</p>
+          <strong>example: daily pause, entry cue, bedside anchor</strong>
+        </article>
+        <article>
+          <span>Field 03</span>
+          <h3>Art Function</h3>
+          <p>아트가 맡을 일을 하나만 지정한다. 정지점, 균형추, 온도 조절, 시선 고정 중 하나로 좁힌다.</p>
+          <strong>example: make the pause visible</strong>
+        </article>
+        <article>
+          <span>Field 04</span>
+          <h3>Palette Logic</h3>
+          <p>Dominant, Counter Tone, Quiet Field, Anchor로 색을 분리해 PDF에서 바로 판단 가능하게 한다.</p>
+          <strong>example: warm wood anchor with cool blue field</strong>
+        </article>
+        <article>
+          <span>Field 05</span>
+          <h3>Private Code Name</h3>
+          <p>사용자의 방에서 반복되는 단서를 하우스 코드처럼 이름 붙여 브로슈어의 챕터 제목으로 만든다.</p>
+          <strong>example: The Mirror Edge, The Warm Object</strong>
+        </article>
+        <article>
+          <span>Field 06</span>
+          <h3>Delivery Proof</h3>
+          <p>마지막에는 감성 문장이 아니라 납품 판단을 준다. 한 벽 역할, 두 아트 루트, 하나의 printable PDF로 닫는다.</p>
+          <strong>example: one wall role, two art routes</strong>
+        </article>
+      </div>
+    </section>
+
     <section class="variant is-active" id="v0900" data-title="Atelier Diagnostic">
       <article class="brochure diagnostic print-page">
         <div class="brochure-head">
