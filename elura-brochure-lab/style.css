@@ -593,6 +593,59 @@ figcaption {
   font-size: 20px;
 }
 
+.object-thesis {
+  max-width: 640px;
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.object-thesis strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.object-thesis p {
+  margin: 12px 0 0;
+  font-size: 15px;
+}
+
+.object-materials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.object-materials article {
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.object-materials span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.object-materials h3 {
+  min-height: 48px;
+}
+
+.object-materials p {
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .object-index {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -873,6 +926,7 @@ figcaption {
   .release-grid,
   .palette-dossier,
   .object-index,
+  .object-materials,
   .image-strip,
   .chapter-list,
   .decision-strip,
@@ -931,6 +985,7 @@ figcaption {
   .release-grid,
   .palette-dossier,
   .object-index,
+  .object-materials,
   .image-strip,
   .chapter-list,
   .decision-strip,
@@ -1032,6 +1087,7 @@ figcaption {
   .release-grid,
   .palette-dossier,
   .object-index,
+  .object-materials,
   .image-strip,
   .chapter-list,
   .decision-strip,

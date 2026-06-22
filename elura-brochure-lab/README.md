@@ -37,3 +37,8 @@ Release log:
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 6 pages, approximately 2.6 MB.
   - Status should change from `Ready` to `Released` at the 11:00 KST checkpoint after live verification.
+- 2026-06-22 13:00 KST ready: `exports/elura-brochure-1300-objets-nomades-room.pdf`
+  - Verified with Playwright image load check: 0 broken images.
+  - Rendered locally with Poppler for visual PDF inspection.
+  - PDF: A4, 7 pages, approximately 3.4 MB.
+  - Status should change from `Ready` to `Released` at the 13:00 KST checkpoint after live verification.
