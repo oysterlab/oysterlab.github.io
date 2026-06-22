@@ -817,6 +817,81 @@ p {
   line-height: 1.18;
 }
 
+.copy-system {
+  background: #f8f6f0;
+}
+
+.copy-head {
+  display: grid;
+  grid-template-columns: 1fr minmax(320px, 470px);
+  gap: 28px;
+  align-items: end;
+}
+
+.copy-head p {
+  max-width: 790px;
+  font-size: 18px;
+}
+
+.copy-rule {
+  padding: 24px;
+  border: 1px solid var(--ink);
+  background: #15120f;
+}
+
+.copy-rule span,
+.copy-grid span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.copy-rule span {
+  color: #dcc8a0;
+}
+
+.copy-rule strong {
+  display: block;
+  color: var(--paper);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 29px;
+  font-weight: 500;
+  line-height: 1.12;
+}
+
+.copy-rule p {
+  margin: 12px 0 0;
+  color: #e6ddd1;
+  font-size: 15px;
+}
+
+.copy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.copy-grid article {
+  min-height: 205px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.copy-grid article:nth-child(4),
+.copy-grid article:nth-child(5) {
+  border-top: 5px solid var(--gold);
+}
+
+.copy-grid p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
 .client-sample {
   background: #f8f6f0;
 }
@@ -1533,6 +1608,7 @@ figcaption {
   .verdict-head,
   .qa-head,
   .schema-head,
+  .copy-head,
   .sample-head,
   .magazine-masthead,
   .portfolio-head,
@@ -1559,6 +1635,7 @@ figcaption {
   .verdict-grid,
   .qa-grid,
   .schema-map,
+  .copy-grid,
   .sample-decision,
   .route-grid,
   .schedule-grid,
@@ -1636,6 +1713,7 @@ figcaption {
   .verdict-grid,
   .qa-grid,
   .schema-map,
+  .copy-grid,
   .sample-decision,
   .route-grid,
   .schedule-grid,
@@ -1662,6 +1740,7 @@ figcaption {
   .verdict-head,
   .qa-head,
   .schema-head,
+  .copy-head,
   .sample-head,
   .release-head {
     grid-template-columns: 1fr;
@@ -1742,6 +1821,7 @@ figcaption {
   .verdict-head,
   .qa-head,
   .schema-head,
+  .copy-head,
   .sample-head,
   .magazine-masthead,
   .release-head,
@@ -1763,6 +1843,7 @@ figcaption {
   .verdict-grid,
   .qa-grid,
   .schema-map,
+  .copy-grid,
   .sample-decision,
   .route-grid,
   .schedule-grid,
@@ -1794,6 +1875,7 @@ figcaption {
   .verdict-grid,
   .qa-grid,
   .schema-map,
+  .copy-grid,
   .sample-decision,
   .route-grid,
   .schedule-grid,
@@ -1971,6 +2053,47 @@ figcaption {
 
   .schema-map strong {
     font-size: 8.5pt;
+  }
+
+  .copy-head {
+    gap: 10px;
+  }
+
+  .copy-head p {
+    font-size: 10pt;
+    line-height: 1.45;
+  }
+
+  .copy-rule {
+    padding: 12px;
+  }
+
+  .copy-rule strong {
+    font-size: 14pt;
+  }
+
+  .copy-rule p {
+    font-size: 8.5pt;
+  }
+
+  .copy-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    margin-top: 10px;
+  }
+
+  .copy-grid article {
+    min-height: auto;
+    padding: 10px;
+  }
+
+  .copy-grid h3 {
+    font-size: 10.5pt;
+  }
+
+  .copy-grid p {
+    font-size: 8pt;
+    line-height: 1.35;
   }
 
   .sample-head {
