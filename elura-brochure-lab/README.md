@@ -19,6 +19,7 @@ Core thesis:
 - 2026-06-22 10:20 KST client sample update: added a filled client brief sample for a mirror-edge bathroom upload, including room signal, wall role, two art routes, and revision rule.
 - 2026-06-22 11:05 KST 13:00 pre-release refinement: strengthened the Objets Nomades Room brochure with placement proof and explicit art-role notes for each object.
 - 2026-06-22 11:14 KST 15:00 pre-release refinement: added code-proof captions to the Rue Cambon Chapters brochure so the image spread explains why each room signal qualifies as a private house code.
+- 2026-06-22 11:20 KST 17:00 pre-release refinement: tightened the Neo-Deco finish rule so the certificate stays dramatic without turning the room into theme decor.
 
 Included experiments:
 
@@ -70,6 +71,7 @@ Release log:
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.3 MB.
+  - 2026-06-22 11:20 KST pre-release refinement: tightened the finish rule around one dramatic gesture, matte print, dark frame, and a single metallic cue.
   - Status should change from `Ready` to `Released` at the 17:00 KST checkpoint after live verification.
 - 2026-06-22 19:00 KST ready: `exports/elura-brochure-1900-lived-in-magazine-feature.pdf`
   - Verified with Playwright image load check: 0 broken images.
