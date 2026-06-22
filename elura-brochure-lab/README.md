@@ -10,6 +10,7 @@ Core thesis:
 - The brochure should read the room's existing signals first, then translate them into art role, palette, placement, and story.
 - The strongest direction for the current demographic is lived-in luxury: real apartments, warm object density, editorial restraint, and one clear art decision per space.
 - 2026-06-22 09:35 KST research update: added a demographic fit matrix that ranks the strongest brochure languages as lived-in couture, palette dossier, private diagnostic, object narrative, and Neo-Deco as a higher-risk accent direction.
+- 2026-06-22 09:50 KST product bridge update: added an upload-to-brochure blueprint that defines the minimum photo inputs, room-signal reading, art role assignment, private-code storytelling, and printable PDF delivery promise.
 
 Included experiments:
 
@@ -32,10 +33,10 @@ Print behavior:
 Release log:
 
 - 2026-06-22 09:45 KST master export: `exports/elura-brochure-master-research-release.pdf`
-  - Includes cover, research memo, demographic fit matrix, schedule, release log, and all seven brochure experiments.
+  - Includes cover, research memo, demographic fit matrix, upload-to-brochure blueprint, schedule, release log, and all seven brochure experiments.
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 21 pages, approximately 9.1 MB.
+  - PDF: A4, 22 pages, approximately 9.3 MB.
 - 2026-06-22 09:00 KST: `exports/elura-brochure-0900-atelier-diagnostic.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered with Poppler for visual PDF inspection.

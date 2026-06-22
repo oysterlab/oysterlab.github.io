@@ -240,6 +240,7 @@ p {
 }
 
 .research,
+.intake,
 .schedule {
   background: var(--paper);
 }
@@ -377,6 +378,95 @@ p {
   color: var(--ink);
   font-size: 13px;
   text-decoration: none;
+}
+
+.intake {
+  background: #f7f2ea;
+}
+
+.intake-head {
+  display: grid;
+  grid-template-columns: .82fr 1fr;
+  gap: 30px;
+  align-items: end;
+}
+
+.intake-head p {
+  max-width: 720px;
+  font-size: 19px;
+}
+
+.intake-head figure {
+  margin: 0;
+}
+
+.intake-head img {
+  max-height: 560px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.flow-grid article {
+  min-height: 230px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.flow-grid article:nth-child(3) {
+  background: #15120f;
+}
+
+.flow-grid article:nth-child(3) h3,
+.flow-grid article:nth-child(3) p {
+  color: var(--paper);
+}
+
+.flow-grid span,
+.contract-strip span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.flow-grid article:nth-child(3) span {
+  color: #dcc8a0;
+}
+
+.flow-grid p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.contract-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.contract-strip article {
+  padding: 18px;
+  border: 1px solid var(--ink);
+  background: #fdfaf3;
+}
+
+.contract-strip strong {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.12;
 }
 
 .schedule-grid {
@@ -1108,6 +1198,7 @@ figcaption {
   .object-hero,
   .cambon-cover,
   .fit-matrix,
+  .intake-head,
   .magazine-masthead,
   .portfolio-head,
   .portfolio-body {
@@ -1128,6 +1219,8 @@ figcaption {
 
   .research-grid,
   .fit-table,
+  .flow-grid,
+  .contract-strip,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1198,6 +1291,8 @@ figcaption {
   .metric-panel,
   .research-grid,
   .fit-table,
+  .flow-grid,
+  .contract-strip,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1218,6 +1313,7 @@ figcaption {
   .deco-grid,
   .magazine-layout,
   .fit-matrix,
+  .intake-head,
   .release-head {
     grid-template-columns: 1fr;
   }
@@ -1293,6 +1389,7 @@ figcaption {
   .object-hero,
   .cambon-cover,
   .fit-matrix,
+  .intake-head,
   .magazine-masthead,
   .release-head,
   .portfolio-head,
@@ -1308,6 +1405,8 @@ figcaption {
   .cover-grid,
   .research-grid,
   .fit-table,
+  .flow-grid,
+  .contract-strip,
   .schedule-grid,
   .release-grid,
   .palette-dossier,
@@ -1332,6 +1431,8 @@ figcaption {
 
   .research-grid,
   .fit-table,
+  .flow-grid,
+  .contract-strip,
   .schedule-grid,
   .object-index,
   .image-strip,
@@ -1342,6 +1443,43 @@ figcaption {
 
   .schedule-grid article {
     min-height: auto;
+  }
+
+  .intake-head img {
+    max-height: 105mm;
+  }
+
+  .flow-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .flow-grid article {
+    min-height: auto;
+    padding: 8px;
+  }
+
+  .flow-grid h3 {
+    font-size: 9pt;
+  }
+
+  .flow-grid p {
+    font-size: 7.5pt;
+    line-height: 1.35;
+  }
+
+  .contract-strip {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+  }
+
+  .contract-strip article {
+    padding: 9px;
+  }
+
+  .contract-strip strong {
+    font-size: 10.5pt;
   }
 
   .fit-matrix {
