@@ -63,12 +63,12 @@ Release log:
   - PDF: A4, 3 pages, approximately 2.5 MB.
   - 2026-06-22 11:05 KST pre-release refinement: added placement proof and object-level art role notes.
   - 2026-06-22 13:00 KST live checkpoint: automatic release state verified with `Released` count 3 and `Ready` count 4.
-- 2026-06-22 15:00 KST ready: `exports/elura-brochure-1500-rue-cambon-chapters.pdf`
+- 2026-06-22 15:00 KST released: `exports/elura-brochure-1500-rue-cambon-chapters.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.3 MB.
   - 2026-06-22 11:14 KST pre-release refinement: added two proof captions to connect the image spread back to private house-code logic.
-  - Status should change from `Ready` to `Released` at the 15:00 KST checkpoint after live verification.
+  - 2026-06-22 15:00 KST live checkpoint: automatic release state verified with `Released` count 4 and `Ready` count 3.
 - 2026-06-22 17:00 KST ready: `exports/elura-brochure-1700-neo-deco-certificate.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
