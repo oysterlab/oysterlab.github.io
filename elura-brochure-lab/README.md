@@ -12,6 +12,7 @@ Core thesis:
 - 2026-06-22 09:35 KST research update: added a demographic fit matrix that ranks the strongest brochure languages as lived-in couture, palette dossier, private diagnostic, object narrative, and Neo-Deco as a higher-risk accent direction.
 - 2026-06-22 09:50 KST product bridge update: added an upload-to-brochure blueprint that defines the minimum photo inputs, room-signal reading, art role assignment, private-code storytelling, and printable PDF delivery promise.
 - 2026-06-22 09:58 KST decision update: added an aesthetic verdict board that recommends 19:00 Lived-In Magazine plus 21:00 Private Client Portfolio as the primary route, with 11:00 as the save driver and 09:00 as the trust builder.
+- 2026-06-22 10:05 KST QA update: added a production evidence board summarizing the visual direction, PDF fidelity, release cadence, client promise, link audit, and remaining checkpoint gate.
 
 Included experiments:
 
@@ -34,10 +35,10 @@ Print behavior:
 Release log:
 
 - 2026-06-22 09:45 KST master export: `exports/elura-brochure-master-research-release.pdf`
-  - Includes cover, research memo, demographic fit matrix, upload-to-brochure blueprint, aesthetic verdict board, schedule, release log, and all seven brochure experiments.
+  - Includes cover, research memo, demographic fit matrix, upload-to-brochure blueprint, aesthetic verdict board, schedule, release log, production QA board, and all seven brochure experiments.
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
-  - PDF: A4, 23 pages, approximately 9.5 MB.
+  - PDF: A4, 24 pages, approximately 9.6 MB.
 - 2026-06-22 09:00 KST: `exports/elura-brochure-0900-atelier-diagnostic.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered with Poppler for visual PDF inspection.

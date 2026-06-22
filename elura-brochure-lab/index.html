@@ -362,6 +362,53 @@
       </div>
     </section>
 
+    <section class="qa-board print-page">
+      <div class="section-label">Production QA / Evidence Board</div>
+      <div class="qa-head">
+        <div>
+          <h2>고급 브로슈어는 감성만큼 검증 방식도 보여야 한다</h2>
+          <p>이번 실험의 산출물은 단순 웹 페이지가 아니라, 사용자가 공간 사진을 올린 뒤 받을 수 있는 PDF형 납품물의 시제품이다. 그래서 디자인 감성, 인쇄 품질, 링크 안정성, 자동 릴리스 상태를 각각 분리해 검증한다.</p>
+        </div>
+        <div class="qa-proof">
+          <span>Current Gate</span>
+          <strong>live page, seven PDFs, master PDF, print CSS, release automation</strong>
+          <p>각 항목은 Playwright, curl, pdfinfo, Poppler 렌더링으로 확인한다.</p>
+        </div>
+      </div>
+      <div class="qa-grid">
+        <article>
+          <span>Visual Direction</span>
+          <h3>luxury without showroom sterility</h3>
+          <p>리서치 결론은 lived-in couture다. 실제 방의 생활 밀도를 지우지 않고 색, 물성, 조도, 오브제를 편집한다.</p>
+        </article>
+        <article>
+          <span>PDF Fidelity</span>
+          <h3>A4 pages render through Poppler</h3>
+          <p>마스터 PDF와 개별 PDF는 A4로 출력되며, 페이지 잘림과 이미지 누락을 렌더링 이미지로 확인한다.</p>
+        </article>
+        <article>
+          <span>Release Cadence</span>
+          <h3>09:00 to 21:00 KST, every two hours</h3>
+          <p>릴리스 카드는 KST timestamp로 자동 계산된다. 체크포인트 이후에는 Ready가 Released로 바뀐다.</p>
+        </article>
+        <article>
+          <span>Client Promise</span>
+          <h3>one room, one wall role, two art routes</h3>
+          <p>고객에게 무한 선택지를 주지 않고, 공간 사진에서 읽은 신호를 구매 판단 가능한 브로슈어로 압축한다.</p>
+        </article>
+        <article>
+          <span>Link Audit</span>
+          <h3>web, master PDF, individual PDFs</h3>
+          <p>라이브 HTML과 PDF URL은 배포 후 200 응답과 파일 크기로 확인한다.</p>
+        </article>
+        <article>
+          <span>Remaining Gate</span>
+          <h3>checkpoint verification until 21:00</h3>
+          <p>11:00, 13:00, 15:00, 17:00, 19:00, 21:00에 자동 상태와 PDF 접근성을 다시 확인한다.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="variant is-active" id="v0900" data-title="Atelier Diagnostic">
       <article class="brochure diagnostic print-page">
         <div class="brochure-head">
