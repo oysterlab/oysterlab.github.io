@@ -21,6 +21,7 @@ Core thesis:
 - 2026-06-22 11:14 KST 15:00 pre-release refinement: added code-proof captions to the Rue Cambon Chapters brochure so the image spread explains why each room signal qualifies as a private house code.
 - 2026-06-22 11:20 KST 17:00 pre-release refinement: tightened the Neo-Deco finish rule so the certificate stays dramatic without turning the room into theme decor.
 - 2026-06-22 11:38 KST 19:00 pre-release refinement: added a saveable crop rule to make the lived-in magazine route more explicit about which real room object should remain visible.
+- 2026-06-22 11:49 KST 21:00 pre-release refinement: added an approval gate to the Private Client Portfolio so the final brochure closes on role approval, route choice, and PDF proof.
 
 Included experiments:
 
@@ -84,6 +85,7 @@ Release log:
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 0.6 MB.
+  - 2026-06-22 11:49 KST pre-release refinement: added an approval gate for role approval, route choice, and PDF proof export.
   - Status should change from `Ready` to `Released` at the 21:00 KST checkpoint after live verification.
 - 2026-06-22 09:40 KST: added automatic KST release-state calculation.
   - Verified with Playwright time injection for 09:40, 11:01, and 21:01 KST.
