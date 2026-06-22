@@ -57,12 +57,12 @@ Release log:
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 2 pages, approximately 1.7 MB.
   - 2026-06-22 11:00 KST live checkpoint: automatic release state verified with `Released` count 2 and `Ready` count 5.
-- 2026-06-22 13:00 KST ready: `exports/elura-brochure-1300-objets-nomades-room.pdf`
+- 2026-06-22 13:00 KST released: `exports/elura-brochure-1300-objets-nomades-room.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
   - PDF: A4, 3 pages, approximately 2.5 MB.
   - 2026-06-22 11:05 KST pre-release refinement: added placement proof and object-level art role notes.
-  - Status should change from `Ready` to `Released` at the 13:00 KST checkpoint after live verification.
+  - 2026-06-22 13:00 KST live checkpoint: automatic release state verified with `Released` count 3 and `Ready` count 4.
 - 2026-06-22 15:00 KST ready: `exports/elura-brochure-1500-rue-cambon-chapters.pdf`
   - Verified with Playwright image load check: 0 broken images.
   - Rendered locally with Poppler for visual PDF inspection.
