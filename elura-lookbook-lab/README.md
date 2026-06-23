@@ -55,7 +55,7 @@ Release log:
   - Verified with Playwright desktop and mobile image checks: 0 broken images.
   - Verified mobile horizontal overflow: none at 390 px viewport.
   - Generated printable PDF: `elura-lookbook-1100-nomadic.pdf`, A4, 4 pages, approximately 1.6 MB.
-- 2026-06-23 12:00 KST ready: Maison Table Lookbook, `#h1200`.
+- 2026-06-23 12:00 KST released: Maison Table Lookbook, `#h1200`.
   - Adds a real-home art de vivre page around a work-dining table, mug, laptop, lamp, outlet, and wall art.
   - Includes Dior Maison and Dior Salone del Mobile reference URLs inside the section.
   - Verified with Playwright time-injection release gate for 12:01 KST.
