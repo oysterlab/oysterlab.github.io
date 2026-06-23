@@ -627,6 +627,76 @@ figcaption {
   object-fit: cover;
 }
 
+.maison-table {
+  background: #f8f1e8;
+}
+
+.maison-table-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .7fr) minmax(560px, 1.3fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.maison-table-head > div {
+  align-self: center;
+}
+
+.maison-table-head p {
+  font-size: 18px;
+}
+
+.maison-table-head img {
+  height: 690px;
+  object-fit: cover;
+}
+
+.maison-table-head figcaption {
+  margin-top: 10px;
+}
+
+.maison-table-rules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.maison-table-rules article {
+  border-left: 1px solid var(--line);
+  padding-left: 18px;
+}
+
+.maison-table-rules span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.maison-table-rules h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.maison-table-spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.maison-table-spread img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.maison-table-spread figcaption {
+  margin-top: 10px;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -669,7 +739,8 @@ figcaption {
   .essay-grid,
   .zine,
   .cambon-head,
-  .nomadic-cover {
+  .nomadic-cover,
+  .maison-table-head {
     grid-template-columns: 1fr;
   }
 
@@ -684,7 +755,9 @@ figcaption {
   .cambon-grid,
   .cambon-spread,
   .nomadic-index,
-  .nomadic-spread {
+  .nomadic-spread,
+  .maison-table-rules,
+  .maison-table-spread {
     grid-template-columns: 1fr;
   }
 
@@ -700,7 +773,8 @@ figcaption {
   .room-card img,
   .zine-strip img,
   .cambon-head img,
-  .nomadic-cover img {
+  .nomadic-cover img,
+  .maison-table-head img {
     height: auto;
     min-height: 0;
   }

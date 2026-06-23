@@ -2,15 +2,16 @@
 
 Created: 2026-06-23 KST
 
-Purpose: turn the previous research session into actual luxury lookbook, spatial essay, and zine web pages.
+Purpose: turn the previous research session into actual luxury lookbook, spatial essay, and zine web pages for realistic user homes.
 
 Working rule:
 
 - Each hour should add a real page, not only a strategy note.
 - Reference Dior, Chanel, and Louis Vuitton as editorial grammar only.
 - Do not use brand logos, monograms, proprietary layouts, or brand copy.
-- Use generated room/art imagery when a house needs multiple coherent spaces.
+- Use generated room/art imagery when a realistic apartment needs multiple coherent spaces.
 - Keep the ELURA promise centered on user-uploaded rooms, art role, placement story, and printable output.
+- The home should feel attainable for the current demographic: small rental apartment, modest furniture, visible daily objects, and a clear art-led upgrade.
 
 Reference grammar used for 09:00:
 
@@ -30,8 +31,9 @@ Reference URLs:
 Image generation:
 
 - Built-in `image_gen` mode.
-- Generated four coherent private-apartment images: living, dining, bedroom, entry/powder-room threshold.
+- Generated four coherent real-home apartment images: living room, work-dining corner, small bedroom, narrow entry.
 - Prompts avoided people, logos, monograms, readable text, and brand marks.
+- 2026-06-23 10:40 KST correction: replaced the earlier overly luxurious apartment mood with ordinary rental-home environments so the promise reads as "your home becomes luxury through art."
 - Final web assets were copied into `docs/lookbook-lab/assets/` as compressed JPGs.
 
 Release log:
@@ -47,9 +49,14 @@ Release log:
   - Verified with Playwright desktop and mobile image checks: 0 broken images.
   - Verified mobile horizontal overflow: none at 390 px viewport.
   - Generated printable PDF: `elura-lookbook-1000-cambon.pdf`, A4, 3 pages, approximately 1.3 MB.
-- 2026-06-23 11:00 KST ready: Nomadic Object Zine, `#h1100`.
-  - Adds a real object-zine page based on portable anchor, object companion, and travel-proof art placement.
-  - Generated three additional images: nomadic bench room, portable art detail, object index flat-lay.
+- 2026-06-23 11:00 KST released: Nomadic Object Zine, `#h1100`.
+  - Adds a real-home object-zine page based on changing focal point, daily companion objects, and placement proof.
+  - Uses realistic apartment images: living room, work-dining desk, narrow entry.
   - Verified with Playwright desktop and mobile image checks: 0 broken images.
   - Verified mobile horizontal overflow: none at 390 px viewport.
   - Generated printable PDF: `elura-lookbook-1100-nomadic.pdf`, A4, 4 pages, approximately 1.6 MB.
+- 2026-06-23 12:00 KST ready: Maison Table Lookbook, `#h1200`.
+  - Adds a real-home art de vivre page around a work-dining table, mug, laptop, lamp, outlet, and wall art.
+  - Includes Dior Maison and Dior Salone del Mobile reference URLs inside the section.
+  - Verified with Playwright time-injection release gate for 12:01 KST.
+  - Generated printable PDF: `elura-lookbook-1200-maison-table.pdf`, A4, 3 pages, approximately 1.5 MB.
