@@ -94,3 +94,8 @@ Release log:
   - Adds a real-home shelf archive around books, storage boxes, papers, a phone, charging cable, folded blanket, lamp, and wall art.
   - Includes Chanel Inside Chanel, Louis Vuitton Objets Nomades, and Dior Maison reference URLs inside the section.
   - Generated two additional realistic rental-shelf images with built-in `image_gen`.
+  - Generated printable PDF: `elura-lookbook-1900-shelf-archive.pdf`, A4, 2 pages, approximately 0.9 MB.
+- 2026-06-23 20:00 KST ready: Home Studio Essay, `#h2000`.
+  - Adds a real-home exercise corner essay around a yoga mat, dumbbells, foam roller, towel, water bottle, outlet, sofa edge, and wall art.
+  - Includes Dior Maison, Louis Vuitton Objets Nomades, and Chanel Inside Chanel reference URLs inside the section.
+  - Generated two additional realistic rental-home-studio images with built-in `image_gen`.
