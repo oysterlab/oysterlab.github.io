@@ -1223,6 +1223,81 @@ figcaption {
   object-fit: cover;
 }
 
+.portfolio-index {
+  background: #ebe2d6;
+}
+
+.portfolio-index-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .82fr) minmax(540px, 1.18fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.portfolio-index-head > div {
+  align-self: center;
+}
+
+.portfolio-index-head p {
+  font-size: 18px;
+}
+
+.portfolio-index-head img {
+  height: 640px;
+  object-fit: cover;
+}
+
+.portfolio-index-head figcaption,
+.portfolio-mosaic figcaption {
+  margin-top: 10px;
+}
+
+.portfolio-mosaic {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.portfolio-mosaic img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.portfolio-mosaic figcaption {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.portfolio-rules {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.portfolio-rules article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .7);
+  padding: 18px;
+}
+
+.portfolio-rules span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.portfolio-rules h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1274,7 +1349,8 @@ figcaption {
   .laundry-zine-head,
   .media-essay-head,
   .shelf-archive-head,
-  .studio-essay-head {
+  .studio-essay-head,
+  .portfolio-index-head {
     grid-template-columns: 1fr;
   }
 
@@ -1299,8 +1375,13 @@ figcaption {
   .laundry-zine-grid,
   .media-essay-grid,
   .shelf-archive-grid,
-  .studio-essay-grid {
+  .studio-essay-grid,
+  .portfolio-rules {
     grid-template-columns: 1fr;
+  }
+
+  .portfolio-mosaic {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .room-card,
@@ -1324,7 +1405,8 @@ figcaption {
   .laundry-zine-head img,
   .media-essay-head img,
   .shelf-archive-head img,
-  .studio-essay-head img {
+  .studio-essay-head img,
+  .portfolio-index-head img {
     height: auto;
     min-height: 0;
   }
@@ -1706,6 +1788,65 @@ figcaption {
   }
 
   #h2000 .section-sources {
+    margin-top: 8mm;
+  }
+
+  #h2100.portfolio-index {
+    padding: 12mm 14mm;
+  }
+
+  #h2100 .portfolio-index-head {
+    grid-template-columns: minmax(72mm, .78fr) minmax(90mm, 1.22fr);
+    gap: 8mm;
+    align-items: start;
+  }
+
+  #h2100 .portfolio-index-head p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #h2100 .portfolio-index-head img {
+    height: 100mm;
+  }
+
+  #h2100 .portfolio-mosaic {
+    break-inside: avoid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 2.4mm;
+    margin-top: 6mm;
+    page-break-inside: avoid;
+  }
+
+  #h2100 .portfolio-mosaic figcaption {
+    font-size: 8px;
+    margin-top: 2mm;
+  }
+
+  #h2100 .portfolio-rules {
+    break-before: page;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  #h2100 .portfolio-rules article {
+    padding: 4mm;
+  }
+
+  #h2100 .portfolio-rules h3 {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-top: 7mm;
+  }
+
+  #h2100 .portfolio-rules p {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  #h2100 .section-sources {
     margin-top: 8mm;
   }
 }
