@@ -1028,6 +1028,71 @@ figcaption {
   object-fit: cover;
 }
 
+.media-essay {
+  background: #ebe4d8;
+}
+
+.media-essay-head {
+  display: grid;
+  grid-template-columns: minmax(540px, 1.16fr) minmax(360px, .84fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.media-essay-head img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.media-essay-head figcaption,
+.media-detail figcaption {
+  margin-top: 10px;
+}
+
+.media-essay-head > div {
+  align-self: center;
+}
+
+.media-essay-head p {
+  font-size: 18px;
+}
+
+.media-essay-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.media-essay-grid article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .7);
+  padding: 18px;
+}
+
+.media-essay-grid span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.media-essay-grid h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.media-detail {
+  margin-top: 18px;
+}
+
+.media-detail img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1076,7 +1141,8 @@ figcaption {
   .kitchen-zine-head,
   .bathroom-essay-head,
   .entryway-zine-head,
-  .laundry-zine-head {
+  .laundry-zine-head,
+  .media-essay-head {
     grid-template-columns: 1fr;
   }
 
@@ -1098,7 +1164,8 @@ figcaption {
   .kitchen-zine-grid,
   .bathroom-essay-strip,
   .entryway-zine-grid,
-  .laundry-zine-grid {
+  .laundry-zine-grid,
+  .media-essay-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1120,7 +1187,8 @@ figcaption {
   .kitchen-zine-head img,
   .bathroom-essay-head img,
   .entryway-zine-head img,
-  .laundry-zine-head img {
+  .laundry-zine-head img,
+  .media-essay-head img {
     height: auto;
     min-height: 0;
   }
@@ -1328,6 +1396,64 @@ figcaption {
   }
 
   #h1700 .section-sources {
+    margin-top: 8mm;
+  }
+
+  #h1800.media-essay {
+    padding: 12mm 14mm;
+  }
+
+  #h1800 .media-essay-head {
+    grid-template-columns: minmax(92mm, 1.18fr) minmax(70mm, .82fr);
+    gap: 8mm;
+    align-items: start;
+  }
+
+  #h1800 .media-essay-head img {
+    height: 108mm;
+  }
+
+  #h1800 .media-essay-head p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #h1800 .media-essay-grid {
+    break-inside: avoid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    margin-top: 7mm;
+    page-break-inside: avoid;
+  }
+
+  #h1800 .media-essay-grid article {
+    break-inside: avoid;
+    padding: 4mm;
+    page-break-inside: avoid;
+  }
+
+  #h1800 .media-essay-grid h3 {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-top: 7mm;
+  }
+
+  #h1800 .media-essay-grid p {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  #h1800 .media-detail {
+    break-before: page;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  #h1800 .media-detail img {
+    max-height: 160mm;
+  }
+
+  #h1800 .section-sources {
     margin-top: 8mm;
   }
 }

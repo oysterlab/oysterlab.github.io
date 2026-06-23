@@ -84,3 +84,8 @@ Release log:
   - Adds a real-home laundry balcony zine around a washer, drying rack, towels, detergent, laundry basket, outlet, window, and wall art.
   - Includes Dior Maison, Dior Salone del Mobile, and Louis Vuitton Objets Nomades reference URLs inside the section.
   - Generated two additional realistic rental-laundry images with built-in `image_gen`.
+  - Generated printable PDF: `elura-lookbook-1700-laundry-light.pdf`, A4, 2 pages, approximately 1.0 MB.
+- 2026-06-23 18:00 KST ready: TV Gallery Essay, `#h1800`.
+  - Adds a real-home media wall essay around a TV, router, remote controls, cable loop, lamp, plant, storage basket, and wall art.
+  - Includes Louis Vuitton Fashion Eye, Chanel Inside Chanel, and Dior Maison reference URLs inside the section.
+  - Generated two additional realistic rental-media-wall images with built-in `image_gen`.
