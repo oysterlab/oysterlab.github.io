@@ -963,6 +963,71 @@ figcaption {
   margin-top: 10px;
 }
 
+.laundry-zine {
+  background: #eee8dc;
+}
+
+.laundry-zine-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .78fr) minmax(540px, 1.22fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.laundry-zine-head > div {
+  align-self: center;
+}
+
+.laundry-zine-head p {
+  font-size: 18px;
+}
+
+.laundry-zine-head img {
+  height: 690px;
+  object-fit: cover;
+}
+
+.laundry-zine-head figcaption,
+.laundry-detail figcaption {
+  margin-top: 10px;
+}
+
+.laundry-zine-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.laundry-zine-grid article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .7);
+  padding: 18px;
+}
+
+.laundry-zine-grid span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.laundry-zine-grid h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.laundry-detail {
+  margin-top: 18px;
+}
+
+.laundry-detail img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1010,7 +1075,8 @@ figcaption {
   .bedroom-story-head,
   .kitchen-zine-head,
   .bathroom-essay-head,
-  .entryway-zine-head {
+  .entryway-zine-head,
+  .laundry-zine-head {
     grid-template-columns: 1fr;
   }
 
@@ -1031,7 +1097,8 @@ figcaption {
   .bedroom-story-grid,
   .kitchen-zine-grid,
   .bathroom-essay-strip,
-  .entryway-zine-grid {
+  .entryway-zine-grid,
+  .laundry-zine-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1052,7 +1119,8 @@ figcaption {
   .bedroom-story-head img,
   .kitchen-zine-head img,
   .bathroom-essay-head img,
-  .entryway-zine-head img {
+  .entryway-zine-head img,
+  .laundry-zine-head img {
     height: auto;
     min-height: 0;
   }
@@ -1202,6 +1270,64 @@ figcaption {
   }
 
   #h1600 .section-sources {
+    margin-top: 8mm;
+  }
+
+  #h1700.laundry-zine {
+    padding: 12mm 14mm;
+  }
+
+  #h1700 .laundry-zine-head {
+    grid-template-columns: minmax(70mm, .78fr) minmax(92mm, 1.22fr);
+    gap: 8mm;
+    align-items: start;
+  }
+
+  #h1700 .laundry-zine-head p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #h1700 .laundry-zine-head img {
+    height: 108mm;
+  }
+
+  #h1700 .laundry-zine-grid {
+    break-inside: avoid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    margin-top: 7mm;
+    page-break-inside: avoid;
+  }
+
+  #h1700 .laundry-zine-grid article {
+    break-inside: avoid;
+    padding: 4mm;
+    page-break-inside: avoid;
+  }
+
+  #h1700 .laundry-zine-grid h3 {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-top: 7mm;
+  }
+
+  #h1700 .laundry-zine-grid p {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  #h1700 .laundry-detail {
+    break-before: page;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  #h1700 .laundry-detail img {
+    max-height: 160mm;
+  }
+
+  #h1700 .section-sources {
     margin-top: 8mm;
   }
 }

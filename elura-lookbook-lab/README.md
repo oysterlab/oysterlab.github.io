@@ -79,3 +79,8 @@ Release log:
   - Adds a real-home entryway zine around a door, intercom, shoe rack, sneakers, umbrella, tote bag, delivery box, keys, and wall art.
   - Includes Louis Vuitton Objets Nomades, Louis Vuitton Fashion Eye, and Chanel 31 Cambon reference URLs inside the section.
   - Generated two additional realistic rental-entryway images with built-in `image_gen`.
+  - Generated printable PDF: `elura-lookbook-1600-entryway-zine.pdf`, A4, 2 pages, approximately 0.8 MB.
+- 2026-06-23 17:00 KST ready: Laundry Light Zine, `#h1700`.
+  - Adds a real-home laundry balcony zine around a washer, drying rack, towels, detergent, laundry basket, outlet, window, and wall art.
+  - Includes Dior Maison, Dior Salone del Mobile, and Louis Vuitton Objets Nomades reference URLs inside the section.
+  - Generated two additional realistic rental-laundry images with built-in `image_gen`.
