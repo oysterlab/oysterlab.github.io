@@ -19,6 +19,14 @@ Reference grammar used for 09:00:
 - Louis Vuitton Objets Nomades: functional furniture and objects raised into designer/craft narrative.
 - Louis Vuitton Fashion Eye: large-format photographic gaze with essay/editorial context.
 
+Reference URLs:
+
+- Dior Maison: https://www.dior.com/en_us/fashion/maison/maison
+- Chanel Inside Chanel: https://www.chanel.com/us/about-chanel/inside-chanel/
+- Chanel 31 Cambon: https://www.chanel.com/us/fashion/services/boutique-31-cambon/
+- Louis Vuitton Objets Nomades: https://us.louisvuitton.com/eng-us/magazine/articles/the-objets-nomades-collection
+- Louis Vuitton Fashion Eye: https://us.louisvuitton.com/eng-us/trunks-travel-and-home/library-and-stationery/fashion-eye/_/N-tiayzr9
+
 Image generation:
 
 - Built-in `image_gen` mode.
@@ -33,3 +41,15 @@ Release log:
   - Verified with Playwright desktop and mobile image checks: 0 broken images.
   - Verified mobile horizontal overflow: none at 390 px viewport.
   - Generated printable PDF: `elura-lookbook-0900-maison.pdf`, A4, 13 pages, approximately 1.9 MB.
+- 2026-06-23 10:00 KST released: Cambon Spatial Essay, `#h1000`.
+  - Adds a real spatial essay page based on address, mirror, threshold, preservation, and chaptered house-code storytelling.
+  - Generated three additional private-apartment images: stair/mirror threshold, preservation detail, salon corner.
+  - Verified with Playwright desktop and mobile image checks: 0 broken images.
+  - Verified mobile horizontal overflow: none at 390 px viewport.
+  - Generated printable PDF: `elura-lookbook-1000-cambon.pdf`, A4, 3 pages, approximately 1.3 MB.
+- 2026-06-23 11:00 KST ready: Nomadic Object Zine, `#h1100`.
+  - Adds a real object-zine page based on portable anchor, object companion, and travel-proof art placement.
+  - Generated three additional images: nomadic bench room, portable art detail, object index flat-lay.
+  - Verified with Playwright desktop and mobile image checks: 0 broken images.
+  - Verified mobile horizontal overflow: none at 390 px viewport.
+  - Generated printable PDF: `elura-lookbook-1100-nomadic.pdf`, A4, 4 pages, approximately 1.6 MB.
