@@ -89,3 +89,8 @@ Release log:
   - Adds a real-home media wall essay around a TV, router, remote controls, cable loop, lamp, plant, storage basket, and wall art.
   - Includes Louis Vuitton Fashion Eye, Chanel Inside Chanel, and Dior Maison reference URLs inside the section.
   - Generated two additional realistic rental-media-wall images with built-in `image_gen`.
+  - Generated printable PDF: `elura-lookbook-1800-tv-gallery.pdf`, A4, 2 pages, approximately 0.8 MB.
+- 2026-06-23 19:00 KST ready: Shelf Archive, `#h1900`.
+  - Adds a real-home shelf archive around books, storage boxes, papers, a phone, charging cable, folded blanket, lamp, and wall art.
+  - Includes Chanel Inside Chanel, Louis Vuitton Objets Nomades, and Dior Maison reference URLs inside the section.
+  - Generated two additional realistic rental-shelf images with built-in `image_gen`.

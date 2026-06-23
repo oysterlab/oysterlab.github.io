@@ -1093,6 +1093,71 @@ figcaption {
   object-fit: cover;
 }
 
+.shelf-archive {
+  background: #eee6da;
+}
+
+.shelf-archive-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .78fr) minmax(540px, 1.22fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.shelf-archive-head > div {
+  align-self: center;
+}
+
+.shelf-archive-head p {
+  font-size: 18px;
+}
+
+.shelf-archive-head img {
+  height: 690px;
+  object-fit: cover;
+}
+
+.shelf-archive-head figcaption,
+.shelf-detail figcaption {
+  margin-top: 10px;
+}
+
+.shelf-archive-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.shelf-archive-grid article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .7);
+  padding: 18px;
+}
+
+.shelf-archive-grid span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.shelf-archive-grid h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.shelf-detail {
+  margin-top: 18px;
+}
+
+.shelf-detail img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -1142,7 +1207,8 @@ figcaption {
   .bathroom-essay-head,
   .entryway-zine-head,
   .laundry-zine-head,
-  .media-essay-head {
+  .media-essay-head,
+  .shelf-archive-head {
     grid-template-columns: 1fr;
   }
 
@@ -1165,7 +1231,8 @@ figcaption {
   .bathroom-essay-strip,
   .entryway-zine-grid,
   .laundry-zine-grid,
-  .media-essay-grid {
+  .media-essay-grid,
+  .shelf-archive-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1188,7 +1255,8 @@ figcaption {
   .bathroom-essay-head img,
   .entryway-zine-head img,
   .laundry-zine-head img,
-  .media-essay-head img {
+  .media-essay-head img,
+  .shelf-archive-head img {
     height: auto;
     min-height: 0;
   }
@@ -1454,6 +1522,64 @@ figcaption {
   }
 
   #h1800 .section-sources {
+    margin-top: 8mm;
+  }
+
+  #h1900.shelf-archive {
+    padding: 12mm 14mm;
+  }
+
+  #h1900 .shelf-archive-head {
+    grid-template-columns: minmax(70mm, .78fr) minmax(92mm, 1.22fr);
+    gap: 8mm;
+    align-items: start;
+  }
+
+  #h1900 .shelf-archive-head p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #h1900 .shelf-archive-head img {
+    height: 108mm;
+  }
+
+  #h1900 .shelf-archive-grid {
+    break-inside: avoid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    margin-top: 7mm;
+    page-break-inside: avoid;
+  }
+
+  #h1900 .shelf-archive-grid article {
+    break-inside: avoid;
+    padding: 4mm;
+    page-break-inside: avoid;
+  }
+
+  #h1900 .shelf-archive-grid h3 {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-top: 7mm;
+  }
+
+  #h1900 .shelf-archive-grid p {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  #h1900 .shelf-detail {
+    break-before: page;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  #h1900 .shelf-detail img {
+    max-height: 160mm;
+  }
+
+  #h1900 .section-sources {
     margin-top: 8mm;
   }
 }
