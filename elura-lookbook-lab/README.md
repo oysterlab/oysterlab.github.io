@@ -60,7 +60,7 @@ Release log:
   - Includes Dior Maison and Dior Salone del Mobile reference URLs inside the section.
   - Verified with Playwright time-injection release gate for 12:01 KST.
   - Generated printable PDF: `elura-lookbook-1200-maison-table.pdf`, A4, 3 pages, approximately 1.5 MB.
-- 2026-06-23 13:00 KST ready: Bedroom Storybook, `#h1300`.
+- 2026-06-23 13:00 KST released: Bedroom Storybook, `#h1300`.
   - Adds a real-home bedroom storybook around a clothing rail, laundry basket, bedside charger, small lamp, and wall art.
   - Includes Chanel Inside Chanel and 31 Cambon reference URLs inside the section.
   - Verified with Playwright time-injection release gate for 13:01 KST.
