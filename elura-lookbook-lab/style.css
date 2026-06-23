@@ -765,6 +765,71 @@ figcaption {
   margin-top: 10px;
 }
 
+.kitchen-zine {
+  background: #f4eee4;
+}
+
+.kitchen-zine-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .75fr) minmax(540px, 1.25fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.kitchen-zine-head > div {
+  align-self: center;
+}
+
+.kitchen-zine-head p {
+  font-size: 18px;
+}
+
+.kitchen-zine-head img {
+  height: 680px;
+  object-fit: cover;
+}
+
+.kitchen-zine-head figcaption,
+.kitchen-detail figcaption {
+  margin-top: 10px;
+}
+
+.kitchen-zine-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.kitchen-zine-grid article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .72);
+  padding: 18px;
+}
+
+.kitchen-zine-grid span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.kitchen-zine-grid h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.kitchen-detail {
+  margin-top: 18px;
+}
+
+.kitchen-detail img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -809,7 +874,8 @@ figcaption {
   .cambon-head,
   .nomadic-cover,
   .maison-table-head,
-  .bedroom-story-head {
+  .bedroom-story-head,
+  .kitchen-zine-head {
     grid-template-columns: 1fr;
   }
 
@@ -827,7 +893,8 @@ figcaption {
   .nomadic-spread,
   .maison-table-rules,
   .maison-table-spread,
-  .bedroom-story-grid {
+  .bedroom-story-grid,
+  .kitchen-zine-grid {
     grid-template-columns: 1fr;
   }
 
@@ -845,7 +912,8 @@ figcaption {
   .cambon-head img,
   .nomadic-cover img,
   .maison-table-head img,
-  .bedroom-story-head img {
+  .bedroom-story-head img,
+  .kitchen-zine-head img {
     height: auto;
     min-height: 0;
   }
