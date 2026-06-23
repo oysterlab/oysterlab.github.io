@@ -65,7 +65,7 @@ Release log:
   - Includes Chanel Inside Chanel and 31 Cambon reference URLs inside the section.
   - Verified with Playwright time-injection release gate for 13:01 KST.
   - Generated printable PDF: `elura-lookbook-1300-bedroom-story.pdf`, A4, 2 pages, approximately 1.0 MB.
-- 2026-06-23 14:00 KST ready: Kitchen Zine, `#h1400`.
+- 2026-06-23 14:00 KST released: Kitchen Zine, `#h1400`.
   - Adds a real-home kitchen zine around a dish rack, kettle, outlet, towel, small plant, and wall art.
   - Includes Dior Maison reference URL inside the section.
   - Verified with Playwright time-injection release gate for 14:01 KST.
