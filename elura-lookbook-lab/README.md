@@ -70,3 +70,7 @@ Release log:
   - Includes Dior Maison reference URL inside the section.
   - Verified with Playwright time-injection release gate for 14:01 KST.
   - Generated printable PDF: `elura-lookbook-1400-kitchen-zine.pdf`, A4, 2 pages, approximately 0.9 MB.
+- 2026-06-23 15:00 KST ready: Bathroom Mirror Essay, `#h1500`.
+  - Adds a real-home bathroom essay around white tile, towel, sink, mirror, light switch, bottles, and wall art.
+  - Includes Chanel Inside Chanel, 31 Cambon, and Dior Maison reference URLs inside the section.
+  - Generated two additional realistic rental-bathroom images with built-in `image_gen`.

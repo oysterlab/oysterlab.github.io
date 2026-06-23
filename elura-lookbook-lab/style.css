@@ -830,6 +830,71 @@ figcaption {
   object-fit: cover;
 }
 
+.bathroom-essay {
+  background: #eee9df;
+}
+
+.bathroom-essay-head {
+  display: grid;
+  grid-template-columns: minmax(360px, .78fr) minmax(540px, 1.22fr);
+  gap: 32px;
+  align-items: stretch;
+}
+
+.bathroom-essay-head > div {
+  align-self: center;
+}
+
+.bathroom-essay-head p {
+  font-size: 18px;
+}
+
+.bathroom-essay-head img {
+  height: 680px;
+  object-fit: cover;
+}
+
+.bathroom-essay-head figcaption,
+.bathroom-detail figcaption {
+  margin-top: 10px;
+}
+
+.bathroom-essay-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.bathroom-essay-strip article {
+  border: 1px solid var(--line);
+  background: rgba(255, 250, 240, .7);
+  padding: 18px;
+}
+
+.bathroom-essay-strip span {
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.bathroom-essay-strip h3 {
+  margin-top: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.bathroom-detail {
+  margin-top: 18px;
+}
+
+.bathroom-detail img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
 .queue-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -875,7 +940,8 @@ figcaption {
   .nomadic-cover,
   .maison-table-head,
   .bedroom-story-head,
-  .kitchen-zine-head {
+  .kitchen-zine-head,
+  .bathroom-essay-head {
     grid-template-columns: 1fr;
   }
 
@@ -894,7 +960,8 @@ figcaption {
   .maison-table-rules,
   .maison-table-spread,
   .bedroom-story-grid,
-  .kitchen-zine-grid {
+  .kitchen-zine-grid,
+  .bathroom-essay-strip {
     grid-template-columns: 1fr;
   }
 
@@ -913,7 +980,8 @@ figcaption {
   .nomadic-cover img,
   .maison-table-head img,
   .bedroom-story-head img,
-  .kitchen-zine-head img {
+  .kitchen-zine-head img,
+  .bathroom-essay-head img {
     height: auto;
     min-height: 0;
   }
@@ -948,5 +1016,63 @@ figcaption {
 
   .release-section.is-locked {
     display: none;
+  }
+
+  #h1500.bathroom-essay {
+    padding: 12mm 14mm;
+  }
+
+  #h1500 .bathroom-essay-head {
+    grid-template-columns: minmax(70mm, .72fr) minmax(92mm, 1.28fr);
+    gap: 8mm;
+    align-items: start;
+  }
+
+  #h1500 .bathroom-essay-head p {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  #h1500 .bathroom-essay-head img {
+    height: 106mm;
+  }
+
+  #h1500 .bathroom-essay-strip {
+    break-inside: avoid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4mm;
+    margin-top: 7mm;
+    page-break-inside: avoid;
+  }
+
+  #h1500 .bathroom-essay-strip article {
+    break-inside: avoid;
+    padding: 4mm;
+    page-break-inside: avoid;
+  }
+
+  #h1500 .bathroom-essay-strip h3 {
+    font-size: 20px;
+    line-height: 1.05;
+    margin-top: 7mm;
+  }
+
+  #h1500 .bathroom-essay-strip p {
+    font-size: 10px;
+    line-height: 1.45;
+  }
+
+  #h1500 .bathroom-detail {
+    break-before: page;
+    margin-top: 0;
+    page-break-before: always;
+  }
+
+  #h1500 .bathroom-detail img {
+    max-height: 160mm;
+  }
+
+  #h1500 .section-sources {
+    margin-top: 8mm;
   }
 }
