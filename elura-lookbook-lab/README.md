@@ -74,3 +74,8 @@ Release log:
   - Adds a real-home bathroom essay around white tile, towel, sink, mirror, light switch, bottles, and wall art.
   - Includes Chanel Inside Chanel, 31 Cambon, and Dior Maison reference URLs inside the section.
   - Generated two additional realistic rental-bathroom images with built-in `image_gen`.
+  - Generated printable PDF: `elura-lookbook-1500-bathroom-mirror.pdf`, A4, 2 pages, approximately 0.9 MB.
+- 2026-06-23 16:00 KST ready: Entryway Zine, `#h1600`.
+  - Adds a real-home entryway zine around a door, intercom, shoe rack, sneakers, umbrella, tote bag, delivery box, keys, and wall art.
+  - Includes Louis Vuitton Objets Nomades, Louis Vuitton Fashion Eye, and Chanel 31 Cambon reference URLs inside the section.
+  - Generated two additional realistic rental-entryway images with built-in `image_gen`.
