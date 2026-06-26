@@ -1,0 +1,14 @@
+file '../slides/slide-01.png'
+duration 2
+file '../slides/slide-02.png'
+duration 2
+file '../slides/slide-03.png'
+duration 2
+file '../slides/slide-04.png'
+duration 2
+file '../slides/slide-05.png'
+duration 2
+file '../slides/slide-06.png'
+duration 2
+file '../slides/slide-06.png'
+duration 2
