@@ -11,8 +11,9 @@
   <header class="topbar screen-only" aria-label="ELURA uploaded room demo controls">
     <a class="brand" href="#top">ELURA</a>
     <nav aria-label="Page sections">
+      <a href="#result">결과</a>
+      <a href="#before-after">Before/After</a>
       <a href="#diagnosis">진단</a>
-      <a href="#essay">에세이</a>
       <a href="#carousel">카루셀</a>
       <a href="#prompt">프롬프트</a>
     </nav>
@@ -23,34 +24,64 @@
   </header>
 
   <main id="top">
-    <section class="cover print-page">
+    <section class="cover print-page" id="result">
       <div class="cover-copy">
-        <p class="kicker">Uploaded Room / Art Logic Applied</p>
-        <h1>너의 집은 이미 갤러리의 구조를 갖고 있다</h1>
-        <p class="lead">이 사진은 쇼룸이 아니라서 더 좋다. 회색 커튼, 선풍기, 기대어 둔 액자, 식탁, 고양이가 모두 남아 있다. ELURA의 역할은 이 생활감을 지우는 것이 아니라, 한 점의 아트가 집의 중심을 만드는 방식으로 편집하는 것이다.</p>
+        <p class="kicker">Direct Art Placement / After Image</p>
+        <h1>아트를 실제로 걸면, 이 집의 중심이 생긴다</h1>
+        <p class="lead">원본 방을 고급 주택처럼 바꾸지 않았다. 회색 커튼, 선풍기, 작은 해바라기 액자, 식탁, 고양이는 그대로 두고, 큰 꽃 작품을 중앙 벽에 설치했다. 오른쪽 식탁 벽에는 작은 동반 작품을 걸어 공간 전체가 하나의 룩북처럼 이어지게 만들었다.</p>
         <div class="cover-statement">
-          <span>Output Direction</span>
-          <strong>진짜 집의 증거를 보존한 럭셔리 공간 에세이</strong>
+          <span>Placed Art Result</span>
+          <strong>생활감은 보존하고, 아트만 집의 시선 중심으로 배치</strong>
         </div>
       </div>
       <figure class="room-figure">
-        <div class="image-stage">
-          <img src="assets/user-room-web.jpg" alt="Uploaded real home with gray curtains, fan, leaning artworks, dining table, and a cat">
-          <span class="marker marker-1" style="--x:13%;--y:72%;">01</span>
-          <span class="marker marker-2" style="--x:37%;--y:72%;">02</span>
-          <span class="marker marker-3" style="--x:54%;--y:63%;">03</span>
-          <span class="marker marker-4" style="--x:50%;--y:22%;">04</span>
-          <span class="marker marker-5" style="--x:83%;--y:47%;">05</span>
+        <div class="image-stage after-stage">
+          <img src="assets/user-room-after-art-placement.png" alt="After image showing the uploaded real home with the floral artwork mounted on the central wall and a companion artwork above the dining table">
         </div>
-        <figcaption>원본 사진 기반 판독. 방의 어둠, 생활 물건, 반려동물, 기둥, 식탁을 삭제하지 않는다.</figcaption>
+        <figcaption>After image. 중앙 작품을 벽에 걸고, 오른쪽 식탁 벽에 동반 작품을 배치했다.</figcaption>
       </figure>
+    </section>
+
+    <section class="before-after print-page" id="before-after">
+      <div class="section-head">
+        <p class="kicker">Before / After</p>
+        <h2>바뀐 것은 집이 아니라 아트의 위치다</h2>
+        <p>원본의 어두운 커튼, 선풍기, 식탁, 고양이를 남겨서 실제 집이라는 느낌을 유지했다. 변화는 큰 작품을 바닥에서 벽으로 올리고, 식탁 벽에 작은 작품을 연결해 시선의 순서를 만든 것이다.</p>
+      </div>
+      <div class="compare-grid">
+        <figure>
+          <img src="assets/user-room-web.jpg" alt="Before: uploaded real home before art placement">
+          <figcaption><strong>Before</strong> 작품이 기대어 있어 색은 강하지만 공간의 중심이 아직 바닥에 머문다.</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/user-room-after-art-placement.png" alt="After: real home with art placed on wall">
+          <figcaption><strong>After</strong> 큰 작품이 중앙 벽에 걸리며 집의 표지 컷이 되고, 식탁 쪽 작은 작품이 두 번째 장면을 만든다.</figcaption>
+        </figure>
+      </div>
+      <div class="placement-notes">
+        <article>
+          <span>01 / Main Move</span>
+          <strong>큰 꽃 작품을 중앙 벽에 설치</strong>
+          <p>사진에서 가장 강한 색을 가진 작품이 벽에 올라가면서 집의 첫 시선이 바닥에서 중앙으로 이동한다.</p>
+        </article>
+        <article>
+          <span>02 / Companion Move</span>
+          <strong>식탁 벽에 작은 동반 작품 배치</strong>
+          <p>오른쪽 밝은 식탁 공간이 별개 방처럼 끊기지 않고 중앙 작품의 색과 연결된다.</p>
+        </article>
+        <article>
+          <span>03 / Real Home Guardrail</span>
+          <strong>생활 물건은 지우지 않음</strong>
+          <p>선풍기와 고양이가 남아 있기 때문에 “내 집도 가능하다”는 기대감이 유지된다.</p>
+        </article>
+      </div>
     </section>
 
     <section class="diagnosis print-page" id="diagnosis">
       <div class="section-head">
         <p class="kicker">Room Reading</p>
         <h2>아트 생성 로직 적용 결과</h2>
-        <p>사진의 핵심은 중앙 기둥이 만든 두 개의 무대다. 왼쪽은 커튼과 작은 해바라기 액자로 닫힌 조용한 갤러리, 오른쪽은 식탁과 고양이가 있는 생활 무대, 중앙은 큰 꽃 작품이 두 공간을 묶는 표지 컷이 된다.</p>
+        <p>사진의 핵심은 중앙 기둥이 만든 두 개의 무대다. 왼쪽은 커튼과 작은 해바라기 액자로 닫힌 조용한 갤러리, 오른쪽은 식탁과 고양이가 있는 생활 무대, 중앙은 벽에 건 큰 꽃 작품이 두 공간을 묶는 표지 컷이 된다.</p>
       </div>
 
       <div class="logic-grid">
@@ -66,8 +97,8 @@
         </article>
         <article>
           <span>03 / Cover Piece</span>
-          <h3>큰 꽃 작품은 이 집의 표지다</h3>
-          <p>가장 강한 컬러와 가장 큰 면적을 가진 작품이 중앙에 기대어 있다. 이 작품은 단순 장식이 아니라 브로슈어의 커버 이미지, 집의 색 코드, 구매 기대감을 만드는 장치다.</p>
+          <h3>큰 꽃 작품은 벽에 걸 때 표지가 된다</h3>
+          <p>가장 강한 컬러와 가장 큰 면적을 가진 작품을 중앙 벽에 올렸다. 이 작품은 단순 장식이 아니라 브로슈어의 커버 이미지, 집의 색 코드, 구매 기대감을 만드는 장치다.</p>
         </article>
         <article>
           <span>04 / Chapter Divider</span>
@@ -77,7 +108,7 @@
         <article>
           <span>05 / Living Stage</span>
           <h3>고양이가 있는 식탁은 두 번째 장면이다</h3>
-          <p>식탁, 의자, 세로 벽 패턴, 천장 조명은 생활의 밝은 무대다. 여기에 아트가 직접 걸리지 않아도 중앙 작품과 색이 이어지면 공간 전체가 한 권의 룩북처럼 읽힌다.</p>
+          <p>식탁, 의자, 세로 벽 패턴, 천장 조명은 생활의 밝은 무대다. 작은 동반 작품을 걸면 중앙 작품과 색이 이어져 공간 전체가 한 권의 룩북처럼 읽힌다.</p>
         </article>
       </div>
 
@@ -95,8 +126,8 @@
         </article>
         <article>
           <span>Art Route</span>
-          <strong>large botanical abstraction plus one quiet framed memory</strong>
-          <p>이미 있는 두 작품의 관계를 살린다. 큰 작품은 표지, 작은 작품은 생활의 낮은 음성이다.</p>
+          <strong>central botanical statement plus one dining companion</strong>
+          <p>큰 작품은 집의 표지, 식탁 벽의 작은 작품은 생활 무대를 이어주는 두 번째 장면이다.</p>
         </article>
         <article>
           <span>Luxury Promise</span>
@@ -109,14 +140,14 @@
     <section class="essay print-page" id="essay">
       <div class="essay-layout">
         <figure>
-          <img src="assets/user-room-web.jpg" alt="Real home interior with art leaning against a wall">
+          <img src="assets/user-room-after-art-placement.png" alt="Real home interior after the art has been placed on the central wall">
           <figcaption>Cover crop: the house keeps its lived-in evidence.</figcaption>
         </figure>
         <div>
           <p class="kicker">Spatial Essay</p>
           <h2>Two Rooms, One Wall of Color</h2>
           <p>밤의 집은 언제나 조금 덜 정리되어 있고, 그래서 더 개인적이다. 이 공간에서 먼저 보이는 것은 비싼 가구가 아니다. 커튼의 무게, 낮은 위치의 액자, 선풍기의 원형, 기둥의 넓은 면, 식탁 위의 고양이가 먼저 보인다. 좋은 아트 브로슈어는 이 단서를 감추지 않고, 각각이 왜 필요한지 설명한다.</p>
-          <p>중앙에 기대어 둔 큰 꽃 작품은 이 집의 색을 결정한다. 붉은 꽃과 초록의 배경은 오른쪽 식탁의 따뜻한 목재, 왼쪽 해바라기 프린트의 노란 빛과 이어진다. 그래서 이 작품은 벽에 걸려 있지 않아도 이미 방의 주인공이다. ELURA의 제안은 새 가구를 사라는 말이 아니라, 이 작품을 집의 표지로 삼아 시선을 재배치하자는 말이다.</p>
+          <p>중앙 벽에 건 큰 꽃 작품은 이 집의 색을 결정한다. 붉은 꽃과 초록의 배경은 오른쪽 식탁의 따뜻한 목재, 왼쪽 해바라기 프린트의 노란 빛과 이어진다. 그래서 이 작품은 방의 주인공이 된다. ELURA의 제안은 새 가구를 사라는 말이 아니라, 이 작품을 집의 표지로 삼아 시선을 재배치하자는 말이다.</p>
           <p>오른쪽 식탁에 누워 있는 고양이는 사진에서 가장 중요한 생활 증거다. 이 장면이 있기 때문에 사용자는 “내 집도 가능하다”고 느낀다. 명품감은 생활을 지운 결과가 아니라, 생활이 남아 있는데도 한 장면으로 보이는 편집에서 생긴다.</p>
           <div class="pullquote">이 집은 완벽해져야 명품처럼 보이는 것이 아니다. 이미 있는 아트가 집의 시선을 가져가는 순간, 평범한 저녁이 개인 룩북의 첫 페이지가 된다.</div>
         </div>
@@ -144,7 +175,7 @@
         <article>
           <span>03</span>
           <h3>큰 꽃 작품은 이 집의 표지 컷</h3>
-          <p>방의 색, 온도, 시선이 이 작품에서 시작된다.</p>
+          <p>중앙 벽에 걸리는 순간 방의 색, 온도, 시선이 이 작품에서 시작된다.</p>
         </article>
         <article>
           <span>04</span>
@@ -179,15 +210,15 @@
 
     <section class="prompt print-page" id="prompt">
       <div class="section-head">
-        <p class="kicker">Production Notes</p>
-        <h2>생성 로직과 레퍼런스 문법</h2>
-        <p>이 데모는 원본 사진을 직접 콘텐츠화했다. 이미지 생성이 필요한 다음 단계에서는 아래 프롬프트로 같은 집의 아트 방향, 표지 크롭, 대체 작품 시안을 만들 수 있다.</p>
+          <p class="kicker">Production Notes</p>
+        <h2>직접 배치에 사용한 생성 로직</h2>
+        <p>이번 데모는 원본 사진을 편집 대상으로 두고, 실제로 아트가 벽에 걸린 after 이미지를 생성했다. 아래 프롬프트가 이번 이미지 생성의 핵심 지시다.</p>
       </div>
 
       <div class="prompt-grid">
         <article class="prompt-box">
           <span>Image Generation Prompt</span>
-          <p>Use the uploaded real room as reference. Preserve the central column, gray curtains, leaning sunflower frame, circular fan, colorful floral artwork, wood dining table, cat on the table, white vertical wall texture, and warm ceiling light. Create an art-led editorial brochure scene where the existing artworks become the house code. Keep the home ordinary, lived-in, and realistic. Do not make it a luxury apartment. No brand logos, no monograms, no readable text, no people.</p>
+          <p>Use the uploaded real home photo as the edit target. Preserve the central column, gray curtains, small sunflower frame, circular fan, wood dining table and chairs, cat on the table, white vertical wall panels, warm ceiling light, and ordinary lived-in home feeling. Create a realistic after view where the large colorful floral artwork is professionally mounted on the central wall at eye level as the main statement art. Add one small companion framed artwork on the right dining wall, aligned with the vertical wall panels and echoing the red, green, and yellow palette. Keep the room real, not staged or expensive. No people, no logos, no monograms, no readable text, no watermark.</p>
         </article>
         <article>
           <span>Reference Grammar</span>

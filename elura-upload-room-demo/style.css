@@ -264,8 +264,74 @@ figcaption {
 }
 
 .diagnosis,
-.carousel {
+.carousel,
+.before-after {
   background: var(--paper);
+}
+
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.compare-grid figure {
+  margin: 0;
+  border: 1px solid var(--line);
+  background: var(--card);
+}
+
+.compare-grid img {
+  aspect-ratio: 1672 / 941;
+  object-fit: cover;
+  background: #161310;
+}
+
+.compare-grid figcaption {
+  padding: 14px;
+  font-size: 15px;
+}
+
+.compare-grid figcaption strong {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--ink);
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.placement-notes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.placement-notes article {
+  border: 1px solid var(--line);
+  background: var(--card);
+  padding: 18px;
+}
+
+.placement-notes span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: var(--wine);
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.placement-notes strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.25;
+}
+
+.placement-notes p {
+  margin-bottom: 0;
+  font-size: 15px;
 }
 
 .logic-grid {
@@ -461,7 +527,8 @@ figcaption {
 
   .palette-board,
   .copy-panel,
-  .deliverable-strip {
+  .deliverable-strip,
+  .placement-notes {
     grid-template-columns: 1fr;
   }
 }
@@ -507,7 +574,8 @@ figcaption {
   }
 
   .logic-grid,
-  .slide-grid {
+  .slide-grid,
+  .compare-grid {
     grid-template-columns: 1fr;
   }
 
@@ -605,6 +673,10 @@ figcaption {
     min-height: 124mm;
   }
 
+  .after-stage {
+    min-height: 118mm;
+  }
+
   .section-head {
     margin-bottom: 10px;
   }
@@ -617,6 +689,38 @@ figcaption {
   .logic-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 7px;
+  }
+
+  .compare-grid,
+  .placement-notes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+  }
+
+  .compare-grid figure:first-child {
+    grid-column: span 1;
+  }
+
+  .compare-grid figure:last-child {
+    grid-column: span 2;
+  }
+
+  .compare-grid figcaption,
+  .placement-notes article {
+    padding: 10px;
+  }
+
+  .compare-grid figcaption,
+  .placement-notes p {
+    font-size: 10.5px;
+  }
+
+  .placement-notes strong {
+    font-size: 13px;
+  }
+
+  .placement-notes span {
+    font-size: 9px;
   }
 
   .logic-grid article {
