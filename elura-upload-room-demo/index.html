@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ELURA Uploaded Room Art Logic Demo</title>
+  <meta name="description" content="사용자가 올린 실제 집 사진을 ELURA 아트 생성 로직으로 분석해 명품형 공간 브로슈어와 PDF 산출물로 만든 데모.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar screen-only" aria-label="ELURA uploaded room demo controls">
+    <a class="brand" href="#top">ELURA</a>
+    <nav aria-label="Page sections">
+      <a href="#diagnosis">진단</a>
+      <a href="#essay">에세이</a>
+      <a href="#carousel">카루셀</a>
+      <a href="#prompt">프롬프트</a>
+    </nav>
+    <div class="actions">
+      <a href="exports/elura-uploaded-room-art-logic.pdf">PDF</a>
+      <button type="button" onclick="window.print()">Print</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="cover print-page">
+      <div class="cover-copy">
+        <p class="kicker">Uploaded Room / Art Logic Applied</p>
+        <h1>너의 집은 이미 갤러리의 구조를 갖고 있다</h1>
+        <p class="lead">이 사진은 쇼룸이 아니라서 더 좋다. 회색 커튼, 선풍기, 기대어 둔 액자, 식탁, 고양이가 모두 남아 있다. ELURA의 역할은 이 생활감을 지우는 것이 아니라, 한 점의 아트가 집의 중심을 만드는 방식으로 편집하는 것이다.</p>
+        <div class="cover-statement">
+          <span>Output Direction</span>
+          <strong>진짜 집의 증거를 보존한 럭셔리 공간 에세이</strong>
+        </div>
+      </div>
+      <figure class="room-figure">
+        <div class="image-stage">
+          <img src="assets/user-room-web.jpg" alt="Uploaded real home with gray curtains, fan, leaning artworks, dining table, and a cat">
+          <span class="marker marker-1" style="--x:13%;--y:72%;">01</span>
+          <span class="marker marker-2" style="--x:37%;--y:72%;">02</span>
+          <span class="marker marker-3" style="--x:54%;--y:63%;">03</span>
+          <span class="marker marker-4" style="--x:50%;--y:22%;">04</span>
+          <span class="marker marker-5" style="--x:83%;--y:47%;">05</span>
+        </div>
+        <figcaption>원본 사진 기반 판독. 방의 어둠, 생활 물건, 반려동물, 기둥, 식탁을 삭제하지 않는다.</figcaption>
+      </figure>
+    </section>
+
+    <section class="diagnosis print-page" id="diagnosis">
+      <div class="section-head">
+        <p class="kicker">Room Reading</p>
+        <h2>아트 생성 로직 적용 결과</h2>
+        <p>사진의 핵심은 중앙 기둥이 만든 두 개의 무대다. 왼쪽은 커튼과 작은 해바라기 액자로 닫힌 조용한 갤러리, 오른쪽은 식탁과 고양이가 있는 생활 무대, 중앙은 큰 꽃 작품이 두 공간을 묶는 표지 컷이 된다.</p>
+      </div>
+
+      <div class="logic-grid">
+        <article>
+          <span>01 / Left Anchor</span>
+          <h3>커튼 앞 작은 액자는 이미 입구 컷이다</h3>
+          <p>어두운 커튼과 작은 해바라기 액자는 정리 부족이 아니라, 집의 첫 번째 조용한 시선이다. 이 위치는 작은 프린트와 깊은 매트 보더가 잘 맞는다.</p>
+        </article>
+        <article>
+          <span>02 / Real Proof</span>
+          <h3>선풍기는 지우지 않는다</h3>
+          <p>선풍기는 이 집이 실제로 사는 공간이라는 증거다. 명품감은 생활 물건을 없애서가 아니라, 그 옆의 아트가 시선을 선택하게 만들 때 생긴다.</p>
+        </article>
+        <article>
+          <span>03 / Cover Piece</span>
+          <h3>큰 꽃 작품은 이 집의 표지다</h3>
+          <p>가장 강한 컬러와 가장 큰 면적을 가진 작품이 중앙에 기대어 있다. 이 작품은 단순 장식이 아니라 브로슈어의 커버 이미지, 집의 색 코드, 구매 기대감을 만드는 장치다.</p>
+        </article>
+        <article>
+          <span>04 / Chapter Divider</span>
+          <h3>중앙 기둥은 결함이 아니라 챕터 경계다</h3>
+          <p>기둥은 방을 끊는 요소처럼 보이지만, 브로슈어에서는 왼쪽 갤러리와 오른쪽 다이닝 스테이지를 나누는 하우스 코드가 된다.</p>
+        </article>
+        <article>
+          <span>05 / Living Stage</span>
+          <h3>고양이가 있는 식탁은 두 번째 장면이다</h3>
+          <p>식탁, 의자, 세로 벽 패턴, 천장 조명은 생활의 밝은 무대다. 여기에 아트가 직접 걸리지 않아도 중앙 작품과 색이 이어지면 공간 전체가 한 권의 룩북처럼 읽힌다.</p>
+        </article>
+      </div>
+
+      <div class="palette-board" aria-label="Palette and art direction">
+        <article>
+          <span>Palette</span>
+          <div class="swatches" aria-hidden="true">
+            <i style="background:#6f6a58"></i>
+            <i style="background:#d8d3c2"></i>
+            <i style="background:#934536"></i>
+            <i style="background:#b6a04a"></i>
+            <i style="background:#3f725e"></i>
+          </div>
+          <strong>curtain gray, ceiling cream, flower red, sunflower ochre, muted green</strong>
+        </article>
+        <article>
+          <span>Art Route</span>
+          <strong>large botanical abstraction plus one quiet framed memory</strong>
+          <p>이미 있는 두 작품의 관계를 살린다. 큰 작품은 표지, 작은 작품은 생활의 낮은 음성이다.</p>
+        </article>
+        <article>
+          <span>Luxury Promise</span>
+          <strong>집을 비싸게 꾸미는 게 아니라, 집의 시선을 비싸게 편집한다</strong>
+          <p>이 메시지가 사용자의 기대감을 만든다. 내 집을 뜯어고치지 않아도 아트가 먼저 들어올 수 있다는 약속이다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="essay print-page" id="essay">
+      <div class="essay-layout">
+        <figure>
+          <img src="assets/user-room-web.jpg" alt="Real home interior with art leaning against a wall">
+          <figcaption>Cover crop: the house keeps its lived-in evidence.</figcaption>
+        </figure>
+        <div>
+          <p class="kicker">Spatial Essay</p>
+          <h2>Two Rooms, One Wall of Color</h2>
+          <p>밤의 집은 언제나 조금 덜 정리되어 있고, 그래서 더 개인적이다. 이 공간에서 먼저 보이는 것은 비싼 가구가 아니다. 커튼의 무게, 낮은 위치의 액자, 선풍기의 원형, 기둥의 넓은 면, 식탁 위의 고양이가 먼저 보인다. 좋은 아트 브로슈어는 이 단서를 감추지 않고, 각각이 왜 필요한지 설명한다.</p>
+          <p>중앙에 기대어 둔 큰 꽃 작품은 이 집의 색을 결정한다. 붉은 꽃과 초록의 배경은 오른쪽 식탁의 따뜻한 목재, 왼쪽 해바라기 프린트의 노란 빛과 이어진다. 그래서 이 작품은 벽에 걸려 있지 않아도 이미 방의 주인공이다. ELURA의 제안은 새 가구를 사라는 말이 아니라, 이 작품을 집의 표지로 삼아 시선을 재배치하자는 말이다.</p>
+          <p>오른쪽 식탁에 누워 있는 고양이는 사진에서 가장 중요한 생활 증거다. 이 장면이 있기 때문에 사용자는 “내 집도 가능하다”고 느낀다. 명품감은 생활을 지운 결과가 아니라, 생활이 남아 있는데도 한 장면으로 보이는 편집에서 생긴다.</p>
+          <div class="pullquote">이 집은 완벽해져야 명품처럼 보이는 것이 아니다. 이미 있는 아트가 집의 시선을 가져가는 순간, 평범한 저녁이 개인 룩북의 첫 페이지가 된다.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel print-page" id="carousel">
+      <div class="section-head compact">
+        <p class="kicker">Content Output</p>
+        <h2>이 사진으로 바로 만들 수 있는 Zine 카루셀</h2>
+        <p>업로드 사진 한 장을 기반으로 저장형 콘텐츠와 결제 전 브로슈어를 동시에 만든다.</p>
+      </div>
+
+      <div class="slide-grid">
+        <article>
+          <span>01</span>
+          <h3>이 집은 이미 아트가 시작한 집</h3>
+          <p>정리된 쇼룸이 아니라 실제 저녁의 집이라서 더 믿을 수 있다.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>중앙 기둥은 단점이 아니라 챕터다</h3>
+          <p>왼쪽은 조용한 갤러리, 오른쪽은 식탁의 무대가 된다.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>큰 꽃 작품은 이 집의 표지 컷</h3>
+          <p>방의 색, 온도, 시선이 이 작품에서 시작된다.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>선풍기와 고양이는 지우지 않는다</h3>
+          <p>생활 증거가 남아 있어야 사용자는 자기 집을 상상한다.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>작은 해바라기 액자는 낮은 목소리</h3>
+          <p>큰 작품과 작은 작품의 거리감이 집을 더 개인적으로 만든다.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h3>고급감은 집값이 아니라 시선의 편집</h3>
+          <p>아트는 벽을 채우는 물건이 아니라, 이 집을 읽는 순서를 만든다.</p>
+        </article>
+      </div>
+
+      <div class="copy-panel">
+        <div>
+          <span>Cover Copy</span>
+          <h3>너의 집이 아트로 명품이 되는 순간</h3>
+          <p>커튼, 선풍기, 식탁, 고양이가 그대로 있는 집. 바뀌는 것은 생활이 아니라 시선이다.</p>
+        </div>
+        <div>
+          <span>CTA</span>
+          <h3>사진 한 장을 올리면, 당신의 방에서 이미 시작된 아트의 자리를 찾아드립니다.</h3>
+          <p>완벽한 인테리어 사진이 필요하지 않다. 실제로 사는 방일수록 더 정확하게 읽을 수 있다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="prompt print-page" id="prompt">
+      <div class="section-head">
+        <p class="kicker">Production Notes</p>
+        <h2>생성 로직과 레퍼런스 문법</h2>
+        <p>이 데모는 원본 사진을 직접 콘텐츠화했다. 이미지 생성이 필요한 다음 단계에서는 아래 프롬프트로 같은 집의 아트 방향, 표지 크롭, 대체 작품 시안을 만들 수 있다.</p>
+      </div>
+
+      <div class="prompt-grid">
+        <article class="prompt-box">
+          <span>Image Generation Prompt</span>
+          <p>Use the uploaded real room as reference. Preserve the central column, gray curtains, leaning sunflower frame, circular fan, colorful floral artwork, wood dining table, cat on the table, white vertical wall texture, and warm ceiling light. Create an art-led editorial brochure scene where the existing artworks become the house code. Keep the home ordinary, lived-in, and realistic. Do not make it a luxury apartment. No brand logos, no monograms, no readable text, no people.</p>
+        </article>
+        <article>
+          <span>Reference Grammar</span>
+          <ul class="reference-list">
+            <li><a href="https://www.dior.com/en_us/fashion/maison/maison">Dior Maison</a> - 생활 오브제를 art de vivre 체계로 묶는 문법</li>
+            <li><a href="https://www.chanel.com/us/about-chanel/inside-chanel/">Inside Chanel</a> - 장소, 반복 코드, 챕터형 스토리텔링</li>
+            <li><a href="https://www.chanel.com/us/fashion/services/boutique-31-cambon/">Chanel 31 Cambon</a> - 하나의 주소를 하우스 코드로 만드는 방식</li>
+            <li><a href="https://us.louisvuitton.com/eng-us/magazine/articles/the-objets-nomades-collection">Louis Vuitton Objets Nomades</a> - 기능적 물건을 디자인 오브제로 올리는 방식</li>
+            <li><a href="https://us.louisvuitton.com/eng-us/trunks-travel-and-home/library-and-stationery/fashion-eye/_/N-tiayzr9">Louis Vuitton Fashion Eye</a> - 장소를 한 시선의 사진 에세이로 재편집하는 방식</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="deliverable-strip">
+        <article>
+          <span>Web</span>
+          <strong>사진 판독형 럭셔리 브로슈어</strong>
+        </article>
+        <article>
+          <span>PDF</span>
+          <strong>A4 출력 가능한 공간 에세이</strong>
+        </article>
+        <article>
+          <span>Social</span>
+          <strong>6장 Zine 카루셀 원고</strong>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
