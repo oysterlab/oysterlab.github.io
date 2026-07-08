@@ -1,26 +1,38 @@
 {
-  "generated_at": "2026-07-09T01:04:36",
+  "generated_at": "2026-07-08T01:02:50",
   "audience_metrics": {
-    "viewer_sg": 53.9,
+    "viewer_sg": 55.2,
     "follower_sg": 13.1,
-    "viewer_us": 1.7,
+    "viewer_us": 1.4,
     "follower_us": 47.8,
-    "viewer_target_market": 3.7,
+    "viewer_target_market": 3.4,
     "follower_target_market": 51.6,
-    "viewer_asia_leakage": 79.8,
+    "viewer_asia_leakage": 81.7,
     "follower_asia_leakage": 22.6,
-    "viewer_target_age": 58.1,
-    "follower_target_age": 64.9,
-    "viewer_female": 67.0,
-    "follower_female": 59.0
+    "viewer_target_age": 58.4,
+    "follower_target_age": 65.3,
+    "viewer_female": 69.0,
+    "follower_female": 60.0
   },
   "account_audience_7d": {
     "range": "last_7_days",
-    "generated_at": "2026-07-09T01:00:05",
-    "unique_viewers": 16712,
-    "new_viewers": 8669,
+    "generated_at": "2026-07-07T01:00:07",
+    "unique_viewers": 18258,
+    "new_viewers": 9605,
     "returning_viewers": null,
     "profile_views_7d": [
+      {
+        "date": "2026-06-30",
+        "label": "6/30",
+        "value": 6,
+        "status": 0
+      },
+      {
+        "date": "2026-07-01",
+        "label": "7/1",
+        "value": 9,
+        "status": 0
+      },
       {
         "date": "2026-07-02",
         "label": "7/2",
@@ -48,24 +60,24 @@
       {
         "date": "2026-07-06",
         "label": "7/6",
-        "value": 0,
-        "status": 0
-      },
-      {
-        "date": "2026-07-07",
-        "label": "7/7",
-        "value": 1,
-        "status": 0
-      },
-      {
-        "date": "2026-07-08",
-        "label": "7/8",
         "value": null,
         "status": 2
       }
     ],
-    "profile_views_7d_total": 19,
+    "profile_views_7d_total": 33,
     "reached_audience_7d": [
+      {
+        "date": "2026-06-30",
+        "label": "6/30",
+        "value": 2538,
+        "status": 0
+      },
+      {
+        "date": "2026-07-01",
+        "label": "7/1",
+        "value": 3469,
+        "status": 0
+      },
       {
         "date": "2026-07-02",
         "label": "7/2",
@@ -93,32 +105,32 @@
       {
         "date": "2026-07-06",
         "label": "7/6",
-        "value": 403,
-        "status": 0
-      },
-      {
-        "date": "2026-07-07",
-        "label": "7/7",
-        "value": 204,
-        "status": 0
-      },
-      {
-        "date": "2026-07-08",
-        "label": "7/8",
         "value": null,
         "status": 2
       }
     ],
-    "reached_audience_7d_total": 14401,
-    "viewer_to_profile_visit_rate": 0.114,
-    "reached_to_profile_visit_rate": 0.132,
-    "profile_origin_view_percent": 0.4,
-    "viewer_target_market": 3.7,
-    "viewer_sg": 53.9,
+    "reached_audience_7d_total": 19801,
+    "viewer_to_profile_visit_rate": 0.181,
+    "reached_to_profile_visit_rate": 0.167,
+    "profile_origin_view_percent": 0.3,
+    "viewer_target_market": 3.4,
+    "viewer_sg": 55.2,
     "viewer_kr": 4.6,
-    "viewer_target_age": 58.1,
-    "viewer_female": 67.0,
+    "viewer_target_age": 58.4,
+    "viewer_female": 69.0,
     "daily_unique_viewers_7d": [
+      {
+        "date": "2026-06-30",
+        "label": "6/30",
+        "value": 3688,
+        "status": 0
+      },
+      {
+        "date": "2026-07-01",
+        "label": "7/1",
+        "value": 2556,
+        "status": 0
+      },
       {
         "date": "2026-07-02",
         "label": "7/2",
@@ -146,27 +158,15 @@
       {
         "date": "2026-07-06",
         "label": "7/6",
-        "value": 3280,
-        "status": 0
-      },
-      {
-        "date": "2026-07-07",
-        "label": "7/7",
-        "value": 427,
-        "status": 0
-      },
-      {
-        "date": "2026-07-08",
-        "label": "7/8",
         "value": null,
         "status": 2
       }
     ]
   },
   "site_activity": {
-    "raw_views_total": 232,
+    "raw_views_total": 228,
     "raw_signups_total": 2,
-    "raw_views_7d": 10,
+    "raw_views_7d": 7,
     "raw_signups_7d": 0,
     "verified_views_today": 0,
     "verified_unique_ips_today": 0,
@@ -174,7 +174,7 @@
     "verified_unique_ips_7d": 0,
     "verified_signups_today": 0,
     "verified_signups_7d": 0,
-    "bot_datacenter_views_7d": 10,
+    "bot_datacenter_views_7d": 7,
     "suspicious_views_7d": 0,
     "bot_datacenter_signups_7d": 0,
     "suspicious_signups_7d": 0,
@@ -187,20 +187,20 @@
     "exclusion_reasons_7d": [
       [
         "datacenter/proxy IP",
-        6
+        4
       ],
       [
         "bot/crawler UA",
-        4
+        3
       ]
     ],
     "recent_verified_signups": []
   },
-  "evaluation_excludes_date": "2026-07-09",
+  "evaluation_excludes_date": "2026-07-08",
   "growth_comparison": {
     "days": [
       {
-        "day": "2026-07-06",
+        "day": "2026-07-05",
         "post_count": 0,
         "post_demo_count": 0,
         "removed_count": 0,
@@ -217,43 +217,14 @@
         "female": 0,
         "female_count": null,
         "target_rich_posts": 0,
-        "account_daily_unique_viewers": 3280,
+        "account_daily_unique_viewers": 3791,
         "account_daily_unique_status": 0,
         "top_posts": [],
         "weak_posts": []
       },
       {
-        "day": "2026-07-07",
-        "post_count": 4,
-        "post_demo_count": 2,
-        "removed_count": 0,
-        "known_viewers": 29,
-        "known_viewer_posts": 2,
-        "target_market": 1.4,
-        "target_market_count": 0,
-        "sg": 26.9,
-        "sg_count": 9,
-        "asia_leakage": 94.7,
-        "asia_leakage_count": 28,
-        "target_age": 55.0,
-        "target_age_count": 16,
-        "female": 78.0,
-        "female_count": 22,
-        "target_rich_posts": 0,
-        "account_daily_unique_viewers": 427,
-        "account_daily_unique_status": 0,
-        "top_posts": [
-          "svc_20260707_s4_dining_chair_wall_art_control",
-          "svc_20260707_s3_hall_shelf_wall_art"
-        ],
-        "weak_posts": [
-          "svc_20260707_s3_hall_shelf_wall_art",
-          "svc_20260707_s4_dining_chair_wall_art_control"
-        ]
-      },
-      {
-        "day": "2026-07-08",
-        "post_count": 5,
+        "day": "2026-07-06",
+        "post_count": 0,
         "post_demo_count": 0,
         "removed_count": 0,
         "known_viewers": 0,
@@ -273,6 +244,29 @@
         "account_daily_unique_status": 2,
         "top_posts": [],
         "weak_posts": []
+      },
+      {
+        "day": "2026-07-07",
+        "post_count": 4,
+        "post_demo_count": 0,
+        "removed_count": 0,
+        "known_viewers": 0,
+        "known_viewer_posts": 0,
+        "target_market": 0,
+        "target_market_count": null,
+        "sg": 0,
+        "sg_count": null,
+        "asia_leakage": 0,
+        "asia_leakage_count": null,
+        "target_age": 0,
+        "target_age_count": null,
+        "female": 0,
+        "female_count": null,
+        "target_rich_posts": 0,
+        "account_daily_unique_viewers": null,
+        "account_daily_unique_status": null,
+        "top_posts": [],
+        "weak_posts": []
       }
     ],
     "direction": {
@@ -282,13 +276,13 @@
     }
   },
   "audience_routine": {
-    "run_id": "20260708-120005-scheduled_1200",
-    "date_kst": "2026-07-08",
+    "run_id": "20260707-120005-scheduled_1200",
+    "date_kst": "2026-07-07",
     "source": "scheduled_1200",
     "mode": "target_audience_research_and_surface_packet",
     "status": "completed",
-    "started_at_kst": "2026-07-08T12:00:05+09:00",
-    "finished_at_kst": "2026-07-08T12:00:05+09:00",
+    "started_at_kst": "2026-07-07T12:00:05+09:00",
+    "finished_at_kst": "2026-07-07T12:00:05+09:00",
     "target_comment_count": "0-3 optional",
     "prepared_comment_count": 8,
     "posted_comment_count": 0,
@@ -343,8 +337,204 @@
       "kill_threshold": "visible_core_na_eu < 5% and Asia leakage > 75%"
     },
     "post_level_na_eu_evidence": {
-      "status": "unavailable",
-      "reason": "no_post_level_rows"
+      "status": "available",
+      "source": "content/post_demographics.json",
+      "row_count": 204,
+      "visibility_note": "TikTok exposes only visible top countries; other target countries may be hidden under Others, so use this as conservative directional evidence.",
+      "top_visible_na_eu_posts": [
+        {
+          "post_id": "svc_20260625_s2_cool_girl_wall_art_choices",
+          "unique_viewers": 1043,
+          "visible_core_na_eu": 44.9,
+          "us": 36.1,
+          "gb": 2.7,
+          "ca": 0.0,
+          "asia_leakage": 15.3,
+          "sg": 9.2,
+          "my": 3.6
+        },
+        {
+          "post_id": "svc_20260604_s1_entry_wall_distance_na",
+          "unique_viewers": 900,
+          "visible_core_na_eu": 19.7,
+          "us": 4.8,
+          "gb": 2.6,
+          "ca": 12.3,
+          "asia_leakage": 22.2,
+          "sg": 8.4,
+          "my": 2.2
+        },
+        {
+          "post_id": "svc_20260617_s1_dining_window_sightline",
+          "unique_viewers": 940,
+          "visible_core_na_eu": 15.0,
+          "us": 4.4,
+          "gb": 4.4,
+          "ca": 4.3,
+          "asia_leakage": 49.3,
+          "sg": 31.5,
+          "my": 7.7
+        },
+        {
+          "post_id": "svc_20260525_hq_s5_work_shelf_pause_angle_story_preview",
+          "unique_viewers": 190,
+          "visible_core_na_eu": 13.2,
+          "us": 4.1,
+          "gb": 2.3,
+          "ca": 3.6,
+          "asia_leakage": 64.5,
+          "sg": 33.6,
+          "my": 15.0
+        },
+        {
+          "post_id": "svc_20260625_s4_wall_art_detail_archive",
+          "unique_viewers": 831,
+          "visible_core_na_eu": 12.7,
+          "us": 12.7,
+          "gb": 0.0,
+          "ca": 0.0,
+          "asia_leakage": 52.7,
+          "sg": 23.9,
+          "my": 14.2
+        },
+        {
+          "post_id": "svc_20260703_s1_entry_bench_wall_art",
+          "unique_viewers": 828,
+          "visible_core_na_eu": 11.6,
+          "us": 2.0,
+          "gb": 3.7,
+          "ca": 5.9,
+          "asia_leakage": 64.5,
+          "sg": 32.7,
+          "my": 5.8
+        },
+        {
+          "post_id": "svc_20260604_s4_dining_chair_sightline",
+          "unique_viewers": 870,
+          "visible_core_na_eu": 10.7,
+          "us": 5.0,
+          "gb": 2.6,
+          "ca": 2.1,
+          "asia_leakage": 21.8,
+          "sg": 14.7,
+          "my": 1.4
+        },
+        {
+          "post_id": "svc_20260603_s4_service_yard_line_sightline",
+          "unique_viewers": 844,
+          "visible_core_na_eu": 10.4,
+          "us": 4.4,
+          "gb": 1.4,
+          "ca": 4.6,
+          "asia_leakage": 60.3,
+          "sg": 39.9,
+          "my": 6.1
+        }
+      ],
+      "weak_recent_country_routing_posts": [
+        {
+          "post_id": "svc_20260628_s4_one_bold_print_real_room",
+          "unique_viewers": 919,
+          "visible_core_na_eu": 0.5,
+          "us": 0.0,
+          "gb": 0.5,
+          "ca": 0.0,
+          "asia_leakage": 94.0,
+          "sg": 66.1,
+          "my": 18.9
+        },
+        {
+          "post_id": "svc_20260629_s1_bedroom_dresser_wall_art",
+          "unique_viewers": 986,
+          "visible_core_na_eu": 0.9,
+          "us": 0.0,
+          "gb": 0.9,
+          "ca": 0.0,
+          "asia_leakage": 89.1,
+          "sg": 65.6,
+          "my": 17.3
+        },
+        {
+          "post_id": "svc_20260628_s3_dining_nook_framed_prints",
+          "unique_viewers": 893,
+          "visible_core_na_eu": 1.1,
+          "us": 0.7,
+          "gb": 0.4,
+          "ca": 0.0,
+          "asia_leakage": 95.6,
+          "sg": 17.8,
+          "my": 74.2
+        },
+        {
+          "post_id": "svc_20260629_s3_hallway_wall_art_picture_rail",
+          "unique_viewers": 980,
+          "visible_core_na_eu": 1.1,
+          "us": 0.0,
+          "gb": 1.1,
+          "ca": 0.0,
+          "asia_leakage": 92.3,
+          "sg": 69.4,
+          "my": 17.6
+        },
+        {
+          "post_id": "svc_20260623_s2_cool_girl_awkward_corner_art_ideas",
+          "unique_viewers": 990,
+          "visible_core_na_eu": 1.4,
+          "us": 1.4,
+          "gb": 0.0,
+          "ca": 0.0,
+          "asia_leakage": 85.4,
+          "sg": 7.9,
+          "my": 71.1
+        },
+        {
+          "post_id": "svc_20260629_s2_small_dining_nook_art",
+          "unique_viewers": 951,
+          "visible_core_na_eu": 1.4,
+          "us": 0.0,
+          "gb": 1.4,
+          "ca": 0.0,
+          "asia_leakage": 77.5,
+          "sg": 44.2,
+          "my": 23.2
+        },
+        {
+          "post_id": "svc_20260621_s2_bookcase_print_stack_role",
+          "unique_viewers": 904,
+          "visible_core_na_eu": 1.7,
+          "us": 1.7,
+          "gb": 0.0,
+          "ca": 0.0,
+          "asia_leakage": 78.2,
+          "sg": 42.6,
+          "my": 21.5
+        },
+        {
+          "post_id": "svc_20260620_s1_desk_cable_sightline",
+          "unique_viewers": 911,
+          "visible_core_na_eu": 1.9,
+          "us": 0.9,
+          "gb": 1.0,
+          "ca": 0.0,
+          "asia_leakage": 87.6,
+          "sg": 37.5,
+          "my": 41.0
+        }
+      ],
+      "current_read": {
+        "what_is_working": [
+          "ordinary Western room cues visible before text",
+          "radiator/window/dining/dresser/entry/shelf surfaces",
+          "large framed art decision in the first frame",
+          "concrete wall problem rather than identity or generic aesthetic label"
+        ],
+        "what_is_failing": [
+          "cool-girl or identity labels as the public hook",
+          "generic color-combo boards without a specific room problem",
+          "persona/woman presence without a country-routing hypothesis",
+          "Asia-heavy early distribution despite female/25-44 fit"
+        ]
+      }
     },
     "discovery_rule": "실제 링크나 출처가 있는 웹/TikTok 표면에서 북미/유럽 사용자의 공간 문제, 도시형 생활패턴, 2D 아트 취향을 먼저 찾고, 그 다음 콘텐츠 훅으로 번역한다. Singapore/Korea/Asia 신호는 타겟이 아니라 분배 진단으로만 본다.",
     "discovery_sources": [
@@ -511,7 +701,7 @@
       "mechanic": "persona DIY wall-art idea carousel: large handmade-looking wall art, casual lowercase text, strong visual impact per slide, and selective aspirational woman silhouette/back/hand as scale cue",
       "default_slot": 3
     },
-    "reference_scout_path": "content/reference_scout_20260708_elura.md",
+    "reference_scout_path": "content/reference_scout_20260707_elura.md",
     "fixed_experiment2_reference_scout_path": "content/reference_scout_20260621_coolgirl_colorboard_pilot.md",
     "fixed_experiment2_references": [
       {
@@ -835,122 +1025,17 @@
   },
   "posts": [
     {
-      "id": "svc_20260708_s4_chair_wall_art_control",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7660175305784495380",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 100.0,
-        "target_age": 75.0,
-        "female": 75.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260708_s3_kitchen_shelf_wall_art",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7660174212576939285",
-      "audience_metrics": {
-        "sg": 53.9,
-        "us": 1.7,
-        "target_market": 3.7,
-        "asia_leakage": 79.8,
-        "target_age": 58.1,
-        "female": 67.0,
-        "unique_viewers": null,
-        "source": "account fallback"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260708_s2_stair_landing_wall_art",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7660172987689127188",
-      "audience_metrics": {
-        "sg": 0,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 100.0,
-        "target_age": 100.0,
-        "female": 100.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260708_s1_entry_shelf_wall_art",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7660171770434981141",
-      "audience_metrics": {
-        "sg": 33.3,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 100.0,
-        "target_age": 63.0,
-        "female": 89.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
-      "id": "svc_20260708_bedroom_art_vibe_quiz",
-      "url": "https://www.tiktok.com/@elura_studio7/photo/7660162546564926740",
-      "audience_metrics": {
-        "sg": 30.0,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 90.0,
-        "target_age": 65.0,
-        "female": 70.0,
-        "unique_viewers": null,
-        "source": "post-level"
-      },
-      "engagement": {
-        "views": null,
-        "likes": null,
-        "comments": null,
-        "shares": null,
-        "saves": null
-      }
-    },
-    {
       "id": "svc_20260707_s4_dining_chair_wall_art_control",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7659559291858193684",
       "audience_metrics": {
-        "sg": 10.8,
-        "us": 1.0,
-        "target_market": 1.8,
-        "asia_leakage": 95.8,
-        "target_age": 54.0,
-        "female": 86.0,
-        "unique_viewers": 11,
-        "source": "post-level"
+        "sg": 55.2,
+        "us": 1.4,
+        "target_market": 3.4,
+        "asia_leakage": 81.7,
+        "target_age": 58.4,
+        "female": 69.0,
+        "unique_viewers": null,
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -964,14 +1049,14 @@
       "id": "svc_20260707_s3_hall_shelf_wall_art",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7659558162722278677",
       "audience_metrics": {
-        "sg": 43.0,
-        "us": 0,
-        "target_market": 0.9,
-        "asia_leakage": 93.5,
-        "target_age": 56.0,
-        "female": 70.0,
-        "unique_viewers": 18,
-        "source": "post-level"
+        "sg": 55.2,
+        "us": 1.4,
+        "target_market": 3.4,
+        "asia_leakage": 81.7,
+        "target_age": 58.4,
+        "female": 69.0,
+        "unique_viewers": null,
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -985,14 +1070,14 @@
       "id": "svc_20260707_s2_stair_landing_wall_art",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7659556970445327637",
       "audience_metrics": {
-        "sg": 56.3,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 94.9,
-        "target_age": 54.0,
-        "female": 82.0,
-        "unique_viewers": 17,
-        "source": "post-level"
+        "sg": 55.2,
+        "us": 1.4,
+        "target_market": 3.4,
+        "asia_leakage": 81.7,
+        "target_age": 58.4,
+        "female": 69.0,
+        "unique_viewers": null,
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -1006,14 +1091,14 @@
       "id": "svc_20260707_s1_stair_turn_wall_art",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7659555751119113492",
       "audience_metrics": {
-        "sg": 15.8,
-        "us": 0,
-        "target_market": 0,
-        "asia_leakage": 95.9,
-        "target_age": 50.0,
-        "female": 89.0,
-        "unique_viewers": 18,
-        "source": "post-level"
+        "sg": 55.2,
+        "us": 1.4,
+        "target_market": 3.4,
+        "asia_leakage": 81.7,
+        "target_age": 58.4,
+        "female": 69.0,
+        "unique_viewers": null,
+        "source": "account fallback"
       },
       "engagement": {
         "views": null,
@@ -1027,13 +1112,13 @@
       "id": "svc_20260704_s4_armchair_large_print_control",
       "url": "https://www.tiktok.com/@elura_studio7/photo/7658362134211906837",
       "audience_metrics": {
-        "sg": 13.0,
+        "sg": 13.1,
         "us": 0.6,
         "target_market": 1.6,
-        "asia_leakage": 93.5,
-        "target_age": 49.0,
-        "female": 28.0,
-        "unique_viewers": 1054,
+        "asia_leakage": 93.4,
+        "target_age": 48.0,
+        "female": 27.0,
+        "unique_viewers": 1040,
         "source": "post-level"
       },
       "engagement": {
@@ -1052,9 +1137,9 @@
         "us": 0,
         "target_market": 0.5,
         "asia_leakage": 91.2,
-        "target_age": 57.0,
+        "target_age": 56.0,
         "female": 83.0,
-        "unique_viewers": 876,
+        "unique_viewers": 873,
         "source": "post-level"
       },
       "engagement": {
@@ -1075,7 +1160,112 @@
         "asia_leakage": 49.1,
         "target_age": 71.0,
         "female": 81.0,
-        "unique_viewers": 986,
+        "unique_viewers": 724,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260704_s1_entry_stair_bench_wall_art",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7658357736559627540",
+      "audience_metrics": {
+        "sg": 46.6,
+        "us": 0,
+        "target_market": 0.5,
+        "asia_leakage": 94.8,
+        "target_age": 62.0,
+        "female": 35.0,
+        "unique_viewers": 888,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260703_s1_entry_bench_wall_art",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7657990659239873813",
+      "audience_metrics": {
+        "sg": 32.7,
+        "us": 2.0,
+        "target_market": 11.6,
+        "asia_leakage": 64.5,
+        "target_age": 51.0,
+        "female": 57.0,
+        "unique_viewers": 828,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260703_s4_pattern_wall_art_control",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7657989340903099669",
+      "audience_metrics": {
+        "sg": 22.3,
+        "us": 0.4,
+        "target_market": 1.2,
+        "asia_leakage": 95.9,
+        "target_age": 57.0,
+        "female": 27.0,
+        "unique_viewers": 977,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260703_s3_bedside_dresser_wall_art",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7657988240066268437",
+      "audience_metrics": {
+        "sg": 34.4,
+        "us": 0.5,
+        "target_market": 1.5,
+        "asia_leakage": 93.6,
+        "target_age": 58.0,
+        "female": 88.0,
+        "unique_viewers": 828,
+        "source": "post-level"
+      },
+      "engagement": {
+        "views": null,
+        "likes": null,
+        "comments": null,
+        "shares": null,
+        "saves": null
+      }
+    },
+    {
+      "id": "svc_20260703_s2_dining_window_wall_art",
+      "url": "https://www.tiktok.com/@elura_studio7/photo/7657986838455520533",
+      "audience_metrics": {
+        "sg": 61.0,
+        "us": 0,
+        "target_market": 1.4,
+        "asia_leakage": 77.5,
+        "target_age": 55.0,
+        "female": 64.0,
+        "unique_viewers": 951,
         "source": "post-level"
       },
       "engagement": {
@@ -1090,32 +1280,32 @@
   "content_learning": {
     "keep": [
       {
-        "id": "svc_20260708_s4_chair_wall_art_control",
+        "id": "svc_20260707_s4_dining_chair_wall_art_control",
         "role": "유지",
-        "format": "controlled chair scale wall art board 20260708",
+        "format": "controlled dining chair wall art board 20260707",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Chair wall art: use the seat line to set the scale.",
+        "reflected": "Dining chair wall art: let the chair set the scale.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260708_s3_kitchen_shelf_wall_art",
+        "id": "svc_20260707_s3_hall_shelf_wall_art",
         "role": "유지",
-        "format": "continental europe kitchen shelf wall art board 20260708",
+        "format": "continental europe hall shelf wall art board 20260707",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Kitchen shelf wall art: let the shelf and window share the color.",
+        "reflected": "Hall shelf wall art: let the objects point to the frame.",
         "performance": "성과 수집 대기",
         "is_new": false
       },
       {
-        "id": "svc_20260708_s1_entry_shelf_wall_art",
+        "id": "svc_20260704_s4_armchair_large_print_control",
         "role": "유지",
-        "format": "us canada entry shelf wall art board 20260708",
+        "format": "controlled armchair art first scale board 20260704",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Entry shelf wall art: let the shelf point to the frame.",
+        "reflected": "Armchair wall art: start with the print size, then let the corner settle.",
         "performance": "성과 수집 대기",
         "is_new": false
       }
@@ -1124,93 +1314,75 @@
     "new": [],
     "plan": [
       {
-        "id": "svc_20260708_bedroom_art_vibe_quiz",
-        "role": "user-requested reference recreation/stronger art style",
-        "format": "miacrawford bedroom vibe quiz recreated 20260708",
-        "medium": "clean digital 2D matte framed art integrated into generated room photographs",
-        "target": "target not recorded",
-        "reflected": "What’s your bedroom art style?",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "user-requested reference recreation / stronger art style",
-        "applied_strategy": "What’s your bedroom art style?",
-        "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
-        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: user requested reference clone with stronger art identity. 전개 방식: from wall-art problem boards to high-signal bedroom style quiz.",
-        "visual_proof": "첫 장에서 무엇을 보게 할지 기록이 부족하다.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://vt.tiktok.com/ZSCwSavML/ / bedroom vibe quiz photo carousel; first slide 2x2 collage with large pale-yellow condensed headline. 빌린 포맷 요소: 10-slide photo carousel, 2x2 bedroom collage cover, centered pale-yellow condensed headline, bedroom style quiz/caption…."
-      },
-      {
-        "id": "svc_20260708_s1_entry_shelf_wall_art",
+        "id": "svc_20260707_s1_stair_turn_wall_art",
         "role": "US/Canada ordinary city-home recovery",
-        "format": "us canada entry shelf wall art board 20260708",
+        "format": "us canada stair turn wall art board 20260707",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Let the shelf point to the frame.",
+        "reflected": "Make the turn feel intentional.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "US/Canada ordinary city-home recovery",
-        "applied_strategy": "Let the shelf point to the frame.",
-        "drop_prevention": "재발 방지 설명 없음",
-        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
-        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: us/canada entry shelf object clue surface. 전개 방식: entry problem, shelf detail, front proof, object relation, 마지막 synthesis.",
-        "visual_proof": "첫 문장 `Let the shelf point to the frame.`. 화면 증거: entry shelf, hooks, tote, 신발, framed print create daily-object friction.",
-        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / small-wall object setup and immediate wall problem. 빌린 포맷 요소: immediate room problem, object clues, and detail-to-room proof rhythm."
-      },
-      {
-        "id": "svc_20260708_s2_stair_landing_wall_art",
-        "role": "UK/Ireland small-home recovery",
-        "format": "uk ireland stair landing wall art board 20260708",
-        "medium": "clean digital 2D matte print",
-        "target": "target not recorded",
-        "reflected": "Give the turn one quiet frame.",
-        "performance": "성과 수집 대기",
-        "is_new": false,
-        "basis_from": "UK/Ireland small-home recovery",
-        "applied_strategy": "Give the turn one quiet frame.",
+        "applied_strategy": "Make the turn feel intentional.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
-        "new_points": "새로 넣은 장치: controlled retest of stair landing with fresh old home cues. 전개 방식: landing problem, banister detail, front proof, turn relation, 마지막 synthesis.",
-        "visual_proof": "첫 문장 `Give the turn one quiet frame.`. 화면 증거: landing turn, rail, boots, umbrella, framed print create old-home turn friction.",
+        "new_points": "새로 넣은 장치: us/canada stair turn rebuild of relative stair/landing signal. 전개 방식: turn problem, object clue, frame detail, front proof, 마지막 landing synthesis.",
+        "visual_proof": "첫 문장 `Make the turn feel intentional.`. 화면 증거: stair rail, turn wall, shoe, tote, framed print create stair-turn friction.",
+        "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / small-wall object setup and immediate wall problem. 빌린 포맷 요소: immediate room problem, object clues, and detail-to-room proof rhythm."
+      },
+      {
+        "id": "svc_20260707_s2_stair_landing_wall_art",
+        "role": "UK/Ireland small-home recovery",
+        "format": "uk ireland stair landing wall art board 20260707",
+        "medium": "clean digital 2D matte print",
+        "target": "target not recorded",
+        "reflected": "One frame can hold the turn.",
+        "performance": "성과 수집 대기",
+        "is_new": false,
+        "basis_from": "UK/Ireland small-home recovery",
+        "applied_strategy": "One frame can hold the turn.",
+        "drop_prevention": "재발 방지 설명 없음",
+        "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: controlled retest of latest relative top surface. 전개 방식: landing problem, detail proof, front proof, rail relation, 마지막 synthesis.",
+        "visual_proof": "첫 문장 `One frame can hold the turn.`. 화면 증거: stair landing, rail, boots, framed print create old-home turn friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / small-wall object setup and immediate wall problem. 빌린 포맷 요소: object setup, fast focal payoff, and restrained old-home pacing."
       },
       {
-        "id": "svc_20260708_s3_kitchen_shelf_wall_art",
+        "id": "svc_20260707_s3_hall_shelf_wall_art",
         "role": "Continental Europe mixed-home recovery",
-        "format": "continental europe kitchen shelf wall art board 20260708",
+        "format": "continental europe hall shelf wall art board 20260707",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Let the shelf and window share the color.",
+        "reflected": "Let the objects point to the frame.",
         "performance": "성과 수집 대기",
         "is_new": false,
         "basis_from": "Continental Europe mixed-home recovery",
-        "applied_strategy": "Let the shelf and window share the color.",
+        "applied_strategy": "Let the objects point to the frame.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
-        "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: changed shelf surface from hall to kitchen/window/radiator. 전개 방식: kitchen shelf problem, 아트 디테일, front proof, object relation, 마지막 synthesis.",
-        "visual_proof": "첫 문장 `Let the shelf and window share the color.`. 화면 증거: kitchen shelf, 창문, radiator, books, 램프, framed print create object-clue friction.",
+        "reduced_points": "전날과 같은 방·같은 오브젝트·문장만 바꾼 반복으로 보이지 않게 했다.",
+        "new_points": "새로 넣은 장치: changed retest of weak hallway shelf object clue surface. 전개 방식: shelf problem, 아트 디테일, front proof, object relation, 마지막 synthesis.",
+        "visual_proof": "첫 문장 `Let the objects point to the frame.`. 화면 증거: books, 램프, hall shelf, 창문 light, framed print create object-clue friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / small-wall object setup and immediate wall problem. 빌린 포맷 요소: object clues, mature archive pacing, and detail-to-room proof."
       },
       {
-        "id": "svc_20260708_s4_chair_wall_art_control",
-        "role": "controlled contrast chair-scale wall test",
-        "format": "controlled chair scale wall art board 20260708",
+        "id": "svc_20260707_s4_dining_chair_wall_art_control",
+        "role": "controlled contrast dining-chair wall test",
+        "format": "controlled dining chair wall art board 20260707",
         "medium": "clean digital 2D matte print",
         "target": "target not recorded",
-        "reflected": "Use the seat line to set the scale.",
+        "reflected": "Let the chair set the scale.",
         "performance": "성과 수집 대기",
         "is_new": false,
-        "basis_from": "controlled contrast chair-scale wall test",
-        "applied_strategy": "Use the seat line to set the scale.",
+        "basis_from": "controlled contrast dining-chair wall test",
+        "applied_strategy": "Let the chair set the scale.",
         "drop_prevention": "재발 방지 설명 없음",
         "saved_points": "기존의 완성된 방 배치 사진 반복은 기준으로 삼지 않고, 포맷 자체를 새로 열었다.",
         "reduced_points": "같은 이미지 반복, 같은 아트 재사용, 텍스트만 바뀐 슬라이드는 제외했다.",
-        "new_points": "새로 넣은 장치: controlled chair scale proof across three ordinary room surfaces. 전개 방식: chair proof, bedside proof, dining chair proof, detail relation, 마지막 synthesis.",
-        "visual_proof": "첫 문장 `Use the seat line to set the scale.`. 화면 증거: chair, side table, baseboard, framed print create scale friction.",
+        "new_points": "새로 넣은 장치: controlled dining chair scale rather than dining window or radiator. 전개 방식: chair scale problem, 아트 디테일, front proof, table relation, 마지막 synthesis.",
+        "visual_proof": "첫 문장 `Let the chair set the scale.`. 화면 증거: dining chair back, table edge, baseboard, framed print create scale friction.",
         "reference_basis": "확인한 고성과 레퍼런스: https://www.tiktok.com/@amandabhome/video/7523027193430035743 / small-wall object setup and immediate wall problem. 빌린 포맷 요소: small-wall object setup, scale proof, and fast framed-art payoff."
       }
     ]
