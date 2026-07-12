@@ -249,7 +249,7 @@ kbd {
 
 .progress span {
   display: block;
-  width: calc(100% / 18);
+  width: calc(100% / 19);
   height: 100%;
   background: var(--blue);
   transform-origin: left;

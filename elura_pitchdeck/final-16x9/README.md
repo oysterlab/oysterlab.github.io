@@ -1,4 +1,4 @@
-# ELURA Pitch Deck V2 — 18 slides
+# ELURA Pitch Deck V3 — 19 slides
 
 ![ELURA Pitch Deck V2 contact sheet](/Users/shin/elura/biz/pitchdeck/final-16x9/contact-sheet.png)
 
@@ -12,16 +12,17 @@
 6. Solution
 7. Core Experience
 8. Result
-9. Initial Customer Hypothesis
-10. Market & Wedge
-11. Business Model
-12. Validation
-13. Go to Market
-14. Competition
-15. Defensibility
-16. Roadmap
-17. Founder & Current Ask
-18. Closing
+9. Customer
+10. Acquisition Wedge
+11. Market & Expansion
+12. Business Model
+13. Validation
+14. Go to Market
+15. Competition
+16. Defensibility
+17. Roadmap
+18. Founder & Current Ask
+19. Closing
 
 All slides are `1672 × 941 px`, exact 16:9.
 

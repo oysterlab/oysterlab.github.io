@@ -1,10 +1,10 @@
-# ELURA Pitch Deck V2 — final 16:9 image deck
+# ELURA Pitch Deck V3 — final 16:9 image deck
 
 ## Direction
 
 - Audience: pre-seed / seed investors and early partners
 - Language: English
-- Format: 18 individual 16:9 PNG slides
+- Format: 19 individual 16:9 PNG slides
 - Visual system: Toss-like hierarchy and Airbnb-like warmth
 - Truth standard: pre-revenue, hypothesis-first, no invented SAM/SOM or traction
 
@@ -52,33 +52,49 @@ Not infinite generation. Curated confidence.
 
 Curated direction · actual-room preview · size and frame recommendation · print-ready file or framed delivery.
 
-### 09 — Initial customer hypothesis
+### 09 — Customer
 
-**Start with the moment—not a demographic.**
+**They know what they like. They can’t see what belongs in their room.**
 
-Trigger moments: new space · starting a home together · first ownership · room refresh.
+The initial customer is defined by a decision state rather than age, gender or a single life event:
 
-Initial segment to test: English-speaking urban adults, 25–44, apartment / condo / flat, renter or first-time owner, U.S. / Canada / U.K.
+- saves interiors repeatedly
+- has a visible unfinished wall
+- wants something personal rather than generic
+- is willing to share room and taste inputs
 
-Bottom: **A focused GTM hypothesis—not the limit of the market.**
+The need can appear across renters, owners, moves, refreshes and everyday reinvention.
 
-### 10 — Market and wedge
+Evidence context: `57%` of people who feel more belonging when expressing identity at home often experience enjoyment, versus `51%` globally. IKEA Life at Home Report 2024, 38,000+ people across 39 countries.
 
-**A large existing market—with one high-intent moment to enter.**
+### 10 — Acquisition wedge
 
-Category context, not direct TAM:
+**Meet them while taste is turning into action.**
 
-- `$61.0B` global wall-art market, 2025
-- `$19.6B` online wall-art channel, 2025
-- `70.5%` residential share, 2025
+Pinterest channel context:
 
-Wedge: people personalizing a new or newly refreshed home.
+- `631M` monthly users
+- `96%` of top searches are unbranded
+- `80%` of weekly Pinners feel inspired by shopping
 
-Bottom: **Qualified reach × paid conversion × annual spend = evidence-based SOM.**
+Flow: room and style content → save, click or share a room → three curated directions → direction pack or physical art.
 
-Footnote: broad category includes wall coverings; first 30 paid orders establish the inputs.
+Bottom: **Discovery reveals taste. Room input reveals intent. ELURA closes the decision gap.**
 
-### 11 — Business model
+Pinterest is the first channel; search, creators and home partnerships are expansion channels.
+
+### 11 — Market and expansion
+
+**Wall art is the first transaction. Personalization expands across the home.**
+
+- Online wall-art channel: `$19.6B` in 2025 → `$33.6B` in 2033, `7.1%` CAGR
+- Illustrative venture-scale math: `500K annual core orders × $200 AOV = $100M GMV`
+- `$100M` equals approximately `0.3%` of the projected 2033 online category
+- Expansion path: first piece → companion set → more rooms → gifts and refreshes
+
+The scale equation is an illustration, not a forecast. The `$200` AOV is the midpoint of ELURA's proposed `$150–250` core order.
+
+### 12 — Business model
 
 **The direction earns trust. The physical product earns revenue.**
 
@@ -88,7 +104,7 @@ Footnote: broad category includes wall coverings; first 30 paid orders establish
 
 Bottom: **Pricing is a hypothesis until the first 30 paid orders.**
 
-### 12 — Validation
+### 13 — Validation
 
 **The system runs. Demand is not yet proven.**
 
@@ -101,7 +117,7 @@ Built: content engine · live product prototype · 49 archived reports · 166 co
 
 Next gates: qualified reach · landing intent · 30 paid orders · CAC < contribution margin.
 
-### 13 — Go to market
+### 14 — Go to market
 
 **Focus first. Scale only after the signal is qualified.**
 
@@ -112,13 +128,13 @@ Next gates: qualified reach · landing intent · 30 paid orders · CAC < contrib
 
 Bottom: **Every installed home becomes the next proof asset.**
 
-### 14 — Competition
+### 15 — Competition
 
 **The market forces a trade-off. ELURA removes it.**
 
 Designer-level personalization. Product-level accessibility.
 
-### 15 — Defensibility
+### 16 — Defensibility
 
 **Today: curation and workflow. Later: outcome data.**
 
@@ -128,13 +144,13 @@ What compounds after paid orders: selection · purchase · installed result · s
 
 Bottom: **A roadmap to defensibility—not a moat claim today.**
 
-### 16 — Roadmap
+### 17 — Roadmap
 
 **From concierge proof to a compounding product.**
 
 Now → first 30 paid orders → 100 paid orders and structured outcomes → automation and repeat products.
 
-### 17 — Founder and current ask
+### 18 — Founder and current ask
 
 **One founder built the full loop. The next constraint is paid proof.**
 
@@ -146,15 +162,15 @@ Current ask: founding-customer introductions · micro-creator partners · print 
 
 Bottom: **30 paid orders before scaling headcount or media.**
 
-### 18 — Closing
+### 19 — Closing
 
 **The future of home personalization starts with the person.**
 
 ## Key sources
 
-- Grand View Research wall-art market: https://www.grandviewresearch.com/industry-analysis/wall-art-market-report
 - Grand View Research online segment: https://www.grandviewresearch.com/horizon/statistics/wall-art-market/sales-channel/online/global
-- Pinterest investor release: https://investor.pinterestinc.com/news-and-events/press-releases/press-releases-details/2026/Pinterest-Announces-1-Billion-Strategic-Investment-from-Elliott-and-2-Billion-of-Near-Term-Share-Repurchases/default.aspx
+- IKEA Life at Home Report 2024: https://lifeathome.ikea.com/
+- Pinterest Business audience: https://business.pinterest.com/en-gb/audience/
+- Pinterest platform behavior: https://business.pinterest.com/en-gb/how-pinterest-works/
 - Internal audience report: `/Users/shin/elura/docs/art-service/reports/2026-07-05.html`
 - Internal product status: `/Users/shin/elura/CURRENT_STATUS.md`
-

@@ -1,5 +1,17 @@
 # ELURA Pitch Deck V2 — full audit
 
+## V3 revision — July 13, 2026
+
+The first V2 correction overfit the customer to home-personalization trigger events, especially moving. It also made the market slide defensive: accurate category disclaimers replaced an actual commercial argument.
+
+V3 replaces slides 9–10 with three pages:
+
+- **Customer:** a behavior-defined decision gap—saved taste plus an unresolved real room—across renters, owners, moves, refreshes and everyday reinvention.
+- **Acquisition wedge:** a measurable content-to-room-input-to-purchase journey, supported by current Pinterest planning and shopping behavior.
+- **Market and expansion:** the relevant online wall-art channel, explicit illustrative `$100M GMV` math, and a repeat path from one piece to more rooms, sets, gifts and refreshes.
+
+This revision removes the unsupported age/geography persona and the broad `$61B` headline from the commercial argument.
+
 Updated after reviewing the shared ChatGPT critique and rechecking the deck against current workspace evidence.
 
 ## Executive assessment
@@ -162,4 +174,3 @@ These remain consistent with the corrected commercial logic. Insight and Result 
 - Internal audience evidence: `docs/art-service/reports/2026-07-05.html`
 - Internal product status: `CURRENT_STATUS.md`
 - Internal pricing strategy: `biz/strategy/elura_payment_conversion_strategy.md`
-
