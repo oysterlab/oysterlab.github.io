@@ -1,6 +1,6 @@
 # ELURA Pitch Deck — GitHub Pages
 
-Static presentation viewer for the 17-slide ELURA image deck.
+Static presentation viewer for the 18-slide ELURA image deck.
 
 ## Published path
 
