@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ELURA — Pitch Deck</title>
+  <meta name="description" content="ELURA translates who you are into how your space feels. View the ELURA investor pitch deck.">
+  <meta name="theme-color" content="#0b0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ELURA — Pitch Deck">
+  <meta property="og:description" content="The future of home personalization starts with the person.">
+  <meta property="og:image" content="final-16x9/01-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%230b0d12'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' fill='white'%3EE%3C/text%3E%3C/svg%3E">
+  <link rel="preload" as="image" href="final-16x9/01-cover.png" fetchpriority="high">
+  <link rel="stylesheet" href="pitchdeck.css">
+  <script src="pitchdeck.js" defer></script>
+</head>
+<body>
+  <header class="chrome" aria-label="Pitch deck controls">
+    <a class="brand" href="#1" aria-label="Go to cover">
+      <span class="brand__mark" aria-hidden="true">E</span>
+      <span>ELURA</span>
+    </a>
+
+    <div class="chrome__meta">
+      <span class="counter" id="counter" aria-live="polite">01 / 17</span>
+      <span class="slide-title" id="slide-title">Cover</span>
+    </div>
+
+    <div class="chrome__actions">
+      <button class="text-button" id="overview-button" type="button" aria-label="Open slide overview" aria-haspopup="dialog" title="Overview (O)">
+        <span>Overview</span>
+        <kbd>O</kbd>
+      </button>
+      <button class="icon-button" id="fullscreen-button" type="button" aria-label="Enter full screen" title="Full screen (F)">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 3H3v5M16 3h5v5M8 21H3v-5M16 21h5v-5"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="viewer" id="viewer">
+    <div class="deck" id="deck" aria-label="ELURA pitch deck" aria-roledescription="slide deck"></div>
+
+    <nav class="nav-controls" aria-label="Slide navigation">
+      <button class="nav-button" id="previous-button" type="button" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg>
+      </button>
+      <button class="nav-button" id="next-button" type="button" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg>
+      </button>
+    </nav>
+
+    <div class="swipe-hint" id="swipe-hint" aria-hidden="true">Swipe or use arrow keys</div>
+  </main>
+
+  <div class="progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+  <dialog class="overview" id="overview-dialog" aria-labelledby="overview-title">
+    <div class="overview__header">
+      <div>
+        <p class="eyebrow">ELURA / Investor deck</p>
+        <h1 id="overview-title">17 slides</h1>
+      </div>
+      <button class="icon-button icon-button--light" id="overview-close" type="button" aria-label="Close overview">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <div class="overview__grid" id="overview-grid"></div>
+    <footer class="overview__footer">
+      <span>← → Navigate</span>
+      <span>F Full screen</span>
+      <span>Esc Close</span>
+    </footer>
+  </dialog>
+
+  <noscript>
+    <div class="noscript">
+      <img src="final-16x9/01-cover.png" alt="ELURA — Reveal yourself through your space.">
+      <p>JavaScript is required to navigate this pitch deck.</p>
+    </div>
+  </noscript>
+</body>
+</html>

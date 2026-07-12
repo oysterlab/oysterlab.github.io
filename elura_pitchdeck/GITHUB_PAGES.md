@@ -4,7 +4,7 @@ Static presentation viewer for the 17-slide ELURA image deck.
 
 ## Published path
 
-`https://oysterlab.github.io/pitchdeck/`
+`https://oysterlab.github.io/elura_pitchdeck/`
 
 ## Controls
 
