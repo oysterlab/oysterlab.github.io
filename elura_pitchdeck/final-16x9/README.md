@@ -1,14 +1,14 @@
-# ELURA Pitch Deck V3 — 19 slides
+# ELURA Pitch Deck V4 — 19 slides
 
-![ELURA Pitch Deck V2 contact sheet](/Users/shin/elura/biz/pitchdeck/final-16x9/contact-sheet.png)
+![ELURA Pitch Deck V4 contact sheet](/Users/shin/elura/biz/pitchdeck/final-16x9/contact-sheet.png)
 
 ## Slides
 
 1. Cover
 2. Problem
-3. Why It Stays Unfinished
-4. Insight
-5. Why Now
+3. Activated Desire
+4. Core Hypothesis
+5. Why Art First
 6. Solution
 7. Core Experience
 8. Result

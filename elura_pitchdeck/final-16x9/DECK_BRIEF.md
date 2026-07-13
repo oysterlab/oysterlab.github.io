@@ -1,4 +1,4 @@
-# ELURA Pitch Deck V3 — final 16:9 image deck
+# ELURA Pitch Deck V4 — final 16:9 image deck
 
 ## Direction
 
@@ -16,25 +16,42 @@
 
 ### 02 — Problem
 
-**A home can be fully furnished—and still feel unfinished.**
+**When people want their space to feel more personal, choosing what belongs is surprisingly difficult.**
 
-### 03 — Why it stays unfinished
+Not everyone wants to change their space. The problem begins when the desire becomes active.
 
-**Identity is easy to feel. Hard to translate into space.**
+### 03 — Activated desire
 
-### 04 — Insight
+**The problem begins after: “I want this space to feel more like me.”**
 
-**More inspiration does not create a decision.**
+Triggers vary: an inspiring space · a room that feels generic · hosting or photographing home · wanting something meaningful · refreshing a familiar room · moving or starting a new chapter.
 
-Flow: endless references → missing translation → one confident direction.
+Decision friction: What fits this room? What feels personal? What will I still like later?
 
-Bottom: **Person + actual room → curated choice.**
+Bottom: **People don’t buy art often. When they do, confidence matters.**
 
-### 05 — Why now
+### 04 — Core hypothesis
 
-**Home personalization can now begin with the person—not the catalog.**
+**The desire may stay latent—until people see their own room transformed.**
 
-Taste is visible · space is understandable · one-of-one is fulfillable.
+Comparison: an acceptable room with generic art (“It’s fine”) versus a personalized in-room preview (“This feels more like me”).
+
+Unproven test: **Does a personalized in-room preview increase purchase intent and willingness to pay versus generic wall art?**
+
+Before/After content and real checkout behavior must answer this.
+
+### 05 — Why art first
+
+**Art is not the only way to personalize a home. It is the clearest place to start.**
+
+- Personal meaning: carries memories, taste, place, music and emotion
+- High impact, low friction: changes a wall without replacing furniture or renovating
+- Room-aware: image, scale, ratio, color, frame and placement can adapt
+- Made to order: tests paid demand without traditional inventory
+
+Bottom: **Art is the first product—not the final scope.**
+
+It makes ELURA's person + space translation visible, shippable and testable.
 
 ### 06 — Solution
 
@@ -59,11 +76,11 @@ Curated direction · actual-room preview · size and frame recommendation · pri
 The initial customer is defined by a decision state rather than age, gender or a single life event:
 
 - saves interiors repeatedly
-- has a visible unfinished wall
+- is actively considering a change
 - wants something personal rather than generic
 - is willing to share room and taste inputs
 
-The need can appear across renters, owners, moves, refreshes and everyday reinvention.
+The conditional need-state can appear across renters, owners, moves, refreshes and everyday reinvention.
 
 Evidence context: `57%` of people who feel more belonging when expressing identity at home often experience enjoyment, versus `51%` globally. IKEA Life at Home Report 2024, 38,000+ people across 39 countries.
 
@@ -85,12 +102,12 @@ Pinterest is the first channel; search, creators and home partnerships are expan
 
 ### 11 — Market and expansion
 
-**Wall art is the first transaction. Personalization expands across the home.**
+**Wall art is the first transaction. Personalization can expand across the home.**
 
 - Online wall-art channel: `$19.6B` in 2025 → `$33.6B` in 2033, `7.1%` CAGR
 - Illustrative venture-scale math: `500K annual core orders × $200 AOV = $100M GMV`
 - `$100M` equals approximately `0.3%` of the projected 2033 online category
-- Expansion path: first piece → companion set → more rooms → gifts and refreshes
+- Expansion hypothesis: first piece → companion set → more rooms → gifts and refreshes
 
 The scale equation is an illustration, not a forecast. The `$200` AOV is the midpoint of ELURA's proposed `$150–250` core order.
 
@@ -106,7 +123,7 @@ Bottom: **Pricing is a hypothesis until the first 30 paid orders.**
 
 ### 13 — Validation
 
-**The system runs. Demand is not yet proven.**
+**The system runs. The purchase hypothesis is not yet proven.**
 
 - `17.6K` latest measured 7-day viewers
 - `2.9%` priority North America / Europe audience
@@ -115,18 +132,18 @@ Bottom: **Pricing is a hypothesis until the first 30 paid orders.**
 
 Built: content engine · live product prototype · 49 archived reports · 166 content batches.
 
-Next gates: qualified reach · landing intent · 30 paid orders · CAC < contribution margin.
+Next experiment: personalized preview versus generic art · purchase-intent and willingness-to-pay lift · first 30 paid orders · CAC < contribution margin.
 
 ### 14 — Go to market
 
-**Focus first. Scale only after the signal is qualified.**
+**Test the difference before scaling the channel.**
 
-1. Qualify audience
-2. Prove room-application intent
-3. Prove willingness to pay
-4. Amplify only after unit economics
+1. Recruit people already considering a room change
+2. Show generic art and a personalized in-room preview
+3. Measure room upload, checkout intent and willingness to pay
+4. Prove 30 paid orders and CAC below contribution margin
 
-Bottom: **Every installed home becomes the next proof asset.**
+Bottom: **Scale only if the personalized view changes behavior.**
 
 ### 15 — Competition
 

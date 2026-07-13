@@ -1,5 +1,18 @@
 # ELURA Pitch Deck V2 — full audit
 
+## V4 revision — activated desire and why art first
+
+The previous problem story still implied that a blank or undecorated wall was a broadly felt daily pain. That overstated the need and blurred the actual commercial hypothesis.
+
+V4 makes four corrections:
+
+- The problem is conditional: it begins only after someone wants the space to feel more personal.
+- The friction is choosing what fits the room, feels personal and will still feel right later.
+- The core test is whether seeing a personalized version of the actual room increases purchase intent and willingness to pay versus generic wall art.
+- Art is positioned as ELURA's first testable product—not the only way to personalize a home and not the company's final scope.
+
+Validation and GTM now center on a before/after comparison, willingness-to-pay lift and real paid orders rather than treating content activity as demand.
+
 ## V3 revision — July 13, 2026
 
 The first V2 correction overfit the customer to home-personalization trigger events, especially moving. It also made the market slide defensive: accurate category disclaimers replaced an actual commercial argument.
